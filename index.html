@@ -144,7 +144,7 @@ section{margin-block:34px;}
 .card-role{font-size:0.84rem; color:var(--ink-2); margin-top:2px; font-style:italic;}
 .boss-card{border-top-color:var(--gold); box-shadow:0 0 0 1px var(--gold) inset;}
 .boss-badge{display:inline-flex; align-items:center; gap:4px; margin-left:9px; padding:2px 8px 2px 6px; border-radius:999px; background:var(--gold); color:var(--gold-ink); font-family:var(--font-mono); font-size:0.62rem; font-weight:700; letter-spacing:0.04em; vertical-align:middle; white-space:nowrap;}
-.card-joke{font-family:var(--font-mono); font-style:italic; font-size:0.82rem; color:var(--link); margin-top:8px; max-width:48ch;}
+.card-joke{font-family:var(--font-mono); font-style:italic; font-size:0.82rem; color:var(--link); margin-top:8px;}
 .status{font-size:0.68rem; font-weight:700; padding:3px 10px; white-space:nowrap; text-transform:uppercase; letter-spacing:0.04em; border:1.5px solid currentColor;
   border-radius:2px; background:none;}
 .status-critical{color:var(--red);}
@@ -165,9 +165,8 @@ section{margin-block:34px;}
 /* card compartilhavel */
 .share-block{margin-top:16px; display:none;}
 .share-block.active{display:block;}
-.share-canvas-wrap{border:1px solid var(--border); border-radius:0; overflow:hidden; max-width:320px; margin-bottom:12px;}
+.share-canvas-wrap{border:1px solid var(--border); border-radius:0; overflow:hidden; max-width:420px; margin-bottom:12px;}
 .share-canvas-wrap canvas{width:100%; height:auto; display:block;}
-.size-toggle{display:flex; gap:8px; margin-bottom:10px;}
 .share-actions{display:flex; gap:8px; flex-wrap:wrap; align-items:center;}
 .toast{font-size:0.8rem; color:var(--blue); font-family:var(--font-mono);}
 
@@ -659,10 +658,10 @@ function renderPositive(matches, banner){
       '<div class="detail-row"><div class="detail-label">Fontes</div><ul class="source-list">'+e.src.map(k=>'<li><a href="'+SRC[k].u+'" target="_blank" rel="noopener">'+SRC[k].t+' ↗</a></li>').join('')+'</ul></div>'+
     '</div>';
   }).join('');
-  html += '<div class="block-note" style="margin-top:18px;">Compartilhe que achou algo — sem citar nome, sem risco de virar acusação de ninguém.</div>';
-  html += shareBlockHtml('invite');
+  html += '<div class="block-note" style="margin-top:18px;">Compartilhe a ficha — nome, cargo e a piadinha, direto na imagem.</div>';
+  html += shareBlockHtml('invite', true);
   results.innerHTML = html;
-  setupPositiveShare();
+  setupPositiveShare(matches.find(m=>m.boss) || matches[0]);
 }
 
 function renderNegative(q, suggestion){
@@ -674,7 +673,7 @@ function renderNegative(q, suggestion){
     : '';
   const sugerir = '<div class="followup">Acha que devia ter dado algo? <a href="'+sugerirLink(q)+'">Sugere esse nome pra gente</a>, com fonte.</div>';
   results.innerHTML = '<div class="result-negative">'+didYouMean+'<h3>'+msg+'</h3><div class="followup">'+follow+'</div>'+sugerir+'</div>'+
-    shareBlockHtml('negative');
+    shareBlockHtml('negative', true);
   if(suggestion){
     document.getElementById('dymBtn').addEventListener('click', ()=>{
       document.getElementById('searchInput').value = suggestion.name;
@@ -685,11 +684,13 @@ function renderNegative(q, suggestion){
 }
 
 /* ---------- cards compartilháveis: negativo, convite genérico (positivo) e estado ---------- */
-function shareBlockHtml(id){
+function shareBlockHtml(id, minimal){
+  const actions = minimal
+    ? '<div class="share-actions"><button class="btn ghost" id="copyLinkBtn-'+id+'">Copiar link</button><span class="toast" id="shareToast-'+id+'"></span></div>'
+    : '<div class="share-actions"><button class="btn" id="shareBtnNative-'+id+'">Compartilhar</button><button class="btn ghost" id="downloadBtn-'+id+'">Baixar imagem</button><button class="btn ghost" id="copyLinkBtn-'+id+'">Copiar link</button><span class="toast" id="shareToast-'+id+'"></span></div>';
   return '<div class="share-block active" id="shareBlock-'+id+'">'+
-    '<div class="size-toggle"><button class="btn small" data-size="feed">Feed (1080×1080)</button><button class="btn small ghost" data-size="story">Stories (1080×1920)</button></div>'+
-    '<div class="share-canvas-wrap"><canvas id="shareCanvas-'+id+'" width="1080" height="1080"></canvas></div>'+
-    '<div class="share-actions"><button class="btn" id="shareBtnNative-'+id+'">Compartilhar</button><button class="btn ghost" id="downloadBtn-'+id+'">Baixar imagem</button><button class="btn ghost" id="copyLinkBtn-'+id+'">Copiar link</button><span class="toast" id="shareToast-'+id+'"></span></div>'+
+    '<div class="share-canvas-wrap"><canvas id="shareCanvas-'+id+'" width="1200" height="630"></canvas></div>'+
+    actions+
   '</div>';
 }
 
@@ -697,17 +698,17 @@ const shareWidgets = {};
 
 function drawHazardBorder(ctx,w,h){
   ctx.strokeStyle = '#7a1620';
-  ctx.lineWidth = 6;
-  ctx.beginPath(); ctx.moveTo(70,44); ctx.lineTo(w-70,44); ctx.stroke();
-  ctx.beginPath(); ctx.moveTo(70,58); ctx.lineTo(w-70,58); ctx.stroke();
-  ctx.beginPath(); ctx.moveTo(70,h-58); ctx.lineTo(w-70,h-58); ctx.stroke();
-  ctx.beginPath(); ctx.moveTo(70,h-44); ctx.lineTo(w-70,h-44); ctx.stroke();
+  ctx.lineWidth = 5;
+  ctx.beginPath(); ctx.moveTo(50,28); ctx.lineTo(w-50,28); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(50,38); ctx.lineTo(w-50,38); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(50,h-38); ctx.lineTo(w-50,h-38); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(50,h-28); ctx.lineTo(w-50,h-28); ctx.stroke();
 }
 function drawVerifiedStamp(ctx,w,label){
-  ctx.save(); ctx.translate(w-190, 190); ctx.rotate(-6*Math.PI/180);
-  ctx.strokeStyle = '#7a1620'; ctx.lineWidth = 5; ctx.strokeRect(-140,-46,280,92);
+  ctx.save(); ctx.translate(w-140, 90); ctx.rotate(-6*Math.PI/180);
+  ctx.strokeStyle = '#7a1620'; ctx.lineWidth = 4; ctx.strokeRect(-104,-33,208,66);
   ctx.fillStyle = '#7a1620'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-  ctx.font = '700 28px "Playfair Display", serif'; ctx.fillText(label, 0, 4);
+  ctx.font = '700 20px "Playfair Display", serif'; ctx.fillText(label, 0, 3);
   ctx.restore();
 }
 function wrapText(ctx, text, x, y, maxWidth, lineHeight){
@@ -724,7 +725,7 @@ function wrapText(ctx, text, x, y, maxWidth, lineHeight){
 function drawShareCard(id){
   const canvas = document.getElementById('shareCanvas-'+id); if(!canvas) return;
   const widget = shareWidgets[id]; if(!widget) return;
-  const w = 1080, h = widget.size==='story' ? 1920 : 1080;
+  const w = 1200, h = 630;
   canvas.width = w; canvas.height = h;
   const ctx = canvas.getContext('2d');
   ctx.fillStyle = '#faf6ec'; ctx.fillRect(0,0,w,h);
@@ -732,39 +733,39 @@ function drawShareCard(id){
   drawVerifiedStamp(ctx,w, widget.stampLabel);
 
   ctx.fillStyle = '#1f1a14'; ctx.textAlign = 'left';
-  ctx.font = '800 64px "Playfair Display", serif';
-  wrapText(ctx, 'VORCARÔMETRO', 70, h*0.28, w-260, 66);
+  ctx.font = '800 42px "Playfair Display", serif';
+  wrapText(ctx, 'VORCARÔMETRO', 60, 96, w-300, 46);
 
-  ctx.font = '600 44px "Source Serif 4", serif';
+  ctx.font = '700 38px "Playfair Display", serif';
   ctx.fillStyle = '#1f1a14';
-  const endY = wrapText(ctx, widget.phrase, 70, h*0.42, w-140, 58);
+  let endY = wrapText(ctx, widget.phrase, 60, 172, w-260, 44);
 
   if(widget.subPhrase){
-    ctx.font = '400 32px "IBM Plex Mono", monospace';
+    ctx.font = '400 24px "IBM Plex Mono", monospace';
     ctx.fillStyle = '#5c5346';
-    wrapText(ctx, widget.subPhrase, 70, endY+56, w-140, 40);
+    endY = wrapText(ctx, widget.subPhrase, 60, endY+36, w-260, 30);
   }
 
-  ctx.font = '400 30px "IBM Plex Mono", monospace';
+  if(widget.joke){
+    ctx.font = 'italic 400 24px "IBM Plex Mono", monospace';
+    ctx.fillStyle = '#7a1620';
+    endY = wrapText(ctx, '“'+widget.joke+'”', 60, endY+38, w-120, 32);
+  }
+
+  ctx.font = '400 22px "IBM Plex Mono", monospace';
   ctx.fillStyle = '#5c5346';
   const dataStr = new Date().toLocaleDateString('pt-BR');
-  ctx.fillText('Verificado em '+dataStr+' · vorcaromet.ro', 70, h-70);
+  ctx.fillText('Verificado em '+dataStr+' · vorcaromet.ro', 60, h-46);
 }
 
 function setupShareWidget(id, opts){
-  shareWidgets[id] = {size:'feed', phrase: opts.phrase, subPhrase: opts.subPhrase||'', stampLabel: opts.stampLabel||'VERIFICADO'};
+  shareWidgets[id] = {phrase: opts.phrase, subPhrase: opts.subPhrase||'', joke: opts.joke||'', stampLabel: opts.stampLabel||'VERIFICADO'};
   const block = document.getElementById('shareBlock-'+id); if(!block) return;
-  const draw = async ()=>{ try{ await document.fonts.load('800 64px "Playfair Display"'); await document.fonts.load('600 44px "Source Serif 4"'); await document.fonts.ready; }catch(e){} drawShareCard(id); };
+  const draw = async ()=>{ try{ await document.fonts.load('800 42px "Playfair Display"'); await document.fonts.load('700 38px "Playfair Display"'); await document.fonts.ready; }catch(e){} drawShareCard(id); };
   draw();
-  block.querySelectorAll('.size-toggle [data-size]').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      shareWidgets[id].size = btn.dataset.size;
-      block.querySelectorAll('.size-toggle [data-size]').forEach(b=>b.classList.toggle('ghost', b!==btn));
-      drawShareCard(id);
-    });
-  });
   const toast = ()=>document.getElementById('shareToast-'+id);
-  document.getElementById('downloadBtn-'+id).addEventListener('click', ()=>{
+  const downloadBtn = document.getElementById('downloadBtn-'+id);
+  if(downloadBtn) downloadBtn.addEventListener('click', ()=>{
     const canvas = document.getElementById('shareCanvas-'+id);
     canvas.toBlob(blob=>{
       const url = URL.createObjectURL(blob);
@@ -778,7 +779,8 @@ function setupShareWidget(id, opts){
     catch(e){ toast().textContent='Não deu para copiar — copie o link da barra de endereço.'; }
     setTimeout(()=>toast().textContent='', 2500);
   });
-  document.getElementById('shareBtnNative-'+id).addEventListener('click', ()=>{
+  const shareBtnNative = document.getElementById('shareBtnNative-'+id);
+  if(shareBtnNative) shareBtnNative.addEventListener('click', ()=>{
     const canvas = document.getElementById('shareCanvas-'+id);
     canvas.toBlob(async blob=>{
       const shareText = opts.shareText || ('Vorcarômetro: '+location.href);
@@ -808,14 +810,19 @@ function setupShare(q){
   });
 }
 
-function setupPositiveShare(){
+function setupPositiveShare(entity){
   const baseUrl = location.origin + location.pathname;
+  const name = entity ? entity.name : 'Vorcarômetro';
+  const shareText = entity
+    ? name+' apareceu no Vorcarômetro. Confere a sua também: '+baseUrl
+    : 'Achei uma ficha no Vorcarômetro. Confere a sua também: '+baseUrl;
   setupShareWidget('invite', {
-    phrase: 'Achei uma ficha no Vorcarômetro.',
-    subPhrase: 'Confere a sua também.',
+    phrase: name,
+    subPhrase: entity ? entity.role : 'Achei uma ficha no Vorcarômetro.',
+    joke: entity ? entity.joke : '',
     stampLabel: 'ACHADO',
     linkUrl: baseUrl,
-    shareText: 'Achei uma ficha no Vorcarômetro. Confere a sua também: '+baseUrl,
+    shareText: shareText,
   });
 }
 
