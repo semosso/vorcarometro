@@ -103,8 +103,6 @@ section{margin-block:34px;}
 .trending-list{font-family:var(--font-sans); font-size:0.88rem; color:var(--ink-2);}
 .trending-chip{font:inherit; font-style:italic; text-decoration:underline; padding:0; border:none; background:none; color:var(--ink); cursor:pointer; -webkit-appearance:none; appearance:none;}
 .trending-chip:hover{color:var(--link);}
-.social-counter{font-family:var(--font-sans); font-size:0.86rem; font-weight:400; color:var(--ink-2); vertical-align:middle;}
-.social-counter strong{color:var(--ink);}
 .full-list{margin-top:12px; border:1px solid var(--border); border-radius:0; background:var(--surface); max-height:360px; overflow-y:auto;}
 .full-list-title{font-family:var(--font-mono); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-muted); padding:10px 14px; border-bottom:1px solid var(--gridline);}
 .full-list-item{padding:9px 14px; border-bottom:1px solid var(--gridline); display:flex; justify-content:space-between; align-items:baseline; gap:10px; cursor:pointer;}
@@ -263,7 +261,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 </div>
 
 <section id="busca">
-  <div class="block-title">Vorcarizar um nome <span class="social-counter" id="socialCounter"></span></div>
+  <div class="block-title">Vorcarizar um nome</div>
   <div class="block-note">Não achou nada e acha que deveria? Manda pra gente com o botão "sugerir" que aparece no resultado.</div>
   <form class="search-form" id="searchForm">
     <input type="text" id="searchInput" placeholder="Digite um nome (qualquer um, a chance é alta)" autocomplete="off">
@@ -412,23 +410,6 @@ const TICKER_ITEMS = ["ÚLTIMA HORA: FGC AINDA CONTANDO OS ZEROS","EDIÇÃO DE H
   const items = [...TICKER_ITEMS, ...TICKER_ITEMS].map(t=>'<span>'+t+'</span>').join('');
   track.innerHTML = items;
 })();
-
-/* ---------- contador social (local, cosmético) ---------- */
-function socialCounter(){
-  try{
-    const key = 'vorca_visit_rank';
-    const today = new Date().toISOString().slice(0,10);
-    let data = JSON.parse(localStorage.getItem(key)||'null');
-    if(!data || data.day!==today){
-      const hoje = new Date();
-      const base = 640 + hoje.getHours()*47 + hoje.getDate()*13;
-      data = {day:today, n: base + Math.floor(Math.random()*40)};
-      localStorage.setItem(key, JSON.stringify(data));
-    }
-    return data.n;
-  }catch(e){ return 700 + Math.floor(Math.random()*300); }
-}
-document.getElementById('socialCounter').innerHTML = '(você é a pessoa nº <strong>'+socialCounter().toLocaleString('pt-BR')+'</strong> a vorcarizar hoje)';
 
 /* ---------- vibração tátil (mobile) ---------- */
 function buzz(ms){ try{ if(navigator.vibrate) navigator.vibrate(ms); }catch(e){} }
