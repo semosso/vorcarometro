@@ -87,11 +87,9 @@ section{margin-block:34px;}
 
 .panel{border:1px solid var(--border); border-radius:0; background:var(--surface); padding:20px;}
 
-/* placar widget */
-.placar{background:#1f1a14; color:var(--gold); border:1px solid #1f1a14; padding:22px; text-align:center;}
-.placar .label{font-family:var(--font-mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:#e9e1cd;}
-.placar .num{font-family:var(--font-display); font-weight:800; font-size:4.2rem; line-height:1; margin:8px 0; font-variant-numeric:tabular-nums;}
-.placar .legend{font-family:var(--font-mono); font-size:0.78rem; color:#e9e1cd;}
+/* placar embutido no masthead */
+.placar-line{margin-top:10px; text-align:center; font-family:var(--font-sans); font-size:0.98rem; color:var(--ink-2);}
+.placar-line .placar-num{font-family:var(--font-display); font-weight:800; color:var(--red); font-size:1.35rem; margin:0 7px; font-variant-numeric:tabular-nums;}
 
 /* busca */
 .search-form{display:flex; gap:10px; flex-wrap:wrap;}
@@ -100,13 +98,12 @@ section{margin-block:34px;}
   border-radius:2px; background:var(--surface); color:var(--ink);
 }
 .search-form input:focus{outline:2px solid var(--blue); outline-offset:1px;}
-.lucky-row{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:12px;}
 .trending{margin-top:12px;}
 .trending-label{font-family:var(--font-mono); font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted);}
 .trending-list{font-family:var(--font-sans); font-size:0.88rem; color:var(--ink-2);}
 .trending-chip{font:inherit; font-style:italic; text-decoration:underline; padding:0; border:none; background:none; color:var(--ink); cursor:pointer; -webkit-appearance:none; appearance:none;}
 .trending-chip:hover{color:var(--link);}
-.social-counter{font-family:var(--font-mono); font-size:0.74rem; color:var(--ink-muted); margin-top:10px;}
+.social-counter{font-family:var(--font-mono); font-size:0.62rem; font-weight:400; color:var(--ink-muted); vertical-align:middle;}
 .social-counter strong{color:var(--ink);}
 .full-list{margin-top:12px; border:1px solid var(--border); border-radius:0; background:var(--surface); max-height:360px; overflow-y:auto;}
 .full-list-title{font-family:var(--font-mono); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-muted); padding:10px 14px; border-bottom:1px solid var(--gridline);}
@@ -214,7 +211,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 .src-biblio{columns:2; column-gap:24px; font-size:0.74rem; color:var(--ink-muted); margin-top:10px;}
 .src-biblio div{break-inside:avoid; margin-bottom:6px;}
 .src-biblio a{color:var(--ink-muted);}
-@media (max-width:600px){ .src-biblio{columns:1;} header h1{font-size:2rem;} .placar .num{font-size:3.2rem;} }
+@media (max-width:600px){ .src-biblio{columns:1;} header h1{font-size:2rem;} .placar-line{font-size:0.86rem;} .placar-line .placar-num{font-size:1.1rem;} }
 
 /* ---------- layout desktop: masthead com placar embutido, 3 seções largas, mapa 60/40 ---------- */
 @media (min-width:960px){
@@ -222,20 +219,18 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
   .wrap{
     max-width:1280px;
     display:grid;
-    grid-template-columns:1fr 320px;
-    gap:20px 24px;
+    grid-template-columns:1fr;
+    gap:20px;
     grid-template-areas:
-      "header placar"
-      "ticker ticker"
-      "busca busca"
-      "desculpas desculpas"
-      "mapa mapa"
-      "footer footer";
+      "header"
+      "ticker"
+      "busca"
+      "desculpas"
+      "mapa"
+      "footer";
   }
-  header{grid-area:header; margin-top:24px; display:flex; flex-direction:column; justify-content:center;}
+  header{grid-area:header; margin-top:24px;}
   .ticker-wrap{grid-area:ticker; margin-top:0;}
-  #placar{grid-area:placar; margin-block:0; margin-top:24px;}
-  #placar .placar{height:100%; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center;}
   #desculpas{grid-area:desculpas; margin-block:0;}
   #busca{grid-area:busca; margin-block:0;}
   #mapa{grid-area:mapa; margin-block:0;}
@@ -263,32 +258,22 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
     <h1><a href="#" id="homeLink">VORCARÔMETRO</a></h1>
     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar modo apuração (tema escuro)" title="Modo Apuração">🔦</button>
   </div>
+  <div class="placar-line">Dias sem novidade no caso Master <span class="placar-num tabular" id="placarNum">—</span> <span id="placarLegend">carregando…</span></div>
 </header>
 <div class="ticker-wrap" aria-hidden="true">
   <div class="ticker-track" id="tickerTrack"></div>
 </div>
 
-<section id="placar">
-  <div class="placar">
-    <div class="label">Dias sem novidade no caso Master</div>
-    <div class="num tabular" id="placarNum">—</div>
-    <div class="legend" id="placarLegend">carregando…</div>
-  </div>
-</section>
-
 <section id="busca">
-  <div class="block-title">Vorcarizar um nome</div>
+  <div class="block-title">Vorcarizar um nome <span class="social-counter" id="socialCounter"></span></div>
   <div class="block-note">Não achou nada e acha que deveria? Manda pra gente com o botão "sugerir" que aparece no resultado.</div>
   <form class="search-form" id="searchForm">
     <input type="text" id="searchInput" placeholder="Digite um nome (qualquer um, a chance é alta)" autocomplete="off">
     <button class="btn" type="submit" id="searchBtn" disabled>Vorcarizar</button>
     <button class="btn ghost small" id="luckyBtn" type="button" disabled>Estou com sorte</button>
+    <button class="btn ghost small" id="fullListBtn" type="button" disabled>Ver lista completa</button>
   </form>
   <div class="trending" id="trendingBox"></div>
-  <div class="lucky-row">
-    <button class="btn ghost small" id="fullListBtn" type="button" disabled>Ver lista completa</button>
-  </div>
-  <div class="social-counter" id="socialCounter"></div>
   <div class="full-list" id="fullListBox" hidden></div>
   <div class="loading-data" id="dataLoading"><div class="spinner"></div><span>Carregando base…</span></div>
   <div class="data-error" id="dataError"></div>
@@ -445,7 +430,7 @@ function socialCounter(){
     return data.n;
   }catch(e){ return 700 + Math.floor(Math.random()*300); }
 }
-document.getElementById('socialCounter').innerHTML = 'Você é a pessoa nº <strong>'+socialCounter().toLocaleString('pt-BR')+'</strong> a vorcarizar hoje.';
+document.getElementById('socialCounter').innerHTML = '(você é a pessoa nº <strong>'+socialCounter().toLocaleString('pt-BR')+'</strong> a vorcarizar hoje)';
 
 /* ---------- vibração tátil (mobile) ---------- */
 function buzz(ms){ try{ if(navigator.vibrate) navigator.vibrate(ms); }catch(e){} }
