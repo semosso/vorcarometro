@@ -238,7 +238,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
   footer{grid-area:footer; margin-top:0;}
   header h1{font-size:3rem;}
   .block-note{max-width:none;}
-  .map-layout{display:grid; grid-template-columns:3fr 2fr; align-items:stretch;}
+  .map-layout{display:grid; grid-template-columns:1fr 1fr; align-items:stretch;}
   .map-svg-wrap{max-width:none;}
   .state-panel{padding:22px;}
   .card{padding:24px;}
@@ -315,7 +315,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
   <div class="block-note">Onde o caso deixou rastro — contado por gente, não por dinheiro. A cor mede quantas pessoas/instituições desta base têm ligação com aquele estado (moradia, cargo, evento pago, o que for documentado); quando também há valor público identificado, ele aparece no painel ao lado. Cinza é ausência de registro nesta base, não ausência de exposição real.</div>
   <div class="map-layout">
     <div class="map-svg-wrap">
-      <svg id="brMap" viewBox="0 0 271 414" role="img" aria-label="Mapa hexagonal dos estados do Brasil"></svg>
+      <svg id="brMap" viewBox="0 0 337 493" role="img" aria-label="Mapa hexagonal dos estados do Brasil"></svg>
       <div class="map-tooltip" id="mapTooltip"></div>
       <div class="legend">
         <div class="legend-row"><span class="legend-ramp"><span style="background:var(--seq-1)"></span><span style="background:var(--seq-2)"></span><span style="background:var(--seq-3)"></span><span style="background:var(--seq-4)"></span></span><span>Nº de pessoas/instituições ligadas ao estado: de 1 a 10+</span></div>
@@ -346,16 +346,15 @@ let SRC = {};
 let ENTITIES = [];
 
 const BR_HEX = [
- {uf:'AC',name:'Acre',row:3,col:1},{uf:'RO',name:'Rondônia',row:4,col:2},{uf:'AM',name:'Amazonas',row:3,col:2},
- {uf:'RR',name:'Roraima',row:2,col:2},{uf:'PA',name:'Pará',row:2,col:3},{uf:'AP',name:'Amapá',row:1,col:3},
- {uf:'MT',name:'Mato Grosso',row:5,col:2},{uf:'TO',name:'Tocantins',row:3,col:3},{uf:'MA',name:'Maranhão',row:3,col:4},
- {uf:'PI',name:'Piauí',row:4,col:4},{uf:'CE',name:'Ceará',row:3,col:5},{uf:'RN',name:'Rio Grande do Norte',row:3,col:6},
- {uf:'PB',name:'Paraíba',row:4,col:6},{uf:'PE',name:'Pernambuco',row:4,col:5},{uf:'BA',name:'Bahia',row:4,col:3},
- {uf:'SE',name:'Sergipe',row:5,col:6},{uf:'AL',name:'Alagoas',row:5,col:5},{uf:'GO',name:'Goiás',row:5,col:3},
- {uf:'DF',name:'Distrito Federal',row:5,col:4},{uf:'MG',name:'Minas Gerais',row:6,col:4},{uf:'ES',name:'Espírito Santo',row:7,col:3},
- {uf:'MS',name:'Mato Grosso do Sul',row:6,col:2},{uf:'SP',name:'São Paulo',row:6,col:3},{uf:'RJ',name:'Rio de Janeiro',row:7,col:4},
- {uf:'PR',name:'Paraná',row:7,col:2},{uf:'SC',name:'Santa Catarina',row:8,col:2},{uf:'RS',name:'Rio Grande do Sul',row:9,col:2}
+ {uf:'RR',name:'Roraima',row:0,col:2},{uf:'AP',name:'Amapá',row:0,col:3},{uf:'AM',name:'Amazonas',row:1,col:1},{uf:'PA',name:'Pará',row:1,col:3},{uf:'MA',name:'Maranhão',row:2,col:4},
+ {uf:'AC',name:'Acre',row:3,col:0},{uf:'RO',name:'Rondônia',row:3,col:1},{uf:'TO',name:'Tocantins',row:3,col:4},{uf:'PI',name:'Piauí',row:3,col:5},{uf:'CE',name:'Ceará',row:2,col:5},
+ {uf:'RN',name:'Rio Grande do Norte',row:2,col:7},{uf:'MT',name:'Mato Grosso',row:4,col:3},{uf:'PB',name:'Paraíba',row:3,col:7},{uf:'PE',name:'Pernambuco',row:4,col:7},{uf:'BA',name:'Bahia',row:4,col:5},
+ {uf:'SE',name:'Sergipe',row:5,col:6},{uf:'AL',name:'Alagoas',row:5,col:7},{uf:'GO',name:'Goiás',row:5,col:4},{uf:'DF',name:'Distrito Federal',row:4,col:4},{uf:'MG',name:'Minas Gerais',row:5,col:5},
+ {uf:'ES',name:'Espírito Santo',row:6,col:6},{uf:'MS',name:'Mato Grosso do Sul',row:6,col:3},{uf:'SP',name:'São Paulo',row:7,col:4},{uf:'RJ',name:'Rio de Janeiro',row:6,col:5},
+ {uf:'PR',name:'Paraná',row:7,col:3},{uf:'SC',name:'Santa Catarina',row:8,col:3},{uf:'RS',name:'Rio Grande do Sul',row:9,col:3}
 ];
+/* hexágonos sem estado — só preenchem "buracos" entre estados reais pra silhueta ler como o mapa do Brasil */
+const BR_HEX_FILLER = [{row:4,col:6},{row:6,col:4},{row:1,col:2},{row:3,col:6},{row:1,col:4},{row:2,col:1},{row:2,col:3},{row:3,col:3},{row:5,col:3},{row:8,col:4}];
 /* valores públicos quantificados por estado (curado à mão, vem do data.json) e notas de contexto —
    quem está ligado a cada estado NÃO é curado aqui: é calculado a partir do campo "states" de cada
    entidade, pra nunca mais ficar dessincronizado. */
@@ -861,9 +860,14 @@ let selectedUF = 'RJ';
 function buildMap(){
   const R = 26; const svg = document.getElementById('brMap');
   let out = '';
+  BR_HEX_FILLER.forEach(f=>{
+    const cx = R + f.col*1.5*R + 6;
+    const cy = (Math.sqrt(3)*R)/2 + f.row*Math.sqrt(3)*R + (f.col%2===1 ? (Math.sqrt(3)*R)/2 : 0) + 10;
+    out += '<polygon points="'+hexPoints(cx,cy,R*0.86)+'" fill="var(--map-none)" stroke="var(--map-none-line)" stroke-width="1"/>';
+  });
   BR_HEX.forEach(s=>{
-    const cx = R + s.col*1.5*R - 27;
-    const cy = (Math.sqrt(3)*R)/2 + s.row*Math.sqrt(3)*R + (s.col%2===1 ? (Math.sqrt(3)*R)/2 : 0) - 52;
+    const cx = R + s.col*1.5*R + 6;
+    const cy = (Math.sqrt(3)*R)/2 + s.row*Math.sqrt(3)*R + (s.col%2===1 ? (Math.sqrt(3)*R)/2 : 0) + 10;
     const stat = STATE_STATS[s.uf];
     const hasCount = !!(stat && stat.count);
     let fill='var(--map-none)', stroke='var(--map-none-line)';
