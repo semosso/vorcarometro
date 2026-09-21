@@ -212,31 +212,34 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 .src-biblio a{color:var(--ink-muted);}
 @media (max-width:600px){ .src-biblio{columns:1;} header h1{font-size:2rem;} .placar .num{font-size:3.2rem;} }
 
-/* ---------- layout desktop: mais largo, com sidebar fixa e mais respiro ---------- */
+/* ---------- layout desktop: masthead com placar embutido, 3 seções largas, mapa 60/40 ---------- */
 @media (min-width:960px){
   body{padding-inline:32px;}
   .wrap{
     max-width:1280px;
     display:grid;
-    grid-template-columns:340px 1fr;
-    gap:28px 32px;
+    grid-template-columns:1fr 320px;
+    gap:20px 24px;
     grid-template-areas:
-      "header header"
+      "header placar"
       "ticker ticker"
-      "placar busca"
-      "desculpas busca"
+      "busca busca"
+      "desculpas desculpas"
       "mapa mapa"
       "footer footer";
   }
-  header{grid-area:header; margin-top:24px;}
+  header{grid-area:header; margin-top:24px; display:flex; flex-direction:column; justify-content:center;}
   .ticker-wrap{grid-area:ticker; margin-top:0;}
-  #placar{grid-area:placar; margin-block:0; position:sticky; top:20px;}
+  #placar{grid-area:placar; margin-block:0; margin-top:24px;}
+  #placar .placar{height:100%; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center;}
   #desculpas{grid-area:desculpas; margin-block:0;}
   #busca{grid-area:busca; margin-block:0;}
   #mapa{grid-area:mapa; margin-block:0;}
   footer{grid-area:footer; margin-top:0;}
-  header h1{font-size:3.4rem;}
-  .map-svg-wrap{max-width:480px;}
+  header h1{font-size:3rem;}
+  .block-note{max-width:none;}
+  .map-layout{display:grid; grid-template-columns:3fr 2fr; align-items:stretch;}
+  .map-svg-wrap{max-width:none;}
   .state-panel{padding:22px;}
   .card{padding:24px;}
 }
@@ -878,7 +881,7 @@ function buildMap(){
       ? s.name+' — '+stat.count+(stat.count===1?' ligação':' ligações')+(stat.value?' · '+brl(stat.value):'')
       : s.name+' — sem registro nesta base';
     out += '<g class="hex'+(s.uf===selectedUF?' selected':'')+(hasCount?' has-value':'')+'" data-uf="'+s.uf+'" data-tip="'+tipText.replace(/"/g,'&quot;')+'" tabindex="0" role="button" aria-label="'+s.name+'" onclick="selectState(\''+s.uf+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){selectState(\''+s.uf+'\')}">'+
-      '<polygon points="'+hexPoints(cx,cy,R)+'" fill="'+fill+'" stroke="'+stroke+'"/>'+
+      '<polygon points="'+hexPoints(cx,cy,R*0.86)+'" fill="'+fill+'" stroke="'+stroke+'"/>'+
       '<text x="'+cx+'" y="'+(cy+4)+'" text-anchor="middle" fill="'+textFill+'">'+s.uf+'</text>'+
     '</g>';
   });
@@ -992,7 +995,7 @@ async function init(){
   /* chips de "em alta hoje" — curadoria manual, ids filtrados contra a base atual */
   const TRENDING_IDS = ['daniel-vorcaro','banco-master','roberto-campos-neto','claudio-castro','ibaneis-rocha','hugo-motta','ciro-nogueira','jaques-wagner'];
   const trendingBox = document.getElementById('trendingBox');
-  const trendingPicks = TRENDING_IDS.map(byId).filter(Boolean);
+  const trendingPicks = TRENDING_IDS.map(byId).filter(Boolean).slice(0,5);
   if(trendingPicks.length){
     trendingBox.innerHTML = '<span class="trending-label">Em alta hoje</span>' + trendingPicks.map(e=>'<button type="button" class="trending-chip" data-id="'+e.id+'">'+e.name+'</button>').join('');
     trendingBox.querySelectorAll('.trending-chip').forEach(btn=>{
