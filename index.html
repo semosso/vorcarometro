@@ -30,7 +30,6 @@
   --red:#d03b3b; --red-ink:#ffffff;
   --blue:#2a78d6; --blue-ink:#ffffff;
   --map-none:#efeee9; --map-none-line:#d8d6cd;
-  --linked-bg:#efe9fb; --linked-line:#4a3aa7; --linked-ink:#3c2f8c;
   --seq-1:#6da7ec; --seq-2:#2a78d6; --seq-3:#1c5cab; --seq-4:#0d366b;
   --font-display:'Anton',Impact,'Arial Narrow',sans-serif;
   --font-sans:'Work Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -43,7 +42,6 @@
     --ink:#f5f5f0; --ink-2:#c3c2b7; --ink-muted:#8f8d86;
     --border:#f5f5f0; --gridline:#2c2c2a;
     --map-none:#232321; --map-none-line:#34342f;
-    --linked-bg:#241f36; --linked-line:#9085e9; --linked-ink:#c3baf7;
     --link:#ff8577;
     color-scheme:dark;
   }
@@ -53,7 +51,6 @@
   --ink:#f5f5f0; --ink-2:#c3c2b7; --ink-muted:#8f8d86;
   --border:#f5f5f0; --gridline:#2c2c2a;
   --map-none:#232321; --map-none-line:#34342f;
-  --linked-bg:#241f36; --linked-line:#9085e9; --linked-ink:#c3baf7;
   --link:#ff8577;
   color-scheme:dark;
 }
@@ -283,14 +280,13 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 
 <section id="mapa">
   <div class="block-title">Bacia Hidrográfica do Master</div>
-  <div class="block-note">Onde passam os rios de dinheiro — ou pelo menos onde encontramos registro público deles. Azul mede recursos públicos expostos em R$; tracejado marca conexão documentada sem valor público quantificado; cinza é ausência de registro nesta base, não ausência de exposição real.</div>
+  <div class="block-note">Onde o caso deixou rastro — contado por gente, não por dinheiro. A cor mede quantas pessoas/instituições desta base têm ligação com aquele estado (moradia, cargo, evento pago, o que for documentado); quando também há valor público identificado, ele aparece no painel ao lado. Cinza é ausência de registro nesta base, não ausência de exposição real.</div>
   <div class="map-layout">
     <div class="map-svg-wrap">
       <svg id="brMap" viewBox="0 0 271 414" role="img" aria-label="Mapa hexagonal dos estados do Brasil"></svg>
       <div class="map-tooltip" id="mapTooltip"></div>
       <div class="legend">
-        <div class="legend-row"><span class="legend-ramp"><span style="background:var(--seq-1)"></span><span style="background:var(--seq-2)"></span><span style="background:var(--seq-3)"></span><span style="background:var(--seq-4)"></span></span><span>Recursos públicos expostos: de R$ 97 mi (AL) a R$ 970 mi (RJ)</span></div>
-        <div class="legend-row"><span class="legend-swatch" style="background:var(--linked-bg); border-color:var(--linked-line)"></span><span>Conexão documentada, sem valor quantificado</span></div>
+        <div class="legend-row"><span class="legend-ramp"><span style="background:var(--seq-1)"></span><span style="background:var(--seq-2)"></span><span style="background:var(--seq-3)"></span><span style="background:var(--seq-4)"></span></span><span>Nº de pessoas/instituições ligadas ao estado: de 1 a 10+</span></div>
         <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none)"></span><span>Sem registro nesta base</span></div>
       </div>
     </div>
@@ -328,7 +324,27 @@ const BR_HEX = [
  {uf:'MS',name:'Mato Grosso do Sul',row:6,col:2},{uf:'SP',name:'São Paulo',row:6,col:3},{uf:'RJ',name:'Rio de Janeiro',row:7,col:4},
  {uf:'PR',name:'Paraná',row:7,col:2},{uf:'SC',name:'Santa Catarina',row:8,col:2},{uf:'RS',name:'Rio Grande do Sul',row:9,col:2}
 ];
-let STATE_INFO = {};
+/* valores públicos quantificados por estado (curado à mão, vem do data.json) e notas de contexto —
+   quem está ligado a cada estado NÃO é curado aqui: é calculado a partir do campo "states" de cada
+   entidade, pra nunca mais ficar dessincronizado. */
+let STATE_VALUES = {};
+let STATE_NOTES = {};
+let STATE_STATS = {};
+function computeStateStats(){
+  const stats = {};
+  ENTITIES.forEach(e=>{
+    (e.states||[]).forEach(uf=>{
+      if(!stats[uf]) stats[uf] = {count:0, entities:[]};
+      stats[uf].count++;
+      stats[uf].entities.push(e.id);
+    });
+  });
+  Object.keys(stats).forEach(uf=>{
+    if(STATE_VALUES[uf]) Object.assign(stats[uf], STATE_VALUES[uf]);
+    if(STATE_NOTES[uf]) stats[uf].note = STATE_NOTES[uf];
+  });
+  return stats;
+}
 
 /* ---------- placar ---------- */
 const ULTIMA_NOVIDADE = "2026-09-18"; // atualizar manualmente a cada notícia nova
@@ -800,36 +816,39 @@ function setupPositiveShare(){
   });
 }
 
-function setupStateShare(uf, name, value){
-  const valueTxt = value ? brl(value) : 'Sem valor público quantificado';
+function setupStateShare(uf, name, stat){
+  const count = stat ? stat.count : 0;
+  const countTxt = count + (count===1 ? ' pessoa/instituição ligada' : ' pessoas/instituições ligadas');
+  const valueTxt = stat && stat.value ? brl(stat.value)+' em valor público identificado' : null;
   const link = location.origin + location.pathname + '#estado=' + uf;
   setupShareWidget('state', {
     phrase: name.toUpperCase(),
-    subPhrase: valueTxt,
+    subPhrase: valueTxt ? countTxt+' · '+valueTxt : countTxt,
     stampLabel: 'APURADO',
     linkUrl: link,
-    shareText: 'O que o caso Master expôs em '+name+', segundo o Vorcarômetro: '+valueTxt+'. '+link,
+    shareText: 'O que o caso Master expôs em '+name+', segundo o Vorcarômetro: '+countTxt+(valueTxt?' · '+valueTxt:'')+'. '+link,
   });
 }
 
 /* ---------- mapa hexagonal ---------- */
 function hexPoints(cx,cy,R){ const pts=[]; for(let i=0;i<6;i++){ const a=Math.PI/180*60*i; pts.push((cx+R*Math.cos(a)).toFixed(1)+','+(cy+R*Math.sin(a)).toFixed(1)); } return pts.join(' '); }
-function seqColor(value){ if(value>=900000000) return 'var(--seq-4)'; if(value>=350000000) return 'var(--seq-3)'; if(value>=150000000) return 'var(--seq-2)'; return 'var(--seq-1)'; }
+function seqColor(count){ if(count>=10) return 'var(--seq-4)'; if(count>=6) return 'var(--seq-3)'; if(count>=3) return 'var(--seq-2)'; return 'var(--seq-1)'; }
 let selectedUF = 'RJ';
 function buildMap(){
   const R = 26; const svg = document.getElementById('brMap');
-  let out = '<defs><pattern id="hatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="var(--linked-bg)"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--linked-line)" stroke-width="1.6"/></pattern></defs>';
+  let out = '';
   BR_HEX.forEach(s=>{
     const cx = R + s.col*1.5*R - 27;
     const cy = (Math.sqrt(3)*R)/2 + s.row*Math.sqrt(3)*R + (s.col%2===1 ? (Math.sqrt(3)*R)/2 : 0) - 52;
-    const info = STATE_INFO[s.uf];
+    const stat = STATE_STATS[s.uf];
+    const hasCount = !!(stat && stat.count);
     let fill='var(--map-none)', stroke='var(--map-none-line)';
-    if(info && info.value){ fill = seqColor(info.value); stroke='none'; }
-    else if(info){ fill = 'url(#hatch)'; stroke='var(--linked-line)'; }
-    const textFill = (info && info.value) ? '#ffffff' : (info ? 'var(--linked-ink)' : 'var(--ink-muted)');
-    const hasValue = !!(info && info.value);
-    const tipText = info && info.value ? s.name+' — '+brl(info.value) : (info ? s.name+' — conexão sem valor quantificado' : s.name+' — sem registro nesta base');
-    out += '<g class="hex'+(s.uf===selectedUF?' selected':'')+(hasValue?' has-value':'')+'" data-uf="'+s.uf+'" data-tip="'+tipText.replace(/"/g,'&quot;')+'" tabindex="0" role="button" aria-label="'+s.name+'" onclick="selectState(\''+s.uf+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){selectState(\''+s.uf+'\')}">'+
+    if(hasCount){ fill = seqColor(stat.count); stroke='none'; }
+    const textFill = hasCount ? '#ffffff' : 'var(--ink-muted)';
+    const tipText = hasCount
+      ? s.name+' — '+stat.count+(stat.count===1?' ligação':' ligações')+(stat.value?' · '+brl(stat.value):'')
+      : s.name+' — sem registro nesta base';
+    out += '<g class="hex'+(s.uf===selectedUF?' selected':'')+(hasCount?' has-value':'')+'" data-uf="'+s.uf+'" data-tip="'+tipText.replace(/"/g,'&quot;')+'" tabindex="0" role="button" aria-label="'+s.name+'" onclick="selectState(\''+s.uf+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){selectState(\''+s.uf+'\')}">'+
       '<polygon points="'+hexPoints(cx,cy,R)+'" fill="'+fill+'" stroke="'+stroke+'"/>'+
       '<text x="'+cx+'" y="'+(cy+4)+'" text-anchor="middle" fill="'+textFill+'">'+s.uf+'</text>'+
     '</g>';
@@ -845,18 +864,18 @@ function buildMap(){
   });
 }
 function renderStatePanel(uf){
-  const s = BR_HEX.find(x=>x.uf===uf); const info = STATE_INFO[uf];
+  const s = BR_HEX.find(x=>x.uf===uf); const stat = STATE_STATS[uf];
   const panel = document.getElementById('statePanel');
   let html = '<h3>'+s.name+'</h3>';
-  if(info && info.value){
-    html += '<div class="state-value tabular">'+brl(info.value)+'</div><div class="state-note">'+(info.note||'Valor público identificado exposto ao Master neste estado.')+'</div>';
-  } else if(info){
-    html += '<div class="state-note">Sem valor público quantificado nesta base — conexão institucional ou política documentada abaixo.<br>'+(info.note||'')+'</div>';
+  if(stat && stat.count){
+    html += '<div class="state-value tabular">'+stat.count+(stat.count===1?' pessoa/instituição ligada':' pessoas/instituições ligadas')+'</div>';
+    if(stat.value) html += '<div class="state-note"><strong>'+brl(stat.value)+'</strong> em valor público identificado neste estado.'+(stat.note?' '+stat.note:'')+'</div>';
+    else if(stat.note) html += '<div class="state-note">'+stat.note+'</div>';
   } else {
     html += '<div class="state-note">Nenhuma conexão documentada nesta base para este estado. Não significa ausência de exposição real — apenas que não localizamos dado público agregável nesta pesquisa.</div>';
   }
-  if(info && info.entities.length){
-    html += '<div class="detail-row"><div class="detail-label">Conexões neste estado</div><div class="related-chips">'+info.entities.map(id=>{const e=byId(id); return '<button type="button" class="related-chip" onclick="relatedClick(\''+id+'\')">'+e.name+'</button>';}).join('')+'</div></div>';
+  if(stat && stat.entities.length){
+    html += '<div class="detail-row"><div class="detail-label">Quem está ligado a este estado</div><div class="related-chips">'+stat.entities.map(id=>{const e=byId(id); return e ? '<button type="button" class="related-chip" onclick="relatedClick(\''+id+'\')">'+e.name+'</button>' : '';}).join('')+'</div></div>';
   }
   html += '<div class="detail-row"><button class="btn ghost small" id="shareStateBtn" type="button">Compartilhar '+s.uf+'</button></div>';
   html += shareBlockHtml('state');
@@ -865,7 +884,7 @@ function renderStatePanel(uf){
     const btn = document.getElementById('shareStateBtn');
     btn.hidden = true;
     document.getElementById('shareBlock-state').classList.add('active');
-    setupStateShare(uf, s.name, info ? info.value : null);
+    setupStateShare(uf, s.name, stat);
   });
   document.getElementById('shareBlock-state').classList.remove('active');
 }
@@ -886,7 +905,9 @@ async function init(){
     const data = await res.json();
     SRC = data.src || {};
     ENTITIES = data.entities || [];
-    STATE_INFO = data.stateInfo || {};
+    STATE_VALUES = data.stateValues || {};
+    STATE_NOTES = data.stateNotes || {};
+    STATE_STATS = computeStateStats();
   }catch(err){
     loadingEl.classList.remove('active');
     errorEl.classList.add('active');

@@ -362,7 +362,8 @@
     "nikolas-ferreira"
    ],
    "states": [
-    "SP"
+    "SP",
+    "MG"
    ],
    "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor.",
    "src": [
@@ -1633,7 +1634,9 @@
    "related": [
     "daniel-vorcaro"
    ],
-   "states": [],
+   "states": [
+    "MG"
+   ],
    "summary": "DJ contratado como atração da festa de 15 anos da filha de Daniel Vorcaro, em 2023, numa mansão em Nova Lima (MG). Não há qualquer indicação de participação nas irregularidades do caso — aparece aqui só como parte do cenário.",
    "src": [
     "infomoney_luxo"
@@ -1657,7 +1660,9 @@
    "related": [
     "daniel-vorcaro"
    ],
-   "states": [],
+   "states": [
+    "MG"
+   ],
    "summary": "DJ contratado como atração da festa de 15 anos da filha de Daniel Vorcaro, em 2023. Não há qualquer indicação de participação nas irregularidades do caso — aparece aqui só como parte do cenário.",
    "src": [
     "infomoney_luxo"
@@ -1681,7 +1686,9 @@
    "related": [
     "daniel-vorcaro"
    ],
-   "states": [],
+   "states": [
+    "MG"
+   ],
    "summary": "Dupla de DJs contratada como atração internacional da festa de 15 anos da filha de Daniel Vorcaro, em 2023. Não há qualquer indicação de participação nas irregularidades do caso — aparecem aqui só como parte do cenário.",
    "src": [
     "infomoney_luxo"
@@ -1744,71 +1751,26 @@
    ]
   }
  ],
- "stateInfo": {
+ "stateValues": {
   "RJ": {
    "value": 970000000,
-   "entities": [
-    "rioprevidencia",
-    "claudio-castro"
-   ],
    "note": "Maior valor público identificado no caso."
   },
   "AP": {
-   "value": 400000000,
-   "entities": [
-    "amprev"
-   ]
+   "value": 400000000
   },
   "SP": {
    "value": 218000000,
-   "entities": [
-    "banco-master",
-    "reag-investimentos",
-    "institutos-sp"
-   ],
    "note": "Sede das duas principais instituições do esquema."
   },
   "AL": {
-   "value": 97000000,
-   "entities": [
-    "iprev-maceio"
-   ]
-  },
-  "DF": {
-   "entities": [
-    "brb",
-    "paulo-henrique-costa",
-    "roberio-mangueira",
-    "ibaneis-rocha",
-    "paulo-sergio-neves",
-    "belline-santana",
-    "roberto-campos-neto",
-    "gabriel-galipolo",
-    "paulo-gonet",
-    "andrei-rodrigues"
-   ],
-   "note": "Sede do BRB, do Banco Central, da PGR, da PF e do governo do DF."
-  },
-  "PI": {
-   "entities": [
-    "ciro-nogueira"
-   ]
-  },
-  "BA": {
-   "entities": [
-    "jaques-wagner",
-    "joao-roma",
-    "roberta-roma",
-    "augusto-lima",
-    "banco-pleno"
-   ],
-   "note": "Origem de Augusto “Guga” Lima (ex-sócio do Master) e de parte da “bancada do Master” no Congresso."
-  },
-  "PB": {
-   "entities": [
-    "hugo-motta"
-   ],
-   "note": "Terreno comprado com empréstimo do Master fica em João Pessoa."
+   "value": 97000000
   }
+ },
+ "stateNotes": {
+  "DF": "Sede do BRB, do Banco Central, da PGR, da PF e do governo do DF.",
+  "BA": "Origem de Augusto “Guga” Lima (ex-sócio do Master) e de parte da “bancada do Master” no Congresso.",
+  "PB": "Terreno comprado com empréstimo do Master fica em João Pessoa.",
+  "MG": "Nova Lima (MG) sediou a festa de 15 anos da filha de Daniel Vorcaro, com DJs contratados como atração."
  }
 }
