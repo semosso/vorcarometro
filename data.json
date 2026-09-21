@@ -327,6 +327,14 @@
   "poder360_nikolas": {
    "t": "Poder360 — Nikolas apresenta “dossiê” sobre caso Vorcaro-Moraes",
    "u": "https://www.poder360.com.br/poder-congresso/nikolas-apresenta-dossie-sobre-caso-vorcaro-moraes/"
+  },
+  "cartaneymarflavio": {
+   "t": "CartaCapital — Flávio Bolsonaro e ‘Neymar Pai’ cobravam recursos de Vorcaro, indicam mensagens",
+   "u": "https://www.cartacapital.com.br/justica/exclusivo-flavio-bolsonaro-e-neymar-pai-cobravam-recursos-de-vorcaro-indicam-mensagens/"
+  },
+  "terraneymarflavio": {
+   "t": "Terra — Mensagens da PF mostram Neymar Pai e Flávio Bolsonaro cobrando recursos de Vorcaro",
+   "u": "https://www.terra.com.br/esportes/futebol/mensagens-da-pf-mostram-neymar-pai-e-flavio-bolsonaro-cobrando-recursos-de-vorcaro,3ed13d36a7bbdc87bc931f36aefa5517y1klqv3i.html"
   }
  },
  "entities": [
@@ -1122,25 +1130,58 @@
     "kind": "warning"
    },
    "role": "Senador (PL-RJ); pré-candidato à Presidência",
-   "period": "Negociação ocorrida entre fevereiro e maio de 2025; áudio revelado em 05/2026",
+   "period": "Negociação ocorrida entre fevereiro e maio de 2025; áudio revelado em 05/2026; novas mensagens reveladas em 09/2026",
    "amounts": [
     "R$ 134 milhões — valor negociado em áudio para bancar o filme “Dark Horse”, biografia de Jair Bolsonaro",
     "~R$ 61 milhões (US$ 10,6 milhões) já pagos entre fevereiro e maio de 2025, em seis transferências, segundo reportagem"
    ],
    "related": [
     "jair-bolsonaro",
-    "daniel-vorcaro"
+    "daniel-vorcaro",
+    "neymar-pai"
    ],
    "states": [
     "RJ"
    ],
-   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro.",
+   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro.",
    "src": [
     "interceptflavio",
     "cnnflavio",
-    "correiobrazilianseflavio"
+    "correiobrazilianseflavio",
+    "cartaneymarflavio"
    ],
    "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa."
+  },
+  {
+   "id": "neymar-pai",
+   "name": "Neymar Pai",
+   "aliases": [
+    "Neymar da Silva Santos",
+    "pai do Neymar"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Empresário; pai e representante do jogador Neymar Jr.",
+   "period": "Mensagens interceptadas pela PF; reportagem publicada em 09/2026",
+   "amounts": [
+    "R$ 100 milhões — proposta de patrocínio da marca Master ao Santos Futebol Clube, negociada com participação de Neymar Pai, segundo mensagens"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "flavio-bolsonaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Empresário e pai do atacante Neymar Jr. Mensagens do celular de Daniel Vorcaro, obtidas pela Polícia Federal e reveladas pela CartaCapital, mostram Neymar Pai cobrando recursos do banqueiro e tratando, ao lado do executivo Tiago Miranda, de uma proposta de patrocínio de R$ 100 milhões da marca Master ao Santos Futebol Clube — clube em que o filho é ídolo. Uma das mensagens cita que “o pai do Ney quer sentar e quer levar ele também”, indicando intenção de envolver o próprio jogador nas tratativas. As cobranças aparecem no mesmo conjunto de mensagens em que o senador Flávio Bolsonaro também cobra recursos de Vorcaro.",
+   "src": [
+    "cartaneymarflavio",
+    "terraneymarflavio"
+   ],
+   "joke": "Negociava patrocínio de R$ 100 milhões pro Santos e ainda tentou emplacar o camisa 10 na reunião."
   },
   {
    "id": "jair-bolsonaro",
