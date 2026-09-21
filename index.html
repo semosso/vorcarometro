@@ -94,15 +94,16 @@ section{margin-block:34px;}
 /* busca */
 .search-form{display:flex; gap:10px; flex-wrap:wrap;}
 .search-form input{
-  flex:1 1 220px; font:inherit; font-size:1rem; padding:13px 14px; border:2px solid var(--border);
+  flex:1 1 140px; min-width:0; font:inherit; font-size:1rem; padding:13px 14px; border:2px solid var(--border);
   border-radius:2px; background:var(--surface); color:var(--ink);
 }
 .search-form input:focus{outline:2px solid var(--blue); outline-offset:1px;}
 .lucky-row{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:12px;}
-.trending{display:flex; flex-wrap:wrap; gap:7px; margin-top:12px;}
-.trending-label{font-family:var(--font-mono); font-size:0.68rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); width:100%; margin-bottom:2px;}
-.trending-chip{font-family:var(--font-sans); font-style:italic; font-size:0.8rem; padding:5px 12px; border-radius:2px; border:1px solid var(--gold); background:var(--surface); color:var(--ink); cursor:pointer; -webkit-appearance:none; appearance:none;}
-.trending-chip:hover{background:var(--gold); color:var(--gold-ink); border-color:var(--gold);}
+.trending{margin-top:12px;}
+.trending-label{display:block; font-family:var(--font-mono); font-size:0.68rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); margin-bottom:4px;}
+.trending-list{font-family:var(--font-sans); font-size:0.88rem; color:var(--ink-2);}
+.trending-chip{font:inherit; font-style:italic; text-decoration:underline; padding:0; border:none; background:none; color:var(--ink); cursor:pointer; -webkit-appearance:none; appearance:none;}
+.trending-chip:hover{color:var(--link);}
 .social-counter{font-family:var(--font-mono); font-size:0.74rem; color:var(--ink-muted); margin-top:10px;}
 .social-counter strong{color:var(--ink);}
 .full-list{margin-top:12px; border:1px solid var(--border); border-radius:0; background:var(--surface); max-height:360px; overflow-y:auto;}
@@ -120,6 +121,7 @@ section{margin-block:34px;}
 .btn:active{opacity:0.78;}
 .btn.ghost{background:var(--surface); color:var(--ink);}
 .btn.small{padding:8px 15px; font-size:0.85rem;}
+.btn-invert{display:block; margin-left:auto; background:var(--ink); color:var(--bg); border-color:var(--ink);}
 .btn:disabled{opacity:0.5; cursor:default;}
 
 .loading{display:none; margin-top:18px; align-items:center; gap:12px; flex-wrap:wrap;}
@@ -199,7 +201,7 @@ section{margin-block:34px;}
 .legend-ramp span{width:13px; height:13px; border-radius:2px; display:inline-block;}
 .state-panel{flex:1 1 260px; min-width:240px; border:1px solid var(--border); border-radius:0; background:var(--surface); padding:16px;}
 .state-panel h3{font-family:var(--font-display); font-weight:700; font-size:1.15rem; margin-bottom:4px;}
-.state-value{font-family:var(--font-mono); font-size:1.25rem; margin:6px 0; color:var(--blue);}
+.state-value{font-family:var(--font-mono); font-size:1.25rem; margin:6px 0; color:var(--link);}
 .state-note{font-size:0.8rem; color:var(--ink-muted); margin-bottom:8px;}
 
 footer{border-top:3px solid var(--border); padding-block:22px 40px; margin-top:10px; font-size:0.82rem; color:var(--ink-2);}
@@ -277,10 +279,10 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
   <div class="block-note">Não achou nada e acha que deveria? Manda pra gente com o botão "sugerir" que aparece no resultado.</div>
   <form class="search-form" id="searchForm">
     <input type="text" id="searchInput" placeholder="Digite um nome (qualquer um, a chance é alta)" autocomplete="off">
+    <button class="btn ghost small" id="luckyBtn" type="button" disabled>Estou com sorte</button>
     <button class="btn" type="submit" id="searchBtn" disabled>Vorcarizar</button>
   </form>
   <div class="lucky-row">
-    <button class="btn ghost small" id="luckyBtn" type="button" disabled>Estou com sorte</button>
     <button class="btn ghost small" id="fullListBtn" type="button" disabled>Ver lista completa</button>
   </div>
   <div class="trending" id="trendingBox"></div>
@@ -297,7 +299,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 </section>
 
 <section id="desculpas">
-  <div class="block-title">Caso você esteja no esquema, clique aqui para uma desculpa legal</div>
+  <div class="block-title">Caso você esteja no esquema, que tal uma desculpinha?</div>
   <div class="quote-box">
     <div class="quote-text" id="excuseText">"Toda declaração à imprensa começa aqui."</div>
     <div class="quote-foot">Desculpa não reconhecida pelo FGC.</div>
@@ -305,14 +307,12 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
   <div class="excuse-actions">
     <button class="btn" id="excuseBtn">Gerar minha desculpa</button>
     <button class="btn ghost small" id="copyExcuseBtn">Copiar desculpa</button>
-    <button class="btn ghost small" id="shareExcuseBtn">Compartilhar desculpa</button>
     <span class="toast" id="excuseToast"></span>
   </div>
 </section>
 
 <section id="mapa">
   <div class="block-title">Bacia Hidrográfica do Master</div>
-  <div class="block-note">Onde o caso deixou rastro — contado por gente, não por dinheiro. A cor mede quantas pessoas/instituições desta base têm ligação com aquele estado (moradia, cargo, evento pago, o que for documentado); quando também há valor público identificado, ele aparece no painel ao lado. Cinza é ausência de registro nesta base, não ausência de exposição real.</div>
   <div class="map-layout">
     <div class="map-svg-wrap">
       <svg id="brMap" viewBox="0 0 337 493" role="img" aria-label="Mapa hexagonal dos estados do Brasil"></svg>
@@ -462,17 +462,6 @@ document.getElementById('copyExcuseBtn').addEventListener('click', async ()=>{
   catch(e){ toast.textContent = 'Não deu para copiar automaticamente — selecione o texto.'; }
   setTimeout(()=>toast.textContent='', 2500);
 });
-document.getElementById('shareExcuseBtn').addEventListener('click', async ()=>{
-  const txt = document.getElementById('excuseText').textContent;
-  const toast = document.getElementById('excuseToast');
-  if(navigator.share){
-    try{ await navigator.share({title:'Vorcarômetro', text: txt}); return; }catch(e){}
-  }
-  try{ await navigator.clipboard.writeText(txt); toast.textContent = 'Compartilhamento direto indisponível — copiado para você colar.'; }
-  catch(e){ toast.textContent = 'Não deu para compartilhar — selecione o texto.'; }
-  setTimeout(()=>toast.textContent='', 3500);
-});
-
 /* ---------- busca ---------- */
 const brl = n => new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0}).format(n);
 const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
@@ -905,7 +894,7 @@ function renderStatePanel(uf){
   if(stat && stat.entities.length){
     html += '<div class="detail-row"><div class="detail-label">Quem está ligado a este estado</div><div class="related-chips">'+stat.entities.map(id=>{const e=byId(id); return e ? '<button type="button" class="related-chip" onclick="relatedClick(\''+id+'\')">'+e.name+'</button>' : '';}).join('')+'</div></div>';
   }
-  html += '<div class="detail-row"><button class="btn ghost small" id="shareStateBtn" type="button">Compartilhar '+s.uf+'</button></div>';
+  html += '<div class="detail-row"><button class="btn small btn-invert" id="shareStateBtn" type="button">Compartilhar '+s.uf+'</button></div>';
   html += shareBlockHtml('state');
   panel.innerHTML = html;
   document.getElementById('shareStateBtn').addEventListener('click', ()=>{
@@ -993,7 +982,7 @@ async function init(){
   const trendingBox = document.getElementById('trendingBox');
   const trendingPicks = TRENDING_IDS.map(byId).filter(Boolean).slice(0,5);
   if(trendingPicks.length){
-    trendingBox.innerHTML = '<span class="trending-label">Em alta hoje</span>' + trendingPicks.map(e=>'<button type="button" class="trending-chip" data-id="'+e.id+'">'+e.name+'</button>').join('');
+    trendingBox.innerHTML = '<span class="trending-label">Em alta hoje</span><span class="trending-list">' + trendingPicks.map(e=>'<button type="button" class="trending-chip" data-id="'+e.id+'">'+e.name+'</button>').join(', ') + '</span>';
     trendingBox.querySelectorAll('.trending-chip').forEach(btn=>{
       btn.addEventListener('click', ()=>{ const ent = byId(btn.getAttribute('data-id')); if(ent) goToEntity(ent); });
     });
