@@ -335,6 +335,18 @@
   "terraneymarflavio": {
    "t": "Terra — Mensagens da PF mostram Neymar Pai e Flávio Bolsonaro cobrando recursos de Vorcaro",
    "u": "https://www.terra.com.br/esportes/futebol/mensagens-da-pf-mostram-neymar-pai-e-flavio-bolsonaro-cobrando-recursos-de-vorcaro,3ed13d36a7bbdc87bc931f36aefa5517y1klqv3i.html"
+  },
+  "cnnkassab": {
+   "t": "CNN Brasil (blog Matheus Teixeira) — Doação a Bolsonaro e Tarcísio eram propina acertada por Kassab, diz Vorcaro",
+   "u": "https://www.cnnbrasil.com.br/blogs/matheus-teixeira/politica/doacao-a-bolsonaro-e-tarcisio-eram-propina-acertada-por-kassab-diz-vorcaro/"
+  },
+  "jbkassab": {
+   "t": "Jornal do Brasil — Vorcaro acusa Kassab de articular propina em doações a Bolsonaro e Tarcísio",
+   "u": "https://www.jb.com.br/brasil/justica/2026/09/1060800-vorcaro-acusa-kassab-de-articular-propina-em-doacoes-a-bolsonaro-e-tarcisio.html"
+  },
+  "brasildefatokassab": {
+   "t": "Brasil de Fato — Doações de R$ 5 milhões para campanhas de Tarcísio e Bolsonaro foram propina negociada com Kassab, diz Vorcaro",
+   "u": "https://www.brasildefato.com.br/2026/09/03/doacoes-de-r-5-milhoes-para-campanhas-de-tarcisio-e-bolsonaro-foram-propina-negociada-com-kassab-diz-vorcaro/"
   }
  },
  "entities": [
@@ -430,24 +442,91 @@
    "period": "Prisão preventiva decretada em 2026",
    "amounts": [
     "~R$ 8 milhões — imóvel apontado como simulação de repasse de propina a servidor do BC",
-    "R$ 3 milhões — doação a Jair Bolsonaro em 2022, segundo reportagem"
+    "R$ 3 milhões — doação à campanha de Jair Bolsonaro em 2022, segundo reportagem",
+    "R$ 2 milhões — doação à campanha de Tarcísio de Freitas ao governo de SP em 2022, formalizada em seu nome, segundo delação (rejeitada) de Vorcaro"
    ],
    "related": [
     "daniel-vorcaro",
     "pipe-participacoes",
     "paulo-sergio-neves",
-    "jair-bolsonaro"
+    "jair-bolsonaro",
+    "tarcisio-de-freitas",
+    "gilberto-kassab"
    ],
    "states": [
     "SP"
    ],
-   "summary": "Cunhado de Daniel Vorcaro e dono da Pipe Participações, empresa que, segundo apuração, foi usada para simular a compra de um imóvel como forma de repassar propina a um ex-diretor do BC. Também é apontado como doador de campanha de Jair Bolsonaro em 2022.",
+   "summary": "Cunhado de Daniel Vorcaro e dono da Pipe Participações, empresa que, segundo apuração, foi usada para simular a compra de um imóvel como forma de repassar propina a um ex-diretor do BC. Também formalizou, em seu próprio nome, as doações de R$ 3 milhões à campanha de Jair Bolsonaro e R$ 2 milhões à de Tarcísio de Freitas em 2022. Em proposta de delação premiada rejeitada pela PF e pela PGR por falta de fatos novos, Vorcaro alega que as duas doações eram, na prática, propina negociada por Gilberto Kassab para manter o CredCesta operando no governo paulista — versão que Kassab chama de “fantasiosa”.",
    "src": [
     "gzalvos",
     "embc",
-    "timesbrasil"
+    "timesbrasil",
+    "cnnkassab",
+    "brasildefatokassab"
    ],
    "joke": "Cunhado que também sabia comprar imóvel — só que pra devolver em forma de propina, segundo a apuração."
+  },
+  {
+   "id": "tarcisio-de-freitas",
+   "name": "Tarcísio de Freitas",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Governador de São Paulo (Republicanos)",
+   "period": "Doação em 2022; alegação de delação (rejeitada) revelada em 09/2026",
+   "amounts": [
+    "R$ 2 milhões — doação de campanha em 2022, formalizada em nome de Fabiano Zettel, cunhado de Vorcaro"
+   ],
+   "related": [
+    "fabiano-zettel",
+    "gilberto-kassab",
+    "augusto-lima",
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Governador de São Paulo, eleito em 2022 com apoio de Gilberto Kassab, que se tornou seu secretário de Governo. Recebeu R$ 2 milhões em doação de campanha formalizada em nome de Fabiano Zettel, cunhado de Vorcaro. Em proposta de delação premiada rejeitada pela Polícia Federal e pela PGR por falta de fatos novos, Vorcaro alega que a doação era, na prática, propina negociada por Kassab para manter o CredCesta — programa de consignado ligado a parentes de Augusto Lima — operando no governo estadual. Tarcísio afirmou nunca ter tido contato com Vorcaro e que sua campanha foi conduzida dentro da lei; não há confirmação independente da alegação.",
+   "src": [
+    "cnnkassab",
+    "jbkassab",
+    "brasildefatokassab"
+   ],
+   "joke": "R$ 2 milhões de doação que, numa delação que nem colou, viraram acusação de propina."
+  },
+  {
+   "id": "gilberto-kassab",
+   "name": "Gilberto Kassab",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Presidente nacional do PSD; secretário de Governo de SP; ex-prefeito de São Paulo",
+   "period": "Alegação de delação (rejeitada) de Vorcaro revelada em 09/2026",
+   "amounts": [
+    "~R$ 10 milhões — segundo Vorcaro, entregues em espécie, à margem da contabilidade oficial, para financiar o PSD (alegação não confirmada, delação rejeitada)"
+   ],
+   "related": [
+    "fabiano-zettel",
+    "tarcisio-de-freitas",
+    "augusto-lima",
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Presidente nacional do PSD, secretário de Governo do estado de São Paulo e ex-prefeito da capital paulista. Em proposta de delação premiada rejeitada pela Polícia Federal e pela Procuradoria-Geral da República por falta de fatos novos, Daniel Vorcaro afirma que Kassab articulou o pagamento de propina — via as doações oficiais de R$ 5 milhões a Jair Bolsonaro e Tarcísio de Freitas em 2022, mais cerca de R$ 10 milhões entregues em espécie — em troca da manutenção do CredCesta no governo paulista. Kassab classificou o relato como “absolutamente fantasioso” e disse nunca ter falado com Vorcaro pessoalmente ou por telefone, embora tenha confirmado conhecer Augusto Lima e Thiago Botelho; negou qualquer doação recebida deles. Alegação não confirmada de forma independente.",
+   "src": [
+    "cnnkassab",
+    "jbkassab",
+    "brasildefatokassab"
+   ],
+   "joke": "Segundo delação que nem foi aceita, teria negociado propina em nome de um cartão consignado. Negou tudo — menos conhecer todo mundo envolvido."
   },
   {
    "id": "luiz-antonio-bull",
@@ -549,18 +628,22 @@
    "related": [
     "daniel-vorcaro",
     "banco-master",
-    "banco-pleno"
+    "banco-pleno",
+    "gilberto-kassab",
+    "tarcisio-de-freitas"
    ],
    "states": [
-    "BA"
+    "BA",
+    "SP"
    ],
-   "summary": "Conhecido como “Guga Lima”, entrou no mercado de crédito consignado em 2018 e se tornou sócio e CEO do Banco Master em 2020, trazendo o CredCesta — programa de consignado que virou um dos principais produtos do banco. Deixou a sociedade com Vorcaro em maio de 2024 e hoje controla o Banco Pleno (ex-Voiter), que ficou de fora da liquidação decretada pelo Banco Central. Reportagens apontam trânsito político com o PT baiano. Foi preso na deflagração da Operação Compliance Zero.",
+   "summary": "Conhecido como “Guga Lima”, entrou no mercado de crédito consignado em 2018 e se tornou sócio e CEO do Banco Master em 2020, trazendo o CredCesta — programa de consignado que virou um dos principais produtos do banco. Deixou a sociedade com Vorcaro em maio de 2024 e hoje controla o Banco Pleno (ex-Voiter), que ficou de fora da liquidação decretada pelo Banco Central. Reportagens apontam trânsito político com o PT baiano. Foi preso na deflagração da Operação Compliance Zero. Em proposta de delação (rejeitada), Vorcaro apontou a PKL One Participações, ligada a parentes de Lima, como operadora do CredCesta no governo de São Paulo — elo central da alegação de propina envolvendo Kassab; Lima não se pronunciou publicamente sobre essa alegação específica.",
    "src": [
     "poder360augusto1",
     "poder360augusto2",
     "gazetaaugusto",
     "cnnpleno",
-    "poder360voiter"
+    "poder360voiter",
+    "jbkassab"
    ],
    "joke": "Trouxe o CredCesta pro Master, saiu da sociedade antes da conta chegar."
   },
@@ -1193,19 +1276,22 @@
     "kind": "affected"
    },
    "role": "Ex-presidente da República",
-   "period": "Doação em 2022; filme biográfico negociado em 2025",
+   "period": "Doação em 2022; filme biográfico negociado em 2025; alegação de delação (rejeitada) revelada em 09/2026",
    "amounts": [
     "R$ 3 milhões — doação de campanha via Fabiano Zettel em 2022, segundo reportagem"
    ],
    "related": [
     "fabiano-zettel",
-    "flavio-bolsonaro"
+    "flavio-bolsonaro",
+    "gilberto-kassab",
+    "tarcisio-de-freitas"
    ],
    "states": [],
-   "summary": "Ex-presidente da República (já inelegível por outros processos). Reportagens apontam uma doação de campanha de R$ 3 milhões em 2022 via Fabiano Zettel, cunhado de Vorcaro, e o financiamento, negociado por seu filho Flávio, de um filme biográfico sobre sua trajetória política com recursos oferecidos por Vorcaro.",
+   "summary": "Ex-presidente da República (já inelegível por outros processos). Reportagens apontam uma doação de campanha de R$ 3 milhões em 2022 via Fabiano Zettel, cunhado de Vorcaro, e o financiamento, negociado por seu filho Flávio, de um filme biográfico sobre sua trajetória política com recursos oferecidos por Vorcaro. Em proposta de delação premiada rejeitada pela Polícia Federal e pela PGR por falta de fatos novos, Vorcaro alega que essa doação era propina negociada por Gilberto Kassab; não há confirmação independente da alegação.",
    "src": [
     "apublicabancada",
-    "interceptflavio"
+    "interceptflavio",
+    "cnnkassab"
    ],
    "joke": "Ganhou doação de R$ 3 milhões do cunhado de Vorcaro. A lista de pendências só cresce."
   },
