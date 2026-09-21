@@ -69,6 +69,8 @@ button{font-family:var(--font-sans);}
 header{background:var(--surface); border-top:1px solid var(--border); border-bottom:4px double var(--red); margin-top:20px; padding:22px 22px 16px;}
 .header-row{display:flex; align-items:center; justify-content:space-between; gap:10px;}
 header h1{font-size:2.7rem; line-height:1; color:var(--ink); text-align:center; flex:1;}
+header h1 a{color:inherit; text-decoration:none; cursor:pointer;}
+header h1 a:hover{opacity:0.82;}
 .theme-toggle{flex-shrink:0; background:none; border:2px solid var(--ink); color:var(--ink); border-radius:8px; padding:8px 10px; font-size:1.05rem; cursor:pointer; line-height:1;}
 .theme-toggle:hover{border-color:var(--red);}
 
@@ -100,7 +102,7 @@ section{margin-block:34px;}
 .search-form input:focus{outline:2px solid var(--blue); outline-offset:1px;}
 .lucky-row{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:12px;}
 .trending{margin-top:12px;}
-.trending-label{display:block; font-family:var(--font-mono); font-size:0.68rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); margin-bottom:4px;}
+.trending-label{font-family:var(--font-mono); font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted);}
 .trending-list{font-family:var(--font-sans); font-size:0.88rem; color:var(--ink-2);}
 .trending-chip{font:inherit; font-style:italic; text-decoration:underline; padding:0; border:none; background:none; color:var(--ink); cursor:pointer; -webkit-appearance:none; appearance:none;}
 .trending-chip:hover{color:var(--link);}
@@ -258,7 +260,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 
 <header>
   <div class="header-row">
-    <h1>VORCARÔMETRO</h1>
+    <h1><a href="#" id="homeLink">VORCARÔMETRO</a></h1>
     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar modo apuração (tema escuro)" title="Modo Apuração">🔦</button>
   </div>
 </header>
@@ -279,13 +281,13 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
   <div class="block-note">Não achou nada e acha que deveria? Manda pra gente com o botão "sugerir" que aparece no resultado.</div>
   <form class="search-form" id="searchForm">
     <input type="text" id="searchInput" placeholder="Digite um nome (qualquer um, a chance é alta)" autocomplete="off">
-    <button class="btn ghost small" id="luckyBtn" type="button" disabled>Estou com sorte</button>
     <button class="btn" type="submit" id="searchBtn" disabled>Vorcarizar</button>
+    <button class="btn ghost small" id="luckyBtn" type="button" disabled>Estou com sorte</button>
   </form>
+  <div class="trending" id="trendingBox"></div>
   <div class="lucky-row">
     <button class="btn ghost small" id="fullListBtn" type="button" disabled>Ver lista completa</button>
   </div>
-  <div class="trending" id="trendingBox"></div>
   <div class="social-counter" id="socialCounter"></div>
   <div class="full-list" id="fullListBox" hidden></div>
   <div class="loading-data" id="dataLoading"><div class="spinner"></div><span>Carregando base…</span></div>
@@ -414,6 +416,10 @@ document.getElementById('themeToggle').addEventListener('click', ()=>{
   applyTheme(next);
   try{ localStorage.setItem('vorca_theme', next); }catch(e){}
   buzz(8);
+});
+document.getElementById('homeLink').addEventListener('click', e=>{
+  e.preventDefault();
+  location.href = location.pathname;
 });
 
 /* ---------- ticker de manchetes ---------- */
@@ -982,7 +988,7 @@ async function init(){
   const trendingBox = document.getElementById('trendingBox');
   const trendingPicks = TRENDING_IDS.map(byId).filter(Boolean).slice(0,5);
   if(trendingPicks.length){
-    trendingBox.innerHTML = '<span class="trending-label">Em alta hoje</span><span class="trending-list">' + trendingPicks.map(e=>'<button type="button" class="trending-chip" data-id="'+e.id+'">'+e.name+'</button>').join(', ') + '</span>';
+    trendingBox.innerHTML = '<span class="trending-label">Em alta hoje: </span><span class="trending-list">' + trendingPicks.map(e=>'<button type="button" class="trending-chip" data-id="'+e.id+'">'+e.name+'</button>').join(', ') + '</span>';
     trendingBox.querySelectorAll('.trending-chip').forEach(btn=>{
       btn.addEventListener('click', ()=>{ const ent = byId(btn.getAttribute('data-id')); if(ent) goToEntity(ent); });
     });
