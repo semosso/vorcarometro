@@ -193,10 +193,11 @@ section{margin-block:34px;}
 .map-tooltip{position:fixed; pointer-events:none; z-index:20; background:#1f1a14; color:#e9e1cd; font-family:var(--font-mono); font-size:0.74rem; padding:6px 10px; border-radius:0; border:1px solid var(--gold); transform:translate(-50%,-120%); white-space:nowrap; display:none;}
 .map-tooltip.active{display:block;}
 .legend{display:flex; flex-direction:column; gap:8px; font-size:0.76rem; color:var(--ink-2); margin-top:14px;}
-.legend-row{display:flex; align-items:center; gap:8px;}
+.legend-row{display:flex; align-items:center; gap:10px;}
 .legend-swatch{width:15px; height:15px; border-radius:3px; flex-shrink:0; border:1px solid var(--border);}
-.legend-ramp{display:flex; gap:2px;}
-.legend-ramp span{width:13px; height:13px; border-radius:2px; display:inline-block;}
+.legend-scale{display:flex; flex-direction:column; gap:3px; flex-shrink:0;}
+.legend-scale-bar{width:120px; height:12px; border-radius:2px; border:1px solid var(--border); background:linear-gradient(to right, var(--seq-1), var(--seq-2), var(--seq-3), var(--seq-4));}
+.legend-scale-labels{display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.64rem; color:var(--ink-muted);}
 .state-panel{flex:1 1 260px; min-width:240px; border:1px solid var(--border); border-radius:0; background:var(--surface); padding:16px;}
 .state-panel h3{font-family:var(--font-display); font-weight:700; font-size:1.15rem; margin-bottom:4px;}
 .state-value{font-family:var(--font-mono); font-size:1.25rem; margin:6px 0; color:var(--link);}
@@ -304,7 +305,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
       <svg id="brMap" viewBox="0 0 337 493" role="img" aria-label="Mapa hexagonal dos estados do Brasil"></svg>
       <div class="map-tooltip" id="mapTooltip"></div>
       <div class="legend">
-        <div class="legend-row"><span class="legend-ramp"><span style="background:var(--seq-1)"></span><span style="background:var(--seq-2)"></span><span style="background:var(--seq-3)"></span><span style="background:var(--seq-4)"></span></span><span>Nº de pessoas/instituições ligadas ao estado: de 1 a 10+</span></div>
+        <div class="legend-row"><span class="legend-scale"><span class="legend-scale-bar"></span><span class="legend-scale-labels"><span>1</span><span>10+</span></span></span><span>Quantidade de pessoas e empresas ligadas</span></div>
         <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none)"></span><span>Sem registro nesta base</span></div>
       </div>
     </div>
