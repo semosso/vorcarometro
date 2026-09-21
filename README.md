@@ -9,7 +9,7 @@ Três arquivos, sem build, sem backend:
 ## Antes de publicar
 
 1. ~~Troque o email de sugestões~~ — já configurado (`vorcarometro@gmail.com`, na constante `SUGESTOES_EMAIL` perto do topo do `<script>`).
-2. ~~Troque o domínio~~ — já configurado (`vorcaromet.ro`), nas tags `og:image`/`og:url`/`twitter:image` do `<head>` e no rodapé da imagem de compartilhar (dentro de `drawShareCard`). Se o domínio final mudar, procure por `vorcaromet.ro` em `index.html` e troque todas as ocorrências — o `og:image` precisa continuar sendo uma URL absoluta pra funcionar em preview de link.
+2. Domínio: por enquanto aponta pro GitHub Pages (`https://semosso.github.io/vorcarometro/`), nas tags `og:image`/`og:url`/`twitter:image` do `<head>`. O rodapé da imagem de compartilhar (dentro de `drawShareCard`) usa só o nome "Vorcarômetro", sem domínio. Se comprar `vorcaromet.ro` e configurar o DNS, troque as URLs dessas três tags e adicione um arquivo `CNAME` — o `og:image` precisa continuar sendo uma URL absoluta pra funcionar em preview de link.
 3. Favicon já incluído (emoji 💸 embutido como `data:` URI no `<head>` — não precisa de arquivo separado). Se quiser um ícone próprio, troque o `<link rel="icon">` por um arquivo `favicon.svg`/`favicon.ico` na mesma pasta.
 
 ## Como publicar
