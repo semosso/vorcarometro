@@ -1,0 +1,1814 @@
+{
+ "src": {
+  "stf": {
+   "t": "STF — ordem de prisão de Vorcaro e outros investigados",
+   "u": "https://noticias.stf.jus.br/postsnoticias/stf-atende-a-pedido-da-pf-e-determina-prisao-de-daniel-vorcaro-e-outros-investigados-por-supostas-fraudes-no-banco-master/"
+  },
+  "yahoo": {
+   "t": "Wire (via Yahoo) — STF ordena prisão de ex-chefe do Master",
+   "u": "https://www.yahoo.com/news/articles/brazils-supreme-court-orders-arrest-171820573.html"
+  },
+  "ndmais": {
+   "t": "ND+ — o esquema que levou ao rombo de R$ 51 bi",
+   "u": "https://ndmais.com.br/economia/banco-master-historia-ascensao-queda-fraude-fgc/"
+  },
+  "jota": {
+   "t": "JOTA — como o Master transformou precatórios em CDBs",
+   "u": "https://www.jota.info/tributos-e-empresas/mercado/como-o-banco-master-transformou-precatorios-em-cdbs-e-pos-em-xeque-o-sistema-financeiro"
+  },
+  "marketscreener": {
+   "t": "MarketScreener — BC fecha o Master, PF prende controlador",
+   "u": "https://uk.marketscreener.com/news/brazil-central-bank-shuts-banco-master-as-police-arrest-top-shareholder-ce7d5edbda8cfe25"
+  },
+  "t7news": {
+   "t": "T7 News — especial sobre o caso Vorcaro",
+   "u": "https://t7news.com.br/noticia/especial-caso-vorcaro-entenda-o-escandalo-do-banco-master-que-chegou-ao-centro-do-poder"
+  },
+  "agpai": {
+   "t": "Agência Brasil — pai de Vorcaro é preso na 6ª fase",
+   "u": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-05/pai-de-daniel-vorcaro-e-preso-na-6a-fase-da-operacao-compliance-zero"
+  },
+  "ag13": {
+   "t": "Agência Brasil — PF prendeu 13 pessoas em operações contra Master e BRB",
+   "u": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-04/pf-prendeu-13-pessoas-em-operacoes-contra-fraudes-no-master-e-brb"
+  },
+  "gzalvos": {
+   "t": "Gazeta do Povo — veja todos os alvos da PF",
+   "u": "https://www.gazetadopovo.com.br/republica/quem-sao-os-envolvidos-no-esquema-investigado-pela-operacao-compliance-zero/"
+  },
+  "embc": {
+   "t": "Estado de Minas — como servidores do BC viraram “assessoria” de Vorcaro",
+   "u": "https://www.em.com.br/politica/2026/09/7498361-escandalo-no-banco-central-como-servidores-viraram-assessoria-de-vorcaro-e-do-banco-master.html"
+  },
+  "timesbrasil": {
+   "t": "Times Brasil — servidores do BC receberam R$ 12 mi em propina",
+   "u": "https://timesbrasil.com.br/brasil/servidores-banco-central-propina-master-sindicancia/"
+  },
+  "sempauta": {
+   "t": "Sem Pauta — investigação do BC aponta R$ 12 mi em propina",
+   "u": "https://sempauta.com.br/noticia/49181/investigacao-do-bc-aponta-rs-12-milhoes-em-propina-do-master-para-dois-servidores-do-orgao.html"
+  },
+  "blogdodina": {
+   "t": "Blog do Dina — Vorcaro teria pago propina a senador para barrar CPI",
+   "u": "https://blogdodina.com/vorcaro-propina-senador-barrar-cpi-banco-master/"
+  },
+  "cnnquadra": {
+   "t": "CNN Brasil — BRB encerra negociação com a Quadra sobre ativos do Master",
+   "u": "https://www.cnnbrasil.com.br/economia/negocios/brb-encerra-negociacao-com-gestora-para-vender-r-15-bi-em-ativos-do-master/"
+  },
+  "bloombergquadra": {
+   "t": "Bloomberg Línea — BRB fecha acordo com a Quadra para vender ativos do Master",
+   "u": "https://www.bloomberglinea.com.br/2026/04/21/brb-fecha-acordo-com-a-gestora-quadra-para-vender-r-15-bi-em-ativos-do-banco-master/"
+  },
+  "metropolesveto": {
+   "t": "Metrópoles — veto do BC à fusão BRB–Master foi “grande surpresa”, diz Vorcaro",
+   "u": "https://www.metropoles.com/colunas/andreza-matais/veto-do-bc-a-fusao-do-brb-com-master-foi-grande-surpresa-diz-vorcaro"
+  },
+  "metropolesfgc": {
+   "t": "Metrópoles — Master baixou liquidez do FGC em 41% e obrigou aporte de R$ 44 bi",
+   "u": "https://www.metropoles.com/brasil/master-baixou-liquidez-fgc-44-bilhoes"
+  },
+  "barbierifgc": {
+   "t": "Barbieri Advogados — limite do FGC e a liquidação do Master",
+   "u": "https://www.barbieriadvogados.com/fundo-garantidor-creditos-fgc-limite-liquidacao/"
+  },
+  "agreag": {
+   "t": "Agência Brasil — BC liquida Reag, ligada às suspeitas de fraude no Master",
+   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-01/bc-liquida-reag-ligada-suspeitas-de-fraude-no-banco-master"
+  },
+  "otempodez": {
+   "t": "O Tempo — por que operações do Master com a Reag estão sob investigação",
+   "u": "https://www.otempo.com.br/economia/2025/12/31/entenda-por-que-operacoes-do-banco-master-com-a-reag-estao-sob-investigacao"
+  },
+  "otempojan": {
+   "t": "O Tempo — o passo a passo do esquema usado pelo Master em fundos da Reag",
+   "u": "https://www.otempo.com.br/economia/2026/1/15/veja-o-passo-a-passo-do-esquema-usado-pelo-master-em-fundos-da-reag"
+  },
+  "neofeed": {
+   "t": "NeoFeed — BRB compra Banco Master por R$ 2 bilhões",
+   "u": "https://neofeed.com.br/negocios/brb-compra-banco-master-de-daniel-vorcaro-por-r-2-bilhoes/"
+  },
+  "cnnestados": {
+   "t": "CNN Brasil — quais estados e municípios mais investiram no Master",
+   "u": "https://www.cnnbrasil.com.br/economia/macroeconomia/quais-estados-e-municipios-mais-investiram-no-master/"
+  },
+  "contec": {
+   "t": "Contec Brasil — estados e municípios terão que cobrir rombo dos fundos de previdência",
+   "u": "https://contec.org.br/estados-e-municipios-terao-que-cobrir-rombo-dos-fundos-de-previdencia-com-master/"
+  },
+  "gz8estados": {
+   "t": "Gazeta do Povo — fundos que aplicaram no Master são deficitários em 8 estados/municípios",
+   "u": "https://www.gazetadopovo.com.br/economia/fundos-previdenciarios-aplicaram-master-deficitarios-8-estados-municipios/"
+  },
+  "mpcsp": {
+   "t": "MPC-SP — alerta sobre institutos de RPPS que investiram em instituições questionáveis",
+   "u": "https://www.mpc.sp.gov.br/procuradoria-do-mpc-sp-faz-alerta-sobre-institutos-de-rpps-que-investiram-milhoes-em-instituicoes"
+  },
+  "poder360rpps": {
+   "t": "Poder360 — previdência de 18 estados e municípios tem R$ 1,9 bi no Banco Master",
+   "u": "https://www.poder360.com.br/poder-economia/previdencia-de-18-estados-e-municipios-tem-r-19-bi-no-banco-master/"
+  },
+  "poder360augusto1": {
+   "t": "Poder360 — Augusto Lima, ex-sócio do Master, tem ligações com o PT da Bahia",
+   "u": "https://www.poder360.com.br/poder-governo/augusto-lima-ex-socio-do-master-tem-ligacoes-com-o-pt-da-bahia/"
+  },
+  "poder360augusto2": {
+   "t": "Poder360 — PF cancela depoimento de Augusto Lima; saiba quem é o empresário",
+   "u": "https://www.poder360.com.br/poder-justica/depoimento-de-augusto-lima-a-pf-e-cancelado-saiba-quem-e-o-empresario/"
+  },
+  "poder360voiter": {
+   "t": "Poder360 — mesmo sabendo de fraudes, BC autorizou venda do Banco Voiter",
+   "u": "https://www.poder360.com.br/poder-justica/mesmo-sabendo-de-fraudes-bc-autorizou-venda-do-banco-voiter/"
+  },
+  "cnnpleno": {
+   "t": "CNN Brasil — dono do Banco Pleno, liquidado pelo BC, é ligado a Vorcaro e políticos",
+   "u": "https://www.cnnbrasil.com.br/economia/macroeconomia/dono-do-banco-pleno-liquidado-pelo-bc-e-ligado-a-vorcaro-e-politicos/"
+  },
+  "gazetaaugusto": {
+   "t": "Gazeta do Povo — Augusto Lima: o ex-sócio do Master próximo de políticos do PT",
+   "u": "https://www.gazetadopovo.com.br/economia/augusto-lima-o-ex-socio-de-banco-master-com-transito-pt/"
+  },
+  "metropolespresos": {
+   "t": "Metrópoles — saiba quem são os presos na operação contra o Banco Master",
+   "u": "https://www.metropoles.com/colunas/mirelle-pinheiro/saiba-quem-sao-os-presos-na-operacao-contra-o-banco-master"
+  },
+  "oestesuper": {
+   "t": "Revista Oeste — ex-superintendente do Master fica em silêncio na PF",
+   "u": "https://revistaoeste.com/economia/ex-superintendente-do-master-fica-em-silencio-durante-depoimento-a-pf/"
+  },
+  "cnndepoem": {
+   "t": "CNN Brasil — nomes ligados ao Banco Master e BRB depõem no STF",
+   "u": "https://www.cnnbrasil.com.br/politica/nomes-ligados-ao-banco-master-e-brb-depoem-no-stf-nesta-terca-feira-27/"
+  },
+  "gazeta8envolvidos": {
+   "t": "Gazeta do Povo — PF ouve 8 envolvidos na compra frustrada do Master pelo BRB",
+   "u": "https://www.gazetadopovo.com.br/economia/pf-ouve-8-envolvidos-compra-frustrada-master-brb/"
+  },
+  "ndmotta": {
+   "t": "ND+ — Vorcaro emprestou R$ 22 milhões para cunhada de Hugo Motta",
+   "u": "https://ndmais.com.br/politica/vorcaro-emprestou-r-22-milhoes-para-cunhada-de-hugo-motta/"
+  },
+  "gazetamotta": {
+   "t": "Gazeta do Povo — cunhada de Motta que emprestou R$ 22 milhões de Vorcaro tinha empresa de R$ 100 mil",
+   "u": "https://www.gazetadopovo.com.br/republica/cunhada-de-motta-que-emprestou-r-22-milhoes-de-vorcaro-tinha-empresa-de-r-100-mil/"
+  },
+  "cnnmotta": {
+   "t": "CNN Brasil — Hugo pediu a Vorcaro empréstimo do Master à empresa de cunhada, diz jornal",
+   "u": "https://www.cnnbrasil.com.br/politica/hugo-pediu-a-vorcaro-emprestimo-do-master-a-empresa-de-cunhada-diz-jornal/"
+  },
+  "interceptflavio": {
+   "t": "Intercept Brasil — áudio: Flávio Bolsonaro negociou com Vorcaro R$ 134 milhões para bancar filme sobre Jair",
+   "u": "https://www.intercept.com.br/2026/05/13/audio-flavio-negociou-vorcaro-milhoes/"
+  },
+  "cnnflavio": {
+   "t": "CNN Brasil — ouça o áudio de Flávio Bolsonaro pedindo dinheiro a Vorcaro",
+   "u": "https://www.cnnbrasil.com.br/politica/ouca-o-audio-de-flavio-bolsonaro-pedindo-dinheiro-a-vorcaro/"
+  },
+  "correiobrazilianseflavio": {
+   "t": "Correio Braziliense — em áudio, Flávio Bolsonaro cobra R$ 134 milhões de Daniel Vorcaro",
+   "u": "https://www.correiobraziliense.com.br/politica/2026/05/7418809-em-audio-flavio-bolsonaro-cobra-rs-134-milhoes-de-daniel-vorcaro.html"
+  },
+  "apublicabancada": {
+   "t": "Agência Pública — a bancada do Master é de direita",
+   "u": "https://apublica.org/2026/01/a-bancada-do-master-e-de-direita/"
+  },
+  "revistaforumbancada": {
+   "t": "Revista Fórum — Bancada do Master: quem segue na disputa eleitoral em 2026?",
+   "u": "https://revistaforum.com.br/politica/bancada-do-master-eleicoes-2026/"
+  },
+  "otempoimplode": {
+   "t": "O Tempo — longe do fim, escândalo do Master abala e até implode candidaturas",
+   "u": "https://www.otempo.com.br/politica/judiciario/2026/8/6/longe-do-fim-escandalo-do-master-abala-e-ate-implode-candidaturas-veja-nomes-e-implicacoes"
+  },
+  "apublicaibaneis": {
+   "t": "Agência Pública — BRB, rombo bilionário: o que Ibaneis Rocha tem a ver com a crise do Master",
+   "u": "https://apublica.org/2026/02/brb-como-ibaneis-rocha-esta-ligado-a-crise-do-banco-master/"
+  },
+  "gazetaibaneis": {
+   "t": "Gazeta do Povo — Ibaneis foge de CPI e perde chance de explicar negócio entre BRB e Master",
+   "u": "https://www.gazetadopovo.com.br/vozes/alexandre-garcia/ibaneis-rocha-cpi-crime-organizado-banco-master-brb/"
+  },
+  "agenciabrasilcpiibaneis": {
+   "t": "Agência Brasil — Banco Master: CPI quer ouvir o governador Ibaneis Rocha",
+   "u": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-02/banco-master-cpi-quer-ouvir-o-governador-ibaneis-rocha"
+  },
+  "bradoroberta": {
+   "t": "Brado Jornal — silêncio na Bahia: Roberta Roma não assina CPMI em meio a conexões familiares",
+   "u": "https://www.bradojornal.com/noticias/politica/2026/01/20/silencio-na-bahia-roberta-roma-nao-assina-cpmi-do-banco-master-em-meio-a-conexoes-familiares-com-o-escandalo/"
+  },
+  "cnnreverter": {
+   "t": "CNN Brasil — “Não conseguimos reverter isso com Paulo e Andrei?”, disse Vorcaro a Moraes",
+   "u": "https://www.cnnbrasil.com.br/politica/nao-conseguimos-reverter-isso-com-paulo-e-andrei-disse-vorcaro-a-moraes/"
+  },
+  "cnnkassio": {
+   "t": "CNN Brasil — “Meu filho nunca prestou serviço ao Master”, diz Nunes Marques em sessão",
+   "u": "https://www.cnnbrasil.com.br/politica/meu-filho-nunca-prestou-servico-ao-master-diz-nunes-marques-em-sessao/"
+  },
+  "revistaforumkassio": {
+   "t": "Revista Fórum — Kássio Nunes Marques, ao se declarar impedido, deu álibi à defesa de Vorcaro",
+   "u": "https://revistaforum.com.br/politica/kassio-nunes-marques-defesa-vorcaro"
+  },
+  "obrasilianistakassio": {
+   "t": "O Brasilianista — o mais novo escândalo do Master envolve Kassio",
+   "u": "https://obrasilianista.com.br/2026/09/15/justica/escandalo-master-kassio-nunes-marques"
+  },
+  "apublicareconstrucao": {
+   "t": "Agência Pública — Banco Master: a reconstrução completa de como uma fraude capturou a República",
+   "u": "https://apublica.org/2026/03/banco-master-a-reconstrucao-completa-de-como-uma-fraude-capturou-a-republica/"
+  },
+  "apublicagranada": {
+   "t": "Agência Pública — as 24h de revelações sobre o Master e Vorcaro e a “granada sem pino” no STF",
+   "u": "https://apublica.org/2026/09/analise-as-revelacoes-sobre-master-vorcaro-moraes-e-mendonca/"
+  },
+  "conjurpet": {
+   "t": "Conjur — para entender o caso Banco Master/Vorcaro no STF (Pet 16.662)",
+   "u": "https://conjur.com.br/2026-set-13/para-entender-o-caso-banco-master-vorcaro-no-stf-pet-16-662/"
+  },
+  "cnnsoltura": {
+   "t": "CNN Brasil — Justiça Federal manda soltar Daniel Vorcaro, dono do Banco Master",
+   "u": "https://www.cnnbrasil.com.br/economia/money/negocios/justica-federal-manda-soltar-dono-do-banco-master/"
+  },
+  "jovempandcm": {
+   "t": "Jovem Pan — “Comprado os caras”: Vorcaro pagou DCM para não criticar Master, diz PF",
+   "u": "https://jovempan.com.br/brasil/comprado-os-caras-vorcaro-pagou-dcm-para-nao-criticar-master/"
+  },
+  "cnndcm": {
+   "t": "CNN Brasil — Vorcaro orientou pagamento a site de esquerda “para bater nos inimigos”",
+   "u": "https://www.cnnbrasil.com.br/politica/vorcaro-orientou-pagamento-a-site-de-esquerda-para-bater-nos-inimigos/"
+  },
+  "oestedcm": {
+   "t": "Revista Oeste — relatório demonstra pagamentos de Vorcaro a jornalista e tentativa de acordo com site de esquerda",
+   "u": "https://revistaoeste.com/imprensa/relatorio-demonstra-pagamentos-de-vorcaro-a-jornalista-e-tentativa-de-acordo-com-site-de-esquerda/"
+  },
+  "infomoneyedinho": {
+   "t": "InfoMoney — Edinho rebate Galípolo por isentar Campos Neto no caso Master",
+   "u": "https://www.infomoney.com.br/politica/edinho-rebate-galipolo-por-isentar-campos-neto-no-caso-master-responsabilidade-dele/"
+  },
+  "spbancarioscampos": {
+   "t": "Sindicato dos Bancários — do silêncio de Campos Neto à intervenção de Galípolo",
+   "u": "https://spbancarios.com.br/03/2026/do-silencio-de-campos-neto-intervencao-de-galipolo-caso-master-expoe-contraste-entre"
+  },
+  "agenciabrasilcvm": {
+   "t": "Agência Brasil — CVM multa Vorcaro em R$ 20 milhões por fraude em fundo imobiliário",
+   "u": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/cvm-multa-vorcaro-em-r-20-milhoes-por-fraude-em-fundo-imobiliario"
+  },
+  "spacemoneycvm": {
+   "t": "SpaceMoney — multas da CVM a Vorcaro e Banco Master somam R$ 32,5 mi",
+   "u": "https://www.spacemoney.com.br/investimentos/fundos-de-investimentos/cvm-multa-daniel-vorcaro-banco-master"
+  },
+  "jornaldebrasiliacnpjs": {
+   "t": "Jornal de Brasília — rede de empresas relacionadas a Vorcaro soma mais de 2,5 mil CNPJs",
+   "u": "https://jornaldebrasilia.com.br/noticias/economia/rede-de-empresas-relacionadas-a-vorcaro-e-outros-integrantes-do-master-soma-mais-de-25-mil-cnpjs/"
+  },
+  "cartacapitalsicario": {
+   "t": "CartaCapital — PF abre inquérito para apurar a morte de “Sicário”, operador de Vorcaro",
+   "u": "https://www.cartacapital.com.br/justica/pf-abre-inquerito-para-apurar-a-morte-de-sicario-operador-de-vorcaro-em-carceragem-da-corporacao/"
+  },
+  "gazetamortesicario": {
+   "t": "Gazeta do Povo — braço direito de Vorcaro tem morte cerebral após tentar suicídio na PF",
+   "u": "https://www.gazetadopovo.com.br/republica/braco-direito-de-vorcaro-tem-morte-cerebral-apos-tentar-suicidio-na-pf/"
+  },
+  "cnnmortesicario": {
+   "t": "CNN Brasil — defesa confirma morte de “Sicário”, operador de Vorcaro e alvo da PF",
+   "u": "https://www.cnnbrasil.com.br/politica/defesa-confirma-morte-de-sicario-operador-de-vorcaro-e-alvo-da-pf/"
+  },
+  "band_monique": {
+   "t": "Band — Quem é Monique Alfradique, atriz citada por Vorcaro",
+   "u": "https://www.band.com.br/entretenimento/celebridades/quem-e-monique-alfradique-atriz-envolvida-com-vorcaro-citada-no-caso-master"
+  },
+  "metropoles_hackeado": {
+   "t": "Metrópoles — Vorcaro pediu aos “Meninos” para recuperar perfil hackeado de Monique Alfradique",
+   "u": "https://www.metropoles.com/brasil/vorcaro-pediu-aos-meninos-para-recuperar-perfil-hackeado-de-monique-alfradique"
+  },
+  "cnn_moer": {
+   "t": "CNN Brasil — Vorcaro pediu para “Sicário” “moer” empregada de Monique Alfradique, diz PF",
+   "u": "https://www.cnnbrasil.com.br/politica/vorcaro-pediu-para-sicario-moer-empregada-de-monique-alfradique-diz-pf/"
+  },
+  "ndmais_alan": {
+   "t": "ND+ — atriz Monique Alfradique aparece em mensagens de Vorcaro sob codinome “Alan T.I.”",
+   "u": "https://ndmais.com.br/famosos/monique-alfradique-e-vorcaro-teriam-trocado-mensagens/"
+  },
+  "diariopara_pcc": {
+   "t": "Diário do Pará — perfil hackeado de Monique Alfradique expõe elo de Vorcaro com segurança privada e menção ao PCC",
+   "u": "https://diariodopara.com.br/cotidiano/perfil-hackeado-de-monique-alfradique-expoe-elo-de-vorcaro-com-seguranca-privada-e-mencao-ao-pcc/"
+  },
+  "infomoney_luxo": {
+   "t": "InfoMoney — jatos, viagens e festas: a vida de luxo de Vorcaro",
+   "u": "https://www.infomoney.com.br/brasil/jatos-viagens-e-festas-a-vida-de-luxo-de-vorcaro-preso-pela-pf-no-caso-master/"
+  },
+  "poder360_macallan": {
+   "t": "Poder360 — Moraes, Vorcaro e Andrei degustaram Macallan juntos em Londres",
+   "u": "https://www.poder360.com.br/poder-justica/moraes-vorcaro-e-andrei-degustaram-macallan-juntos-em-londres/"
+  },
+  "ndmais_whisky": {
+   "t": "ND+ — Moraes, Toffoli, Gonet e mais: Vorcaro reuniu poderosos em degustação de whisky de mais de R$ 3 milhões",
+   "u": "https://ndmais.com.br/justica/moraes-toffoli-gonet-e-mais-vorcaro-reuniu-poderosos-em-degustacao-de-whisky-de-r-3-milhoes/"
+  },
+  "revistaforum_luxo": {
+   "t": "Revista Fórum — Daniel Vorcaro bancou circuito de luxo, com degustação de whisky de US$ 6 milhões, para autoridades brasileiras em Londres",
+   "u": "https://revistaforum.com.br/politica/daniel-vorcaro-bancou-circuito-de-luxo-com-degustacao-de-whisky-de-us-6-milhoes-para-autoridades-brasileiras-em-londres/"
+  },
+  "cnn_nikolas": {
+   "t": "CNN Brasil — em áudio, Nikolas diz a Vorcaro se arrepender de crítica a evento do Master",
+   "u": "https://www.cnnbrasil.com.br/politica/em-audio-nikolas-diz-a-vorcaro-se-arrepender-de-critica-a-evento-do-master/"
+  },
+  "brasildefato_nikolas": {
+   "t": "Brasil de Fato — em áudio, Nikolas Ferreira chama Daniel Vorcaro de ‘lindão’ e pede liberação de ativo de minério",
+   "u": "https://www.brasildefato.com.br/2026/09/03/em-audio-nikolas-ferreira-chama-daniel-vorcaro-de-lindao-e-pede-liberacao-de-ativo-de-minerio/"
+  },
+  "agenciabrasil_nikolas": {
+   "t": "Agência Brasil — em áudio, Nikolas pede ajuda a Vorcaro para liberar ativo de minério",
+   "u": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-09/em-audio-nikolas-pede-ajuda-vorcaro-para-liberar-ativo-de-minerio"
+  },
+  "revistaforum_nikolas": {
+   "t": "Revista Fórum — qual seria a negociação por trás do áudio de Nikolas Ferreira a Daniel Vorcaro?",
+   "u": "https://revistaforum.com.br/politica/audio-nikolas-ferreira-a-vorcaro"
+  },
+  "poder360_nikolas": {
+   "t": "Poder360 — Nikolas apresenta “dossiê” sobre caso Vorcaro-Moraes",
+   "u": "https://www.poder360.com.br/poder-congresso/nikolas-apresenta-dossie-sobre-caso-vorcaro-moraes/"
+  }
+ },
+ "entities": [
+  {
+   "id": "daniel-vorcaro",
+   "boss": true,
+   "name": "Daniel Vorcaro",
+   "aliases": [
+    "vorcaro",
+    "dani"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Preso",
+    "kind": "critical"
+   },
+   "role": "Controlador e ex-CEO do Banco Master",
+   "period": "Preso em 18/11/2025; solto por decisão do TRF1 em 29/11/2025; preso novamente em 04/03/2026",
+   "amounts": [
+    "R$ 5,7 bilhões em bens bloqueados pelo STF",
+    "CVM aplicou R$ 20 milhões de multa a ele (09/2026), por fraude na avaliação de ativos do fundo imobiliário Brazil Realty, após recusar acordo"
+   ],
+   "related": [
+    "banco-master",
+    "henrique-vorcaro",
+    "fabiano-zettel",
+    "luiz-antonio-bull",
+    "augusto-lima",
+    "monique-alfradique",
+    "alok",
+    "dennis-dj",
+    "the-chainsmokers",
+    "nikolas-ferreira"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor.",
+   "src": [
+    "stf",
+    "yahoo",
+    "ndmais",
+    "t7news",
+    "cnnsoltura",
+    "jornaldebrasiliacnpjs",
+    "agenciabrasilcvm",
+    "metropoles_hackeado",
+    "cnn_moer",
+    "infomoney_luxo"
+   ],
+   "joke": "Oferecia 177% do CDI e tinha um jato de R$ 200 milhões — hoje só um dos dois ainda voa."
+  },
+  {
+   "id": "henrique-vorcaro",
+   "name": "Henrique Vorcaro",
+   "aliases": [
+    "pai de vorcaro"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Preso",
+    "kind": "critical"
+   },
+   "role": "Empresário; pai de Daniel Vorcaro",
+   "period": "Preso na 6ª fase da Operação Compliance Zero (05/2026)",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Empresário e pai do controlador do Banco Master, foi preso na 6ª fase da Operação Compliance Zero.",
+   "src": [
+    "agpai"
+   ],
+   "joke": "Prova de que negócio de família, às vezes, é levado a sério demais."
+  },
+  {
+   "id": "fabiano-zettel",
+   "name": "Fabiano Zettel",
+   "aliases": [
+    "zettel",
+    "fabiano campos zettel"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Prisão decretada",
+    "kind": "critical"
+   },
+   "role": "Cunhado de Daniel Vorcaro; controlador da Pipe Participações",
+   "period": "Prisão preventiva decretada em 2026",
+   "amounts": [
+    "~R$ 8 milhões — imóvel apontado como simulação de repasse de propina a servidor do BC",
+    "R$ 3 milhões — doação a Jair Bolsonaro em 2022, segundo reportagem"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "pipe-participacoes",
+    "paulo-sergio-neves",
+    "jair-bolsonaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Cunhado de Daniel Vorcaro e dono da Pipe Participações, empresa que, segundo apuração, foi usada para simular a compra de um imóvel como forma de repassar propina a um ex-diretor do BC. Também é apontado como doador de campanha de Jair Bolsonaro em 2022.",
+   "src": [
+    "gzalvos",
+    "embc",
+    "timesbrasil"
+   ],
+   "joke": "Cunhado que também sabia comprar imóvel — só que pra devolver em forma de propina, segundo a apuração."
+  },
+  {
+   "id": "luiz-antonio-bull",
+   "name": "Luiz Antonio Bull",
+   "aliases": [
+    "luiz bull"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Preso",
+    "kind": "critical"
+   },
+   "role": "Ex-diretor do Banco Master",
+   "period": "Preso em 18/11/2025",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "banco-master"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Ex-diretor do Banco Master, preso junto com Daniel Vorcaro na deflagração da Operação Compliance Zero.",
+   "src": [
+    "yahoo",
+    "metropolespresos"
+   ],
+   "joke": "Toparia a parada de novo? Difícil perguntar: já topou a cela."
+  },
+  {
+   "id": "luiz-phillipi-mourao",
+   "name": "Luiz Phillipi Machado de Moraes Mourão",
+   "aliases": [
+    "mourão",
+    "sicário",
+    "mourao"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Morreu sob custódia",
+    "kind": "critical"
+   },
+   "role": "Braço direito de Daniel Vorcaro, ligado por reportagens ao núcleo de segurança/intimidação da organização investigada",
+   "period": "Preso na 3ª fase da Operação Compliance Zero; morreu em custódia da PF em Belo Horizonte (2026), após dar entrada em morte cerebral",
+   "amounts": [
+    "~R$ 1 milhão por mês, segundo apuração, como remuneração por seus serviços a Vorcaro"
+   ],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "MG"
+   ],
+   "summary": "Conhecido nas investigações pelo apelido “Sicário”, era apontado como braço direito de Daniel Vorcaro. Preso na 3ª fase da Operação Compliance Zero, deu entrada em morte cerebral na carceragem da Polícia Federal em Belo Horizonte após um episódio classificado como tentativa de suicídio, e morreu horas depois. A PF abriu inquérito para apurar as circunstâncias da morte.",
+   "src": [
+    "gzalvos",
+    "cartacapitalsicario",
+    "gazetamortesicario",
+    "cnnmortesicario"
+   ],
+   "joke": null
+  },
+  {
+   "id": "marilson-roseno",
+   "name": "Marilson Roseno da Silva",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Prisão decretada",
+    "kind": "critical"
+   },
+   "role": "Policial federal aposentado",
+   "period": "Prisão preventiva decretada em 2026",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [],
+   "summary": "Policial federal aposentado, teve prisão preventiva decretada como alvo da Operação Compliance Zero.",
+   "src": [
+    "gzalvos"
+   ],
+   "joke": "Aposentou da Polícia Federal, mas não do expediente extra, segundo a apuração."
+  },
+  {
+   "id": "augusto-lima",
+   "name": "Augusto Ferreira Lima",
+   "aliases": [
+    "guga lima"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Preso",
+    "kind": "critical"
+   },
+   "role": "Ex-sócio e ex-CEO do Banco Master; hoje controla o Banco Pleno (ex-Voiter)",
+   "period": "Sócio de Vorcaro no Master entre 2020 e maio de 2024; preso na deflagração da Operação Compliance Zero (11/2025)",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "banco-master",
+    "banco-pleno"
+   ],
+   "states": [
+    "BA"
+   ],
+   "summary": "Conhecido como “Guga Lima”, entrou no mercado de crédito consignado em 2018 e se tornou sócio e CEO do Banco Master em 2020, trazendo o CredCesta — programa de consignado que virou um dos principais produtos do banco. Deixou a sociedade com Vorcaro em maio de 2024 e hoje controla o Banco Pleno (ex-Voiter), que ficou de fora da liquidação decretada pelo Banco Central. Reportagens apontam trânsito político com o PT baiano. Foi preso na deflagração da Operação Compliance Zero.",
+   "src": [
+    "poder360augusto1",
+    "poder360augusto2",
+    "gazetaaugusto",
+    "cnnpleno",
+    "poder360voiter"
+   ],
+   "joke": "Trouxe o CredCesta pro Master, saiu da sociedade antes da conta chegar."
+  },
+  {
+   "id": "alberto-felix-oliveira",
+   "name": "Alberto Felix de Oliveira Neto",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Preso",
+    "kind": "critical"
+   },
+   "role": "Superintendente executivo de Tesouraria do Banco Master",
+   "period": "Preso/depôs no âmbito da Operação Compliance Zero (2026)",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "banco-master"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Superintendente executivo de Tesouraria do Banco Master, permaneceu em silêncio durante depoimento à Polícia Federal.",
+   "src": [
+    "oestesuper",
+    "metropolespresos",
+    "cnndepoem"
+   ],
+   "joke": "Cuidava da Tesouraria do banco — e, no depoimento, da tesouraria do silêncio."
+  },
+  {
+   "id": "angelo-antonio-ribeiro",
+   "name": "Angelo Antonio Ribeiro da Silva",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Preso",
+    "kind": "critical"
+   },
+   "role": "Sócio e executivo do Banco Master",
+   "period": "Preso/depôs no âmbito da Operação Compliance Zero (2026)",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "banco-master"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Apontado como sócio e executivo do Banco Master, informou à Polícia Federal que ficaria em silêncio no depoimento, alegando não ter acesso completo aos autos da investigação.",
+   "src": [
+    "metropolespresos",
+    "cnndepoem"
+   ],
+   "joke": "Sócio que preferiu não comentar. Nem um pouco."
+  },
+  {
+   "id": "paulo-henrique-costa",
+   "name": "Paulo Henrique Bezerra Rodrigues Costa",
+   "aliases": [
+    "paulo henrique costa"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Preso",
+    "kind": "critical"
+   },
+   "role": "Ex-presidente do BRB (Banco de Brasília)",
+   "period": "Preso em 04/2026",
+   "amounts": [],
+   "related": [
+    "brb",
+    "daniel-monteiro",
+    "roberio-mangueira"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Ex-presidente do BRB, banco estatal do Distrito Federal que negociou a compra do Banco Master em 2025. Comandava o banco no período em que a instituição avançou nas negociações com o Master. Preso em abril de 2026.",
+   "src": [
+    "ag13",
+    "gzalvos"
+   ],
+   "joke": "Presidente do banco que quase comprou o Master — e quase saiu dessa ileso."
+  },
+  {
+   "id": "daniel-monteiro",
+   "name": "Daniel Monteiro",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Preso",
+    "kind": "critical"
+   },
+   "role": "Advogado, apontado como operador jurídico-financeiro do esquema",
+   "period": "Preso em 04/2026",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "paulo-henrique-costa"
+   ],
+   "states": [],
+   "summary": "Advogado apontado pelas investigações como o operador jurídico-financeiro do esquema entre o Banco Master e o BRB. Foi preso em abril de 2026.",
+   "src": [
+    "ag13"
+   ],
+   "joke": "O advogado que, segundo a PF, também assinava embaixo."
+  },
+  {
+   "id": "roberio-mangueira",
+   "name": "Robério Cesar Bonfim Mangueira",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Superintendente de Operações Financeiras do BRB",
+   "period": "Depôs à PF/STF no âmbito da investigação (2026)",
+   "amounts": [],
+   "related": [
+    "brb",
+    "paulo-henrique-costa"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Superintendente de Operações Financeiras do BRB, apresentou ao Banco Central documentos sobre as transferências de recursos entre o banco público e o Master. Seu nome está entre os investigados chamados a depor à Polícia Federal e ao STF sobre a venda de carteiras de crédito do Master ao BRB.",
+   "src": [
+    "cnndepoem",
+    "gazeta8envolvidos"
+   ],
+   "joke": "Levou os papéis da operação ao Banco Central. Os papéis, pelo visto, não mentiam."
+  },
+  {
+   "id": "paulo-sergio-neves",
+   "name": "Paulo Sérgio Neves de Souza",
+   "aliases": [
+    "paulo sergio neves"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Ex-diretor de fiscalização do Banco Central",
+   "period": "Apurado em sindicância divulgada em 2026",
+   "amounts": [
+    "R$ 8 milhões em propina, segundo apuração"
+   ],
+   "related": [
+    "fabiano-zettel",
+    "belline-santana"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Ex-diretor de fiscalização do Banco Central. Segundo apuração, teria recebido cerca de R$ 8 milhões em propina do esquema Master, dissimulados pela venda de um imóvel à Pipe Participações.",
+   "src": [
+    "embc",
+    "timesbrasil",
+    "sempauta"
+   ],
+   "joke": "Fiscalizava o sistema financeiro — e, segundo a apuração, também fez caixa nele."
+  },
+  {
+   "id": "belline-santana",
+   "name": "Belline Santana",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigada",
+    "kind": "warning"
+   },
+   "role": "Servidora do Banco Central",
+   "period": "Apurado em sindicância divulgada em 2026",
+   "amounts": [
+    "~R$ 4 milhões via contrato de consultoria simulado, segundo apuração"
+   ],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Servidora do Banco Central apontada, segundo apuração, por ter recebido cerca de R$ 4 milhões via contrato de consultoria simulado com empresa ligada a Daniel Vorcaro.",
+   "src": [
+    "embc",
+    "timesbrasil",
+    "sempauta"
+   ],
+   "joke": "Consultoria simulada, diz a apuração. A parte real, dizem, era só o valor."
+  },
+  {
+   "id": "roberto-campos-neto",
+   "name": "Roberto Campos Neto",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "affected"
+   },
+   "role": "Ex-presidente do Banco Central (gestão anterior à liquidação do Master)",
+   "period": "Presidiu o BC até dezembro de 2024/início de 2025; liquidação do Master ocorreu já na gestão seguinte",
+   "amounts": [],
+   "related": [
+    "gabriel-galipolo",
+    "banco-master"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Presidiu o Banco Central no período em que, segundo reportagens, a autarquia já teria sido informada sobre fragilidades relevantes na estrutura de ativos e na liquidez do Master, sem que medidas de intervenção imediatas fossem adotadas. Seu sucessor, Gabriel Galípolo, afirmou publicamente não ter encontrado indícios de que Campos Neto tenha agido para favorecer o banco — avaliação contestada por políticos de oposição ao governo anterior.",
+   "src": [
+    "infomoneyedinho",
+    "spbancarioscampos"
+   ],
+   "joke": "Presidiu o Banco Central bem na hora de, segundo os críticos, não fazer nada."
+  },
+  {
+   "id": "gabriel-galipolo",
+   "name": "Gabriel Galípolo",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "affected"
+   },
+   "role": "Presidente do Banco Central",
+   "period": "À frente do BC quando foi decretada a liquidação do Master (18/11/2025)",
+   "amounts": [],
+   "related": [
+    "roberto-campos-neto",
+    "banco-master"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Presidente do Banco Central desde 2025, foi quem decretou a liquidação extrajudicial do Master em novembro daquele ano. Declarou publicamente não ter encontrado evidências de que seu antecessor, Roberto Campos Neto, tenha agido para favorecer o banco de Vorcaro — declaração que gerou controvérsia e críticas de parlamentares.",
+   "src": [
+    "infomoneyedinho",
+    "spbancarioscampos"
+   ],
+   "joke": "Herdou o problema, decretou a liquidação — e depois inocentou quem herdou."
+  },
+  {
+   "id": "alexandre-de-moraes",
+   "name": "Alexandre de Moraes",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Ministro do Supremo Tribunal Federal (STF)",
+   "period": "Mensagens reveladas em 2026 no âmbito da Operação Compliance Zero",
+   "amounts": [
+    "R$ 129 milhões — valor de contrato entre o Banco Master e o escritório de advocacia da esposa do ministro, pago em parcelas de R$ 3,6 milhões/mês, segundo reportagens"
+   ],
+   "related": [
+    "paulo-gonet",
+    "andrei-rodrigues",
+    "dias-toffoli"
+   ],
+   "states": [],
+   "summary": "Ministro do STF. Reportagens, com base em mensagens extraídas do celular de Vorcaro, mostram o banqueiro pedindo ao ministro ajuda para tentar conter o avanço das investigações junto ao diretor-geral da PF (Andrei Rodrigues) e ao procurador-geral da República (Paulo Gonet). Passou a ser questionado também por um contrato de R$ 129 milhões entre o Master e o escritório de advocacia de sua esposa. O gabinete do ministro afirma que ele nunca julgou nenhum processo envolvendo o Banco Master — não há, até a última atualização desta base, decisão do STF ou denúncia formal contra ele neste caso.",
+   "src": [
+    "cnnreverter",
+    "apublicagranada",
+    "conjurpet",
+    "apublicareconstrucao",
+    "poder360_macallan",
+    "ndmais_whisky"
+   ],
+   "joke": "Foi à degustação de uísque de R$ 3 milhões que o banco pagou. Julgar processo do Master? Isso nunca, garante o gabinete."
+  },
+  {
+   "id": "kassio-nunes-marques",
+   "name": "Kassio Nunes Marques",
+   "aliases": [
+    "kássio nunes marques"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Ministro do Supremo Tribunal Federal (STF)",
+   "period": "Mensagens/diálogos revelados em 2026",
+   "amounts": [
+    "R$ 500 mil — valor citado em diálogo do celular de Vorcaro envolvendo o filho do ministro, segundo reportagem; pagamento negado pelo ministro"
+   ],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [],
+   "summary": "Ministro do STF. Diálogos extraídos do celular de Daniel Vorcaro, com um interlocutor identificado como filho do ministro (o advogado Kevin Marques), citam o valor de R$ 500 mil. Nunes Marques afirmou publicamente, em sessão, que seu filho “nunca prestou serviço ao Master” nem recebeu qualquer pagamento do banco. Ele já havia se declarado impedido em um processo relacionado a Vorcaro, decisão que, segundo análises publicadas, deu à defesa do banqueiro argumento para contestar sua prisão. Não há, até a última atualização desta base, denúncia formal contra o ministro neste caso.",
+   "src": [
+    "cnnkassio",
+    "revistaforumkassio",
+    "obrasilianistakassio"
+   ],
+   "joke": "“Meu filho nunca prestou serviço ao Master”, jurou o ministro em sessão. O WhatsApp de Vorcaro, segundo reportagens, discorda."
+  },
+  {
+   "id": "paulo-gonet",
+   "name": "Paulo Gonet",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "affected"
+   },
+   "role": "Procurador-Geral da República (PGR)",
+   "period": "Mensagens reveladas em 2026",
+   "amounts": [],
+   "related": [
+    "alexandre-de-moraes",
+    "andrei-rodrigues",
+    "dias-toffoli"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Procurador-Geral da República. Aparece citado em mensagem na qual Vorcaro pergunta a Alexandre de Moraes se não seria possível “reverter isso com Paulo e Andrei” — ou seja, é mencionado como uma das autoridades que o banqueiro esperava que o ministro tentasse influenciar. As fontes consultadas não apontam nenhuma ação irregular por parte do próprio Gonet.",
+   "src": [
+    "cnnreverter",
+    "apublicagranada",
+    "poder360_macallan",
+    "ndmais_whisky"
+   ],
+   "joke": "Também esteve na festa do uísque de R$ 3 milhões em Londres. Investigar o anfitrião? Isso é outra história."
+  },
+  {
+   "id": "andrei-rodrigues",
+   "name": "Andrei Rodrigues",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "affected"
+   },
+   "role": "Diretor-geral da Polícia Federal",
+   "period": "Mensagens reveladas em 2026",
+   "amounts": [],
+   "related": [
+    "alexandre-de-moraes",
+    "paulo-gonet",
+    "dias-toffoli"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Diretor-geral da Polícia Federal desde janeiro de 2023. Assim como o procurador-geral Paulo Gonet, aparece citado nas mensagens em que Vorcaro pede a Alexandre de Moraes ajuda para tentar conter o avanço das investigações. As fontes consultadas não apontam nenhuma ação irregular por parte do próprio Andrei Rodrigues.",
+   "src": [
+    "cnnreverter",
+    "apublicagranada",
+    "poder360_macallan",
+    "ndmais_whisky"
+   ],
+   "joke": "Diretor-geral da PF — e um dos 40 convidados na degustação de uísque de R$ 3 milhões paga pelo banco em Londres."
+  },
+  {
+   "id": "ciro-nogueira",
+   "name": "Ciro Nogueira",
+   "aliases": [
+    "senador ciro nogueira"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Senador (PP-PI)",
+   "period": "Investigado em 2026",
+   "amounts": [
+    "R$ 6 a 8 milhões em suposta propina, segundo apuração, para barrar CPI do Master"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "jaques-wagner"
+   ],
+   "states": [
+    "PI"
+   ],
+   "summary": "Senador pelo Piauí e pré-candidato à reeleição, é investigado sob suspeita de ter atuado no Congresso a favor dos interesses de Daniel Vorcaro. Mensagens da PF o relacionam a pagamentos de Vorcaro; reportagens apontam que pode ter recebido entre R$ 6 milhões e R$ 8 milhões para ajudar a barrar uma CPI do Banco Master, e que teria proposto aumentar a cobertura do FGC.",
+   "src": [
+    "blogdodina",
+    "embc",
+    "otempoimplode"
+   ],
+   "joke": "Defendia aumentar a cobertura do FGC bem na hora que o FGC mais precisava não pagar. Coincidência, garantem as fontes."
+  },
+  {
+   "id": "jaques-wagner",
+   "name": "Jaques Wagner",
+   "aliases": [
+    "senador jaques wagner"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Senador (PT-BA)",
+   "period": "Investigado em 2026",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "ciro-nogueira"
+   ],
+   "states": [
+    "BA"
+   ],
+   "summary": "Senador pela Bahia, é apontado por investigações como um dos parlamentares que teriam atuado favoravelmente aos interesses de Daniel Vorcaro no Senado, no contexto das tentativas de barrar uma CPI para apurar o Banco Master.",
+   "src": [
+    "embc"
+   ],
+   "joke": "Do PT pro grupo dos que, segundo apuração, tentaram segurar a CPI."
+  },
+  {
+   "id": "claudio-castro",
+   "name": "Cláudio Castro",
+   "aliases": [
+    "ex-governador rj",
+    "claudio castro"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Ex-governador do Rio de Janeiro",
+   "period": "Investigado em 2026; retirou pré-candidatura ao Senado em meio ao caso",
+   "amounts": [
+    "R$ 970 milhões — valor aplicado pelo Rioprevidência em títulos do Master"
+   ],
+   "related": [
+    "rioprevidencia"
+   ],
+   "states": [
+    "RJ"
+   ],
+   "summary": "Ex-governador do Rio de Janeiro, é investigado por suposta influência sobre a decisão do Rioprevidência, fundo de previdência dos servidores estaduais, de aplicar R$ 970 milhões em títulos do Banco Master — o maior aporte de um fundo público identificado no caso. Reportagens indicam que ele retirou sua pré-candidatura ao Senado em meio ao desgaste do escândalo.",
+   "src": [
+    "embc",
+    "cnnestados",
+    "otempoimplode"
+   ],
+   "joke": "Colocou quase R$ 1 bilhão da previdência do Rio no banco que prometia demais. O Rio que se cuide."
+  },
+  {
+   "id": "ibaneis-rocha",
+   "name": "Ibaneis Rocha",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Governador do Distrito Federal",
+   "period": "Investigado em 2026; convocado (e ausente) em CPI; retirou pré-candidatura ao Senado",
+   "amounts": [],
+   "related": [
+    "brb",
+    "paulo-henrique-costa"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Governador do Distrito Federal, cujo banco estatal (BRB) tentou comprar o Master e chegou a adquirir R$ 12 bilhões em carteira de crédito da instituição antes do veto do Banco Central. Afirmou ter se encontrado “em algumas poucas oportunidades” com Vorcaro para tratar da proposta de compra. Foi convocado por uma CPI para explicar o negócio BRB–Master, mas não compareceu; o caso motivou pedidos de CPI e de impeachment contra ele, e reportagens indicam que retirou sua pré-candidatura ao Senado.",
+   "src": [
+    "apublicaibaneis",
+    "gazetaibaneis",
+    "agenciabrasilcpiibaneis",
+    "otempoimplode"
+   ],
+   "joke": "Encontrou Vorcaro “em algumas poucas oportunidades”. R$ 12 bilhões em carteira de crédito depois."
+  },
+  {
+   "id": "joao-roma",
+   "name": "João Roma",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Senador (PL-BA); ex-ministro no governo Bolsonaro",
+   "period": "Convocado por CPI em 2026",
+   "amounts": [],
+   "related": [
+    "augusto-lima",
+    "roberta-roma"
+   ],
+   "states": [
+    "BA"
+   ],
+   "summary": "Senador pela Bahia e pré-candidato à reeleição. Foi convocado pela CPI do Crime Organizado para esclarecer sua atuação em mudanças no crédito consignado do Auxílio Brasil — modalidade ampliada durante sua gestão como ministro no governo Bolsonaro e que teve no CredCesta, produto trazido ao Master por Augusto “Guga” Lima, um de seus principais veículos.",
+   "src": [
+    "gazetaibaneis",
+    "gazetaaugusto",
+    "otempoimplode"
+   ],
+   "joke": "Ajudou a ampliar o consignado no governo; o CredCesta, coincidentemente, veio de brinde depois."
+  },
+  {
+   "id": "roberta-roma",
+   "name": "Roberta Roma",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citada",
+    "kind": "affected"
+   },
+   "role": "Parlamentar baiana; reportagens apontam conexão familiar com João Roma",
+   "period": "2026",
+   "amounts": [],
+   "related": [
+    "joao-roma"
+   ],
+   "states": [
+    "BA"
+   ],
+   "summary": "Parlamentar baiana apontada por reportagens como tendo conexões familiares com o escândalo do Master; segundo a cobertura, não assinou o requerimento de instalação de uma CPMI sobre o caso.",
+   "src": [
+    "bradoroberta"
+   ],
+   "joke": "Não assinou a CPMI. A família, pelo visto, também não assina embaixo de qualquer coisa."
+  },
+  {
+   "id": "hugo-motta",
+   "name": "Hugo Motta",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Presidente da Câmara dos Deputados (Republicanos-PB)",
+   "period": "Empréstimo ocorrido em 2024; revelado por reportagem em 2026",
+   "amounts": [
+    "R$ 22 milhões — empréstimo do Master a empresa da cunhada de Motta, com a própria empresa (avaliada em R$ 100 mil) como garantia"
+   ],
+   "related": [
+    "banco-master"
+   ],
+   "states": [
+    "PB"
+   ],
+   "summary": "Presidente da Câmara dos Deputados. A PF encontrou mensagens em que ele pede a Vorcaro a liberação de um empréstimo de R$ 22 milhões para uma empresa da cunhada, usado na compra de um terreno em João Pessoa (PB); a garantia era a própria empresa, avaliada em R$ 100 mil. Procurado, Motta não confirmou ter pedido o empréstimo, mas afirmou que a operação seria legal, já que teria sido feita por uma empresa com garantia, sem ilegalidade.",
+   "src": [
+    "ndmotta",
+    "gazetamotta",
+    "cnnmotta",
+    "apublicabancada"
+   ],
+   "joke": "Presidente da Câmara; empréstimo de R$ 22 milhões pra cunhada, garantia: uma empresa de R$ 100 mil."
+  },
+  {
+   "id": "flavio-bolsonaro",
+   "name": "Flávio Bolsonaro",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Senador (PL-RJ); pré-candidato à Presidência",
+   "period": "Negociação ocorrida entre fevereiro e maio de 2025; áudio revelado em 05/2026",
+   "amounts": [
+    "R$ 134 milhões — valor negociado em áudio para bancar o filme “Dark Horse”, biografia de Jair Bolsonaro",
+    "~R$ 61 milhões (US$ 10,6 milhões) já pagos entre fevereiro e maio de 2025, em seis transferências, segundo reportagem"
+   ],
+   "related": [
+    "jair-bolsonaro",
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "RJ"
+   ],
+   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro.",
+   "src": [
+    "interceptflavio",
+    "cnnflavio",
+    "correiobrazilianseflavio"
+   ],
+   "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa."
+  },
+  {
+   "id": "jair-bolsonaro",
+   "name": "Jair Bolsonaro",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "affected"
+   },
+   "role": "Ex-presidente da República",
+   "period": "Doação em 2022; filme biográfico negociado em 2025",
+   "amounts": [
+    "R$ 3 milhões — doação de campanha via Fabiano Zettel em 2022, segundo reportagem"
+   ],
+   "related": [
+    "fabiano-zettel",
+    "flavio-bolsonaro"
+   ],
+   "states": [],
+   "summary": "Ex-presidente da República (já inelegível por outros processos). Reportagens apontam uma doação de campanha de R$ 3 milhões em 2022 via Fabiano Zettel, cunhado de Vorcaro, e o financiamento, negociado por seu filho Flávio, de um filme biográfico sobre sua trajetória política com recursos oferecidos por Vorcaro.",
+   "src": [
+    "apublicabancada",
+    "interceptflavio"
+   ],
+   "joke": "Ganhou doação de R$ 3 milhões do cunhado de Vorcaro. A lista de pendências só cresce."
+  },
+  {
+   "id": "bancada-do-master",
+   "name": "“Bancada do Master” (rede político-eleitoral)",
+   "aliases": [
+    "bancada do master"
+   ],
+   "type": "instituicao",
+   "status": {
+    "label": "Citada",
+    "kind": "affected"
+   },
+   "role": "Conjunto de ao menos 22 políticos (majoritariamente PL, PP, Republicanos e União Brasil, com nomes também do PSDB e do PSD) ligados a Vorcaro por contato telefônico, pagamento, doação ou atuação política, segundo mapeamento jornalístico",
+   "period": "Levantamento publicado em 2026, referente à disputa eleitoral de 2026",
+   "amounts": [],
+   "related": [
+    "flavio-bolsonaro",
+    "ciro-nogueira",
+    "joao-roma",
+    "hugo-motta",
+    "claudio-castro",
+    "ibaneis-rocha"
+   ],
+   "states": [],
+   "summary": "Nome dado por reportagens ao conjunto de pelo menos 22 políticos identificados no aparelho celular de Vorcaro ou em pagamentos/doações ligados ao Master, ainda na disputa eleitoral de 2026. Esta base traz cartões individuais apenas para os nomes com alegação específica e fonte direta; os demais integrantes do grupo estão descritos nas reportagens linkadas abaixo, mas não foram checados individualmente aqui.",
+   "src": [
+    "apublicabancada",
+    "revistaforumbancada",
+    "otempoimplode"
+   ],
+   "joke": "22 políticos, um único contato salvo no mesmo celular."
+  },
+  {
+   "id": "banco-master",
+   "name": "Banco Master",
+   "aliases": [
+    "master"
+   ],
+   "type": "instituicao",
+   "status": {
+    "label": "Liquidação",
+    "kind": "critical"
+   },
+   "role": "Instituição financeira controlada por Daniel Vorcaro",
+   "period": "Liquidado extrajudicialmente pelo Banco Central em 18/11/2025",
+   "amounts": [
+    "~R$ 50 bilhões em CDBs emitidos, com rendimentos de até 177% do CDI",
+    "Rombo estimado entre R$ 17 bilhões e R$ 51 bilhões, a depender da reportagem e do momento da apuração",
+    "CVM aplicou R$ 12,5 milhões de multa ao banco (09/2026), dentro de processo sobre fraude na avaliação de ativos do fundo Brazil Realty"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "reag-investimentos",
+    "brb",
+    "viking-participacoes"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Banco com sede em São Paulo, controlado por Daniel Vorcaro. Emitiu cerca de R$ 50 bilhões em CDBs com rendimentos muito acima do mercado, lastreados em precatórios e títulos de crédito duvidoso. Liquidado extrajudicialmente em 18/11/2025 — a maior intervenção bancária da história do país. Estimativas de rombo variam bastante entre reportagens ao longo do tempo, de cerca de R$ 17 bi a R$ 51 bi.",
+   "src": [
+    "ndmais",
+    "jota",
+    "marketscreener",
+    "agenciabrasilcvm",
+    "spacemoneycvm"
+   ],
+   "joke": "Pagava até 177% do CDI. O rendimento de verdade foi virar a maior liquidação bancária da história do país."
+  },
+  {
+   "id": "brb",
+   "name": "BRB (Banco de Brasília)",
+   "aliases": [
+    "banco de brasília"
+   ],
+   "type": "instituicao",
+   "status": {
+    "label": "Contraparte",
+    "kind": "affected"
+   },
+   "role": "Banco estatal do Distrito Federal",
+   "period": "Acordo anunciado em 28/03/2025; vetado pelo Banco Central em 09/2025",
+   "amounts": [
+    "R$ 2 bilhões — valor anunciado pela compra de 58% do capital total do Master",
+    "R$ 12 bilhões — carteira de crédito comprada do Master antes do veto",
+    "R$ 15 bilhões — ativos que tentou revender à gestora Quadra Capital (negociação encerrada em 07/2026)"
+   ],
+   "related": [
+    "banco-master",
+    "daniel-vorcaro",
+    "paulo-henrique-costa",
+    "quadra-capital",
+    "ibaneis-rocha"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Banco estatal do Distrito Federal. Em 28/03/2025 anunciou a compra de 58% do capital total do Banco Master por R$ 2 bilhões. O Banco Central vetou a fusão em setembro de 2025. Antes do veto, o BRB já havia comprado cerca de R$ 12 bilhões em carteira de crédito do Master e depois tentou vender R$ 15 bilhões desses ativos à gestora Quadra Capital — negociação encerrada sem acordo em julho de 2026. Seu ex-presidente foi preso em abril de 2026.",
+   "src": [
+    "neofeed",
+    "metropolesveto",
+    "cnnquadra",
+    "bloombergquadra"
+   ],
+   "joke": "Comprou 58% do banco errado na hora errada — e ainda tentou revender o que sobrou."
+  },
+  {
+   "id": "reag-investimentos",
+   "name": "Reag Investimentos",
+   "aliases": [
+    "reag"
+   ],
+   "type": "instituicao",
+   "status": {
+    "label": "Liquidação",
+    "kind": "critical"
+   },
+   "role": "Gestora de recursos",
+   "period": "Liquidada extrajudicialmente pelo Banco Central em 01/2026",
+   "amounts": [],
+   "related": [
+    "banco-master",
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Gestora de recursos de São Paulo que, segundo investigações, inflava artificialmente o valor de precatórios usados por fundos ligados ao Master. Liquidada em janeiro de 2026.",
+   "src": [
+    "agreag",
+    "otempodez",
+    "otempojan"
+   ],
+   "joke": "Inflava o valor de precatório no papel. O rombo, esse, veio no valor real."
+  },
+  {
+   "id": "pipe-participacoes",
+   "name": "Pipe Participações",
+   "aliases": [
+    "pipe"
+   ],
+   "type": "instituicao",
+   "status": {
+    "label": "Investigada",
+    "kind": "warning"
+   },
+   "role": "Empresa de Fabiano Zettel",
+   "period": "Investigada em 2026",
+   "amounts": [
+    "~R$ 8 milhões — operação imobiliária apontada como simulação de propina"
+   ],
+   "related": [
+    "fabiano-zettel",
+    "paulo-sergio-neves"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Empresa controlada por Fabiano Zettel, usada, segundo apuração, para simular a compra de um imóvel como forma de repassar propina a um ex-diretor de fiscalização do BC.",
+   "src": [
+    "embc",
+    "timesbrasil"
+   ],
+   "joke": "Empresa de família que, segundo a apuração, também lavava dinheiro — não só roupa."
+  },
+  {
+   "id": "quadra-capital",
+   "name": "Quadra Capital",
+   "aliases": [
+    "quadra"
+   ],
+   "type": "instituicao",
+   "status": {
+    "label": "Contraparte",
+    "kind": "affected"
+   },
+   "role": "Gestora de ativos",
+   "period": "Negociação com o BRB encerrada em 07/2026",
+   "amounts": [
+    "R$ 15 bilhões — valor dos ativos do Master negociados com o BRB"
+   ],
+   "related": [
+    "brb",
+    "banco-master"
+   ],
+   "states": [],
+   "summary": "Gestora de ativos que negociou com o BRB a compra de R$ 15 bilhões em ativos ligados ao Banco Master — negociação encerrada sem acordo em julho de 2026.",
+   "src": [
+    "cnnquadra",
+    "bloombergquadra"
+   ],
+   "joke": "Quase comprou R$ 15 bilhões em ativos do Master. O “quase” fez toda a diferença."
+  },
+  {
+   "id": "banco-pleno",
+   "name": "Banco Pleno (ex-Voiter)",
+   "aliases": [
+    "banco voiter",
+    "voiter"
+   ],
+   "type": "instituicao",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Banco controlado por Augusto “Guga” Lima, ex-sócio de Vorcaro",
+   "period": "Venda do então Banco Voiter analisada pelo BC antes do escândalo estourar",
+   "amounts": [],
+   "related": [
+    "augusto-lima"
+   ],
+   "states": [
+    "BA"
+   ],
+   "summary": "Banco anteriormente chamado Voiter, hoje Banco Pleno, controlado por Augusto “Guga” Lima. Ficou de fora da liquidação decretada pelo Banco Central em novembro de 2025. Reportagem aponta que o Banco Central teria autorizado a venda da instituição mesmo já sabendo de indícios de fraude.",
+   "src": [
+    "poder360voiter",
+    "cnnpleno"
+   ],
+   "joke": "Nasceu Voiter, virou Pleno, escapou da liquidação por pouco."
+  },
+  {
+   "id": "viking-participacoes",
+   "name": "Viking Participações",
+   "aliases": [],
+   "type": "instituicao",
+   "status": {
+    "label": "Investigada",
+    "kind": "warning"
+   },
+   "role": "Empresa citada no processo da CVM sobre o fundo imobiliário Brazil Realty",
+   "period": "Processo administrativo sancionador julgado em 09/2026",
+   "amounts": [],
+   "related": [
+    "banco-master",
+    "daniel-vorcaro"
+   ],
+   "states": [],
+   "summary": "Empresa citada, junto com o Banco Master e Daniel Vorcaro, no processo da CVM que apurou o uso de laudos supostamente forjados para supervalorizar ativos do fundo imobiliário Brazil Realty — proposta de acordo rejeitada pela CVM em dezembro de 2025, com condenação em setembro de 2026.",
+   "src": [
+    "agenciabrasilcvm",
+    "spacemoneycvm"
+   ],
+   "joke": "Nome de conquistador, processo de avaliação nada épico."
+  },
+  {
+   "id": "dcm",
+   "name": "Diário do Centro do Mundo (DCM)",
+   "aliases": [
+    "diario do centro do mundo"
+   ],
+   "type": "instituicao",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Veículo de imprensa (site de notícias)",
+   "period": "Pagamentos apontados como ocorridos ao longo de 2025, revelados por relatório da PF em 2026",
+   "amounts": [
+    "R$ 50 mil/mês — valor que, segundo a PF, o site teria recebido para não criticar o Master"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "luiz-phillipi-mourao"
+   ],
+   "states": [],
+   "summary": "Site de notícias identificado como de esquerda. Segundo relatório da Polícia Federal, teria recebido pagamentos mensais de cerca de R$ 50 mil, repassados por Luiz Phillipi Mourão, para deixar de publicar notícias negativas sobre o Master e passar a atacar “inimigos” de Vorcaro. A defesa do DCM nega a versão e argumenta que o veículo foi, na verdade, um dos que mais publicou reportagens críticas ao banco e a seu dono — inclusive parte das fontes usadas nesta própria base.",
+   "src": [
+    "jovempandcm",
+    "cnndcm",
+    "oestedcm"
+   ],
+   "joke": "Site de esquerda acusado pela PF de receber do banqueiro pra atacar “inimigos”. O site nega — com fonte, aliás."
+  },
+  {
+   "id": "fgc",
+   "name": "FGC (Fundo Garantidor de Créditos)",
+   "aliases": [
+    "fundo garantidor de créditos"
+   ],
+   "type": "instituicao",
+   "status": {
+    "label": "Parte afetada",
+    "kind": "affected"
+   },
+   "role": "Fundo privado que garante depósitos de clientes de bancos",
+   "period": "Pagamentos em curso desde 11/2025",
+   "amounts": [
+    "R$ 39,2 bilhões pagos a credores do Master até 25/03/2026",
+    "R$ 44,4 bilhões aportados pelo setor bancário para recompor o fundo"
+   ],
+   "related": [
+    "banco-master"
+   ],
+   "states": [],
+   "summary": "Fundo privado que garante depósitos e investimentos até R$ 250 mil por CPF/CNPJ. Já desembolsou R$ 39,2 bilhões a credores do Master, em um processo que outras reportagens já estimaram poder chegar a R$ 41 bilhões.",
+   "src": [
+    "metropolesfgc",
+    "barbierifgc"
+   ],
+   "joke": "Existe pra te devolver o dinheiro quando o banco quebra. Neste caso, quebrou o recorde do fundo também."
+  },
+  {
+   "id": "rioprevidencia",
+   "name": "Rioprevidência",
+   "aliases": [],
+   "type": "fundo",
+   "status": {
+    "label": "Parte afetada",
+    "kind": "affected"
+   },
+   "role": "Fundo de previdência do estado do Rio de Janeiro",
+   "period": "Exposição identificada em 2025–2026",
+   "amounts": [
+    "R$ 970 milhões aplicados em letras financeiras do Master, sem garantia do FGC"
+   ],
+   "related": [
+    "claudio-castro",
+    "banco-master"
+   ],
+   "states": [
+    "RJ"
+   ],
+   "summary": "Fundo de previdência dos servidores públicos do Rio de Janeiro. Aplicou R$ 970 milhões em letras financeiras do Master — o maior valor entre os fundos públicos identificados no caso, quase metade do total nacional exposto.",
+   "src": [
+    "cnnestados",
+    "contec",
+    "gz8estados",
+    "poder360rpps"
+   ],
+   "joke": "Aplicou quase R$ 1 bilhão da aposentadoria de servidor num banco que prometia rendimento de sonho."
+  },
+  {
+   "id": "amprev",
+   "name": "Amprev",
+   "aliases": [
+    "amprev amapá"
+   ],
+   "type": "fundo",
+   "status": {
+    "label": "Parte afetada",
+    "kind": "affected"
+   },
+   "role": "Fundo de previdência do estado do Amapá",
+   "period": "Exposição identificada em 2025–2026",
+   "amounts": [
+    "R$ 400 milhões aplicados em letras financeiras do Master"
+   ],
+   "related": [
+    "banco-master"
+   ],
+   "states": [
+    "AP"
+   ],
+   "summary": "Fundo de previdência dos servidores públicos do Amapá. Aplicou R$ 400 milhões em letras financeiras do Master.",
+   "src": [
+    "cnnestados",
+    "contec",
+    "poder360rpps"
+   ],
+   "joke": "Fundo de previdência do Amapá também topou o rendimento turbinado."
+  },
+  {
+   "id": "iprev-maceio",
+   "name": "Iprev Maceió",
+   "aliases": [],
+   "type": "fundo",
+   "status": {
+    "label": "Parte afetada",
+    "kind": "affected"
+   },
+   "role": "Instituto de previdência do município de Maceió (AL)",
+   "period": "Exposição identificada em 2025–2026",
+   "amounts": [
+    "R$ 97 milhões aplicados em letras financeiras do Master"
+   ],
+   "related": [
+    "banco-master"
+   ],
+   "states": [
+    "AL"
+   ],
+   "summary": "Instituto de previdência de Maceió, capital de Alagoas. Aplicou R$ 97 milhões em letras financeiras do Master.",
+   "src": [
+    "cnnestados",
+    "contec",
+    "poder360rpps"
+   ],
+   "joke": "Maceió também comprou a promessa dos 140%+ do CDI."
+  },
+  {
+   "id": "institutos-sp",
+   "name": "Institutos de previdência municipais (SP)",
+   "aliases": [
+    "araras",
+    "cajamar",
+    "são roque"
+   ],
+   "type": "fundo",
+   "status": {
+    "label": "Parte afetada",
+    "kind": "affected"
+   },
+   "role": "Institutos de Araras, Cajamar, Santa Rita d’Oeste, Santo Antônio de Posse e São Roque (SP)",
+   "period": "Exposição identificada em 2025–2026",
+   "amounts": [
+    "~R$ 218 milhões no conjunto dos cinco institutos",
+    "R$ 93 milhões só pelo instituto de São Roque"
+   ],
+   "related": [
+    "banco-master"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Institutos de previdência de cinco municípios do interior paulista que aplicaram, juntos, cerca de R$ 218 milhões em títulos ligados ao Master, sem garantia do FGC. Ao todo, 18 institutos de previdência (3 estaduais e 15 municipais) somavam cerca de R$ 1,86–1,9 bilhão de exposição ao banco — nem todos com nome individualmente checado nesta base.",
+   "src": [
+    "cnnestados",
+    "mpcsp",
+    "poder360rpps"
+   ],
+   "joke": "Cinco cidades do interior de SP, um mesmo boleto de decepção."
+  },
+  {
+   "id": "monique-alfradique",
+   "name": "Monique Alfradique",
+   "aliases": [
+    "alan t.i.",
+    "alan ti"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citada",
+    "kind": "affected"
+   },
+   "role": "Atriz; citada em mensagens de Vorcaro sob o codinome “Alan T.I.”",
+   "period": "Instagram invadido em maio de 2024; mensagens reveladas em 2026",
+   "amounts": [],
+   "joke": "Nas mensagens de Vorcaro ela tinha o codinome “Alan T.I.”. Ele que explique o porquê.",
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [],
+   "summary": "Atriz que teve o Instagram invadido por hackers em maio de 2024. Segundo a Polícia Federal, Daniel Vorcaro se envolveu na tentativa de recuperar o perfil dela e aparece, em mensagens do próprio celular, se referindo a ela sob o codinome “Alan T.I.”. As fontes consultadas não apontam qualquer indício de que Monique Alfradique tenha participação nas irregularidades atribuídas a Vorcaro ou ao Banco Master — ela aparece como pessoa citada, não como investigada.",
+   "src": [
+    "band_monique",
+    "metropoles_hackeado",
+    "ndmais_alan",
+    "diariopara_pcc"
+   ]
+  },
+  {
+   "id": "alok",
+   "name": "Alok",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "affected"
+   },
+   "role": "DJ e produtor musical; atração contratada para festa de Vorcaro",
+   "period": "2023",
+   "amounts": [],
+   "joke": "Tocou na festa de 15 anos paga com o mesmo dinheiro que prometia 140%+ do CDI.",
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [],
+   "summary": "DJ contratado como atração da festa de 15 anos da filha de Daniel Vorcaro, em 2023, numa mansão em Nova Lima (MG). Não há qualquer indicação de participação nas irregularidades do caso — aparece aqui só como parte do cenário.",
+   "src": [
+    "infomoney_luxo"
+   ]
+  },
+  {
+   "id": "dennis-dj",
+   "name": "Dennis DJ",
+   "aliases": [
+    "dennis"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "affected"
+   },
+   "role": "DJ e produtor musical; atração contratada para festa de Vorcaro",
+   "period": "2023",
+   "amounts": [],
+   "joke": "Também subiu no palco da festa de milhões — o CDB, esse, não rodou tanto.",
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [],
+   "summary": "DJ contratado como atração da festa de 15 anos da filha de Daniel Vorcaro, em 2023. Não há qualquer indicação de participação nas irregularidades do caso — aparece aqui só como parte do cenário.",
+   "src": [
+    "infomoney_luxo"
+   ]
+  },
+  {
+   "id": "the-chainsmokers",
+   "name": "The Chainsmokers",
+   "aliases": [
+    "chainsmokers"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citada",
+    "kind": "affected"
+   },
+   "role": "Dupla de DJs/produtores norte-americana; atração contratada para festa de Vorcaro",
+   "period": "2023",
+   "amounts": [],
+   "joke": "Vieram dos EUA tocar na festa de 15 anos mais cara do noticiário bancário brasileiro.",
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [],
+   "summary": "Dupla de DJs contratada como atração internacional da festa de 15 anos da filha de Daniel Vorcaro, em 2023. Não há qualquer indicação de participação nas irregularidades do caso — aparecem aqui só como parte do cenário.",
+   "src": [
+    "infomoney_luxo"
+   ]
+  },
+  {
+   "id": "dias-toffoli",
+   "name": "Dias Toffoli",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "affected"
+   },
+   "role": "Ministro do Supremo Tribunal Federal (STF)",
+   "period": "Evento em Londres, abril de 2024; reportagens em 2026",
+   "amounts": [],
+   "joke": "Também bebeu o uísque de R$ 3 milhões que o banco pagou em Londres. A que título estava lá, as fontes não dizem.",
+   "related": [
+    "alexandre-de-moraes",
+    "paulo-gonet",
+    "andrei-rodrigues",
+    "daniel-vorcaro"
+   ],
+   "states": [],
+   "summary": "Ministro do STF. Reportagens o incluem entre os cerca de 40 convidados de uma degustação do whisky Macallan, avaliada em R$ 3,2 milhões, paga pelo Banco Master num clube exclusivo de Londres em abril de 2024 — evento que reuniu autoridades como Alexandre de Moraes, Paulo Gonet e o diretor-geral da PF Andrei Rodrigues. As fontes consultadas não atribuem a ele nenhuma irregularidade específica além da presença no evento.",
+   "src": [
+    "poder360_macallan",
+    "ndmais_whisky",
+    "revistaforum_luxo"
+   ]
+  },
+  {
+   "id": "nikolas-ferreira",
+   "name": "Nikolas Ferreira",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Deputado federal (PL-MG)",
+   "period": "Áudio de 30/03/2025, revelado por reportagens em 2026",
+   "amounts": [],
+   "joke": "Chamava o banqueiro investigado de “Dani” e “lindão” — e ainda pediu ajuda pra liberar um ativo de minério.",
+   "related": [
+    "daniel-vorcaro",
+    "alexandre-de-moraes"
+   ],
+   "states": [
+    "MG"
+   ],
+   "summary": "Deputado federal por Minas Gerais. Em áudio enviado por WhatsApp em 30 de março de 2025, revelado por reportagens em 2026, pediu a Daniel Vorcaro ajuda para liberar um ativo de minério de uma empresa ligada a seu ex-chefe de gabinete, Thiago Rodrigues de Faria — tratando o banqueiro com informalidade e se desculpando por críticas públicas que havia feito a um evento de luxo em Londres patrocinado pelo banco. Em mensagens a um empresário, Vorcaro afirmou ter financiado passagens aéreas do deputado. Nikolas também divulgou, em setembro de 2026, um vídeo reunindo trechos de um relatório da PF sobre a relação entre Vorcaro e o ministro Alexandre de Moraes.",
+   "src": [
+    "cnn_nikolas",
+    "brasildefato_nikolas",
+    "agenciabrasil_nikolas",
+    "revistaforum_nikolas",
+    "poder360_nikolas"
+   ]
+  }
+ ],
+ "stateInfo": {
+  "RJ": {
+   "value": 970000000,
+   "entities": [
+    "rioprevidencia",
+    "claudio-castro"
+   ],
+   "note": "Maior valor público identificado no caso."
+  },
+  "AP": {
+   "value": 400000000,
+   "entities": [
+    "amprev"
+   ]
+  },
+  "SP": {
+   "value": 218000000,
+   "entities": [
+    "banco-master",
+    "reag-investimentos",
+    "institutos-sp"
+   ],
+   "note": "Sede das duas principais instituições do esquema."
+  },
+  "AL": {
+   "value": 97000000,
+   "entities": [
+    "iprev-maceio"
+   ]
+  },
+  "DF": {
+   "entities": [
+    "brb",
+    "paulo-henrique-costa",
+    "roberio-mangueira",
+    "ibaneis-rocha",
+    "paulo-sergio-neves",
+    "belline-santana",
+    "roberto-campos-neto",
+    "gabriel-galipolo",
+    "paulo-gonet",
+    "andrei-rodrigues"
+   ],
+   "note": "Sede do BRB, do Banco Central, da PGR, da PF e do governo do DF."
+  },
+  "PI": {
+   "entities": [
+    "ciro-nogueira"
+   ]
+  },
+  "BA": {
+   "entities": [
+    "jaques-wagner",
+    "joao-roma",
+    "roberta-roma",
+    "augusto-lima",
+    "banco-pleno"
+   ],
+   "note": "Origem de Augusto “Guga” Lima (ex-sócio do Master) e de parte da “bancada do Master” no Congresso."
+  },
+  "PB": {
+   "entities": [
+    "hugo-motta"
+   ],
+   "note": "Terreno comprado com empréstimo do Master fica em João Pessoa."
+  }
+ }
+}

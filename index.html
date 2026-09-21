@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vorcarômetro</title>
+<meta name="description" content="Digite um nome e descubra, com humor, se ele aparece no caso Banco Master/Vorcaro — status, resumo, fontes e mapa de alcance por estado.">
+<meta property="og:title" content="Vorcarômetro">
+<meta property="og:description" content="Digite um nome e descubra, com humor, se ele aparece no caso Banco Master/Vorcaro.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://vorcaromet.ro/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://vorcaromet.ro/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vorcarômetro">
+<meta name="twitter:description" content="Digite um nome e descubra, com humor, se ele aparece no caso Banco Master/Vorcaro.">
+<meta name="twitter:image" content="https://vorcaromet.ro/og-image.png">
+<meta name="theme-color" content="#141210">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%B8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf6; --surface:#ffffff; --surface-2:#f2f0e6;
+  --ink:#0b0b0b; --ink-2:#4a4944; --ink-muted:#83817a;
+  --border:#0b0b0b; --gridline:#e4e2d8;
+  --gold:#d6a337; --gold-ink:#1c1206; --link:#8a0f24;
+  --red:#d03b3b; --red-ink:#ffffff;
+  --blue:#2a78d6; --blue-ink:#ffffff;
+  --map-none:#efeee9; --map-none-line:#d8d6cd;
+  --linked-bg:#efe9fb; --linked-line:#4a3aa7; --linked-ink:#3c2f8c;
+  --seq-1:#6da7ec; --seq-2:#2a78d6; --seq-3:#1c5cab; --seq-4:#0d366b;
+  --font-display:'Anton',Impact,'Arial Narrow',sans-serif;
+  --font-sans:'Work Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0d0d0d; --surface:#1a1a19; --surface-2:#232321;
+    --ink:#f5f5f0; --ink-2:#c3c2b7; --ink-muted:#8f8d86;
+    --border:#f5f5f0; --gridline:#2c2c2a;
+    --map-none:#232321; --map-none-line:#34342f;
+    --linked-bg:#241f36; --linked-line:#9085e9; --linked-ink:#c3baf7;
+    --link:#ff8577;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d0d0d; --surface:#1a1a19; --surface-2:#232321;
+  --ink:#f5f5f0; --ink-2:#c3c2b7; --ink-muted:#8f8d86;
+  --border:#f5f5f0; --gridline:#2c2c2a;
+  --map-none:#232321; --map-none-line:#34342f;
+  --linked-bg:#241f36; --linked-line:#9085e9; --linked-ink:#c3baf7;
+  --link:#ff8577;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;}
+body{
+  background-color:var(--bg); color:var(--ink); font-family:var(--font-sans); margin:0; padding-inline:16px; line-height:1.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
+.wrap{max-width:760px; margin:0 auto;}
+.stripe{height:6px; background:var(--red); box-shadow:0 4px 0 var(--gold); margin-inline:-16px;}
+h1,h2{font-family:var(--font-display); font-weight:400; text-wrap:balance; margin:0; letter-spacing:0.01em;}
+.mono{font-family:var(--font-mono);}
+a{color:var(--link); text-decoration-thickness:2px;}
+button{font-family:var(--font-sans);}
+
+header{background:#141210; border-radius:10px; margin-top:20px; padding:20px 22px 16px; border-bottom:7px solid var(--red); box-shadow:6px 6px 0 var(--gold);}
+.header-row{display:flex; align-items:center; justify-content:space-between; gap:10px;}
+header h1{font-size:2.7rem; line-height:0.92; color:#f2ede2;}
+.theme-toggle{flex-shrink:0; background:none; border:2px solid #4a453c; color:#f2ede2; border-radius:8px; padding:8px 10px; font-size:1.05rem; cursor:pointer; line-height:1;}
+.theme-toggle:hover{border-color:var(--gold);}
+
+.ticker-wrap{background:#141210; border-radius:8px; margin-top:10px; overflow:hidden; border:2px solid var(--border); box-shadow:3px 3px 0 var(--border);}
+.ticker-track{display:flex; width:max-content; white-space:nowrap; animation:ticker-scroll 34s linear infinite;}
+.ticker-track span{font-family:var(--font-mono); font-size:0.74rem; letter-spacing:0.03em; color:#e8e6da; padding:7px 28px; text-transform:uppercase;}
+.ticker-track span::before{content:"★"; color:var(--gold); margin-right:10px;}
+@keyframes ticker-scroll{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+@media (prefers-reduced-motion: reduce){ .ticker-track{animation:none;} }
+
+section{margin-block:34px;}
+.block-title{font-size:1.3rem; margin-bottom:6px;}
+.block-note{color:var(--ink-2); font-size:0.86rem; margin-bottom:16px; max-width:56ch;}
+
+.panel{border:3px solid var(--border); border-radius:10px; background:var(--surface); padding:20px; box-shadow:6px 6px 0 var(--border);}
+
+/* placar widget */
+.placar{background:#0b0b0b; color:var(--gold); border:3px solid var(--border); border-radius:10px; padding:22px; text-align:center; box-shadow:6px 6px 0 var(--gold);}
+.placar .label{font-family:var(--font-mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:#e8e6da;}
+.placar .num{font-family:var(--font-display); font-size:4.2rem; line-height:1; margin:8px 0; font-variant-numeric:tabular-nums;}
+.placar .legend{font-family:var(--font-mono); font-size:0.78rem; color:#e8e6da;}
+
+/* busca */
+.search-form{display:flex; gap:10px; flex-wrap:wrap;}
+.search-form input{
+  flex:1 1 220px; font:inherit; font-size:1rem; padding:13px 14px; border:3px solid var(--border);
+  border-radius:8px; background:var(--surface); color:var(--ink);
+}
+.search-form input:focus{outline:3px solid var(--blue); outline-offset:1px;}
+.lucky-row{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:12px;}
+.trending{display:flex; flex-wrap:wrap; gap:7px; margin-top:12px;}
+.trending-label{font-family:var(--font-mono); font-size:0.68rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); width:100%; margin-bottom:2px;}
+.trending-chip{font:inherit; font-size:0.78rem; padding:5px 11px; border-radius:999px; border:2px solid var(--border); background:var(--surface); color:var(--ink); cursor:pointer; -webkit-appearance:none; appearance:none;}
+.trending-chip:hover{background:var(--gold); color:var(--gold-ink); border-color:var(--gold);}
+.social-counter{font-family:var(--font-mono); font-size:0.74rem; color:var(--ink-muted); margin-top:10px;}
+.social-counter strong{color:var(--ink);}
+.full-list{margin-top:12px; border:2px solid var(--border); border-radius:8px; background:var(--surface); max-height:360px; overflow-y:auto;}
+.full-list-title{font-family:var(--font-mono); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-muted); padding:10px 14px; border-bottom:1px solid var(--gridline);}
+.full-list-item{padding:9px 14px; border-bottom:1px solid var(--gridline); display:flex; justify-content:space-between; align-items:baseline; gap:10px; cursor:pointer;}
+.full-list-item:last-child{border-bottom:none;}
+.full-list-item:hover{background:var(--surface-2);}
+.full-list-item .fl-name{font-weight:600; font-size:0.86rem;}
+.full-list-item .fl-role{font-size:0.72rem; color:var(--ink-muted); text-align:right; max-width:52%;}
+.btn{
+  font-family:var(--font-sans); font-weight:700; font-size:0.95rem; padding:13px 20px; border-radius:8px;
+  border:3px solid var(--border); background:var(--gold); color:var(--gold-ink); cursor:pointer;
+  box-shadow:4px 4px 0 var(--border); transition:transform .06s, box-shadow .06s;
+}
+.btn:active{transform:translate(3px,3px); box-shadow:1px 1px 0 var(--border);}
+.btn.ghost{background:var(--surface); color:var(--ink);}
+.btn.small{padding:8px 14px; font-size:0.82rem; box-shadow:3px 3px 0 var(--border);}
+.btn:disabled{opacity:0.5; cursor:default;}
+
+.loading{display:none; margin-top:18px; align-items:center; gap:12px; flex-wrap:wrap;}
+.loading.active{display:flex;}
+.spinner{width:22px; height:22px; border-radius:50%; border:4px solid var(--surface-2); border-top-color:var(--blue); animation:spin 0.8s linear infinite; flex-shrink:0;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.loading-msg{font-family:var(--font-mono); font-size:0.86rem; color:var(--ink-2);}
+.loading-bar{height:8px; background:var(--surface-2); border:2px solid var(--border); border-radius:6px; overflow:hidden; flex:1 1 100%;}
+.loading-bar-fill{height:100%; width:0%; background:var(--gold); transition:width 2.6s cubic-bezier(.15,.6,.3,1);}
+
+.results{margin-top:22px;}
+.result-negative{border:3px solid var(--border); border-radius:10px; padding:20px; background:var(--surface-2);}
+.result-negative h3{font-family:var(--font-sans); font-weight:700; font-size:1.1rem; margin:0 0 8px;}
+.result-negative .followup{font-size:0.86rem; color:var(--ink-2); margin-top:10px;}
+.egg-banner{border:3px dashed var(--gold); border-radius:10px; padding:16px; margin-bottom:14px; background:var(--surface-2); font-family:var(--font-mono); font-size:0.86rem; text-align:center;}
+
+.result-positive-head{font-family:var(--font-display); font-size:1.15rem; margin-bottom:14px;}
+.card{border:3px solid var(--border); border-radius:10px; background:var(--surface); padding:18px; margin-bottom:14px;}
+.card-top{display:flex; align-items:flex-start; justify-content:space-between; gap:10px; flex-wrap:wrap;}
+.card-name{font-family:var(--font-sans); font-weight:700; font-size:1.05rem;}
+.card-role{font-size:0.84rem; color:var(--ink-2); margin-top:2px;}
+.boss-card{border-color:var(--gold); box-shadow:0 0 0 2px var(--gold) inset;}
+.boss-badge{display:inline-flex; align-items:center; gap:4px; margin-left:9px; padding:2px 8px 2px 6px; border-radius:999px; background:var(--gold); color:var(--gold-ink); font-family:var(--font-mono); font-size:0.62rem; font-weight:700; letter-spacing:0.04em; vertical-align:middle; white-space:nowrap;}
+.card-joke{font-family:var(--font-mono); font-style:italic; font-size:0.82rem; color:var(--link); margin-top:8px; max-width:48ch;}
+.status{font-size:0.68rem; font-weight:700; padding:3px 9px; white-space:nowrap; text-transform:uppercase; letter-spacing:0.02em; border:2px solid var(--border);
+  border-radius:3px 11px 5px 12px/10px 4px 13px 5px; transform:rotate(-2.5deg); box-shadow:1px 1px 0 rgba(0,0,0,.15);}
+.status-critical{background:var(--red); color:var(--red-ink);}
+.status-warning{background:var(--gold); color:var(--gold-ink); transform:rotate(2deg);}
+.status-affected{background:var(--surface); color:var(--blue); border-color:var(--blue); transform:rotate(-1.5deg);}
+.figurante-note{font-size:0.8rem; font-style:italic; color:var(--ink-muted); margin-top:8px;}
+.dym{display:flex; align-items:center; gap:10px; flex-wrap:wrap; background:var(--surface); border:2px solid var(--gold); border-radius:8px; padding:10px 12px; margin-bottom:14px; font-size:0.88rem;}
+.detail-row{margin-top:12px; font-size:0.88rem; color:var(--ink-2);}
+.detail-label{font-size:0.68rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-muted); margin-bottom:4px;}
+.amount-list{margin:0; padding-left:18px;}
+.amount-list li{font-family:var(--font-mono); font-size:0.8rem; margin-bottom:3px; color:var(--ink);}
+.related-chips{display:flex; flex-wrap:wrap; gap:6px;}
+.related-chip{font:inherit; font-size:0.76rem; padding:4px 9px; border-radius:6px; border:2px solid var(--border); background:var(--surface-2); color:var(--ink); cursor:pointer; -webkit-appearance:none; appearance:none;}
+.related-chip:hover{background:var(--gold); color:var(--gold-ink); border-color:var(--gold);}
+.source-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:5px;}
+.source-list a{font-size:0.78rem;}
+
+/* card compartilhavel */
+.share-block{margin-top:16px; display:none;}
+.share-block.active{display:block;}
+.share-canvas-wrap{border:3px solid var(--border); border-radius:10px; overflow:hidden; max-width:320px; margin-bottom:12px;}
+.share-canvas-wrap canvas{width:100%; height:auto; display:block;}
+.size-toggle{display:flex; gap:8px; margin-bottom:10px;}
+.share-actions{display:flex; gap:8px; flex-wrap:wrap; align-items:center;}
+.toast{font-size:0.8rem; color:var(--blue); font-family:var(--font-mono);}
+
+/* gerador de desculpas */
+.quote-box{position:relative; border:3px solid var(--border); border-radius:10px; background:var(--surface-2); padding:28px 22px; overflow:hidden;}
+.quote-box::before{content:"“"; position:absolute; top:-30px; left:6px; font-family:var(--font-display); font-size:9rem; color:var(--gold); opacity:0.5; line-height:1;}
+.quote-text{position:relative; font-size:1.25rem; font-weight:600; font-style:italic; max-width:52ch;}
+.quote-foot{position:relative; font-family:var(--font-mono); font-size:0.72rem; color:var(--ink-muted); margin-top:12px;}
+.excuse-actions{display:flex; gap:10px; margin-top:16px; flex-wrap:wrap;}
+
+/* mapa */
+.map-layout{display:flex; gap:24px; flex-wrap:wrap; align-items:flex-start;}
+.map-svg-wrap{flex:1 1 300px; min-width:260px; max-width:400px;}
+.map-svg-wrap svg{width:100%; height:auto; display:block;}
+.hex{cursor:pointer;}
+.hex polygon{stroke:var(--bg); stroke-width:2px; transition:opacity .12s;}
+.hex:hover polygon{opacity:0.82;}
+.hex.selected polygon{stroke:var(--ink); stroke-width:2.5px;}
+.hex text{font-family:var(--font-mono); font-size:11px; font-weight:600; pointer-events:none;}
+.hex:focus{outline:none;}
+.hex.has-value polygon{animation:hexPulse 2.8s ease-in-out infinite;}
+@keyframes hexPulse{0%,100%{opacity:1;} 50%{opacity:.72;}}
+@media (prefers-reduced-motion: reduce){ .hex.has-value polygon{animation:none;} }
+.map-tooltip{position:fixed; pointer-events:none; z-index:20; background:#141210; color:#f2ede2; font-family:var(--font-mono); font-size:0.74rem; padding:6px 10px; border-radius:6px; border:2px solid var(--gold); transform:translate(-50%,-120%); white-space:nowrap; display:none;}
+.map-tooltip.active{display:block;}
+.legend{display:flex; flex-direction:column; gap:8px; font-size:0.76rem; color:var(--ink-2); margin-top:14px;}
+.legend-row{display:flex; align-items:center; gap:8px;}
+.legend-swatch{width:15px; height:15px; border-radius:3px; flex-shrink:0; border:1px solid var(--border);}
+.legend-ramp{display:flex; gap:2px;}
+.legend-ramp span{width:13px; height:13px; border-radius:2px; display:inline-block;}
+.state-panel{flex:1 1 260px; min-width:240px; border:3px solid var(--border); border-radius:10px; background:var(--surface); padding:16px;}
+.state-panel h3{font-family:var(--font-sans); font-weight:700; font-size:1.02rem; margin-bottom:4px;}
+.state-value{font-family:var(--font-mono); font-size:1.25rem; margin:6px 0; color:var(--blue);}
+.state-note{font-size:0.8rem; color:var(--ink-muted); margin-bottom:8px;}
+
+footer{border-top:3px solid var(--border); padding-block:22px 40px; margin-top:10px; font-size:0.82rem; color:var(--ink-2);}
+footer .disclaimer{font-weight:600; color:var(--ink); max-width:60ch;}
+footer .cross-link{margin-top:12px;}
+details.src{margin-top:14px;}
+details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
+.src-biblio{columns:2; column-gap:24px; font-size:0.74rem; color:var(--ink-muted); margin-top:10px;}
+.src-biblio div{break-inside:avoid; margin-bottom:6px;}
+.src-biblio a{color:var(--ink-muted);}
+@media (max-width:600px){ .src-biblio{columns:1;} header h1{font-size:2rem;} .placar .num{font-size:3.2rem;} }
+.loading-data{display:none; align-items:center; gap:10px; padding:16px 0; font-family:var(--font-mono); font-size:0.82rem; color:var(--ink-muted);}
+.loading-data.active{display:flex;}
+.data-error{display:none; border:2px solid var(--red); border-radius:8px; padding:14px; background:var(--surface); color:var(--red); font-size:0.88rem; margin-top:14px;}
+.data-error.active{display:block;}
+</style>
+</head>
+<body>
+
+<div class="stripe"></div>
+<div class="wrap">
+
+<header>
+  <div class="header-row">
+    <h1>VORCARÔMETRO</h1>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar modo apuração (tema escuro)" title="Modo Apuração">🔦</button>
+  </div>
+</header>
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<section id="placar">
+  <div class="placar">
+    <div class="label">Dias sem novidade no caso Master</div>
+    <div class="num tabular" id="placarNum">—</div>
+    <div class="legend" id="placarLegend">carregando…</div>
+  </div>
+</section>
+
+<section id="busca">
+  <div class="block-title">Vorcarizar um nome</div>
+  <div class="block-note">Não achou nada e acha que deveria? Manda pra gente com o botão "sugerir" que aparece no resultado.</div>
+  <form class="search-form" id="searchForm">
+    <input type="text" id="searchInput" placeholder="Digite um nome (qualquer um, a chance é alta)" autocomplete="off">
+    <button class="btn" type="submit" id="searchBtn" disabled>Vorcarizar</button>
+  </form>
+  <div class="lucky-row">
+    <button class="btn ghost small" id="luckyBtn" type="button" disabled>Estou com sorte</button>
+    <button class="btn ghost small" id="fullListBtn" type="button" disabled>Ver lista completa</button>
+  </div>
+  <div class="trending" id="trendingBox"></div>
+  <div class="social-counter" id="socialCounter"></div>
+  <div class="full-list" id="fullListBox" hidden></div>
+  <div class="loading-data" id="dataLoading"><div class="spinner"></div><span>Carregando base…</span></div>
+  <div class="data-error" id="dataError"></div>
+  <div class="loading" id="loadingBox" aria-live="polite">
+    <div class="spinner"></div>
+    <div class="loading-msg" id="loadingMsg"></div>
+    <div class="loading-bar"><div class="loading-bar-fill" id="loadingBarFill"></div></div>
+  </div>
+  <div class="results" id="results" aria-live="polite" aria-atomic="true"></div>
+</section>
+
+<section id="desculpas">
+  <div class="block-title">Caso você esteja no esquema, clique aqui para uma desculpa legal</div>
+  <div class="quote-box">
+    <div class="quote-text" id="excuseText">"Toda declaração à imprensa começa aqui."</div>
+    <div class="quote-foot">Desculpa não reconhecida pelo FGC.</div>
+  </div>
+  <div class="excuse-actions">
+    <button class="btn" id="excuseBtn">Gerar minha desculpa</button>
+    <button class="btn ghost small" id="copyExcuseBtn">Copiar desculpa</button>
+    <button class="btn ghost small" id="shareExcuseBtn">Compartilhar desculpa</button>
+    <span class="toast" id="excuseToast"></span>
+  </div>
+</section>
+
+<section id="mapa">
+  <div class="block-title">Bacia Hidrográfica do Master</div>
+  <div class="block-note">Onde passam os rios de dinheiro — ou pelo menos onde encontramos registro público deles. Azul mede recursos públicos expostos em R$; tracejado marca conexão documentada sem valor público quantificado; cinza é ausência de registro nesta base, não ausência de exposição real.</div>
+  <div class="map-layout">
+    <div class="map-svg-wrap">
+      <svg id="brMap" viewBox="0 0 271 414" role="img" aria-label="Mapa hexagonal dos estados do Brasil"></svg>
+      <div class="map-tooltip" id="mapTooltip"></div>
+      <div class="legend">
+        <div class="legend-row"><span class="legend-ramp"><span style="background:var(--seq-1)"></span><span style="background:var(--seq-2)"></span><span style="background:var(--seq-3)"></span><span style="background:var(--seq-4)"></span></span><span>Recursos públicos expostos: de R$ 97 mi (AL) a R$ 970 mi (RJ)</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:var(--linked-bg); border-color:var(--linked-line)"></span><span>Conexão documentada, sem valor quantificado</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none)"></span><span>Sem registro nesta base</span></div>
+      </div>
+    </div>
+    <div class="state-panel" id="statePanel"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="disclaimer">Este site é humor com fonte. Aparecer aqui não é condenação; não aparecer não é atestado de santidade. Consulte os links originais.</div>
+  <div class="cross-link">Quer o histórico completo, sério e sem piada? Veja o <a href="https://claude.ai/artifact/NkhacCL3Cm4RFkDiGmHUXu" target="_blank" rel="noopener">Painel Caso Master</a>.</div>
+  <details class="src">
+    <summary>Fontes usadas nesta ferramenta</summary>
+    <div class="src-biblio" id="sourceBiblio"></div>
+    <div style="margin-top:10px;">Fontes públicas mais amplas para quem quiser apurar por conta própria: CADPREV (Ministério da Previdência), comunicados do Banco Central e do FGC, doações eleitorais no TSE, e processos/decisões públicas — nenhuma delas usada diretamente nos dados acima, listadas aqui como ponto de partida.</div>
+    <div style="margin-top:10px;">Essa base é só curada à mão — sem busca automática nem IA plugada nela. Nome que não está aqui só entra se alguém sugerir (pelo botão "sugerir" no resultado) e quem mantém a ferramenta confirmar a fonte.</div>
+  </details>
+</footer>
+
+</div>
+
+<script>
+/* ---------- dados reais, com fonte (mesma base do Painel Caso Master) ---------- */
+let SRC = {};
+
+let ENTITIES = [];
+
+const BR_HEX = [
+ {uf:'AC',name:'Acre',row:3,col:1},{uf:'RO',name:'Rondônia',row:4,col:2},{uf:'AM',name:'Amazonas',row:3,col:2},
+ {uf:'RR',name:'Roraima',row:2,col:2},{uf:'PA',name:'Pará',row:2,col:3},{uf:'AP',name:'Amapá',row:1,col:3},
+ {uf:'MT',name:'Mato Grosso',row:5,col:2},{uf:'TO',name:'Tocantins',row:3,col:3},{uf:'MA',name:'Maranhão',row:3,col:4},
+ {uf:'PI',name:'Piauí',row:4,col:4},{uf:'CE',name:'Ceará',row:3,col:5},{uf:'RN',name:'Rio Grande do Norte',row:3,col:6},
+ {uf:'PB',name:'Paraíba',row:4,col:6},{uf:'PE',name:'Pernambuco',row:4,col:5},{uf:'BA',name:'Bahia',row:4,col:3},
+ {uf:'SE',name:'Sergipe',row:5,col:6},{uf:'AL',name:'Alagoas',row:5,col:5},{uf:'GO',name:'Goiás',row:5,col:3},
+ {uf:'DF',name:'Distrito Federal',row:5,col:4},{uf:'MG',name:'Minas Gerais',row:6,col:4},{uf:'ES',name:'Espírito Santo',row:7,col:3},
+ {uf:'MS',name:'Mato Grosso do Sul',row:6,col:2},{uf:'SP',name:'São Paulo',row:6,col:3},{uf:'RJ',name:'Rio de Janeiro',row:7,col:4},
+ {uf:'PR',name:'Paraná',row:7,col:2},{uf:'SC',name:'Santa Catarina',row:8,col:2},{uf:'RS',name:'Rio Grande do Sul',row:9,col:2}
+];
+let STATE_INFO = {};
+
+/* ---------- placar ---------- */
+const ULTIMA_NOVIDADE = "2026-09-18"; // atualizar manualmente a cada notícia nova
+const PLACAR_LEGENDAS = ["Recorde histórico: 3 dias.","O número é zerado manualmente a cada notícia nova. Ele fica em zero com frequência.","Nossa equipe de zeragem trabalha em regime de plantão."];
+function countUp(el, target, duration){
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ el.textContent = target; return; }
+  const start = performance.now();
+  function tick(now){
+    const t = Math.min(1, (now-start)/duration);
+    const eased = 1-Math.pow(1-t,3);
+    el.textContent = Math.round(eased*target);
+    if(t<1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+function renderPlacar(){
+  const hoje = new Date(); const ultima = new Date(ULTIMA_NOVIDADE+"T00:00:00");
+  const dias = Math.max(0, Math.floor((hoje - ultima) / 86400000));
+  countUp(document.getElementById('placarNum'), dias, 650);
+  document.getElementById('placarLegend').textContent = dias === 0 ? "Hoje teve novidade. Obviamente." : PLACAR_LEGENDAS[Math.floor(Math.random()*PLACAR_LEGENDAS.length)];
+}
+renderPlacar();
+
+/* ---------- tema manual ---------- */
+function applyTheme(t){
+  if(t){ document.documentElement.setAttribute('data-theme', t); } else { document.documentElement.removeAttribute('data-theme'); }
+  const btn = document.getElementById('themeToggle');
+  if(btn) btn.setAttribute('aria-label', t==='dark' ? 'Voltar ao modo normal' : 'Ativar modo apuração (tema escuro)');
+}
+(function initTheme(){
+  try{ const saved = localStorage.getItem('vorca_theme'); if(saved) applyTheme(saved); }catch(e){}
+})();
+document.getElementById('themeToggle').addEventListener('click', ()=>{
+  const current = document.documentElement.getAttribute('data-theme') || (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const next = current==='dark' ? 'light' : 'dark';
+  applyTheme(next);
+  try{ localStorage.setItem('vorca_theme', next); }catch(e){}
+  buzz(8);
+});
+
+/* ---------- ticker de manchetes ---------- */
+const TICKER_ITEMS = ["ÚLTIMA HORA: FGC AINDA CONTANDO OS ZEROS","EDIÇÃO DE HOJE: NINGUÉM SABE DE NADA","EXCLUSIVO: CDB A 140% DO CDI NÃO ERA MILAGRE","BASTIDORES: A LISTA DE CONVIDADOS SÓ CRESCE","REPERCUSSÃO: TODO MUNDO 'SÓ FOI NO EVENTO'","PLANTÃO: MAIS UMA DELAÇÃO A CAMINHO, PROVAVELMENTE"];
+(function initTicker(){
+  const track = document.getElementById('tickerTrack');
+  const items = [...TICKER_ITEMS, ...TICKER_ITEMS].map(t=>'<span>'+t+'</span>').join('');
+  track.innerHTML = items;
+})();
+
+/* ---------- contador social (local, cosmético) ---------- */
+function socialCounter(){
+  try{
+    const key = 'vorca_visit_rank';
+    const today = new Date().toISOString().slice(0,10);
+    let data = JSON.parse(localStorage.getItem(key)||'null');
+    if(!data || data.day!==today){
+      const hoje = new Date();
+      const base = 640 + hoje.getHours()*47 + hoje.getDate()*13;
+      data = {day:today, n: base + Math.floor(Math.random()*40)};
+      localStorage.setItem(key, JSON.stringify(data));
+    }
+    return data.n;
+  }catch(e){ return 700 + Math.floor(Math.random()*300); }
+}
+document.getElementById('socialCounter').innerHTML = 'Você é a pessoa nº <strong>'+socialCounter().toLocaleString('pt-BR')+'</strong> a vorcarizar hoje.';
+
+/* ---------- vibração tátil (mobile) ---------- */
+function buzz(ms){ try{ if(navigator.vibrate) navigator.vibrate(ms); }catch(e){} }
+
+/* ---------- gerador de desculpas ---------- */
+const DESCULPAS = ["Só tirei uma foto.","Era um evento beneficente.","Assinei sem ler.","Nem sabia que ele era banqueiro.","Achei que 140% do CDI era normal.","Fui pelo buffet.","Meu assessor que cuidava disso.","Eu estava lá, mas em outra mesa.","Conheço ele só de vista. De vista de iate.","Foi uma reunião institucional.","Nunca vi mais gordo. Nem mais rico.","Não me recordo.","Minha agenda é pública. Essa parte, não.","Recebi, mas devolvi. Em espírito.","Todos os procedimentos foram seguidos, exceto os que não foram.","Confio plenamente na Justiça. Principalmente na demora dela.","Era um jantar entre amigos. Amigos com CNPJ.","Fui convidado, fui, comi e fui embora. Assinei algo no caminho."];
+let lastExcuse = -1;
+function newExcuse(){
+  let i; do{ i = Math.floor(Math.random()*DESCULPAS.length); }while(i===lastExcuse && DESCULPAS.length>1);
+  lastExcuse = i;
+  document.getElementById('excuseText').textContent = '"'+DESCULPAS[i]+'"';
+  document.getElementById('excuseBtn').textContent = 'Essa não colou. Outra.';
+  buzz(8);
+}
+document.getElementById('excuseBtn').addEventListener('click', newExcuse);
+document.getElementById('copyExcuseBtn').addEventListener('click', async ()=>{
+  const txt = document.getElementById('excuseText').textContent;
+  const toast = document.getElementById('excuseToast');
+  try{ await navigator.clipboard.writeText(txt); toast.textContent = 'Copiado!'; }
+  catch(e){ toast.textContent = 'Não deu para copiar automaticamente — selecione o texto.'; }
+  setTimeout(()=>toast.textContent='', 2500);
+});
+document.getElementById('shareExcuseBtn').addEventListener('click', async ()=>{
+  const txt = document.getElementById('excuseText').textContent;
+  const toast = document.getElementById('excuseToast');
+  if(navigator.share){
+    try{ await navigator.share({title:'Vorcarômetro', text: txt}); return; }catch(e){}
+  }
+  try{ await navigator.clipboard.writeText(txt); toast.textContent = 'Compartilhamento direto indisponível — copiado para você colar.'; }
+  catch(e){ toast.textContent = 'Não deu para compartilhar — selecione o texto.'; }
+  setTimeout(()=>toast.textContent='', 3500);
+});
+
+/* ---------- busca ---------- */
+const brl = n => new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0}).format(n);
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+const byId = id => ENTITIES.find(e=>e.id===id);
+const LOADING_MSGS = ["Seguindo o rastro de um CDB a 140% do CDI…","Contando os zeros. Ainda contando…","Consultando o FGC (ele já está acostumado)…","Descendo o rio de dinheiro de boia…","Abrindo a pasta de precatórios. A pasta é grande.","A Polícia Federal chegou primeiro, mas estamos quase lá…","Separando investigado, citado e 'só tirou uma foto'…","Conferindo listas de convidados de festas que ninguém lembra de ter ido…","Rendimento desta busca: 0%. Paciência: 100% do CDI."];
+const NEG_MSGS = ["Nada encontrado. Parabéns: você achou uma das raras pessoas públicas do Brasil sem ligação conhecida com o Master. Estatisticamente, é mais improvável que aquele CDB ter dado certo.","Zero conexões. Tire um print, isso pode virar documento histórico.","Nenhum vínculo encontrado. Ou é uma pessoa íntegra, ou ainda não chegou a próxima fase da operação."];
+const FOLLOWUP_MSGS = ["Resultado válido até a próxima manchete. Volte em uns dias, o noticiário deste caso rende mais rápido que o Master prometia.","Hoje não. Mas aqui a delação de amanhã é o spoiler de depois de amanhã."];
+const SHARE_TEMPLATES = ["{nome} está limpo no Vorcarômetro. (Por enquanto.)","{nome}: nenhuma ligação com o Master encontrada. Resultado válido até a próxima fase da operação.","{nome} passou no Vorcarômetro. Um milagre estatístico."];
+
+function shuffledFrom(arr){ const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
+function sleep(ms){ return new Promise(r=>setTimeout(r,ms)); }
+
+const SUGESTOES_EMAIL = "vorcarometro@gmail.com";
+function sugerirLink(nome){
+  const assunto = encodeURIComponent('Sugestão pro Vorcarômetro: ' + nome);
+  const corpo = encodeURIComponent('Nome: ' + nome + '\nPor que essa pessoa/instituição deveria entrar na base:\nFonte (link obrigatório):\n');
+  return 'mailto:' + SUGESTOES_EMAIL + '?subject=' + assunto + '&body=' + corpo;
+}
+
+/* ---------- deep link (?p=id de entidade, ?q=busca, #estado=UF) ---------- */
+function updateUrlForEntity(ent){
+  const url = new URL(location.href);
+  url.searchParams.set('p', ent.id); url.searchParams.delete('q'); url.hash = '';
+  history.pushState({type:'p', id:ent.id}, '', url);
+}
+function updateUrlForSearch(q){
+  const url = new URL(location.href);
+  url.searchParams.set('q', q); url.searchParams.delete('p'); url.hash = '';
+  history.pushState({type:'q', q}, '', url);
+}
+function updateUrlForState(uf){
+  const url = new URL(location.href);
+  url.searchParams.delete('q'); url.searchParams.delete('p'); url.hash = 'estado='+uf;
+  history.pushState({type:'uf', uf}, '', url);
+}
+function applyUrlState(){
+  const params = new URLSearchParams(location.search);
+  const pid = params.get('p');
+  const q = params.get('q');
+  const hash = location.hash.replace('#','');
+  if(pid){
+    const ent = byId(pid);
+    if(ent){ goToEntity(ent, {skipUrlUpdate:true}); return; }
+  }
+  if(q){
+    document.getElementById('searchInput').value = q;
+    runSearch(q, {skipUrlUpdate:true});
+    return;
+  }
+  if(hash.indexOf('estado=')===0){
+    const uf = hash.slice('estado='.length);
+    if(BR_HEX.find(x=>x.uf===uf)) selectState(uf, {skipUrlUpdate:true});
+  }
+}
+window.addEventListener('popstate', applyUrlState);
+
+/* ---------- índice de busca: por token (cobre nome fora de ordem, sobrenome sozinho,
+   sem precisar de alias pra cada variação) + fuzzy "você quis dizer" pra erro de digitação ---------- */
+function haystack(e){
+  return norm([e.name, e.role, ...e.aliases, e.joke||'', e.summary].join(' '));
+}
+function tokenMatch(e, tokens){
+  const h = haystack(e);
+  return tokens.every(t => h.includes(t));
+}
+function localSearch(q){
+  const tokens = norm(q).split(/\s+/).filter(Boolean);
+  if(!tokens.length) return [];
+  return ENTITIES.filter(e => tokenMatch(e, tokens));
+}
+function levenshtein(a,b){
+  const m=a.length, n=b.length;
+  if(!m) return n; if(!n) return m;
+  let prev = Array.from({length:n+1}, (_,i)=>i);
+  for(let i=1;i<=m;i++){
+    const cur=[i];
+    for(let j=1;j<=n;j++){
+      cur[j] = a[i-1]===b[j-1] ? prev[j-1] : 1+Math.min(prev[j-1], prev[j], cur[j-1]);
+    }
+    prev=cur;
+  }
+  return prev[n];
+}
+function suggestClosest(q){
+  const nq = norm(q).trim();
+  if(nq.length < 3) return null;
+  let best=null, bestDist=Infinity;
+  for(const e of ENTITIES){
+    const terms = [e.name, ...e.aliases, ...e.name.split(' ')];
+    for(const term of terms){
+      const nt = norm(term);
+      if(nt.length < 3) continue;
+      const d = levenshtein(nq, nt);
+      const threshold = nq.length<=4 ? 1 : nq.length<=8 ? 2 : 3;
+      if(d>0 && d<=threshold && d<bestDist){ bestDist=d; best=e; }
+    }
+  }
+  return best;
+}
+
+function startLoading(pool){
+  const box = document.getElementById('loadingBox'); box.classList.add('active');
+  const msgEl = document.getElementById('loadingMsg');
+  const fill = document.getElementById('loadingBarFill');
+  fill.style.transition = 'none'; fill.style.width = '0%';
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{ fill.style.transition=''; fill.style.width = '88%'; }));
+  let msgs = shuffledFrom(pool); let mi = 0; msgEl.textContent = msgs[0];
+  const timer = setInterval(()=>{ mi=(mi+1)%msgs.length; msgEl.textContent = msgs[mi]; }, 1400);
+  return {
+    setPool(newPool){ msgs = shuffledFrom(newPool); mi = 0; msgEl.textContent = msgs[0]; },
+    stop(){
+      clearInterval(timer);
+      fill.style.transition = 'width .25s ease'; fill.style.width = '100%';
+      setTimeout(()=>{ box.classList.remove('active'); fill.style.transition='none'; fill.style.width='0%'; }, 220);
+    },
+  };
+}
+
+/* navegação direta pra UMA entidade já conhecida (chip relacionado, lista completa, sorte) —
+   não passa pela busca por token, que pra nomes de instituição (ex.: "Banco Master") bateria
+   em dezenas de resumos que só citam o nome de passagem. */
+function goToEntity(ent, opts){
+  opts = opts || {};
+  document.getElementById('searchInput').value = ent.name;
+  document.getElementById('loadingBox').classList.remove('active');
+  renderPositive([ent]);
+  if(!opts.skipUrlUpdate) updateUrlForEntity(ent);
+  document.getElementById('busca').scrollIntoView({behavior:'smooth', block:'start'});
+}
+function relatedClick(id){
+  const ent = byId(id);
+  if(ent) goToEntity(ent);
+}
+
+/* ---------- easter eggs de busca ---------- */
+function eggBanner(nq){
+  if(nq==='vorcaro' || nq==='daniel vorcaro'){
+    return '<div class="egg-banner">Foi direto na fonte. Respeitamos.</div>';
+  }
+  return null;
+}
+async function runSearch(q, opts){
+  opts = opts || {};
+  const nq = norm(q).trim();
+  document.getElementById('results').innerHTML = '';
+  if(nq==='eu' || nq==='eu mesmo' || nq==='meu nome'){
+    if(!opts.skipUrlUpdate) updateUrlForSearch(q);
+    document.getElementById('results').innerHTML = '<div class="egg-banner">Verificamos. Por enquanto, você não está na nossa base — mas o dia é longo e a lista só cresce. Confere de novo amanhã.</div>';
+    return;
+  }
+  document.getElementById('searchBtn').disabled = true;
+  const loader = startLoading(LOADING_MSGS);
+  await sleep(1400 + Math.random()*1200);
+  const localMatches = localSearch(q);
+  loader.stop(); document.getElementById('searchBtn').disabled = false;
+  if(localMatches.length){
+    if(!opts.skipUrlUpdate) updateUrlForSearch(q);
+    renderPositive(localMatches, eggBanner(nq));
+    return;
+  }
+  const suggestion = suggestClosest(q);
+  if(!opts.skipUrlUpdate) updateUrlForSearch(q);
+  renderNegative(q, suggestion);
+}
+
+/* ---------- atalho de teclado ---------- */
+document.addEventListener('keydown', e=>{
+  if(e.key==='/' && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){
+    e.preventDefault();
+    document.getElementById('searchInput').focus();
+  }
+});
+
+/* ---------- placeholder giratório ---------- */
+const PLACEHOLDER_MSGS = ["Digite um nome (qualquer um, a chance é alta)","tenta \"banco master\"…","tenta um sobrenome só…","tenta \"eu\"…","tenta o nome de um político…"];
+(function rotatePlaceholder(){
+  const input = document.getElementById('searchInput');
+  let i = 0;
+  setInterval(()=>{
+    if(document.activeElement===input || input.value) return;
+    i = (i+1)%PLACEHOLDER_MSGS.length;
+    input.setAttribute('placeholder', PLACEHOLDER_MSGS[i]);
+  }, 3200);
+})();
+
+const CROWN_SVG = '<svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 19h18l1.2-9-5.7 4-4.5-7-4.5 7-5.7-4L3 19z"/></svg>';
+
+function renderPositive(matches, banner){
+  const results = document.getElementById('results');
+  let html = banner || '';
+  html += '<div class="result-positive-head">Encontramos! Pode ser rapidinho, pode dar um café.</div>';
+  html += matches.map(e=>{
+    const amounts = e.amounts.length ? '<div class="detail-row"><div class="detail-label">Valores envolvidos</div><ul class="amount-list">'+e.amounts.map(a=>'<li>'+a+'</li>').join('')+'</ul></div>' : '';
+    const related = e.related.length ? '<div class="detail-row"><div class="detail-label">Outras pessoas / entidades associadas</div><div class="related-chips">'+e.related.map(rid=>{const r=byId(rid); return r ? '<button type="button" class="related-chip" onclick="relatedClick(\''+rid+'\')">'+r.name+'</button>' : '';}).join('')+'</div></div>' : '';
+    const figurante = e.status.kind==='affected' ? '<div class="figurante-note">Aparece no enredo, mas como figurante.</div>' : '';
+    const joke = e.joke ? '<div class="card-joke">“'+e.joke+'”</div>' : '';
+    const bossBadge = e.boss ? '<span class="boss-badge" title="O chefão">'+CROWN_SVG+'BIG BOSS</span>' : '';
+    return '<div class="card'+(e.boss?' boss-card':'')+'"><div class="card-top"><div><div class="card-name">'+e.name+bossBadge+'</div><div class="card-role">'+e.role+'</div>'+joke+'</div><span class="status status-'+e.status.kind+'">'+e.status.label+'</span></div>'+
+      figurante+
+      '<div class="detail-row"><div class="detail-label">Época</div>'+e.period+'</div>'+
+      amounts+
+      '<div class="detail-row"><div class="detail-label">Resumo</div>'+e.summary+'</div>'+
+      related+
+      '<div class="detail-row"><div class="detail-label">Fontes</div><ul class="source-list">'+e.src.map(k=>'<li><a href="'+SRC[k].u+'" target="_blank" rel="noopener">'+SRC[k].t+' ↗</a></li>').join('')+'</ul></div>'+
+    '</div>';
+  }).join('');
+  html += '<div class="block-note" style="margin-top:18px;">Compartilhe que achou algo — sem citar nome, sem risco de virar acusação de ninguém.</div>';
+  html += shareBlockHtml('invite');
+  results.innerHTML = html;
+  setupPositiveShare();
+}
+
+function renderNegative(q, suggestion){
+  const results = document.getElementById('results');
+  const msg = NEG_MSGS[Math.floor(Math.random()*NEG_MSGS.length)];
+  const follow = FOLLOWUP_MSGS[Math.floor(Math.random()*FOLLOWUP_MSGS.length)];
+  const didYouMean = suggestion
+    ? '<div class="dym"><span>Você quis dizer <strong>'+suggestion.name+'</strong>?</span><button class="btn small" id="dymBtn">Sim, era isso</button></div>'
+    : '';
+  const sugerir = '<div class="followup">Acha que devia ter dado algo? <a href="'+sugerirLink(q)+'">Sugere esse nome pra gente</a>, com fonte.</div>';
+  results.innerHTML = '<div class="result-negative">'+didYouMean+'<h3>'+msg+'</h3><div class="followup">'+follow+'</div>'+sugerir+'</div>'+
+    shareBlockHtml('negative');
+  if(suggestion){
+    document.getElementById('dymBtn').addEventListener('click', ()=>{
+      document.getElementById('searchInput').value = suggestion.name;
+      runSearch(suggestion.name);
+    });
+  }
+  setupShare(q);
+}
+
+/* ---------- cards compartilháveis: negativo, convite genérico (positivo) e estado ---------- */
+function shareBlockHtml(id){
+  return '<div class="share-block active" id="shareBlock-'+id+'">'+
+    '<div class="size-toggle"><button class="btn small" data-size="feed">Feed (1080×1080)</button><button class="btn small ghost" data-size="story">Stories (1080×1920)</button></div>'+
+    '<div class="share-canvas-wrap"><canvas id="shareCanvas-'+id+'" width="1080" height="1080"></canvas></div>'+
+    '<div class="share-actions"><button class="btn" id="shareBtnNative-'+id+'">Compartilhar</button><button class="btn ghost" id="downloadBtn-'+id+'">Baixar imagem</button><button class="btn ghost" id="copyLinkBtn-'+id+'">Copiar link</button><span class="toast" id="shareToast-'+id+'"></span></div>'+
+  '</div>';
+}
+
+const shareWidgets = {};
+
+function drawHazardBorder(ctx,w,h){
+  const stripe = 26;
+  ctx.save(); ctx.beginPath(); ctx.rect(0,0,w,stripe*2); ctx.clip();
+  for(let x=-h; x<w+h; x+=stripe*2){
+    ctx.fillStyle = '#0b0b0b'; ctx.save(); ctx.translate(x,0); ctx.rotate(Math.PI/4);
+    ctx.fillRect(0,-h,stripe,h*3); ctx.restore();
+  }
+  ctx.restore();
+  ctx.save(); ctx.translate(0,h-stripe*2); ctx.beginPath(); ctx.rect(0,0,w,stripe*2); ctx.clip();
+  for(let x=-h; x<w+h; x+=stripe*2){
+    ctx.fillStyle = '#0b0b0b'; ctx.save(); ctx.translate(x,0); ctx.rotate(Math.PI/4);
+    ctx.fillRect(0,-h,stripe,h*3); ctx.restore();
+  }
+  ctx.restore();
+}
+function drawVerifiedStamp(ctx,w,label){
+  ctx.save(); ctx.translate(w-190, 170); ctx.rotate(-8*Math.PI/180);
+  ctx.fillStyle = '#d03b3b'; ctx.fillRect(-140,-46,280,92);
+  ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 6; ctx.strokeRect(-132,-38,264,76);
+  ctx.fillStyle = '#ffffff'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.font = '700 28px "Work Sans", sans-serif'; ctx.fillText(label, 0, 4);
+  ctx.restore();
+}
+function wrapText(ctx, text, x, y, maxWidth, lineHeight){
+  const words = text.split(' '); let line=''; let cy=y;
+  for(const word of words){
+    const test = line + word + ' ';
+    if(ctx.measureText(test).width > maxWidth && line !== ''){ ctx.fillText(line, x, cy); line = word+' '; cy += lineHeight; }
+    else{ line = test; }
+  }
+  ctx.fillText(line, x, cy);
+  return cy;
+}
+
+function drawShareCard(id){
+  const canvas = document.getElementById('shareCanvas-'+id); if(!canvas) return;
+  const widget = shareWidgets[id]; if(!widget) return;
+  const w = 1080, h = widget.size==='story' ? 1920 : 1080;
+  canvas.width = w; canvas.height = h;
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#d6a337'; ctx.fillRect(0,0,w,h);
+  drawHazardBorder(ctx,w,h);
+  drawVerifiedStamp(ctx,w, widget.stampLabel);
+
+  ctx.fillStyle = '#0b0b0b'; ctx.textAlign = 'left';
+  ctx.font = '400 64px "Anton", sans-serif';
+  wrapText(ctx, 'VORCARÔMETRO', 70, h*0.28, w-260, 66);
+
+  ctx.font = '600 46px "Work Sans", sans-serif';
+  ctx.fillStyle = '#1a1400';
+  const endY = wrapText(ctx, widget.phrase, 70, h*0.42, w-140, 58);
+
+  if(widget.subPhrase){
+    ctx.font = '400 32px "IBM Plex Mono", monospace';
+    ctx.fillStyle = '#2a2000';
+    wrapText(ctx, widget.subPhrase, 70, endY+56, w-140, 40);
+  }
+
+  ctx.font = '400 30px "IBM Plex Mono", monospace';
+  ctx.fillStyle = '#3a2c00';
+  const dataStr = new Date().toLocaleDateString('pt-BR');
+  ctx.fillText('Verificado em '+dataStr+' · vorcaromet.ro', 70, h-70);
+}
+
+function setupShareWidget(id, opts){
+  shareWidgets[id] = {size:'feed', phrase: opts.phrase, subPhrase: opts.subPhrase||'', stampLabel: opts.stampLabel||'VERIFICADO'};
+  const block = document.getElementById('shareBlock-'+id); if(!block) return;
+  const draw = async ()=>{ try{ await document.fonts.load('64px "Anton"'); await document.fonts.load('600 46px "Work Sans"'); await document.fonts.ready; }catch(e){} drawShareCard(id); };
+  draw();
+  block.querySelectorAll('.size-toggle [data-size]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      shareWidgets[id].size = btn.dataset.size;
+      block.querySelectorAll('.size-toggle [data-size]').forEach(b=>b.classList.toggle('ghost', b!==btn));
+      drawShareCard(id);
+    });
+  });
+  const toast = ()=>document.getElementById('shareToast-'+id);
+  document.getElementById('downloadBtn-'+id).addEventListener('click', ()=>{
+    const canvas = document.getElementById('shareCanvas-'+id);
+    canvas.toBlob(blob=>{
+      const url = URL.createObjectURL(blob);
+      window.open(url, '_blank');
+      toast().textContent = 'Imagem aberta em nova aba — toque e segure (ou botão direito) para salvar.';
+      setTimeout(()=>toast().textContent='', 4000);
+    });
+  });
+  document.getElementById('copyLinkBtn-'+id).addEventListener('click', async ()=>{
+    try{ await navigator.clipboard.writeText(opts.linkUrl || location.href); toast().textContent='Link copiado!'; }
+    catch(e){ toast().textContent='Não deu para copiar — copie o link da barra de endereço.'; }
+    setTimeout(()=>toast().textContent='', 2500);
+  });
+  document.getElementById('shareBtnNative-'+id).addEventListener('click', ()=>{
+    const canvas = document.getElementById('shareCanvas-'+id);
+    canvas.toBlob(async blob=>{
+      const shareText = opts.shareText || ('Vorcarômetro: '+location.href);
+      try{
+        const file = new File([blob], 'vorcarometro.png', {type:'image/png'});
+        if(navigator.canShare && navigator.canShare({files:[file]})){
+          await navigator.share({files:[file], title:'Vorcarômetro', text: shareText});
+          return;
+        }
+        if(navigator.share){ await navigator.share({title:'Vorcarômetro', text: shareText}); return; }
+        throw new Error('sem suporte');
+      }catch(err){
+        const url = URL.createObjectURL(blob); window.open(url,'_blank');
+        toast().textContent = 'Compartilhamento direto indisponível aqui — imagem aberta em nova aba para salvar.';
+        setTimeout(()=>toast().textContent='', 4000);
+      }
+    });
+  });
+}
+
+function setupShare(q){
+  const phrase = SHARE_TEMPLATES[Math.floor(Math.random()*SHARE_TEMPLATES.length)].replace('{nome}', q);
+  setupShareWidget('negative', {
+    phrase,
+    linkUrl: location.href,
+    shareText: 'Chequei no Vorcarômetro e deu negativo. Por enquanto. Testa o seu: '+location.href,
+  });
+}
+
+function setupPositiveShare(){
+  const baseUrl = location.origin + location.pathname;
+  setupShareWidget('invite', {
+    phrase: 'Achei uma ficha no Vorcarômetro.',
+    subPhrase: 'Confere a sua também.',
+    stampLabel: 'ACHADO',
+    linkUrl: baseUrl,
+    shareText: 'Achei uma ficha no Vorcarômetro. Confere a sua também: '+baseUrl,
+  });
+}
+
+function setupStateShare(uf, name, value){
+  const valueTxt = value ? brl(value) : 'Sem valor público quantificado';
+  const link = location.origin + location.pathname + '#estado=' + uf;
+  setupShareWidget('state', {
+    phrase: name.toUpperCase(),
+    subPhrase: valueTxt,
+    stampLabel: 'APURADO',
+    linkUrl: link,
+    shareText: 'O que o caso Master expôs em '+name+', segundo o Vorcarômetro: '+valueTxt+'. '+link,
+  });
+}
+
+/* ---------- mapa hexagonal ---------- */
+function hexPoints(cx,cy,R){ const pts=[]; for(let i=0;i<6;i++){ const a=Math.PI/180*60*i; pts.push((cx+R*Math.cos(a)).toFixed(1)+','+(cy+R*Math.sin(a)).toFixed(1)); } return pts.join(' '); }
+function seqColor(value){ if(value>=900000000) return 'var(--seq-4)'; if(value>=350000000) return 'var(--seq-3)'; if(value>=150000000) return 'var(--seq-2)'; return 'var(--seq-1)'; }
+let selectedUF = 'RJ';
+function buildMap(){
+  const R = 26; const svg = document.getElementById('brMap');
+  let out = '<defs><pattern id="hatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="var(--linked-bg)"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--linked-line)" stroke-width="1.6"/></pattern></defs>';
+  BR_HEX.forEach(s=>{
+    const cx = R + s.col*1.5*R - 27;
+    const cy = (Math.sqrt(3)*R)/2 + s.row*Math.sqrt(3)*R + (s.col%2===1 ? (Math.sqrt(3)*R)/2 : 0) - 52;
+    const info = STATE_INFO[s.uf];
+    let fill='var(--map-none)', stroke='var(--map-none-line)';
+    if(info && info.value){ fill = seqColor(info.value); stroke='none'; }
+    else if(info){ fill = 'url(#hatch)'; stroke='var(--linked-line)'; }
+    const textFill = (info && info.value) ? '#ffffff' : (info ? 'var(--linked-ink)' : 'var(--ink-muted)');
+    const hasValue = !!(info && info.value);
+    const tipText = info && info.value ? s.name+' — '+brl(info.value) : (info ? s.name+' — conexão sem valor quantificado' : s.name+' — sem registro nesta base');
+    out += '<g class="hex'+(s.uf===selectedUF?' selected':'')+(hasValue?' has-value':'')+'" data-uf="'+s.uf+'" data-tip="'+tipText.replace(/"/g,'&quot;')+'" tabindex="0" role="button" aria-label="'+s.name+'" onclick="selectState(\''+s.uf+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){selectState(\''+s.uf+'\')}">'+
+      '<polygon points="'+hexPoints(cx,cy,R)+'" fill="'+fill+'" stroke="'+stroke+'"/>'+
+      '<text x="'+cx+'" y="'+(cy+4)+'" text-anchor="middle" fill="'+textFill+'">'+s.uf+'</text>'+
+    '</g>';
+  });
+  svg.innerHTML = out;
+  const tip = document.getElementById('mapTooltip');
+  svg.querySelectorAll('.hex').forEach(hex=>{
+    hex.addEventListener('mouseenter', ()=>{ tip.textContent = hex.getAttribute('data-tip'); tip.classList.add('active'); });
+    hex.addEventListener('mousemove', ev=>{ tip.style.left = ev.clientX+'px'; tip.style.top = ev.clientY+'px'; });
+    hex.addEventListener('mouseleave', ()=>{ tip.classList.remove('active'); });
+    hex.addEventListener('focus', ()=>{ const r = hex.getBoundingClientRect(); tip.textContent = hex.getAttribute('data-tip'); tip.style.left = (r.left+r.width/2)+'px'; tip.style.top = r.top+'px'; tip.classList.add('active'); });
+    hex.addEventListener('blur', ()=>{ tip.classList.remove('active'); });
+  });
+}
+function renderStatePanel(uf){
+  const s = BR_HEX.find(x=>x.uf===uf); const info = STATE_INFO[uf];
+  const panel = document.getElementById('statePanel');
+  let html = '<h3>'+s.name+'</h3>';
+  if(info && info.value){
+    html += '<div class="state-value tabular">'+brl(info.value)+'</div><div class="state-note">'+(info.note||'Valor público identificado exposto ao Master neste estado.')+'</div>';
+  } else if(info){
+    html += '<div class="state-note">Sem valor público quantificado nesta base — conexão institucional ou política documentada abaixo.<br>'+(info.note||'')+'</div>';
+  } else {
+    html += '<div class="state-note">Nenhuma conexão documentada nesta base para este estado. Não significa ausência de exposição real — apenas que não localizamos dado público agregável nesta pesquisa.</div>';
+  }
+  if(info && info.entities.length){
+    html += '<div class="detail-row"><div class="detail-label">Conexões neste estado</div><div class="related-chips">'+info.entities.map(id=>{const e=byId(id); return '<button type="button" class="related-chip" onclick="relatedClick(\''+id+'\')">'+e.name+'</button>';}).join('')+'</div></div>';
+  }
+  html += '<div class="detail-row"><button class="btn ghost small" id="shareStateBtn" type="button">Compartilhar '+s.uf+'</button></div>';
+  html += shareBlockHtml('state');
+  panel.innerHTML = html;
+  document.getElementById('shareStateBtn').addEventListener('click', ()=>{
+    const btn = document.getElementById('shareStateBtn');
+    btn.hidden = true;
+    document.getElementById('shareBlock-state').classList.add('active');
+    setupStateShare(uf, s.name, info ? info.value : null);
+  });
+  document.getElementById('shareBlock-state').classList.remove('active');
+}
+function selectState(uf, opts){
+  opts = opts || {};
+  selectedUF = uf;
+  document.querySelectorAll('#brMap .hex').forEach(h=>h.classList.toggle('selected', h.getAttribute('data-uf')===uf));
+  renderStatePanel(uf);
+  if(!opts.skipUrlUpdate) updateUrlForState(uf);
+}
+async function init(){
+  const loadingEl = document.getElementById('dataLoading');
+  const errorEl = document.getElementById('dataError');
+  loadingEl.classList.add('active');
+  try{
+    const res = await fetch('./data.json', {cache:'no-cache'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    SRC = data.src || {};
+    ENTITIES = data.entities || [];
+    STATE_INFO = data.stateInfo || {};
+  }catch(err){
+    loadingEl.classList.remove('active');
+    errorEl.classList.add('active');
+    errorEl.textContent = 'Não consegui carregar a base (data.json). Verifique se o arquivo está publicado junto do index.html, ou recarregue a página. Detalhe técnico: ' + err.message;
+    return;
+  }
+  loadingEl.classList.remove('active');
+
+  buildMap();
+  renderStatePanel(selectedUF);
+  document.getElementById('sourceBiblio').innerHTML = Object.values(SRC).sort((a,b)=>a.t.localeCompare(b.t,'pt-BR')).map(s=>'<div><a href="'+s.u+'" target="_blank" rel="noopener">'+s.t+'</a></div>').join('');
+
+  document.getElementById('searchForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const q = document.getElementById('searchInput').value.trim();
+    if(!q) return;
+    runSearch(q);
+  });
+  document.getElementById('luckyBtn').addEventListener('click', ()=>{
+    const btn = document.getElementById('luckyBtn');
+    const input = document.getElementById('searchInput');
+    if(btn.disabled) return;
+    btn.disabled = true;
+    buzz(6);
+    const pick = ENTITIES[Math.floor(Math.random()*ENTITIES.length)];
+    let ticks = 0; const maxTicks = 12;
+    (function spin(){
+      input.value = ENTITIES[Math.floor(Math.random()*ENTITIES.length)].name;
+      ticks++;
+      if(ticks < maxTicks){ setTimeout(spin, 40 + ticks*9); }
+      else{ input.value = pick.name; btn.disabled = false; buzz([8,30,8]); goToEntity(pick); }
+    })();
+  });
+  document.getElementById('fullListBtn').addEventListener('click', ()=>{
+    const box = document.getElementById('fullListBox');
+    if(box.hidden){
+      const sorted = [...ENTITIES].sort((a,b)=>a.name.localeCompare(b.name,'pt-BR'));
+      box.innerHTML = '<div class="full-list-title">'+ENTITIES.length+' registros na base — clique num nome</div>'
+        + sorted.map(e=>'<div class="full-list-item" data-id="'+e.id+'"><span class="fl-name">'+e.name+'</span><span class="fl-role">'+e.role+'</span></div>').join('');
+      box.hidden = false;
+      box.querySelectorAll('.full-list-item').forEach(el=>{
+        el.addEventListener('click', ()=>{
+          const ent = byId(el.getAttribute('data-id'));
+          box.hidden = true;
+          goToEntity(ent);
+        });
+      });
+    } else {
+      box.hidden = true;
+    }
+  });
+
+  /* chips de "em alta hoje" — curadoria manual, ids filtrados contra a base atual */
+  const TRENDING_IDS = ['daniel-vorcaro','banco-master','roberto-campos-neto','claudio-castro','ibaneis-rocha','hugo-motta','ciro-nogueira','jaques-wagner'];
+  const trendingBox = document.getElementById('trendingBox');
+  const trendingPicks = TRENDING_IDS.map(byId).filter(Boolean);
+  if(trendingPicks.length){
+    trendingBox.innerHTML = '<span class="trending-label">Em alta hoje</span>' + trendingPicks.map(e=>'<button type="button" class="trending-chip" data-id="'+e.id+'">'+e.name+'</button>').join('');
+    trendingBox.querySelectorAll('.trending-chip').forEach(btn=>{
+      btn.addEventListener('click', ()=>{ const ent = byId(btn.getAttribute('data-id')); if(ent) goToEntity(ent); });
+    });
+  }
+
+  document.getElementById('searchBtn').disabled = false;
+  document.getElementById('luckyBtn').disabled = false;
+  document.getElementById('fullListBtn').disabled = false;
+
+  applyUrlState();
+}
+init();
+</script>
+</body>
+</html>
