@@ -415,6 +415,26 @@
   "guiaterreno": {
    "t": "Guia do Investidor — Banco aceitou terreno indígena avaliado em R$ 100 milhões como garantia de empréstimo bilionário",
    "u": "https://guiadoinvestidor.com.br/noticias/banco-aceitou-terreno-indigena-avaliado-em-r-100-milhoes-como-garantia-de-emprestimo-bilionario/"
+  },
+  "forumkarina": {
+   "t": "Revista Fórum — Karina Gama não sabia que Vorcaro financiava filme de Bolsonaro, diz advogado",
+   "u": "https://revistaforum.com.br/politica/karina-gama-vorcaro-filme-bolsonaro"
+  },
+  "anoticiakarina": {
+   "t": "A Notícia do Vale — Emendas de Mário Frias a filme de Bolsonaro eram fragmentadas para dificultar rastreio, aponta PF",
+   "u": "https://anoticiadovale.com/2026/09/11/emendas-de-mario-frias-a-filme-de-bolsonaro-eram-fragmentadas-para-dificultar-rastreio-aponta-pf/"
+  },
+  "otempofux": {
+   "t": "O Tempo — Fux nega contato com Vorcaro, após provocação de Dino no plenário e divulgação de mensagens",
+   "u": "https://www.otempo.com.br/politica/judiciario/2026/9/15/fux-nega-contato-com-vorcaro-apos-provocacao-de-dino-no-plenario-e-divulgacao-de-mensagens"
+  },
+  "forumfux": {
+   "t": "Revista Fórum — Filho de Fux trocou mensagens com Vorcaro sobre processo bilionário no STF",
+   "u": "https://revistaforum.com.br/politica/filho-fux-mensagens-vorcaro-processo-bilionario-stf/"
+  },
+  "agorarnfux": {
+   "t": "Agora RN — Rodrigo Fux recebeu pedido de ajuda de Vorcaro e ofereceu “tapete vermelho”",
+   "u": "https://agorarn.com.br/politica/rodrigo-fux-vorcaro-tapete-vermelho-mensagens/"
   }
  },
  "entities": [
@@ -1289,7 +1309,8 @@
    "related": [
     "jair-bolsonaro",
     "daniel-vorcaro",
-    "neymar-pai"
+    "neymar-pai",
+    "karina-gama"
    ],
    "states": [
     "RJ"
@@ -1302,6 +1323,64 @@
     "cartaneymarflavio"
    ],
    "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa."
+  },
+  {
+   "id": "karina-gama",
+   "name": "Karina Gama",
+   "aliases": [
+    "Karina Ferreira da Gama"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigada",
+    "kind": "warning"
+   },
+   "role": "Produtora de cinema (GoUp Entertainment); produtora do filme “Dark Horse”",
+   "period": "Alvo de operação da Polícia Federal em 10/09/2026",
+   "amounts": [
+    "~R$ 61 milhões — parte do financiamento de “Dark Horse” paga por Vorcaro, segundo a produtora",
+    "R$ 2 milhões — emendas parlamentares de Mário Frias sob suspeita de uso em contratos não cumpridos, segundo a PF"
+   ],
+   "related": [
+    "flavio-bolsonaro",
+    "jair-bolsonaro",
+    "daniel-vorcaro"
+   ],
+   "states": [],
+   "summary": "Produtora de cinema, dona da GoUp Entertainment e responsável pelo filme biográfico “Dark Horse”, sobre Jair Bolsonaro — o mesmo cujo financiamento por Daniel Vorcaro foi negociado por Flávio Bolsonaro. Segundo Karina, Vorcaro pagou mais de 90% do orçamento (cerca de R$ 61 milhões dos R$ 134 milhões combinados). Em 10/09/2026 tornou-se alvo de uma operação da Polícia Federal que investiga desvio de emendas parlamentares do deputado Mário Frias, roteirista do filme: segundo a PF, os repasses eram fragmentados por um “circuito fechado” de empresas ligadas a ela (Instituto Conhecer Brasil e Academia Nacional de Cultura) para dificultar o rastreio, num esquema que a PF classificou como “organização criminosa”. Seu advogado, Ricardo Sayeg, afirma que ela não sabia que o dinheiro do filme vinha de Vorcaro e que os investidores da GoUp são empresas americanas protegidas por confidencialidade.",
+   "src": [
+    "forumkarina",
+    "anoticiakarina"
+   ],
+   "joke": "Produziu o filme sobre o pai do freguês mais generoso do banco. A plateia, ao que parece, incluía a Polícia Federal."
+  },
+  {
+   "id": "rodrigo-fux",
+   "name": "Rodrigo Fux",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Advogado; filho do ministro do STF Luiz Fux",
+   "period": "Mensagens trocadas em novembro de 2024; reveladas em 09/2026",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "SP",
+    "RJ",
+    "DF"
+   ],
+   "summary": "Advogado, filho do ministro do STF Luiz Fux. Mensagens do celular de Vorcaro, obtidas pela PF, mostram que ele o procurou em novembro de 2024 sobre um recurso bilionário no STF — créditos da Agro Industrial Tabu adquiridos por fundos de interesse do Master, que podiam valer cerca de R$ 5 bilhões (a AGU estimou impacto de até R$ 80 bilhões considerando processos ligados). Vorcaro enviou um arquivo do caso dois dias antes do julgamento; Rodrigo respondeu “Vou ler”. As mensagens também mostram reuniões marcadas em São Paulo, Rio de Janeiro e Brasília, e Vorcaro pagando ingressos VIP para o desfile de Carnaval de 2025 no Rio para a família de Rodrigo. O escritório de Rodrigo nega qualquer vínculo profissional com Vorcaro ou o Master e nega ter recebido qualquer valor. Apesar da articulação, o STF manteve o precatório suspenso — contra o interesse de Vorcaro — e o próprio ministro Luiz Fux votou contra a liberação.",
+   "src": [
+    "otempofux",
+    "forumfux",
+    "agorarnfux"
+   ],
+   "joke": "Recebeu pedido de ajuda pra destravar R$ 5 bilhões. O precatório continuou travado — só o Carnaval do Vorcaro que desembarcou."
   },
   {
    "id": "neymar-pai",
