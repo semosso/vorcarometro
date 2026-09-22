@@ -194,7 +194,7 @@ section{margin-block:34px;}
 .legend-row{display:flex; align-items:center; gap:10px;}
 .legend-swatch{width:15px; height:15px; border-radius:3px; flex-shrink:0; border:1px solid var(--border);}
 .legend-scale-bar{width:120px; height:12px; border-radius:2px; flex-shrink:0; border:1px solid var(--border); background:linear-gradient(to right, var(--seq-1), var(--seq-2), var(--seq-3), var(--seq-4));}
-.map-credit{font-family:var(--font-mono); font-size:0.68rem; color:var(--ink-muted); margin-top:2px;}
+.map-credit{display:block; font-family:var(--font-mono); font-size:0.68rem; line-height:1.5; color:var(--ink-muted); margin-top:2px;}
 .map-credit a{color:var(--ink-muted);}
 .state-panel{flex:1 1 260px; min-width:240px; border:1px solid var(--border); border-radius:0; background:var(--surface); padding:16px;}
 .state-panel h3{font-family:var(--font-display); font-weight:700; font-size:1.15rem; margin-bottom:4px;}
@@ -304,7 +304,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
       <div class="legend">
         <div class="legend-row"><span class="legend-scale-bar"></span><span>Quantidade de pessoas e empresas ligadas</span></div>
         <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none)"></span><span>Sem registro nesta base</span></div>
-        <div class="legend-row map-credit">Cartograma hexagonal por <a href="https://observablehq.com/@vsueiro/cartogram-of-brazil" target="_blank" rel="noopener">Vinicius Sueiro</a>.</div>
+        <div class="map-credit">Cartograma hexagonal baseado no trabalho “Hexagonal hierarchical cartogram: Towards a thematic map of Brazil”, por Colares Barreto, M., Kosminsky, D., &amp; Esperança, C., disponível <a href="https://doi.org/10.51358/id.v15i1.563" target="_blank" rel="noopener">aqui</a>, conforme implementado por Vinicius Sueiro <a href="https://observablehq.com/@vsueiro/cartogram-of-brazil" target="_blank" rel="noopener">aqui</a>.</div>
       </div>
     </div>
     <div class="state-panel" id="statePanel"></div>
