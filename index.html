@@ -385,7 +385,11 @@ function computeStateStats(){
 }
 
 /* ---------- placar ---------- */
-const ULTIMA_NOVIDADE = "2026-09-22"; // atualizar manualmente a cada notícia nova
+/* data (horário de Brasília) da última novidade. O placar soma 1 automaticamente a cada
+   18h no horário de Brasília (não depende do fuso de quem acessa) — zere manualmente pra
+   "2026-09-22" (ou o dia atual) só quando sair notícia nova de verdade, não pra atualizações
+   de preenchimento de nomes/fatos antigos que já existiam. */
+const ULTIMA_NOVIDADE = "2026-09-20";
 const PLACAR_LEGENDAS = ["Recorde histórico: 3 dias.","O número é zerado manualmente a cada notícia nova. Ele fica em zero com frequência.","Nossa equipe de zeragem trabalha em regime de plantão."];
 function countUp(el, target, duration){
   if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ el.textContent = target; return; }
@@ -399,7 +403,7 @@ function countUp(el, target, duration){
   requestAnimationFrame(tick);
 }
 function renderPlacar(){
-  const hoje = new Date(); const ultima = new Date(ULTIMA_NOVIDADE+"T00:00:00");
+  const hoje = new Date(); const ultima = new Date(ULTIMA_NOVIDADE+"T21:00:00Z"); // 18h em Brasília (UTC-3, sem horário de verão)
   const dias = Math.max(0, Math.floor((hoje - ultima) / 86400000));
   countUp(document.getElementById('placarNum'), dias, 650);
   document.getElementById('placarLegend').textContent = dias === 0 ? "Hoje teve novidade. Obviamente." : PLACAR_LEGENDAS[Math.floor(Math.random()*PLACAR_LEGENDAS.length)];

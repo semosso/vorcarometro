@@ -435,6 +435,30 @@
   "agorarnfux": {
    "t": "Agora RN — Rodrigo Fux recebeu pedido de ajuda de Vorcaro e ofereceu “tapete vermelho”",
    "u": "https://agorarn.com.br/politica/rodrigo-fux-vorcaro-tapete-vermelho-mensagens/"
+  },
+  "piauikassio": {
+   "t": "revista piauí — “Dominado aqui”: Kássio Nunes Marques, o Master e o STF",
+   "u": "https://piaui.uol.com.br/web/dominado-aqui-kassio-nunes-marques-master-stf/"
+  },
+  "painelpoliticokassio": {
+   "t": "Painel Político — “Dominado aqui”: os indícios que ligam Nunes Marques ao caso Master",
+   "u": "https://painelpolitico.com/dominado-aqui-os-indicios-que-ligam-nunes-marques-ao-caso-master"
+  },
+  "brasil247kassiodominado": {
+   "t": "Brasil 247 — “Dominado aqui”: repasses do Master para filho de Nunes Marques coincidem com decisão do ministro",
+   "u": "https://www.brasil247.com/brasil/dominado-aqui-repasses-do-master-para-filho-de-nunes-marques-coincidem-com-decisao-do-ministro/"
+  },
+  "vermelhokassio": {
+   "t": "Vermelho — Diálogos ligam voto pró-Master de Nunes Marques a repasses ligados ao filho",
+   "u": "https://vermelho.org.br/2026/09/18/dialogos-ligam-voto-pro-master-de-nunes-marques-a-repasses-ligados-ao-filho/"
+  },
+  "forum427kassio": {
+   "t": "Revista Fórum — Contrato de R$ 427 milhões ligaria Nunes Marques a Daniel Vorcaro, aponta PF",
+   "u": "https://revistaforum.com.br/politica/contrato-nunes-marques-vorcaro/"
+  },
+  "brasil247427kassio": {
+   "t": "Brasil 247 — Contrato de R$ 427 milhões liga Nunes Marques a precatórios de Vorcaro",
+   "u": "https://www.brasil247.com/brasil/contrato-de-r-427-milhoes-liga-nunes-marques-a-precatorios-de-vorcaro/"
   }
  },
  "entities": [
@@ -1020,21 +1044,29 @@
     "kind": "warning"
    },
    "role": "Ministro do Supremo Tribunal Federal (STF)",
-   "period": "Mensagens/diálogos revelados em 2026",
+   "period": "Voto revertido e mensagem “dominado aqui” em data não precisada; contrato de R$ 427 milhões e mensagens/diálogos revelados pela Piauí e outras reportagens em 09/2026",
    "amounts": [
-    "R$ 500 mil — valor citado em diálogo do celular de Vorcaro envolvendo o filho do ministro, segundo reportagem; pagamento negado pelo ministro"
+    "R$ 500 mil — valor citado em diálogo do celular de Vorcaro envolvendo o filho do ministro, segundo reportagem; pagamento negado pelo ministro",
+    "R$ 6,62 milhões — repassados pelo Master à Consult, consultoria ligada ao filho do ministro, no mesmo período de um julgamento favorável ao banco",
+    "R$ 427 milhões — contrato de êxito (5% líquido sobre valores recuperados em 12 ações) que poderia destravar R$ 8,5 bilhões em precatórios de interesse do Master, via escritório da esposa de um desembargador do TRF-1"
    ],
    "related": [
     "daniel-vorcaro"
    ],
    "states": [],
-   "summary": "Ministro do STF. Diálogos extraídos do celular de Daniel Vorcaro, com um interlocutor identificado como filho do ministro (o advogado Kevin Marques), citam o valor de R$ 500 mil. Nunes Marques afirmou publicamente, em sessão, que seu filho “nunca prestou serviço ao Master” nem recebeu qualquer pagamento do banco. Ele já havia se declarado impedido em um processo relacionado a Vorcaro, decisão que, segundo análises publicadas, deu à defesa do banqueiro argumento para contestar sua prisão. Não há, até a última atualização desta base, denúncia formal contra o ministro neste caso.",
+   "summary": "Ministro do STF. Diálogos extraídos do celular de Daniel Vorcaro, com um interlocutor identificado como filho do ministro (o advogado Kevin Marques), citam o valor de R$ 500 mil. Nunes Marques afirmou publicamente, em sessão, que seu filho “nunca prestou serviço ao Master” nem recebeu qualquer pagamento do banco; o escritório de Kevin diz que ele recebeu R$ 281,6 mil da Consult por serviços jurídicos tributários, sem relação com o Master. Reportagem da revista Piauí (“Dominado aqui”) mostra que, no julgamento de um caso de interesse do Master envolvendo precatórios do setor sucroalcooleiro, o ministro se declarou impedido e depois reverteu a decisão, dando o voto de desempate (3 a 2) favorável ao banco; quatro minutos depois do resultado, um assessor jurídico do Master mandou a Vorcaro o contato de Kevin Marques com a mensagem “dominado aqui” — no mesmo período, a Consult recebeu R$ 6,62 milhões do banco. Mensagens também associam o ministro a um contrato de êxito de até R$ 427 milhões, num escritório de advocacia da esposa de um desembargador federal do TRF-1, que assessores de Vorcaro chamavam de “turma do KN”, visando destravar R$ 8,5 bilhões em precatórios de interesse do Master; os diálogos registram ainda pedidos atribuídos ao ministro, como hospedagem no hotel Fasano e uma mansão no Joá (RJ) alugada por R$ 1,45 milhão por uma semana no Carnaval de 2025. Nunes Marques nega qualquer relação com Vorcaro e diz nunca ter trocado mensagens com o banqueiro. Já se declarou impedido de julgar outro processo do caso Master às vésperas das eleições de 2026, decisão que, segundo análises publicadas, deu à defesa do banqueiro argumento para contestar sua prisão. Não há, até a última atualização desta base, denúncia formal contra o ministro neste caso.",
    "src": [
     "cnnkassio",
     "revistaforumkassio",
-    "obrasilianistakassio"
+    "obrasilianistakassio",
+    "piauikassio",
+    "painelpoliticokassio",
+    "brasil247kassiodominado",
+    "vermelhokassio",
+    "forum427kassio",
+    "brasil247427kassio"
    ],
-   "joke": "“Meu filho nunca prestou serviço ao Master”, jurou o ministro em sessão. O WhatsApp de Vorcaro, segundo reportagens, discorda."
+   "joke": "“Meu filho nunca prestou serviço ao Master”, jurou o ministro em sessão. O WhatsApp de Vorcaro, segundo reportagens, discorda — e ainda manda um “dominado aqui”."
   },
   {
    "id": "paulo-gonet",
