@@ -639,6 +639,10 @@
   "cnntcumotta": {
    "t": "CNN Brasil — TCU é acionado para apurar empréstimo do Master a parente de Hugo",
    "u": "https://www.cnnbrasil.com.br/politica/tcu-e-acionado-para-apurar-emprestimo-do-master-a-parente-de-hugo/"
+  },
+  "uolneymarintermediario": {
+   "t": "UOL — Intermediário tentou aproximar Vorcaro e Neymar Pai antes do caso Master",
+   "u": "https://www.uol.com.br/esporte/colunas/pedro-lopes/2026/09/21/intermediario-tentou-aproximar-vorcaro-e-neymar-pai-antes-de-caso-master.htm"
   }
  },
  "entities": [
@@ -1591,7 +1595,8 @@
     "interceptflavio",
     "cnnflavio",
     "correiobrazilianseflavio",
-    "cartaneymarflavio"
+    "cartaneymarflavio",
+    "uolneymarintermediario"
    ],
    "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa."
   },
@@ -1683,7 +1688,8 @@
    "summary": "Empresário e pai do atacante Neymar Jr. Mensagens do celular de Daniel Vorcaro, obtidas pela Polícia Federal e reveladas pela CartaCapital, mostram Neymar Pai cobrando recursos do banqueiro e tratando, ao lado do executivo Tiago Miranda, de uma proposta de patrocínio de R$ 100 milhões da marca Master ao Santos Futebol Clube — clube em que o filho é ídolo. Uma das mensagens cita que “o pai do Ney quer sentar e quer levar ele também”, indicando intenção de envolver o próprio jogador nas tratativas. As cobranças aparecem no mesmo conjunto de mensagens em que o senador Flávio Bolsonaro também cobra recursos de Vorcaro.",
    "src": [
     "cartaneymarflavio",
-    "terraneymarflavio"
+    "terraneymarflavio",
+    "uolneymarintermediario"
    ],
    "joke": "Negociava patrocínio de R$ 100 milhões pro Santos e ainda tentou emplacar o camisa 10 na reunião."
   },
@@ -2486,7 +2492,8 @@
     "poder360itau",
     "congressoitau",
     "g1celina",
-    "cnndossiecoeitau"
+    "cnndossiecoeitau",
+    "uolneymarintermediario"
    ],
    "joke": "Contratado pra cuidar da imagem do banqueiro. A imagem, no fim, também virou alvo de busca e apreensão."
   },
