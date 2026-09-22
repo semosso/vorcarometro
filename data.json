@@ -643,6 +643,22 @@
   "uolneymarintermediario": {
    "t": "UOL — Intermediário tentou aproximar Vorcaro e Neymar Pai antes do caso Master",
    "u": "https://www.uol.com.br/esporte/colunas/pedro-lopes/2026/09/21/intermediario-tentou-aproximar-vorcaro-e-neymar-pai-antes-de-caso-master.htm"
+  },
+  "jbmonteiro": {
+   "t": "Jornal de Brasília — Advogado preso é sócio de fundos do Master e suspeito de pagar propina de Vorcaro a autoridades",
+   "u": "https://jornaldebrasilia.com.br/noticias/economia/advogado-preso-e-socio-de-fundos-do-master-e-suspeito-de-pagar-propina-de-vorcaro-a-autoridades/"
+  },
+  "infomoneymonteiro": {
+   "t": "InfoMoney — Homem de confiança de Vorcaro é apontado como figura-chave para entender esquema",
+   "u": "https://www.infomoney.com.br/politica/homem-de-confianca-de-vorcaro-e-apontado-como-figura-chave-para-entender-esquema/"
+  },
+  "cnndefesamonteiro": {
+   "t": "CNN Brasil — Defesa de Monteiro nega ilegalidades no Caso Master e cita atuação técnica",
+   "u": "https://www.cnnbrasil.com.br/politica/defesa-de-monteiro-nega-ilegalidades-no-caso-master-e-cita-atuacao-tecnica/"
+  },
+  "cnnparticipacaobrbadvogado": {
+   "t": "CNN Brasil — Caso Master: entenda participação de ex-presidente do BRB e advogado",
+   "u": "https://www.cnnbrasil.com.br/politica/caso-master-entenda-participacao-de-ex-presidente-do-brb-e-advogado/"
   }
  },
  "entities": [
@@ -1059,18 +1075,25 @@
     "label": "Preso",
     "kind": "critical"
    },
-   "role": "Advogado, apontado como operador jurídico-financeiro do esquema",
-   "period": "Preso em 04/2026",
-   "amounts": [],
+   "role": "Advogado; apontado pela PF como homem de confiança de Vorcaro e arquiteto jurídico do esquema entre o Master e o BRB",
+   "period": "Preso em 16/04/2026, na mesma fase da Compliance Zero que prendeu o ex-presidente do BRB Paulo Henrique Costa",
+   "amounts": [
+    "R$ 79 milhões pagos pelo Banco Master ao escritório de Monteiro entre 2022 e 2025 — o 2º maior valor entre bancas contratadas pelo banco, segundo a PF",
+    "R$ 146,5 milhões — valor de seis imóveis de alto padrão em SP e Brasília cuja aquisição e ocultação para o ex-presidente do BRB Paulo Henrique Costa a PF atribui à arquitetura jurídica de Monteiro"
+   ],
    "related": [
     "daniel-vorcaro",
     "paulo-henrique-costa"
    ],
    "states": [],
-   "summary": "Advogado apontado pelas investigações como o operador jurídico-financeiro do esquema entre o Banco Master e o BRB. Foi preso em abril de 2026.",
+   "summary": "Advogado apontado pela Polícia Federal como homem de confiança de Daniel Vorcaro e arquiteto jurídico-financeiro do esquema de propina entre o Banco Master e o BRB. Segundo a PF, seu escritório, batizado de Monteiro Rusu, funcionava como uma espécie de \"compliance paralelo\" do banco, fora dos fluxos normais de controle interno, usando seis empresas de fachada — no mesmo endereço do escritório — para receber recursos de fundos da Reag e bancar a compra de seis imóveis de luxo destinados ao ex-presidente do BRB Paulo Henrique Costa. Foi preso em abril de 2026, na mesma fase da Compliance Zero que prendeu Costa. Sua defesa nega ilegalidades e diz que a atuação foi técnica.",
    "src": [
     "ag13",
-    "cnncompliancezero2fase"
+    "cnncompliancezero2fase",
+    "jbmonteiro",
+    "infomoneymonteiro",
+    "cnndefesamonteiro",
+    "cnnparticipacaobrbadvogado"
    ],
    "joke": "O advogado que, segundo a PF, também assinava embaixo."
   },
