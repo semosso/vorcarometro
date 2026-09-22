@@ -459,6 +459,22 @@
   "brasil247427kassio": {
    "t": "Brasil 247 — Contrato de R$ 427 milhões liga Nunes Marques a precatórios de Vorcaro",
    "u": "https://www.brasil247.com/brasil/contrato-de-r-427-milhoes-liga-nunes-marques-a-precatorios-de-vorcaro/"
+  },
+  "g1celina": {
+   "t": "G1 — Em mensagem, Vorcaro diz que Celina Leão “não ficou de fora” de operação entre BRB e Master",
+   "u": "https://g1.globo.com/df/distrito-federal/noticia/2026/09/15/em-mensagem-vorcaro-diz-que-celina-leao-nao-ficou-de-fora-de-operacao-entre-brb-e-master.ghtml"
+  },
+  "otempocelina": {
+   "t": "O Tempo — Vorcaro diz que Celina Leão “não ficou de fora” das negociações do Master com BRB",
+   "u": "https://www.otempo.com.br/politica/judiciario/2026/9/16/vorcaro-diz-que-celina-leao-nao-ficou-de-fora-das-negociacoes-do-master-com-brb"
+  },
+  "poder360celina1": {
+   "t": "Poder360 — Vorcaro cita Celina Leão em negociação com o BRB: “Não ficou de fora”",
+   "u": "https://www.poder360.com.br/poder-justica/vorcaro-cita-celina-leao-em-negociacao-com-o-brb-nao-ficou-de-fora/"
+  },
+  "poder360celina2": {
+   "t": "Poder360 — Celina rebate Vorcaro e diz que era contrária à compra do Master",
+   "u": "https://www.poder360.com.br/poder-economia/celina-rebate-vorcaro-e-diz-que-era-contraria-a-compra-do-master/"
   }
  },
  "entities": [
@@ -1229,7 +1245,8 @@
    "amounts": [],
    "related": [
     "brb",
-    "paulo-henrique-costa"
+    "paulo-henrique-costa",
+    "celina-leao"
    ],
    "states": [
     "DF"
@@ -2196,18 +2213,50 @@
    "related": [
     "daniel-vorcaro",
     "milton-maluhy-filho",
-    "neymar-pai"
+    "neymar-pai",
+    "celina-leao"
    ],
    "states": [],
-   "summary": "Publicitário, ex-sócio do Grupo Léo Dias, apontado pela PF como coordenador do chamado “Projeto DV”, iniciativa para proteger a reputação de Vorcaro e do Banco Master. Segundo a Polícia Federal, Miranda coagiu e intimidou jornalistas — entre elas Consuelo Dieguez, da revista Piauí, e Malu Gaspar, do O Globo — para tentar remover reportagens sobre o banco, além de ter produzido, a pedido de Vorcaro, um dossiê com dados pessoais e patrimoniais do presidente do Itaú Unibanco, Milton Maluhy Filho, e da esposa dele. Foi alvo de mandados de busca e apreensão na 10ª fase da Operação Compliance Zero, autorizados pelo ministro André Mendonça, do STF.",
+   "summary": "Publicitário, ex-sócio do Grupo Léo Dias, apontado pela PF como coordenador do chamado “Projeto DV”, iniciativa para proteger a reputação de Vorcaro e do Banco Master. Segundo a Polícia Federal, Miranda coagiu e intimidou jornalistas — entre elas Consuelo Dieguez, da revista Piauí, e Malu Gaspar, do O Globo — para tentar remover reportagens sobre o banco, além de ter produzido, a pedido de Vorcaro, um dossiê com dados pessoais e patrimoniais do presidente do Itaú Unibanco, Milton Maluhy Filho, e da esposa dele. Foi também o interlocutor de Vorcaro numa conversa de abril de 2025 em que o banqueiro afirmou que a então vice-governadora do DF, Célina Leão, “não ficou de fora” das negociações entre o BRB e o Master. Foi alvo de mandados de busca e apreensão na 10ª fase da Operação Compliance Zero, autorizados pelo ministro André Mendonça, do STF.",
    "src": [
     "cnnmiranda",
     "otempomiranda",
     "ndmaisitau",
     "poder360itau",
-    "congressoitau"
+    "congressoitau",
+    "g1celina"
    ],
    "joke": "Contratado pra cuidar da imagem do banqueiro. A imagem, no fim, também virou alvo de busca e apreensão."
+  },
+  {
+   "id": "celina-leao",
+   "name": "Célina Leão",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citada",
+    "kind": "warning"
+   },
+   "role": "Vice-governadora do Distrito Federal (PP)",
+   "period": "Mensagem trocada em 05/04/2025; revelada em 09/2026",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "ibaneis-rocha",
+    "brb",
+    "thiago-miranda"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Vice-governadora do Distrito Federal. Em mensagem a Thiago Miranda, em 5 de abril de 2025 — período em que o BRB, banco estatal do DF, tentava comprar o Banco Master —, Daniel Vorcaro afirmou sobre Célina: “Não ficou de fora, não”, sugerindo participação dela nas tratativas. As mensagens foram reveladas pela Folha de S.Paulo e confirmadas pelo Poder360, tornadas públicas pelo ministro André Mendonça (STF) com a quebra de sigilo da Operação Compliance Zero. Célina nega qualquer contato com Vorcaro e afirma que já era contrária à compra do Master pelo BRB antes de o assunto se tornar público, classificando as mensagens como tiradas de contexto.",
+   "src": [
+    "g1celina",
+    "otempocelina",
+    "poder360celina1",
+    "poder360celina2"
+   ],
+   "joke": "Vorcaro jura que ela não ficou de fora. Ela jura que sempre foi contra. Uma das duas versões está errada."
   },
   {
    "id": "milton-maluhy-filho",
