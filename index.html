@@ -532,17 +532,29 @@ window.addEventListener('popstate', applyUrlState);
 function haystack(e){
   return norm([e.name, e.role, ...e.aliases, e.joke||'', e.summary].join(' '));
 }
+function nameHaystack(e){
+  return norm([e.name, ...e.aliases].join(' '));
+}
 function escapeRegExp(s){ return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 /* casa no início de alguma palavra do texto (prefixo), não em qualquer ponto —
    evita falso positivo tipo "lula" batendo dentro de "celular" */
+function tokensMatchText(text, tokens){
+  return tokens.every(t => new RegExp('\\b'+escapeRegExp(t)).test(text));
+}
 function tokenMatch(e, tokens){
-  const h = haystack(e);
-  return tokens.every(t => new RegExp('\\b'+escapeRegExp(t)).test(h));
+  return tokensMatchText(haystack(e), tokens);
 }
 function localSearch(q){
   const tokens = norm(q).split(/\s+/).filter(Boolean);
   if(!tokens.length) return [];
-  return ENTITIES.filter(e => tokenMatch(e, tokens));
+  const matches = ENTITIES.filter(e => tokenMatch(e, tokens));
+  /* prioriza quem bate no próprio nome/alias sobre quem só é citado de passagem
+     no resumo/piada de outra ficha — ordenação estável, empates mantêm a ordem original. */
+  return matches.sort((a,b)=>{
+    const aName = tokensMatchText(nameHaystack(a), tokens) ? 0 : 1;
+    const bName = tokensMatchText(nameHaystack(b), tokens) ? 0 : 1;
+    return aName - bName;
+  });
 }
 function levenshtein(a,b){
   const m=a.length, n=b.length;
@@ -989,10 +1001,9 @@ async function init(){
     }
   });
 
-  /* chips de "em alta hoje" — curadoria manual, ids filtrados contra a base atual */
-  const TRENDING_IDS = ['daniel-vorcaro','banco-master','roberto-campos-neto','claudio-castro','ibaneis-rocha','hugo-motta','ciro-nogueira','jaques-wagner'];
+  /* chips de "em alta hoje" — 5 nomes aleatórios da base a cada carregamento */
   const trendingBox = document.getElementById('trendingBox');
-  const trendingPicks = TRENDING_IDS.map(byId).filter(Boolean).slice(0,5);
+  const trendingPicks = shuffledFrom(ENTITIES).slice(0,5);
   if(trendingPicks.length){
     trendingBox.innerHTML = '<span class="trending-label">Em alta hoje: </span><span class="trending-list">' + trendingPicks.map(e=>'<button type="button" class="trending-chip" data-id="'+e.id+'">'+e.name+'</button>').join(', ') + '</span>';
     trendingBox.querySelectorAll('.trending-chip').forEach(btn=>{
