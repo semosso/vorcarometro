@@ -385,8 +385,8 @@ function computeStateStats(){
 }
 
 /* ---------- placar ---------- */
-/* data (horário de Brasília) da última novidade. O placar soma 1 automaticamente a cada
-   18h no horário de Brasília (não depende do fuso de quem acessa) — zere manualmente pra
+/* data (horário de Brasília) da última novidade. O placar soma 1 automaticamente todo dia às
+   23h59 no horário de Brasília (não depende do fuso de quem acessa) — zere manualmente pra
    "2026-09-22" (ou o dia atual) só quando sair notícia nova de verdade, não pra atualizações
    de preenchimento de nomes/fatos antigos que já existiam. */
 const ULTIMA_NOVIDADE = "2026-09-20";
@@ -395,7 +395,7 @@ const ULTIMA_NOVIDADE = "2026-09-20";
    se a sequência atual ultrapassar este número, o recorde exibido já acompanha sozinho. Ao
    zerar ULTIMA_NOVIDADE por notícia nova de verdade, atualize este valor pro maior entre ele
    mesmo e os dias que a sequência que acabou de terminar tinha alcançado. */
-const RECORDE_ANTERIOR = 3;
+const RECORDE_ANTERIOR = 1;
 const PLACAR_LEGENDAS = ["O número é zerado manualmente a cada notícia nova. Ele fica em zero com frequência.","Nossa equipe de zeragem trabalha em regime de plantão."];
 function countUp(el, target, duration){
   if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ el.textContent = target; return; }
@@ -410,7 +410,7 @@ function countUp(el, target, duration){
 }
 function diasLabel(n){ return n===1 ? 'dia' : 'dias'; }
 function renderPlacar(){
-  const hoje = new Date(); const ultima = new Date(ULTIMA_NOVIDADE+"T21:00:00Z"); // 18h em Brasília (UTC-3, sem horário de verão)
+  const hoje = new Date(); const ultima = new Date(ULTIMA_NOVIDADE+"T23:59:00-03:00"); // 23h59 em Brasília (UTC-3, sem horário de verão)
   const dias = Math.max(0, Math.floor((hoje - ultima) / 86400000));
   const recorde = Math.max(RECORDE_ANTERIOR, dias);
   countUp(document.getElementById('placarNum'), dias, 650);
