@@ -515,9 +515,12 @@ window.addEventListener('popstate', applyUrlState);
 function haystack(e){
   return norm([e.name, e.role, ...e.aliases, e.joke||'', e.summary].join(' '));
 }
+function escapeRegExp(s){ return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+/* casa no início de alguma palavra do texto (prefixo), não em qualquer ponto —
+   evita falso positivo tipo "lula" batendo dentro de "celular" */
 function tokenMatch(e, tokens){
   const h = haystack(e);
-  return tokens.every(t => h.includes(t));
+  return tokens.every(t => new RegExp('\\b'+escapeRegExp(t)).test(h));
 }
 function localSearch(q){
   const tokens = norm(q).split(/\s+/).filter(Boolean);
