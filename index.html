@@ -180,20 +180,22 @@ section{margin-block:34px;}
 .map-svg-wrap{flex:1 1 300px; min-width:260px; max-width:440px;}
 .map-svg-wrap svg{width:100%; height:auto; display:block;}
 .hex{cursor:pointer;}
-.hex polygon{stroke:var(--bg); stroke-width:2px; transition:opacity .12s;}
-.hex:hover polygon{opacity:0.82;}
-.hex.selected polygon{stroke:var(--ink); stroke-width:2.5px;}
-.hex text{font-family:var(--font-mono); font-size:11px; font-weight:600; pointer-events:none;}
+.hex path{stroke:var(--bg); stroke-width:2px; transition:opacity .12s;}
+.hex:hover path{opacity:0.82;}
+.hex.selected path{stroke:var(--ink); stroke-width:2.5px;}
+.hex text{font-family:var(--font-mono); font-size:24px; font-weight:600; pointer-events:none;}
 .hex:focus{outline:none;}
-.hex.has-value polygon{animation:hexPulse 2.8s ease-in-out infinite;}
+.hex.has-value path{animation:hexPulse 2.8s ease-in-out infinite;}
 @keyframes hexPulse{0%,100%{opacity:1;} 50%{opacity:.72;}}
-@media (prefers-reduced-motion: reduce){ .hex.has-value polygon{animation:none;} }
+@media (prefers-reduced-motion: reduce){ .hex.has-value path{animation:none;} }
 .map-tooltip{position:fixed; pointer-events:none; z-index:20; background:#1f1a14; color:#e9e1cd; font-family:var(--font-mono); font-size:0.74rem; padding:6px 10px; border-radius:0; border:1px solid var(--gold); transform:translate(-50%,-120%); white-space:nowrap; display:none;}
 .map-tooltip.active{display:block;}
 .legend{display:flex; flex-direction:column; gap:8px; font-size:0.76rem; color:var(--ink-2); margin-top:14px;}
 .legend-row{display:flex; align-items:center; gap:10px;}
 .legend-swatch{width:15px; height:15px; border-radius:3px; flex-shrink:0; border:1px solid var(--border);}
 .legend-scale-bar{width:120px; height:12px; border-radius:2px; flex-shrink:0; border:1px solid var(--border); background:linear-gradient(to right, var(--seq-1), var(--seq-2), var(--seq-3), var(--seq-4));}
+.map-credit{font-family:var(--font-mono); font-size:0.68rem; color:var(--ink-muted); margin-top:2px;}
+.map-credit a{color:var(--ink-muted);}
 .state-panel{flex:1 1 260px; min-width:240px; border:1px solid var(--border); border-radius:0; background:var(--surface); padding:16px;}
 .state-panel h3{font-family:var(--font-display); font-weight:700; font-size:1.15rem; margin-bottom:4px;}
 .state-value{font-family:var(--font-mono); font-size:1.25rem; margin:6px 0; color:var(--link);}
@@ -297,11 +299,12 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
   <div class="block-title">Bacia Hidrográfica do Master</div>
   <div class="map-layout">
     <div class="map-svg-wrap">
-      <svg id="brMap" viewBox="0 0 337 493" role="img" aria-label="Mapa hexagonal dos estados do Brasil"></svg>
+      <svg id="brMap" viewBox="0 0 722 700" role="img" aria-label="Mapa hexagonal dos estados do Brasil"></svg>
       <div class="map-tooltip" id="mapTooltip"></div>
       <div class="legend">
         <div class="legend-row"><span class="legend-scale-bar"></span><span>Quantidade de pessoas e empresas ligadas</span></div>
         <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none)"></span><span>Sem registro nesta base</span></div>
+        <div class="legend-row map-credit">Cartograma hexagonal por <a href="https://observablehq.com/@vsueiro/cartogram-of-brazil" target="_blank" rel="noopener">Vinicius Sueiro</a>.</div>
       </div>
     </div>
     <div class="state-panel" id="statePanel"></div>
@@ -326,16 +329,37 @@ let SRC = {};
 
 let ENTITIES = [];
 
+/* Cartograma hexagonal do Brasil por Vinicius Sueiro (https://observablehq.com/@vsueiro/cartogram-of-brazil) —
+   coordenadas (d, cx, cy) reproduzidas do SVG original dele, uma a uma por UF. */
 const BR_HEX = [
- {uf:'RR',name:'Roraima',row:0,col:2},{uf:'AP',name:'Amapá',row:0,col:3},{uf:'AM',name:'Amazonas',row:1,col:1},{uf:'PA',name:'Pará',row:1,col:3},{uf:'MA',name:'Maranhão',row:2,col:4},
- {uf:'AC',name:'Acre',row:3,col:0},{uf:'RO',name:'Rondônia',row:3,col:1},{uf:'TO',name:'Tocantins',row:3,col:4},{uf:'PI',name:'Piauí',row:3,col:5},{uf:'CE',name:'Ceará',row:2,col:5},
- {uf:'RN',name:'Rio Grande do Norte',row:2,col:7},{uf:'MT',name:'Mato Grosso',row:4,col:3},{uf:'PB',name:'Paraíba',row:3,col:7},{uf:'PE',name:'Pernambuco',row:4,col:7},{uf:'BA',name:'Bahia',row:4,col:5},
- {uf:'SE',name:'Sergipe',row:5,col:6},{uf:'AL',name:'Alagoas',row:5,col:7},{uf:'GO',name:'Goiás',row:5,col:4},{uf:'DF',name:'Distrito Federal',row:4,col:4},{uf:'MG',name:'Minas Gerais',row:5,col:5},
- {uf:'ES',name:'Espírito Santo',row:6,col:6},{uf:'MS',name:'Mato Grosso do Sul',row:6,col:3},{uf:'SP',name:'São Paulo',row:7,col:4},{uf:'RJ',name:'Rio de Janeiro',row:6,col:5},
- {uf:'PR',name:'Paraná',row:7,col:3},{uf:'SC',name:'Santa Catarina',row:8,col:3},{uf:'RS',name:'Rio Grande do Sul',row:9,col:3}
+ {uf:'AC', name:'Acre', cx:57.735, cy:200, d:'M28.8675 250L0 200L28.8676 150L86.6025 150L115.47 200L86.6026 250H28.8675Z'},
+ {uf:'AL', name:'Alagoas', cx:663.955, cy:250, d:'M635.089 300L606.222 250L635.089 200L692.824 200L721.692 250L692.824 300H635.089Z'},
+ {uf:'AM', name:'Amazonas', cx:144.338, cy:150, d:'M115.47 200L86.6025 150L115.47 100L173.205 100L202.073 150L173.205 200H115.47Z'},
+ {uf:'AP', name:'Amapá', cx:317.544, cy:50, d:'M288.677 100L259.809 50L288.677 1.52588e-05L346.412 0L375.279 50L346.412 100H288.677Z'},
+ {uf:'BA', name:'Bahia', cx:490.753, cy:350, d:'M461.881 400L433.014 350L461.881 300L519.616 300L548.484 350L519.616 400H461.881Z'},
+ {uf:'CE', name:'Ceará', cx:404.148, cy:200, d:'M375.281 250L346.413 200L375.281 150L433.016 150L461.883 200L433.016 250H375.281Z'},
+ {uf:'DF', name:'Distrito Federal', cx:317.544, cy:250, d:'M288.677 300L259.809 250L288.677 200L346.412 200L375.279 250L346.412 300H288.677Z'},
+ {uf:'ES', name:'Espírito Santo', cx:577.355, cy:400, d:'M548.486 450L519.618 400L548.486 350L606.221 350L635.088 400L606.221 450H548.486Z'},
+ {uf:'GO', name:'Goiás', cx:317.544, cy:350, d:'M288.675 400L259.808 350L288.675 300L346.41 300L375.278 350L346.41 400H288.675Z'},
+ {uf:'MA', name:'Maranhão', cx:317.544, cy:150, d:'M288.677 200L259.809 150L288.677 100L346.412 100L375.279 150L346.412 200H288.677Z'},
+ {uf:'MG', name:'Minas Gerais', cx:404.148, cy:400, d:'M375.279 450L346.411 400L375.279 350L433.014 350L461.881 400L433.014 450H375.279Z'},
+ {uf:'MS', name:'Mato Grosso do Sul', cx:317.544, cy:450, d:'M288.675 500L259.808 450L288.675 400L346.41 400L375.278 450L346.41 500H288.675Z'},
+ {uf:'MT', name:'Mato Grosso', cx:230.942, cy:300, d:'M202.074 350L173.207 300L202.074 250L259.809 250L288.677 300L259.809 350H202.074Z'},
+ {uf:'PA', name:'Pará', cx:230.941, cy:100, d:'M202.074 150L173.206 100L202.074 50L259.809 50L288.676 100L259.809 150H202.074Z'},
+ {uf:'PB', name:'Paraíba', cx:577.355, cy:200, d:'M548.487 250L519.619 200L548.487 150L606.222 150L635.089 200L606.222 250H548.487Z'},
+ {uf:'PE', name:'Pernambuco', cx:490.751, cy:250, d:'M461.883 300L433.016 250L461.883 200L519.618 200L548.486 250L519.618 300H461.883Z'},
+ {uf:'PI', name:'Piauí', cx:404.148, cy:300, d:'M375.281 350L346.413 300L375.281 250L433.016 250L461.883 300L433.016 350H375.281Z'},
+ {uf:'PR', name:'Paraná', cx:490.757, cy:550, d:'M461.882 600L433.015 550L461.882 500L519.617 500L548.485 550L519.617 600H461.882Z'},
+ {uf:'RJ', name:'Rio de Janeiro', cx:490.755, cy:450, d:'M461.882 500L433.015 450L461.882 400L519.617 400L548.485 450L519.617 500H461.882Z'},
+ {uf:'RN', name:'Rio Grande do Norte', cx:490.749, cy:150, d:'M461.883 200L433.016 150L461.883 100L519.618 100L548.486 150L519.618 200H461.883Z'},
+ {uf:'RO', name:'Rondônia', cx:144.338, cy:250, d:'M115.47 300L86.6025 250L115.47 200L173.205 200L202.073 250L173.205 300H115.47Z'},
+ {uf:'RR', name:'Roraima', cx:144.338, cy:50, d:'M115.47 100L86.6025 50L115.47 1.52588e-05L173.205 0L202.073 50L173.205 100H115.47Z'},
+ {uf:'RS', name:'Rio Grande do Sul', cx:317.544, cy:650, d:'M288.675 700L259.808 650L288.675 600L346.41 600L375.278 650L346.41 700H288.675Z'},
+ {uf:'SC', name:'Santa Catarina', cx:404.148, cy:600, d:'M375.279 650L346.412 600L375.279 550L433.014 550L461.882 600L433.014 650H375.279Z'},
+ {uf:'SE', name:'Sergipe', cx:577.355, cy:300, d:'M548.487 350L519.619 300L548.487 250L606.222 250L635.089 300L606.222 350H548.487Z'},
+ {uf:'SP', name:'São Paulo', cx:404.148, cy:500, d:'M375.279 550L346.412 500L375.279 450L433.014 450L461.882 500L433.014 550H375.279Z'},
+ {uf:'TO', name:'Tocantins', cx:230.941, cy:200, d:'M202.074 250L173.207 200L202.074 150L259.809 150L288.677 200L259.809 250H202.074Z'}
 ];
-/* hexágonos sem estado — só preenchem "buracos" entre estados reais pra silhueta ler como o mapa do Brasil */
-const BR_HEX_FILLER = [{row:4,col:6},{row:6,col:4},{row:1,col:2},{row:3,col:6},{row:1,col:4},{row:2,col:1},{row:2,col:3},{row:3,col:3},{row:5,col:3},{row:8,col:4}];
 /* valores públicos quantificados por estado (curado à mão, vem do data.json) e notas de contexto —
    quem está ligado a cada estado NÃO é curado aqui: é calculado a partir do campo "states" de cada
    entidade, pra nunca mais ficar dessincronizado. */
@@ -819,20 +843,12 @@ function setupStateShare(uf, name, stat){
 }
 
 /* ---------- mapa hexagonal ---------- */
-function hexPoints(cx,cy,R){ const pts=[]; for(let i=0;i<6;i++){ const a=Math.PI/180*60*i; pts.push((cx+R*Math.cos(a)).toFixed(1)+','+(cy+R*Math.sin(a)).toFixed(1)); } return pts.join(' '); }
 function seqColor(count){ if(count>=10) return 'var(--seq-4)'; if(count>=6) return 'var(--seq-3)'; if(count>=3) return 'var(--seq-2)'; return 'var(--seq-1)'; }
 let selectedUF = 'RJ';
 function buildMap(){
-  const R = 26; const svg = document.getElementById('brMap');
+  const svg = document.getElementById('brMap');
   let out = '';
-  BR_HEX_FILLER.forEach(f=>{
-    const cx = R + f.col*1.5*R + 6;
-    const cy = (Math.sqrt(3)*R)/2 + f.row*Math.sqrt(3)*R + (f.col%2===1 ? (Math.sqrt(3)*R)/2 : 0) + 10;
-    out += '<polygon points="'+hexPoints(cx,cy,R*0.86)+'" fill="var(--map-none)" stroke="var(--map-none-line)" stroke-width="1"/>';
-  });
   BR_HEX.forEach(s=>{
-    const cx = R + s.col*1.5*R + 6;
-    const cy = (Math.sqrt(3)*R)/2 + s.row*Math.sqrt(3)*R + (s.col%2===1 ? (Math.sqrt(3)*R)/2 : 0) + 10;
     const stat = STATE_STATS[s.uf];
     const hasCount = !!(stat && stat.count);
     let fill='var(--map-none)', stroke='var(--map-none-line)';
@@ -842,8 +858,8 @@ function buildMap(){
       ? s.name+' — '+stat.count+(stat.count===1?' ligação':' ligações')+(stat.value?' · '+brl(stat.value):'')
       : s.name+' — sem registro nesta base';
     out += '<g class="hex'+(s.uf===selectedUF?' selected':'')+(hasCount?' has-value':'')+'" data-uf="'+s.uf+'" data-tip="'+tipText.replace(/"/g,'&quot;')+'" tabindex="0" role="button" aria-label="'+s.name+'" onclick="selectState(\''+s.uf+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){selectState(\''+s.uf+'\')}">'+
-      '<polygon points="'+hexPoints(cx,cy,R*0.86)+'" fill="'+fill+'" stroke="'+stroke+'"/>'+
-      '<text x="'+cx+'" y="'+(cy+4)+'" text-anchor="middle" fill="'+textFill+'">'+s.uf+'</text>'+
+      '<path d="'+s.d+'" fill="'+fill+'" stroke="'+stroke+'"/>'+
+      '<text x="'+s.cx+'" y="'+(s.cy+8)+'" text-anchor="middle" fill="'+textFill+'">'+s.uf+'</text>'+
     '</g>';
   });
   svg.innerHTML = out;
