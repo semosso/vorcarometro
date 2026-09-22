@@ -659,6 +659,22 @@
   "cnnparticipacaobrbadvogado": {
    "t": "CNN Brasil — Caso Master: entenda participação de ex-presidente do BRB e advogado",
    "u": "https://www.cnnbrasil.com.br/politica/caso-master-entenda-participacao-de-ex-presidente-do-brb-e-advogado/"
+  },
+  "piauialtatensao": {
+   "t": "revista piauí — Alta tensão no Banco Master",
+   "u": "https://piaui.folha.uol.com.br/materia/alta-tensao-banco-master/"
+  },
+  "diariodocentrodomundodigimais": {
+   "t": "Diário do Centro do Mundo — Banco de Edir Macedo opera no modelo do Master, diz revista Piauí",
+   "u": "https://www.diariodocentrodomundo.com.br/banco-de-edir-macedo-opera-no-modelo-do-master-diz-revista-piaui/"
+  },
+  "jornalggndigimais": {
+   "t": "Jornal GGN — Banco Digimais, de Edir Macedo, foi denunciado um mês antes do Master por praticar mesmo tipo de golpe",
+   "u": "https://jornalggn.com.br/noticia/banco-digimais-de-edir-macedo-foi-denunciado-um-mes-antes-do-master-por-praticar-mesmo-tipo-de-golpe/"
+  },
+  "parlamentopiauidarkhorse": {
+   "t": "Portal Parlamento Piauí — Vorcaro fez novo repasse para “Dark Horse” após Flávio dizer que pagamentos haviam acabado",
+   "u": "https://www.parlamentopiaui.com.br/noticia/vorcaro-fez-novo-repasse-para-dark-horse-apos-flavio-dizer-que-pagamentos-haviam-acabado"
   }
  },
  "entities": [
@@ -715,7 +731,8 @@
     "cnnempresawagnercnpjs",
     "cnncvmmulta20mi",
     "cnn10revelacoes",
-    "cnnvidadeluxo"
+    "cnnvidadeluxo",
+    "piauialtatensao"
    ],
    "joke": "Oferecia 177% do CDI e tinha um jato de R$ 200 milhões — hoje só um dos dois ainda voa."
   },
@@ -1602,24 +1619,27 @@
    "period": "Negociação ocorrida entre fevereiro e maio de 2025; áudio revelado em 05/2026; novas mensagens reveladas em 09/2026",
    "amounts": [
     "R$ 134 milhões — valor negociado em áudio para bancar o filme “Dark Horse”, biografia de Jair Bolsonaro",
-    "~R$ 61 milhões (US$ 10,6 milhões) já pagos entre fevereiro e maio de 2025, em seis transferências, segundo reportagem"
+    "~R$ 61 milhões (US$ 10,6 milhões) já pagos entre fevereiro e maio de 2025, em seis transferências, segundo reportagem",
+    "US$ 1,66 milhão repassado em 16/09/2025 ao Havengate Development Fund — pagamento posterior ao que Flávio apresentou publicamente como o último, elevando o total identificado para ~US$ 12,3 milhões, segundo relatório do Coaf revelado pela piauí"
    ],
    "related": [
     "jair-bolsonaro",
     "daniel-vorcaro",
     "neymar-pai",
-    "karina-gama"
+    "karina-gama",
+    "havengate-development-fund"
    ],
    "states": [
     "RJ"
    ],
-   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro.",
+   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro. Um relatório do Coaf revelado pela revista piauí mostra que Vorcaro continuou enviando dinheiro para o “Dark Horse” depois da data que Flávio apresentou publicamente, em entrevista à GloboNews, como a do último pagamento: um repasse de US$ 1,66 milhão ao Havengate Development Fund em 16/09/2025, elevando o total identificado de US$ 10,6 milhões para cerca de US$ 12,3 milhões. Flávio também afirmou, incorretamente segundo a apuração, que o fundo seria supervisionado pela SEC americana.",
    "src": [
     "interceptflavio",
     "cnnflavio",
     "correiobrazilianseflavio",
     "cartaneymarflavio",
-    "uolneymarintermediario"
+    "uolneymarintermediario",
+    "parlamentopiauidarkhorse"
    ],
    "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa."
   },
@@ -1817,7 +1837,8 @@
     "cnnrombofgc52bi",
     "cnncdbfirma",
     "cnnpresoslista",
-    "cnncvmmulta20mi"
+    "cnncvmmulta20mi",
+    "piauialtatensao"
    ],
    "joke": "Pagava até 177% do CDI. O rendimento de verdade foi virar a maior liquidação bancária da história do país."
   },
@@ -2634,6 +2655,114 @@
     "revistaforum_nikolas",
     "poder360_nikolas"
    ]
+  },
+  {
+   "id": "edir-macedo",
+   "name": "Edir Macedo",
+   "aliases": [
+    "bispo Edir Macedo"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Bispo; fundador da Igreja Universal do Reino de Deus; controlador do Banco Digimais",
+   "period": "Reportagem da revista piauí publicada em 09/2026",
+   "amounts": [],
+   "related": [
+    "banco-digimais",
+    "aldemir-bendine"
+   ],
+   "states": [],
+   "summary": "Bispo fundador da Igreja Universal do Reino de Deus e controlador do Banco Digimais. Reportagem da revista piauí, assinada por Consuelo Dieguez, aponta que o Digimais vinha operando sob o mesmo modelo do Banco Master: inflar artificialmente ativos de fundos de investimento para mascarar um patrimônio líquido negativo estimado em R$ 8,5 bilhões, usando isso como lastro para emitir CDBs com juros de até 125% do CDI. Não há, até a última atualização desta base, acusação formal contra Macedo neste caso; o banco contratou o ex-presidente da Petrobras e do Banco do Brasil Aldemir Bendine — condenado na Lava Jato — para tentar reestruturar a instituição.",
+   "src": [
+    "diariodocentrodomundodigimais",
+    "jornalggndigimais"
+   ],
+   "joke": "Pregava fé inabalável; o balanço do banco, segundo a piauí, era bem mais abalável."
+  },
+  {
+   "id": "banco-digimais",
+   "name": "Banco Digimais",
+   "aliases": [
+    "Digimais"
+   ],
+   "type": "instituicao",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Banco controlado pelo bispo Edir Macedo",
+   "period": "Reportagem da revista piauí publicada em 09/2026",
+   "amounts": [
+    "R$ 8,5 bilhões — patrimônio líquido negativo estimado, segundo auditoria da UHY International Bendoraytes citada pela piauí",
+    "R$ 650 milhões em contratos de crédito do fundo EXP1 (55 mil contratos), dos quais 22 mil sem lastro real, segundo a mesma auditoria"
+   ],
+   "related": [
+    "edir-macedo",
+    "aldemir-bendine"
+   ],
+   "states": [],
+   "summary": "Banco controlado pelo bispo Edir Macedo. Segundo reportagem da revista piauí, baseada em auditoria da UHY International Bendoraytes, o Digimais vinha adotando o mesmo modelo de negócio que levou à liquidação do Banco Master: inflar artificialmente ativos em fundos de investimento para mascarar um patrimônio líquido negativo estimado em R$ 8,5 bilhões, usando isso como lastro para emitir CDBs com juros de até 125% do CDI. De 55 mil contratos de crédito do fundo EXP1 (R$ 650 milhões), 22 mil não teriam lastro real. O ex-presidente da Petrobras e do Banco do Brasil Aldemir Bendine foi contratado para tentar reestruturar a instituição visando uma possível venda.",
+   "src": [
+    "diariodocentrodomundodigimais",
+    "jornalggndigimais"
+   ],
+   "joke": "Mesmo manual do Master: infla o fundo, emite o CDB, reza pra não estourar antes da venda."
+  },
+  {
+   "id": "aldemir-bendine",
+   "name": "Aldemir Bendine",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Ex-presidente da Petrobras e do Banco do Brasil, condenado na Lava Jato; contratado para reestruturar o Banco Digimais",
+   "period": "Condenado em 2018 (Lava Jato); contratado pelo Digimais, reportagem da piauí em 09/2026",
+   "amounts": [
+    "R$ 3 milhões — propina da Odebrecht pela qual foi condenado na Lava Jato (fato anterior e sem relação com o caso Master/Digimais)"
+   ],
+   "related": [
+    "banco-digimais",
+    "edir-macedo"
+   ],
+   "states": [],
+   "summary": "Ex-presidente do Banco do Brasil (2009–2015) e da Petrobras (2015–2016), condenado em 2018 pela Lava Jato a 11 anos de prisão (reduzidos para 7 anos e 9 meses) por corrupção passiva e lavagem de dinheiro, num esquema de propina de R$ 3 milhões pago pela Odebrecht. Sem relação direta com o caso Master, foi contratado pelo Banco Digimais, do bispo Edir Macedo, para tentar reestruturar e “limpar” o balanço da instituição depois que uma auditoria apontou patrimônio líquido negativo de cerca de R$ 8,5 bilhões, segundo reportagem da revista piauí.",
+   "src": [
+    "diariodocentrodomundodigimais"
+   ],
+   "joke": "Contratado pra arrumar a casa alheia com um currículo que inclui 11 anos de prisão pela própria bagunça."
+  },
+  {
+   "id": "havengate-development-fund",
+   "name": "Havengate Development Fund",
+   "aliases": [
+    "Havengate"
+   ],
+   "type": "fundo",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Fundo americano (Texas) que administra os recursos do filme “Dark Horse”",
+   "period": "Repasse identificado em 16/09/2025; reportagem da piauí em 09/2026",
+   "amounts": [
+    "US$ 12,3 milhões — total identificado de repasses de Vorcaro ao fundo para financiar o filme, segundo relatório do Coaf"
+   ],
+   "related": [
+    "flavio-bolsonaro",
+    "daniel-vorcaro",
+    "jair-bolsonaro"
+   ],
+   "states": [],
+   "summary": "Fundo sediado no Texas (EUA), responsável por administrar os recursos destinados à produção do filme biográfico “Dark Horse”, sobre Jair Bolsonaro. Segundo relatório do Coaf revelado pela revista piauí, recebeu de Daniel Vorcaro pelo menos um repasse de US$ 1,66 milhão em 16/09/2025 — meses depois da data que o senador Flávio Bolsonaro apresentou publicamente como a do último pagamento (maio de 2025), elevando o total identificado de cerca de US$ 10,6 milhões para aproximadamente US$ 12,3 milhões. Ao contrário do que Flávio afirmou em entrevista à GloboNews, o fundo não é supervisionado pela SEC, a comissão de valores mobiliários dos EUA.",
+   "src": [
+    "parlamentopiauidarkhorse"
+   ],
+   "joke": "Fundo batizado com nome de “azarão”; o repasse de verdade não tinha nada de azar."
   }
  ],
  "stateValues": {
