@@ -662,7 +662,7 @@
   },
   "piauialtatensao": {
    "t": "revista piauí — Alta tensão no Banco Master",
-   "u": "https://piaui.folha.uol.com.br/materia/alta-tensao-banco-master/"
+   "u": "https://piaui.uol.com.br/revista/217/alta-tensao-banco-master/"
   },
   "diariodocentrodomundodigimais": {
    "t": "Diário do Centro do Mundo — Banco de Edir Macedo opera no modelo do Master, diz revista Piauí",
@@ -675,6 +675,54 @@
   "parlamentopiauidarkhorse": {
    "t": "Portal Parlamento Piauí — Vorcaro fez novo repasse para “Dark Horse” após Flávio dizer que pagamentos haviam acabado",
    "u": "https://www.parlamentopiaui.com.br/noticia/vorcaro-fez-novo-repasse-para-dark-horse-apos-flavio-dizer-que-pagamentos-haviam-acabado"
+  },
+  "piaui129milhoes": {
+   "t": "revista piauí — 129 milhões de aberrações",
+   "u": "https://piaui.uol.com.br/web/129-milhoes-aberracoes-master-moraes-vorcaro/"
+  },
+  "piauiarmadilha": {
+   "t": "revista piauí — A armadilha: a construção do escândalo do Master",
+   "u": "https://piaui.uol.com.br/revista/238/o-escandalo-master-vorcaro-aliados/"
+  },
+  "piauicontaminacao": {
+   "t": "revista piauí — A contaminação: o Banco Master e a desmoralização da República",
+   "u": "https://piaui.uol.com.br/revista/233/o-banco-master-e-a-desmoralizacao-da-republica/"
+  },
+  "piauifestasuicas": {
+   "t": "revista piauí — A festa das “suíças” de Vorcaro",
+   "u": "https://piaui.uol.com.br/web/festa-suicas-vorcaro-fabio-faria/"
+  },
+  "piauisolucaotoffoli": {
+   "t": "revista piauí — A solução Toffoli",
+   "u": "https://piaui.uol.com.br/web/a-solucao-toffoli-stf-master/"
+  },
+  "piauiurnasjustica": {
+   "t": "revista piauí — As urnas no ritmo da Justiça",
+   "u": "https://piaui.uol.com.br/web/as-urnas-no-ritmo-da-justica/"
+  },
+  "piauimoraesbarci": {
+   "t": "revista piauí — Dr. Moraes and Mr. Barci",
+   "u": "https://piaui.uol.com.br/revista/234/dr-moraes-and-mr-barci/"
+  },
+  "piauifabiofaria": {
+   "t": "revista piauí — Fábio Faria, “o cara do Vorcaro”",
+   "u": "https://piaui.uol.com.br/web/fabio-faria-daniel-vorcaro-lobby/"
+  },
+  "piauiflaviopoco": {
+   "t": "revista piauí — Flávio, o homem do poço",
+   "u": "https://piaui.uol.com.br/web/flavio-bolsonaro-o-homem-do-poco-banco-master/"
+  },
+  "piauiamigocrime": {
+   "t": "revista piauí — O amigo do crime: por que Ciro Nogueira comparece em (quase) todos os escândalos da República",
+   "u": "https://piaui.uol.com.br/revista/237/o-amigo-do-crime-ciro-nogueira/"
+  },
+  "piauiministrobanqueiro": {
+   "t": "revista piauí — O ministro, o banqueiro e o fundo",
+   "u": "https://piaui.uol.com.br/web/toffoli-relatorio-pf-vorcaro-paraiso-fiscal/"
+  },
+  "piauivoltemane": {
+   "t": "revista piauí — Voltei, mané",
+   "u": "https://piaui.uol.com.br/revista/236/voltei-mane/"
   }
  },
  "entities": [
@@ -707,13 +755,15 @@
     "alok",
     "dennis-dj",
     "the-chainsmokers",
-    "nikolas-ferreira"
+    "nikolas-ferreira",
+    "ciro-nogueira",
+    "nelson-tanure"
    ],
    "states": [
     "SP",
     "MG"
    ],
-   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor.",
+   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor. Na noite de 17 de novembro de 2025 — um dia depois de a Justiça decretar sua prisão preventiva em sigilo —, tentou embarcar num jato particular rumo a Dubai, com escala em Malta; foi preso no Aeroporto de Guarulhos horas antes do embarque, enquanto a Fictor, holding de investimentos pouco conhecida, anunciava publicamente um “consórcio com investidores árabes” de R$ 3 bilhões para salvar o banco — proposta recebida pelo mercado como piada diante do rombo bilionário. Reportagens da revista piauí também documentam sua festa de Halloween de outubro de 2023 (a “festa das suíças”) e um jantar em Courchevel, nos Alpes franceses, com o senador Ciro Nogueira e o empresário José Seripieri Filho (dono da Amil), no chalé de Alberto Leite.",
    "src": [
     "stf",
     "yahoo",
@@ -732,7 +782,11 @@
     "cnncvmmulta20mi",
     "cnn10revelacoes",
     "cnnvidadeluxo",
-    "piauialtatensao"
+    "piauialtatensao",
+    "piauiarmadilha",
+    "piauicontaminacao",
+    "piauifestasuicas",
+    "piauivoltemane"
    ],
    "joke": "Oferecia 177% do CDI e tinha um jato de R$ 200 milhões — hoje só um dos dois ainda voa."
   },
@@ -1064,22 +1118,27 @@
    },
    "role": "Ex-presidente do BRB (Banco de Brasília)",
    "period": "Preso em 04/2026",
-   "amounts": [],
+   "amounts": [
+    "R$ 12,2 bilhões — valor pago pelo BRB ao Master, em janeiro de 2025, por carteiras de crédito consignado que o Banco Central concluiu não existirem de fato"
+   ],
    "related": [
     "brb",
     "daniel-monteiro",
-    "roberio-mangueira"
+    "roberio-mangueira",
+    "ciro-nogueira"
    ],
    "states": [
     "DF"
    ],
-   "summary": "Ex-presidente do BRB, banco estatal do Distrito Federal que negociou a compra do Banco Master em 2025. Comandava o banco no período em que a instituição avançou nas negociações com o Master. Preso em abril de 2026.",
+   "summary": "Ex-presidente do BRB, banco estatal do Distrito Federal que negociou a compra do Banco Master em 2025. Comandava o banco no período em que a instituição avançou nas negociações com o Master. Preso em abril de 2026. Segundo apuração da revista piauí, sua indicação para a presidência do BRB foi apadrinhada pelo senador Ciro Nogueira. À frente do banco, não conseguiu explicar ao Banco Central aspectos básicos da compra de 58% do Master por R$ 2 bilhões — negócio que incluía ativos fictícios, como cártulas sem validade do extinto Besc avaliadas (sem sustentação) em R$ 13 bilhões. O episódio mais grave envolveu uma compra de R$ 12,2 bilhões em supostas carteiras de crédito consignado do Master: quando o BC pediu comprovação, o BRB apresentou primeiro uma justificativa falsa (servidores da Bahia) e depois outra também falsa (uma empresa, a Tirreno, que sequer existia) — ficando evidente que o banco desembolsara a quantia bilionária “em troca de vento”.",
    "src": [
     "ag13",
     "gzalvos",
     "cnncompliancezero2fase",
     "cnnalvospf",
-    "cnnoitoalvos"
+    "cnnoitoalvos",
+    "piauicontaminacao",
+    "piauiarmadilha"
    ],
    "joke": "Presidente do banco que quase comprou o Master — e quase saiu dessa ileso."
   },
@@ -1221,11 +1280,12 @@
    "states": [
     "DF"
    ],
-   "summary": "Presidiu o Banco Central no período em que, segundo reportagens, a autarquia já teria sido informada sobre fragilidades relevantes na estrutura de ativos e na liquidez do Master, sem que medidas de intervenção imediatas fossem adotadas. Seu sucessor, Gabriel Galípolo, afirmou publicamente não ter encontrado indícios de que Campos Neto tenha agido para favorecer o banco — avaliação contestada por políticos de oposição ao governo anterior.",
+   "summary": "Presidiu o Banco Central no período em que, segundo reportagens, a autarquia já teria sido informada sobre fragilidades relevantes na estrutura de ativos e na liquidez do Master, sem que medidas de intervenção imediatas fossem adotadas. Seu sucessor, Gabriel Galípolo, afirmou publicamente não ter encontrado indícios de que Campos Neto tenha agido para favorecer o banco — avaliação contestada por políticos de oposição ao governo anterior. Reportagem da revista piauí detalha que, durante sua gestão, o Banco Central enviou dezoito ofícios de alerta ao Master sobre irregularidades e descompasso nas provisões, sem tomar medida mais severa; o então diretor de Fiscalização do BC dizia publicamente que os grandes bancos tinham “inveja do crescimento do Master” e que o banco ainda iria “colocar o ovo em pé”. Em novembro de 2024, já perto do fim do mandato, deu a Vorcaro um prazo de quatro meses para ajustar as contas do banco, sob pena de liquidação — prazo que se esgotaria já na gestão de seu sucessor, Gabriel Galípolo. Meses depois de deixar o BC, tornou-se executivo do Nubank, fintech que hoje responde a ação judicial por ter vendido CDBs do Master ao público omitindo riscos.",
    "src": [
     "infomoneyedinho",
     "spbancarioscampos",
-    "cnnbcpoupacamposneto"
+    "cnnbcpoupacamposneto",
+    "piauicontaminacao"
    ],
    "joke": "Presidiu o Banco Central bem na hora de, segundo os críticos, não fazer nada."
   },
@@ -1409,22 +1469,33 @@
    "role": "Senador (PP-PI)",
    "period": "Investigado em 2026",
    "amounts": [
-    "R$ 6 a 8 milhões em suposta propina, segundo apuração, para barrar CPI do Master"
+    "R$ 6 a 8 milhões em suposta propina, segundo apuração, para barrar CPI do Master",
+    "R$ 300 mil a R$ 500 mil por mês — mesada paga por Vorcaro a Ciro Nogueira entre 2024 e 2025, segundo mensagens obtidas pela PF",
+    "R$ 1 milhão pagos pela empresa de Ciro (CNLF) por uma fatia de 30% da Green Investimentos que valia R$ 13 milhões — sociedade oculta com Vorcaro firmada por contrato de gaveta em abril de 2024",
+    "R$ 22 milhões — cobertura tríplex comprada por Ciro na Rua Oscar Freire (SP), em julho de 2024, um mês antes de apresentar a “Emenda Master”",
+    "~R$ 1,85 milhão — custo de treze dias de Ciro e sua companheira na estação de esqui de Courchevel (Alpes franceses), em janeiro de 2025, bancado por Vorcaro",
+    "~R$ 15 milhões em propina apontados por delatores da Lava Jato (Petrobras/PP), da Odebrecht e da J&F/JBS ao longo de mais de uma década — sem que Ciro tenha sido condenado em nenhum dos casos"
    ],
    "related": [
     "daniel-vorcaro",
-    "jaques-wagner"
+    "jaques-wagner",
+    "ricardo-magro",
+    "andre-mendonca",
+    "nelson-tanure"
    ],
    "states": [
     "PI"
    ],
-   "summary": "Senador pelo Piauí e pré-candidato à reeleição, é investigado sob suspeita de ter atuado no Congresso a favor dos interesses de Daniel Vorcaro. Mensagens da PF o relacionam a pagamentos de Vorcaro; reportagens apontam que pode ter recebido entre R$ 6 milhões e R$ 8 milhões para ajudar a barrar uma CPI do Banco Master, e que teria proposto aumentar a cobertura do FGC.",
+   "summary": "Senador pelo Piauí e pré-candidato à reeleição, é investigado sob suspeita de ter atuado no Congresso a favor dos interesses de Daniel Vorcaro. Mensagens da PF o relacionam a pagamentos de Vorcaro; reportagens apontam que pode ter recebido entre R$ 6 milhões e R$ 8 milhões para ajudar a barrar uma CPI do Banco Master, e que teria proposto aumentar a cobertura do FGC. Reportagem da revista piauí, com base em mais de sessenta páginas de um relatório da PF autorizado pelo ministro André Mendonça, detalha uma relação que vai muito além de amizade: Vorcaro pagava a Ciro uma mesada de R$ 300 mil a R$ 500 mil por mês; os dois mantinham uma sociedade oculta, firmada por contrato de gaveta em abril de 2024, pela qual a empresa de Ciro (CNLF) pagou R$ 1 milhão por uma fatia de 30% da Green Investimentos que valia R$ 13 milhões; Ciro ocupou um apartamento de Vorcaro em São Paulo e usava um cartão de crédito do banqueiro para despesas em restaurantes; e, em janeiro de 2025, os dois passaram treze dias juntos na luxuosa estação de esqui de Courchevel, nos Alpes franceses — viagem de cerca de R$ 1,85 milhão bancada por Vorcaro, registrada numa foto dos dois abraçados que a PF encontrou no celular do banqueiro. Segundo a investigação, a “Emenda Master” — que ampliaria a cobertura do FGC de R$ 250 mil para R$ 1 milhão — foi redigida pela própria assessoria do Master e entregue a Ciro num envelope sem identificação do banco, com instruções para que nem o motorista tivesse vínculo com o parlamentar; Vorcaro comemorou depois que o texto saiu “exatamente como mandei”. Ciro usou a mesma tática, batizada de “Emenda Refit”, para favorecer o empresário Ricardo Magro, apontado como o maior sonegador individual do país. A PF também investiga se o senador atuou como sócio oculto da rede de postos HD, em Teresina, comprada por dois empresários foragidos suspeitos de lavar dinheiro para o PCC — negócio em que uma empresa da família de Ciro recebeu, sem justificativa aparente, R$ 63,9 mil de uma das partes. Ciro nunca foi condenado: quatro denúncias da Procuradoria-Geral da República contra ele, ao longo de mais de dez anos e envolvendo os escândalos do petrolão, da Odebrecht e da J&F, foram todas rejeitadas pelo STF por falta de provas suficientes, apesar de fartos indícios documentais (planilhas, delações, coincidências de datas) reunidos pelos investigadores. Prometeu renunciar ao mandato “se surgir alguma denúncia que seja comprovada”; até o fechamento da reportagem da piauí, seguia no cargo.",
    "src": [
     "blogdodina",
     "embc",
     "otempoimplode",
     "cnnpropinaservidoresbc",
-    "cnnnenhumcandidatoespaco"
+    "cnnnenhumcandidatoespaco",
+    "piauiamigocrime",
+    "piauiarmadilha",
+    "piauicontaminacao"
    ],
    "joke": "Defendia aumentar a cobertura do FGC bem na hora que o FGC mais precisava não pagar. Coincidência, garantem as fontes."
   },
@@ -1441,18 +1512,27 @@
    },
    "role": "Senador (PT-BA)",
    "period": "Investigado em 2026",
-   "amounts": [],
+   "amounts": [
+    "US$ 66 mil, € 40 mil e R$ 16,5 mil em espécie encontrados pela PF em seus imóveis em Salvador e Brasília (operação de 18/06/2026)",
+    "R$ 2,45 milhões — apartamento no edifício Poème Horto (SP) cuja compra foi intermediada, a pedido do senador, por Valério Marega Júnior, investigado por gerir fundos falsos do Master",
+    "~R$ 12 milhões pagos pelo Master à empresa BN Financeira, da nora do senador, Bonnie Bonilha, por um contrato de consultoria",
+    "R$ 63,3 mil — ingressos de camarote para um show de Taylor Swift pedidos pelo senador, pagos por João Carlos Mansur, ex-dono da Reag"
+   ],
    "related": [
     "daniel-vorcaro",
-    "ciro-nogueira"
+    "ciro-nogueira",
+    "augusto-lima",
+    "reag-investimentos"
    ],
    "states": [
     "BA"
    ],
-   "summary": "Senador pela Bahia, é apontado por investigações como um dos parlamentares que teriam atuado favoravelmente aos interesses de Daniel Vorcaro no Senado, no contexto das tentativas de barrar uma CPI para apurar o Banco Master.",
+   "summary": "Senador pela Bahia, é apontado por investigações como um dos parlamentares que teriam atuado favoravelmente aos interesses de Daniel Vorcaro no Senado, no contexto das tentativas de barrar uma CPI para apurar o Banco Master. Segundo reportagem da revista piauí, foi Wagner, então secretário de Desenvolvimento Econômico da Bahia, quem, em 2018, aceitou a sugestão do empresário Augusto Lima de ampliar o uso do cartão Credicesta (depois Credcesta) na privatização da rede de supermercados Cesta do Povo — origem de todo o esquema que, anos depois, alavancou o Banco Master. Em 18 de junho de 2026, a PF cumpriu mandados em seus imóveis em Salvador e Brasília, encontrando dólares, euros e reais em espécie, além de joias; dois dias depois de negar qualquer relação com o caso numa entrevista, Wagner deixou a liderança do governo Lula no Senado. Documentos da PF mostram trocas de e-mail entre ele e Augusto Lima sobre a compra de um apartamento de R$ 2,45 milhões, intermediada por Valério Marega Júnior — investigado por gerir fundos falsos do Master —, além de pagamentos da BN Financeira, empresa de sua nora Bonnie Bonilha, que recebeu cerca de R$ 12 milhões do banco por um contrato de consultoria, e ingressos de show pagos por João Carlos Mansur, da Reag. Wagner nega irrefutavelmente qualquer favorecimento ao Master e diz que os valores em espécie são diárias oficiais não utilizadas.",
    "src": [
     "embc",
-    "cnnpropinaservidoresbc"
+    "cnnpropinaservidoresbc",
+    "piauiarmadilha",
+    "piauicontaminacao"
    ],
    "joke": "Do PT pro grupo dos que, segundo apuração, tentaram segurar a CPI."
   },
@@ -1632,14 +1712,15 @@
    "states": [
     "RJ"
    ],
-   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro. Um relatório do Coaf revelado pela revista piauí mostra que Vorcaro continuou enviando dinheiro para o “Dark Horse” depois da data que Flávio apresentou publicamente, em entrevista à GloboNews, como a do último pagamento: um repasse de US$ 1,66 milhão ao Havengate Development Fund em 16/09/2025, elevando o total identificado de US$ 10,6 milhões para cerca de US$ 12,3 milhões. Flávio também afirmou, incorretamente segundo a apuração, que o fundo seria supervisionado pela SEC americana.",
+   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro. Um relatório do Coaf revelado pela revista piauí mostra que Vorcaro continuou enviando dinheiro para o “Dark Horse” depois da data que Flávio apresentou publicamente, em entrevista à GloboNews, como a do último pagamento: um repasse de US$ 1,66 milhão ao Havengate Development Fund em 16/09/2025, elevando o total identificado de US$ 10,6 milhões para cerca de US$ 12,3 milhões. Flávio também afirmou, incorretamente segundo a apuração, que o fundo seria supervisionado pela SEC americana. Reportagem da revista piauí (“Flávio, o homem do poço”) mostra que suas versões sobre a relação com Vorcaro caíram “peça por peça” em menos de uma semana, em maio de 2026: depois de ironizar um repórter que lhe perguntou sobre o financiamento do filme, foi forçado a admitir, horas depois, com a divulgação de um áudio, que pedira o dinheiro. Dias depois, o site Metrópoles revelou que Flávio visitara Vorcaro em sua casa em São Paulo no fim de 2025, quando o banqueiro já usava tornozeleira eletrônica após passar doze dias na cadeia — encontro que o senador omitira até então e que contradiz sua alegação de que, em novembro de 2025, desconhecia a gravidade da situação do banco.",
    "src": [
     "interceptflavio",
     "cnnflavio",
     "correiobrazilianseflavio",
     "cartaneymarflavio",
     "uolneymarintermediario",
-    "parlamentopiauidarkhorse"
+    "parlamentopiauidarkhorse",
+    "piauiflaviopoco"
    ],
    "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa."
   },
@@ -1838,7 +1919,9 @@
     "cnncdbfirma",
     "cnnpresoslista",
     "cnncvmmulta20mi",
-    "piauialtatensao"
+    "piauialtatensao",
+    "piauiarmadilha",
+    "piauicontaminacao"
    ],
    "joke": "Pagava até 177% do CDI. O rendimento de verdade foi virar a maior liquidação bancária da história do país."
   },
@@ -2339,10 +2422,12 @@
     "andrei-rodrigues",
     "daniel-vorcaro",
     "alberto-leite",
-    "fabio-faria"
+    "fabio-faria",
+    "andre-kruschewsky",
+    "andre-mendonca"
    ],
    "states": [],
-   "summary": "Ministro do STF. Reportagens o incluem entre os cerca de 40 convidados de uma degustação do whisky Macallan, avaliada em R$ 3,2 milhões, paga pelo Banco Master num clube exclusivo de Londres em abril de 2024 — evento que reuniu autoridades como Alexandre de Moraes, Paulo Gonet e o diretor-geral da PF Andrei Rodrigues. Também teria sido convidado, segundo mensagens citadas por reportagens, para uma festa de Vorcaro em São Paulo em outubro de 2023, o que nega. Em reportagem publicada pela revista Piauí em setembro de 2026, um relatório da Polícia Federal aponta a hipótese de Toffoli ser o beneficiário final do fundo Arleen, que recebeu R$ 35 milhões de Vorcaro por meio da empresa Egide I e de uma estrutura registrada nas Ilhas Virgens Britânicas; o fundo era sócio do resort Tayayá, ligado à família de Toffoli no Paraná, e teria passado, em fevereiro de 2025, ao empresário Alberto Leite, amigo do ministro. Toffoli nega ter recebido ou mantido recursos no exterior e contesta a reportagem; não há decisão do STF ou denúncia formal contra ele neste caso.",
+   "summary": "Ministro do STF. Reportagens o incluem entre os cerca de 40 convidados de uma degustação do whisky Macallan, avaliada em R$ 3,2 milhões, paga pelo Banco Master num clube exclusivo de Londres em abril de 2024 — evento que reuniu autoridades como Alexandre de Moraes, Paulo Gonet e o diretor-geral da PF Andrei Rodrigues. Também teria sido convidado, segundo mensagens citadas por reportagens, para uma festa de Vorcaro em São Paulo em outubro de 2023, o que nega. Em reportagem publicada pela revista Piauí em setembro de 2026, um relatório da Polícia Federal aponta a hipótese de Toffoli ser o beneficiário final do fundo Arleen, que recebeu R$ 35 milhões de Vorcaro por meio da empresa Egide I e de uma estrutura registrada nas Ilhas Virgens Britânicas; o fundo era sócio do resort Tayayá, ligado à família de Toffoli no Paraná, e teria passado, em fevereiro de 2025, ao empresário Alberto Leite, amigo do ministro. Toffoli nega ter recebido ou mantido recursos no exterior e contesta a reportagem; não há decisão do STF ou denúncia formal contra ele neste caso. Reportagem da revista piauí (“O ministro, o banqueiro e o fundo”) acrescenta que o ministro André Mendonça, relator do inquérito no STF, teria mantido o relatório da PF sobre o caso parado por meses antes de autorizar novas medidas. A mesma reportagem aponta que Roberta Rangel — então mulher de Toffoli, de quem se separou em 2025 — atuou como advogada do próprio Daniel Vorcaro entre dezembro de 2020 e fevereiro de 2025, um conflito de interesse direto com a relatoria posterior do marido sobre o caso Master; a apuração documenta ainda cerca de doze encontros presenciais entre Toffoli e Vorcaro e dezessete tentativas de chamada por WhatsApp ao longo do período. O advogado André Kruschewsky, diretor jurídico do Master, também aparece ligado a um episódio de reversão de voto num precatório de interesse do banco. A revista sublinha que essas informações não constituem, até a última atualização desta base, decisão do STF ou denúncia formal contra o ministro.",
    "src": [
     "poder360_macallan",
     "ndmais_whisky",
@@ -2355,7 +2440,9 @@
     "brasil247festa",
     "cnnuisquelondres",
     "cnnmadamesata",
-    "cnntoffoliconvidou"
+    "cnntoffoliconvidou",
+    "piauiministrobanqueiro",
+    "piauiarmadilha"
    ]
   },
   {
@@ -2377,12 +2464,13 @@
     "daniel-vorcaro"
    ],
    "states": [],
-   "summary": "Empresário, dono da empresa de segurança FS Security e amigo pessoal de Dias Toffoli. Segundo reportagem da revista Piauí, o fundo Arleen — usado numa estrutura offshore nas Ilhas Virgens Britânicas para receber R$ 35 milhões de Daniel Vorcaro e do qual a PF suspeita que Toffoli seja o beneficiário final — pertencia a Vorcaro e teria passado a Leite em fevereiro de 2025. Não há confirmação independente da alegação nem pronunciamento público de Leite sobre o caso.",
+   "summary": "Empresário, dono da empresa de segurança FS Security e amigo pessoal de Dias Toffoli. Segundo reportagem da revista Piauí, o fundo Arleen — usado numa estrutura offshore nas Ilhas Virgens Britânicas para receber R$ 35 milhões de Daniel Vorcaro e do qual a PF suspeita que Toffoli seja o beneficiário final — pertencia a Vorcaro e teria passado a Leite em fevereiro de 2025. Não há confirmação independente da alegação nem pronunciamento público de Leite sobre o caso. Também hospedou, em seu chalé em Courchevel, um jantar de Vorcaro com o senador Ciro Nogueira e o bilionário José Seripieri Filho (dono da Amil), em janeiro de 2025 — um mês antes de adquirir o fundo com 16% do resort Tayayá ligado à família de Dias Toffoli.",
    "src": [
     "poder360arleen",
     "cnnarleen",
     "cartaarleen",
-    "oestearleen"
+    "oestearleen",
+    "piauiarmadilha"
    ],
    "joke": "Segurança particular de profissão; guardou, segundo a PF, um fundo de R$ 35 milhões."
   },
@@ -2408,7 +2496,7 @@
    "states": [
     "SP"
    ],
-   "summary": "Ex-ministro das Comunicações do governo Bolsonaro, casado com Patrícia Abravanel. Reportagem da revista Piauí, com base em mensagens obtidas pela PF, mostra Faria organizando ao lado do promoter Tiago Polo uma festa de Halloween de Vorcaro em outubro de 2023, em São Paulo, cuidando pessoalmente dos convites da lista masculina — que incluía, segundo as mensagens, senadores como Davi Alcolumbre e Rodrigo Pacheco e o convite ao ministro Dias Toffoli. Diálogos também mostram Faria apreensivo com o risco de vazamento do evento. Em nota à Piauí, disse que sua participação se limitou a enviar convites.",
+   "summary": "Ex-ministro das Comunicações do governo Bolsonaro, casado com Patrícia Abravanel. Reportagem da revista Piauí, com base em mensagens obtidas pela PF, mostra Faria organizando ao lado do promoter Tiago Polo uma festa de Halloween de Vorcaro em outubro de 2023, em São Paulo, cuidando pessoalmente dos convites da lista masculina — que incluía, segundo as mensagens, senadores como Davi Alcolumbre e Rodrigo Pacheco e o convite ao ministro Dias Toffoli. Diálogos também mostram Faria apreensivo com o risco de vazamento do evento. Em nota à Piauí, disse que sua participação se limitou a enviar convites. Também viajou a Nova York, em maio de 2024, hospedado por Vorcaro ao lado do senador Ciro Nogueira, num quarto reservado pelo banqueiro para participar de um evento do Lide; segundo Faria, pagou a hospedagem do próprio bolso.",
    "src": [
     "terrafesta",
     "brasil247festa",
@@ -2416,7 +2504,9 @@
     "forumfesta",
     "bahiafesta",
     "cnnmadamesata",
-    "cnntoffoliconvidou"
+    "cnntoffoliconvidou",
+    "piauifestasuicas",
+    "piauifabiofaria"
    ],
    "joke": "Genro de Silvio Santos organizando lista de convidados. O programa de auditório nunca chegou tão perto disso."
   },
@@ -2763,6 +2853,110 @@
     "parlamentopiauidarkhorse"
    ],
    "joke": "Fundo batizado com nome de “azarão”; o repasse de verdade não tinha nada de azar."
+  },
+  {
+   "id": "nelson-tanure",
+   "name": "Nelson Tanure",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Empresário baiano; suspeito de atuar como sócio oculto do Banco Master por meio de uma rede de fundos offshore",
+   "period": "Alvo de mandados de busca e apreensão da PF em 14/01/2026, na segunda fase da Operação Compliance Zero",
+   "amounts": [
+    "Patrimônio líquido de empresas ligadas a ele que operavam com o Master saltou de R$ 219 milhões (2019) para R$ 4,7 bilhões (2024), segundo a revista piauí",
+    "R$ 1 bilhão — financiamento da XP Investimentos para Tanure comprar o controle da Emae (ex-Eletropaulo); o calote no pagamento levou a XP a executar a dívida e tomar a empresa"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "banco-master"
+   ],
+   "states": [],
+   "summary": "Empresário baiano cuja presença constante em negócios obscuros levou o mercado a especular se não seria sócio oculto do Banco Master. Segundo reportagem da revista piauí, Tanure captava dinheiro do Master (via CDBs) numa ponta e, na outra, vendia ao banco participações em empresas endividadas e com ativos podres — Light, CVC, Ambipar, Oi, Gafisa, Oncoclínicas, entre outras —, sempre atuando por meio de fundos com nomes diversos (Modal, Trustee, Banvox, Ilha de Patmos, Estocolmo, Phoenix, Planner) para não aparecer como pessoa física, prática que ajudava a inflar artificialmente o balanço do Master. Foi alvo da segunda fase da Operação Compliance Zero, em 14 de janeiro de 2026. Minoritários de empresas que adquiriu, como Vladimir Timerman (sócio na Gafisa), acusam-no de esvaziar o caixa das companhias e denunciaram o padrão à CVM por anos sem sucesso — o que reacendeu suspeitas sobre a proximidade entre um ex-presidente da CVM, João Pedro Nascimento, e um braço-direito de Tanure conhecido internamente como “Mister CVM”.",
+   "src": [
+    "piauicontaminacao"
+   ],
+   "joke": "Um homem que nunca põe o próprio nome no negócio, mas sempre põe o nome do banco no rombo."
+  },
+  {
+   "id": "andre-mendonca",
+   "name": "André Mendonça",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Ministro do STF; relator de fases da Operação Compliance Zero envolvendo Ciro Nogueira e o esquema do Banco Master",
+   "period": "Autorizou operação da PF contra Ciro Nogueira em 06/05/2026; ordenou a prisão do advogado Daniel Monteiro em abril de 2026",
+   "amounts": [],
+   "related": [
+    "ciro-nogueira",
+    "daniel-vorcaro",
+    "daniel-monteiro"
+   ],
+   "states": [],
+   "summary": "Ministro do Supremo Tribunal Federal. Ao autorizar, em 6 de maio de 2026, uma nova fase da Operação Compliance Zero para apurar a relação entre o senador Ciro Nogueira e Daniel Vorcaro, escreveu em sua decisão que havia um “arranjo funcional e instrumental orientado por benefício mútuo, extrapolando relações de mera amizade” — a base jurídica que destravou o acesso da revista piauí a mais de sessenta páginas do relatório da PF sobre o caso. Também foi quem ordenou, em abril de 2026, a prisão do advogado Daniel Monteiro, apontado como homem de confiança de Vorcaro e arquiteto jurídico do esquema Master-BRB.",
+   "src": [
+    "piauiamigocrime",
+    "piauiarmadilha"
+   ],
+   "joke": "O ministro cujo despacho virou a chave que abriu o cofre das mensagens de “irmãozão”."
+  },
+  {
+   "id": "ricardo-magro",
+   "name": "Ricardo Magro",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Foragido",
+    "kind": "critical"
+   },
+   "role": "Empresário, dono da Refit (antiga Refinaria de Manguinhos); apontado como o maior sonegador individual de impostos do Brasil; beneficiário da “Emenda Refit” apresentada por Ciro Nogueira",
+   "period": "Mandado de prisão por sonegação e fraude desde 15/05/2026; nome incluído na lista vermelha da Interpol por residir nos EUA",
+   "amounts": [
+    "R$ 52 bilhões — dívidas de Ricardo Magro, como pessoa física e jurídica, segundo a revista piauí",
+    "R$ 14,2 milhões — valor a receber por uma empresa de Magro (Athena Real Estate) apontado na contabilidade em favor de uma empresa da família de Ciro Nogueira, oficialmente pela compra de uma gleba em Teresina; a PF suspeita que seja propina disfarçada de negócio imobiliário"
+   ],
+   "related": [
+    "ciro-nogueira"
+   ],
+   "states": [],
+   "summary": "Dono da Refit, a antiga Refinaria de Manguinhos, sob suspeita de ser “uma refinaria que não refina nada” além de vantagens fiscais — é apontado como o maior sonegador individual de impostos do país, com dívidas de R$ 52 bilhões. Chama Ciro Nogueira de “amigo que eu tenho fora da política”. Em 2024, o senador apresentou duas emendas a um projeto de lei que dificultava a punição do chamado “devedor contumaz”, apelidadas de “Emenda Refit” por beneficiarem diretamente a prática sistemática de sonegação de Magro. Menos de dois meses depois, uma empresa de Magro passou a dever 14,2 milhões de reais a uma empresa da família de Ciro, oficialmente pela compra de um terreno na zona rural de Teresina — negócio que a Polícia Federal investiga como possível propina disfarçada, já que o terreno tem localização e características (vegetação nativa, distância do centro) impróprias para o uso comercial alegado. Desde maio de 2026 é alvo de mandado de prisão por sonegação e fraude; como reside nos Estados Unidos, seu nome foi incluído na lista vermelha da Interpol.",
+   "src": [
+    "piauiamigocrime"
+   ],
+   "joke": "Não refina petróleo — refina mesmo é imposto, segundo o mercado."
+  },
+  {
+   "id": "andre-kruschewsky",
+   "name": "André Kruschewsky",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Advogado baiano; diretor jurídico do Banco Master",
+   "period": "Escritório prestava serviços a Augusto Lima desde a privatização da Ebal, em 2018; tornou-se diretor jurídico do Master depois",
+   "amounts": [
+    "R$ 54 milhões pagos pelo Master, entre 2022 e 2025, ao escritório do primo dele, Eugênio Kruschewsky — quarto escritório que mais recebeu recursos do banco, segundo investigação da PF e do MP de Brasília"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "banco-master",
+    "augusto-lima",
+    "ciro-nogueira",
+    "daniel-monteiro"
+   ],
+   "states": [],
+   "summary": "Advogado baiano cujo escritório já prestava serviços a Augusto Lima na época da privatização da Empresa Baiana de Alimentos (Ebal), em 2018 — origem do cartão consignado Credcesta. Tornou-se diretor jurídico do Banco Master, e a Polícia Federal aponta que foi ele quem redigiu a emenda apresentada pelo senador Ciro Nogueira em 2024 propondo ampliar de R$ 250 mil para R$ 1 milhão a cobertura do Fundo Garantidor de Créditos (FGC) — a chamada “Emenda Master”. A relação da família Kruschewsky com o caso é extensa: sua prima Luiá Kruschewsky Monteiro e o advogado Gustavo Castro Lima, ambos egressos da Ebal, foram contratados pela NGV (empresa que arrematou a Ebal) e depois pelo próprio Master; outro primo, Eugênio Kruschewsky — que acumula a advocacia com o cargo de procurador do estado da Bahia —, defendeu o Master na ação coletiva movida pelo advogado Jorge Falcão contra os juros abusivos do Credcesta, tendo seu escritório recebido R$ 54 milhões do banco entre 2022 e 2025. Quando essa ação chegou ao Tribunal de Justiça da Bahia, três desembargadores se declararam suspeitos para julgá-la, um episódio que o próprio autor da ação chamou de “muito inusitado”.",
+   "src": [
+    "piauiarmadilha"
+   ],
+   "joke": "Uma família inteira de advogados, todos, coincidentemente, do lado do banco."
   }
  ],
  "stateValues": {
