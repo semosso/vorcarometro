@@ -396,7 +396,7 @@ const ULTIMA_NOVIDADE = "2026-09-20";
    zerar ULTIMA_NOVIDADE por notícia nova de verdade, atualize este valor pro maior entre ele
    mesmo e os dias que a sequência que acabou de terminar tinha alcançado. */
 const RECORDE_ANTERIOR = 1;
-const PLACAR_LEGENDAS = ["O número é zerado manualmente a cada notícia nova. Ele fica em zero com frequência.","Nossa equipe de zeragem trabalha em regime de plantão."];
+const PLACAR_LEGENDAS = ["O número é zerado manualmente a cada notícia nova. Ele fica em zero com frequência.","Nossa equipe de zeragem trabalha em regime de plantão.","Enquanto o contador sobe, o rombo também.","Se este número parar de crescer, provavelmente é feriado forense."];
 function countUp(el, target, duration){
   if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ el.textContent = target; return; }
   const start = performance.now();
@@ -443,10 +443,15 @@ document.getElementById('homeLink').addEventListener('click', e=>{
 });
 
 /* ---------- ticker de manchetes ---------- */
-const TICKER_ITEMS = ["ÚLTIMA HORA: FGC AINDA CONTANDO OS ZEROS","EDIÇÃO DE HOJE: NINGUÉM SABE DE NADA","EXCLUSIVO: CDB A 140% DO CDI NÃO ERA MILAGRE","BASTIDORES: A LISTA DE CONVIDADOS SÓ CRESCE","REPERCUSSÃO: TODO MUNDO 'SÓ FOI NO EVENTO'","PLANTÃO: MAIS UMA DELAÇÃO A CAMINHO, PROVAVELMENTE"];
+const TICKER_ITEMS = ["ÚLTIMA HORA: FGC AINDA CONTANDO OS ZEROS","EDIÇÃO DE HOJE: NINGUÉM SABE DE NADA","EXCLUSIVO: CDB A 140% DO CDI NÃO ERA MILAGRE","BASTIDORES: A LISTA DE CONVIDADOS SÓ CRESCE","REPERCUSSÃO: TODO MUNDO 'SÓ FOI NO EVENTO'","PLANTÃO: MAIS UMA DELAÇÃO A CAMINHO, PROVAVELMENTE","URGENTE: NINGUÉM LEMBRA DE NADA, SIMULTANEAMENTE","APURAÇÃO: TODOS OS PROCEDIMENTOS FORAM SEGUIDOS, MENOS OS ÓBVIOS","ÚLTIMAS: JATO PARTICULAR TINHA DESTINO TURÍSTICO, GARANTEM","NOTA OFICIAL: TUDO DENTRO DA LEGALIDADE, TUDO É CRIME AGORA?!","PLANTÃO: FGC PEDE PARA NÃO LIGAREM TODOS AO MESMO TEMPO"];
+function formatTickerItem(t){
+  const idx = t.indexOf(':');
+  if(idx === -1) return t;
+  return '<strong>'+t.slice(0, idx+1)+'</strong>'+t.slice(idx+1);
+}
 (function initTicker(){
   const track = document.getElementById('tickerTrack');
-  const items = [...TICKER_ITEMS, ...TICKER_ITEMS].map(t=>'<span>'+t+'</span>').join('');
+  const items = [...TICKER_ITEMS, ...TICKER_ITEMS].map(t=>'<span>'+formatTickerItem(t)+'</span>').join('');
   track.innerHTML = items;
 })();
 
@@ -454,7 +459,7 @@ const TICKER_ITEMS = ["ÚLTIMA HORA: FGC AINDA CONTANDO OS ZEROS","EDIÇÃO DE H
 function buzz(ms){ try{ if(navigator.vibrate) navigator.vibrate(ms); }catch(e){} }
 
 /* ---------- gerador de desculpas ---------- */
-const DESCULPAS = ["Só tirei uma foto.","Era um evento beneficente.","Assinei sem ler.","Nem sabia que ele era banqueiro.","Achei que 140% do CDI era normal.","Fui pelo buffet.","Meu assessor que cuidava disso.","Eu estava lá, mas em outra mesa.","Conheço ele só de vista. De vista de iate.","Foi uma reunião institucional.","Nunca vi mais gordo. Nem mais rico.","Não me recordo.","Minha agenda é pública. Essa parte, não.","Recebi, mas devolvi. Em espírito.","Todos os procedimentos foram seguidos, exceto os que não foram.","Confio plenamente na Justiça. Principalmente na demora dela.","Era um jantar entre amigos. Amigos com CNPJ.","Fui convidado, fui, comi e fui embora. Assinei algo no caminho."];
+const DESCULPAS = ["Só tirei uma foto.","Era um evento beneficente.","Assinei sem ler.","Nem sabia que ele era banqueiro.","Achei que 140% do CDI era normal.","Fui pelo buffet.","Meu assessor que cuidava disso.","Eu estava lá, mas em outra mesa.","Conheço ele só de vista. De vista de iate.","Foi uma reunião institucional.","Nunca vi mais gordo. Nem mais rico.","Não me recordo.","Minha agenda é pública. Essa parte, não.","Recebi, mas devolvi. Em espírito.","Todos os procedimentos foram seguidos, exceto os que não foram.","Confio plenamente na Justiça. Principalmente na demora dela.","Era um jantar entre amigos. Amigos com CNPJ.","Fui convidado, fui, comi e fui embora. Assinei algo no caminho.","Só passei para usar o banheiro.","Fui representar a instituição, não a mim mesmo.","Isso está sob sigilo judicial — inclusive pra mim.","Eu apenas assinei. Ler é outra etapa do processo.","Doação é diferente de propina. Falta só provar a diferença.","Fui pego de surpresa. Pela décima vez seguida.","Minha participação foi meramente protocolar.","Não lembro, mas meu advogado deve lembrar por mim."];
 let lastExcuse = -1;
 function newExcuse(){
   let i; do{ i = Math.floor(Math.random()*DESCULPAS.length); }while(i===lastExcuse && DESCULPAS.length>1);
