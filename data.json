@@ -723,6 +723,10 @@
   "piauivoltemane": {
    "t": "revista piauí — Voltei, mané",
    "u": "https://piaui.uol.com.br/revista/236/voltei-mane/"
+  },
+  "piauicaixapreta": {
+   "t": "revista piauí — Em cartaz, a caixa-preta",
+   "u": "https://piaui.uol.com.br/revista/240/caixa-preta-flavio-bolsonaro-vorcaro-dark-horse/"
   }
  },
  "entities": [
@@ -757,13 +761,19 @@
     "the-chainsmokers",
     "nikolas-ferreira",
     "ciro-nogueira",
-    "nelson-tanure"
+    "nelson-tanure",
+    "eduardo-bolsonaro",
+    "paulo-calixto",
+    "antonio-freixo-junior",
+    "mario-frias",
+    "michael-davis",
+    "flavio-dino"
    ],
    "states": [
     "SP",
     "MG"
    ],
-   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor. Na noite de 17 de novembro de 2025 — um dia depois de a Justiça decretar sua prisão preventiva em sigilo —, tentou embarcar num jato particular rumo a Dubai, com escala em Malta; foi preso no Aeroporto de Guarulhos horas antes do embarque, enquanto a Fictor, holding de investimentos pouco conhecida, anunciava publicamente um “consórcio com investidores árabes” de R$ 3 bilhões para salvar o banco — proposta recebida pelo mercado como piada diante do rombo bilionário. Reportagens da revista piauí também documentam sua festa de Halloween de outubro de 2023 (a “festa das suíças”) e um jantar em Courchevel, nos Alpes franceses, com o senador Ciro Nogueira e o empresário José Seripieri Filho (dono da Amil), no chalé de Alberto Leite.",
+   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor. Na noite de 17 de novembro de 2025 — um dia depois de a Justiça decretar sua prisão preventiva em sigilo —, tentou embarcar num jato particular rumo a Dubai, com escala em Malta; foi preso no Aeroporto de Guarulhos horas antes do embarque, enquanto a Fictor, holding de investimentos pouco conhecida, anunciava publicamente um “consórcio com investidores árabes” de R$ 3 bilhões para salvar o banco — proposta recebida pelo mercado como piada diante do rombo bilionário. Reportagens da revista piauí também documentam sua festa de Halloween de outubro de 2023 (a “festa das suíças”) e um jantar em Courchevel, nos Alpes franceses, com o senador Ciro Nogueira e o empresário José Seripieri Filho (dono da Amil), no chalé de Alberto Leite. Reportagem da piauí (\"Em cartaz, a caixa-preta\") mostra que os repasses ao Havengate não saíam diretamente das empresas de Vorcaro nem caíam na conta da produtora do filme nos EUA, como seria o percurso normal: passavam pelo doleiro Antonio Freixo Junior, o \"Mineiro\", e sua Entre Investimentos — companhia que já recebera R$ 614 milhões em investimentos do banqueiro. A Polícia Federal investiga por que Vorcaro optou por essa rota mais complexa em vez de enviar o dinheiro direto do banco à produtora.",
    "src": [
     "stf",
     "yahoo",
@@ -786,7 +796,8 @@
     "piauiarmadilha",
     "piauicontaminacao",
     "piauifestasuicas",
-    "piauivoltemane"
+    "piauivoltemane",
+    "piauicaixapreta"
    ],
    "joke": "Oferecia 177% do CDI e tinha um jato de R$ 200 milhões — hoje só um dos dois ainda voa."
   },
@@ -878,16 +889,19 @@
     "fabiano-zettel",
     "gilberto-kassab",
     "augusto-lima",
-    "daniel-vorcaro"
+    "daniel-vorcaro",
+    "flavio-bolsonaro",
+    "karina-gama"
    ],
    "states": [
     "SP"
    ],
-   "summary": "Governador de São Paulo, eleito em 2022 com apoio de Gilberto Kassab, que se tornou seu secretário de Governo. Recebeu R$ 2 milhões em doação de campanha formalizada em nome de Fabiano Zettel, cunhado de Vorcaro. Em proposta de delação premiada rejeitada pela Polícia Federal e pela PGR por falta de fatos novos, Vorcaro alega que a doação era, na prática, propina negociada por Kassab para manter o CredCesta — programa de consignado ligado a parentes de Augusto Lima — operando no governo estadual. Tarcísio afirmou nunca ter tido contato com Vorcaro e que sua campanha foi conduzida dentro da lei; não há confirmação independente da alegação.",
+   "summary": "Governador de São Paulo, eleito em 2022 com apoio de Gilberto Kassab, que se tornou seu secretário de Governo. Recebeu R$ 2 milhões em doação de campanha formalizada em nome de Fabiano Zettel, cunhado de Vorcaro. Em proposta de delação premiada rejeitada pela Polícia Federal e pela PGR por falta de fatos novos, Vorcaro alega que a doação era, na prática, propina negociada por Kassab para manter o CredCesta — programa de consignado ligado a parentes de Augusto Lima — operando no governo estadual. Tarcísio afirmou nunca ter tido contato com Vorcaro e que sua campanha foi conduzida dentro da lei; não há confirmação independente da alegação. Em setembro de 2026, ao ser perguntado sobre a ausência de prestação de contas do filme \"Dark Horse\" — financiado por Vorcaro e negociado por Flávio Bolsonaro —, saiu em defesa do senador: \"Acho que ele já deu explicações. Se nenhum fato novo aparecer, eu acho que está tudo esclarecido\", disse, apesar de seu próprio histórico como auditor da CGU.",
    "src": [
     "cnnkassab",
     "jbkassab",
-    "brasildefatokassab"
+    "brasildefatokassab",
+    "piauicaixapreta"
    ],
    "joke": "R$ 2 milhões de doação que, numa delação que nem colou, viraram acusação de propina."
   },
@@ -1700,19 +1714,24 @@
    "amounts": [
     "R$ 134 milhões — valor negociado em áudio para bancar o filme “Dark Horse”, biografia de Jair Bolsonaro",
     "~R$ 61 milhões (US$ 10,6 milhões) já pagos entre fevereiro e maio de 2025, em seis transferências, segundo reportagem",
-    "US$ 1,66 milhão repassado em 16/09/2025 ao Havengate Development Fund — pagamento posterior ao que Flávio apresentou publicamente como o último, elevando o total identificado para ~US$ 12,3 milhões, segundo relatório do Coaf revelado pela piauí"
+    "US$ 1,66 milhão repassado em 16/09/2025 ao Havengate Development Fund — pagamento posterior ao que Flávio apresentou publicamente como o último, elevando o total identificado para ~US$ 12,3 milhões, segundo relatório do Coaf revelado pela piauí",
+    "Possivelmente US$ 14 milhões (R$ 72 milhões) no total, se confirmado um terceiro repasse pressionado por Flávio em 22/10/2025, segundo mensagens de WhatsApp obtidas pela piauí"
    ],
    "related": [
     "jair-bolsonaro",
     "daniel-vorcaro",
     "neymar-pai",
     "karina-gama",
-    "havengate-development-fund"
+    "havengate-development-fund",
+    "eduardo-bolsonaro",
+    "mario-frias",
+    "thiago-miranda",
+    "michael-davis"
    ],
    "states": [
     "RJ"
    ],
-   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro. Um relatório do Coaf revelado pela revista piauí mostra que Vorcaro continuou enviando dinheiro para o “Dark Horse” depois da data que Flávio apresentou publicamente, em entrevista à GloboNews, como a do último pagamento: um repasse de US$ 1,66 milhão ao Havengate Development Fund em 16/09/2025, elevando o total identificado de US$ 10,6 milhões para cerca de US$ 12,3 milhões. Flávio também afirmou, incorretamente segundo a apuração, que o fundo seria supervisionado pela SEC americana. Reportagem da revista piauí (“Flávio, o homem do poço”) mostra que suas versões sobre a relação com Vorcaro caíram “peça por peça” em menos de uma semana, em maio de 2026: depois de ironizar um repórter que lhe perguntou sobre o financiamento do filme, foi forçado a admitir, horas depois, com a divulgação de um áudio, que pedira o dinheiro. Dias depois, o site Metrópoles revelou que Flávio visitara Vorcaro em sua casa em São Paulo no fim de 2025, quando o banqueiro já usava tornozeleira eletrônica após passar doze dias na cadeia — encontro que o senador omitira até então e que contradiz sua alegação de que, em novembro de 2025, desconhecia a gravidade da situação do banco.",
+   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro. Um relatório do Coaf revelado pela revista piauí mostra que Vorcaro continuou enviando dinheiro para o “Dark Horse” depois da data que Flávio apresentou publicamente, em entrevista à GloboNews, como a do último pagamento: um repasse de US$ 1,66 milhão ao Havengate Development Fund em 16/09/2025, elevando o total identificado de US$ 10,6 milhões para cerca de US$ 12,3 milhões. Flávio também afirmou, incorretamente segundo a apuração, que o fundo seria supervisionado pela SEC americana. Reportagem da revista piauí (“Flávio, o homem do poço”) mostra que suas versões sobre a relação com Vorcaro caíram “peça por peça” em menos de uma semana, em maio de 2026: depois de ironizar um repórter que lhe perguntou sobre o financiamento do filme, foi forçado a admitir, horas depois, com a divulgação de um áudio, que pedira o dinheiro. Dias depois, o site Metrópoles revelou que Flávio visitara Vorcaro em sua casa em São Paulo no fim de 2025, quando o banqueiro já usava tornozeleira eletrônica após passar doze dias na cadeia — encontro que o senador omitira até então e que contradiz sua alegação de que, em novembro de 2025, desconhecia a gravidade da situação do banco. Mensagens de WhatsApp obtidas pela revista piauí mostram que, em 22 de outubro de 2025, já no terceiro dia de gravações, Flávio voltou a pressionar Vorcaro por dinheiro (\"Estamos no limite\"; \"se não der me fala que procuro urgente outro caminho\") e que o banqueiro liberou mais uma parcela horas depois — o que, somado ao repasse de 16 de setembro, eleva o total possivelmente desembolsado por Vorcaro para até US$ 14 milhões (R$ 72 milhões). Não é a primeira mentira pública do senador sobre o caso: à colunista Mônica Bergamo, em março de 2026, negou qualquer contato com Vorcaro, e ao Intercept reagiu com deboche (\"É mentira, de onde você tirou isso?\") horas antes de o áudio da cobrança vir a público. Também afirmou que o Havengate fora fechado assim que surgiram as primeiras suspeitas sobre Vorcaro — falso, segundo os registros fazendários do Texas, onde o fundo seguia ativo. Combinou ao menos cinco encontros com o banqueiro até novembro de 2025, incluindo convite para jantar com o ator Jim Caviezel e o diretor Cyrus Nowrasteh, e, na véspera da prisão de Vorcaro, trocou com ele mensagens de visualização única e uma declaração de lealdade eterna (\"Irmão, estou e estarei contigo sempre... Só preciso que me dê uma luz!\") pedindo mais dinheiro. Prometeu prestação de contas pública do filme em trinta dias a partir de maio de 2026; quase quatro meses depois, não apresentou nada — a produção entregou às autoridades um \"laudo\" de 32 páginas que bate exatamente com os centavos, sem detalhar um único gasto, considerado insuficiente por três produtores de cinema ouvidos pela piauí.",
    "src": [
     "interceptflavio",
     "cnnflavio",
@@ -1720,7 +1739,8 @@
     "cartaneymarflavio",
     "uolneymarintermediario",
     "parlamentopiauidarkhorse",
-    "piauiflaviopoco"
+    "piauiflaviopoco",
+    "piauicaixapreta"
    ],
    "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa."
   },
@@ -1739,19 +1759,27 @@
    "period": "Alvo de operação da Polícia Federal em 10/09/2026",
    "amounts": [
     "~R$ 61 milhões — parte do financiamento de “Dark Horse” paga por Vorcaro, segundo a produtora",
-    "R$ 2 milhões — emendas parlamentares de Mário Frias sob suspeita de uso em contratos não cumpridos, segundo a PF"
+    "R$ 2 milhões — emendas parlamentares de Mário Frias sob suspeita de uso em contratos não cumpridos, segundo a PF",
+    "R$ 157 milhões — contrato do Instituto Conhecer Brasil (ICB), sua ONG, com a Prefeitura de São Paulo para wi-fi gratuito (R$ 108 milhões originais mais aditivo), sob inquérito por pagamentos sem serviço prestado e notas fiscais frias",
+    "R$ 12 milhões — subcontrato do ICB com empresa de Alex Bispo dos Santos, apontado pelo Ministério Público como membro do PCC e foragido desde agosto de 2026"
    ],
    "related": [
     "flavio-bolsonaro",
     "jair-bolsonaro",
-    "daniel-vorcaro"
+    "daniel-vorcaro",
+    "mario-frias",
+    "eduardo-bolsonaro",
+    "paulo-calixto",
+    "michael-davis",
+    "antonio-freixo-junior"
    ],
    "states": [],
-   "summary": "Produtora de cinema, dona da GoUp Entertainment e responsável pelo filme biográfico “Dark Horse”, sobre Jair Bolsonaro — o mesmo cujo financiamento por Daniel Vorcaro foi negociado por Flávio Bolsonaro. Segundo Karina, Vorcaro pagou mais de 90% do orçamento (cerca de R$ 61 milhões dos R$ 134 milhões combinados). Em 10/09/2026 tornou-se alvo de uma operação da Polícia Federal que investiga desvio de emendas parlamentares do deputado Mário Frias, roteirista do filme: segundo a PF, os repasses eram fragmentados por um “circuito fechado” de empresas ligadas a ela (Instituto Conhecer Brasil e Academia Nacional de Cultura) para dificultar o rastreio, num esquema que a PF classificou como “organização criminosa”. Seu advogado, Ricardo Sayeg, afirma que ela não sabia que o dinheiro do filme vinha de Vorcaro e que os investidores da GoUp são empresas americanas protegidas por confidencialidade.",
+   "summary": "Produtora de cinema, dona da GoUp Entertainment e responsável pelo filme biográfico “Dark Horse”, sobre Jair Bolsonaro — o mesmo cujo financiamento por Daniel Vorcaro foi negociado por Flávio Bolsonaro. Segundo Karina, Vorcaro pagou mais de 90% do orçamento (cerca de R$ 61 milhões dos R$ 134 milhões combinados). Em 10/09/2026 tornou-se alvo de uma operação da Polícia Federal que investiga desvio de emendas parlamentares do deputado Mário Frias, roteirista do filme: segundo a PF, os repasses eram fragmentados por um “circuito fechado” de empresas ligadas a ela (Instituto Conhecer Brasil e Academia Nacional de Cultura) para dificultar o rastreio, num esquema que a PF classificou como “organização criminosa”. Seu advogado, Ricardo Sayeg, afirma que ela não sabia que o dinheiro do filme vinha de Vorcaro e que os investidores da GoUp são empresas americanas protegidas por confidencialidade. Reportagem da piauí revelou que, enquanto o filme não decolava, as ONGs de Karina faturavam alto com contratos públicos: o Instituto Conhecer Brasil (ICB) fechou com a Prefeitura de São Paulo, na gestão de Ricardo Nunes, um contrato de R$ 108 milhões (depois ampliado para R$ 157 milhões com aditivo) para instalar wi-fi gratuito, apesar de não ter experiência na área — um inquérito da Polícia Civil investiga pagamentos por serviços nunca prestados e R$ 4 milhões em notas fiscais frias, incluindo um subcontrato de R$ 12 milhões com empresa de Alex Bispo dos Santos, apontado pelo MP como integrante do PCC e foragido. O ICB também recebeu R$ 2 milhões em emendas do deputado Mario Frias, sócio de Karina no filme, para dois projetos sociais que uma auditoria da CGU considerou fraudulentos. A Polícia Civil de São Paulo investiga \"consistentes suspeitas de confusão patrimonial\" entre os recursos públicos do ICB e o caixa de \"Dark Horse\" — hipótese reforçada pelo fato de Juliana Piazza Santana exercer a mesma função de controller nas duas organizações. Questionada pela piauí sobre uma \"nota de esclarecimento\" enviada em nome da produtora mas cujos metadados apontavam como autor o advogado Paulo Calixto — sem vínculo oficial com o filme —, Karina deu respostas contraditórias e, ao final, disse que \"a produtora não sabe dizer\" quem escreveu o documento.",
    "src": [
     "forumkarina",
     "anoticiakarina",
-    "cnndarkhorsenegaemendas"
+    "cnndarkhorsenegaemendas",
+    "piauicaixapreta"
    ],
    "joke": "Produziu o filme sobre o pai do freguês mais generoso do banco. A plateia, ao que parece, incluía a Polícia Federal."
   },
@@ -2609,16 +2637,22 @@
    "role": "Publicitário; ex-sócio do Grupo Léo Dias",
    "period": "10ª fase da Operação Compliance Zero, 07/2026",
    "amounts": [
-    "R$ 2 milhões — valor citado pela PF como pago a blogueiros para falar bem de Vorcaro/Banco Master, segundo investigação"
+    "R$ 2 milhões — valor citado pela PF como pago a blogueiros para falar bem de Vorcaro/Banco Master, segundo investigação",
+    "R$ 10 milhões — venda de 17% do Portal Leo Dias, intermediada por Miranda em 07/2024, a empresário mineiro suspeito de atuar como laranja de Vorcaro",
+    "R$ 9,9 milhões — total transferido pelo Banco Master ao Portal Leo Dias entre 02/2024 e 05/2025, sob um alegado \"contrato de publicidade\""
    ],
    "related": [
     "daniel-vorcaro",
     "milton-maluhy-filho",
     "neymar-pai",
-    "celina-leao"
+    "celina-leao",
+    "karina-gama",
+    "eduardo-bolsonaro",
+    "mario-frias",
+    "flavio-bolsonaro"
    ],
    "states": [],
-   "summary": "Publicitário, ex-sócio do Grupo Léo Dias, apontado pela PF como coordenador do chamado “Projeto DV”, iniciativa para proteger a reputação de Vorcaro e do Banco Master. Segundo a Polícia Federal, Miranda coagiu e intimidou jornalistas — entre elas Consuelo Dieguez, da revista Piauí, e Malu Gaspar, do O Globo — para tentar remover reportagens sobre o banco, além de ter produzido, a pedido de Vorcaro, um dossiê com dados pessoais e patrimoniais do presidente do Itaú Unibanco, Milton Maluhy Filho, e da esposa dele. Foi também o interlocutor de Vorcaro numa conversa de abril de 2025 em que o banqueiro afirmou que a então vice-governadora do DF, Celina Leão, “não ficou de fora” das negociações entre o BRB e o Master. Foi alvo de mandados de busca e apreensão na 10ª fase da Operação Compliance Zero, autorizados pelo ministro André Mendonça, do STF.",
+   "summary": "Publicitário, ex-sócio do Grupo Léo Dias, apontado pela PF como coordenador do chamado “Projeto DV”, iniciativa para proteger a reputação de Vorcaro e do Banco Master. Segundo a Polícia Federal, Miranda coagiu e intimidou jornalistas — entre elas Consuelo Dieguez, da revista Piauí, e Malu Gaspar, do O Globo — para tentar remover reportagens sobre o banco, além de ter produzido, a pedido de Vorcaro, um dossiê com dados pessoais e patrimoniais do presidente do Itaú Unibanco, Milton Maluhy Filho, e da esposa dele. Foi também o interlocutor de Vorcaro numa conversa de abril de 2025 em que o banqueiro afirmou que a então vice-governadora do DF, Celina Leão, “não ficou de fora” das negociações entre o BRB e o Master. Foi alvo de mandados de busca e apreensão na 10ª fase da Operação Compliance Zero, autorizados pelo ministro André Mendonça, do STF. Segundo o jornalista Leo Dias, seu ex-sócio no portal que leva seu nome, Miranda \"foi sempre o elo\" entre Flávio Bolsonaro, Daniel Vorcaro e a produção de \"Dark Horse\", intermediando o encontro que selou o financiamento do filme em dezembro de 2024 e cobrando pessoalmente do banqueiro as parcelas atrasadas em nome do senador. Em julho de 2024, Miranda intermediara a venda de 17% do Portal Leo Dias — do qual ainda era sócio — por R$ 10 milhões a um empresário mineiro suspeito de laranja de Vorcaro; entre fevereiro de 2024 e maio de 2025, o Banco Master transferiu R$ 9,9 milhões ao portal sob um contrato de publicidade. Quando o próprio Portal Leo Dias antecipou a existência do filme, em agosto de 2025, Vorcaro reclamou da exposição e Miranda mandou apagar a matéria. Segundo Dias, o nome de Miranda chegou a ser cogitado para coordenar a campanha presidencial de Flávio.",
    "src": [
     "cnnmiranda",
     "otempomiranda",
@@ -2627,7 +2661,8 @@
     "congressoitau",
     "g1celina",
     "cnndossiecoeitau",
-    "uolneymarintermediario"
+    "uolneymarintermediario",
+    "piauicaixapreta"
    ],
    "joke": "Contratado pra cuidar da imagem do banqueiro. A imagem, no fim, também virou alvo de busca e apreensão."
   },
@@ -2845,12 +2880,17 @@
    "related": [
     "flavio-bolsonaro",
     "daniel-vorcaro",
-    "jair-bolsonaro"
+    "jair-bolsonaro",
+    "paulo-calixto",
+    "antonio-freixo-junior",
+    "michael-davis",
+    "eduardo-bolsonaro"
    ],
    "states": [],
-   "summary": "Fundo sediado no Texas (EUA), responsável por administrar os recursos destinados à produção do filme biográfico “Dark Horse”, sobre Jair Bolsonaro. Segundo relatório do Coaf revelado pela revista piauí, recebeu de Daniel Vorcaro pelo menos um repasse de US$ 1,66 milhão em 16/09/2025 — meses depois da data que o senador Flávio Bolsonaro apresentou publicamente como a do último pagamento (maio de 2025), elevando o total identificado de cerca de US$ 10,6 milhões para aproximadamente US$ 12,3 milhões. Ao contrário do que Flávio afirmou em entrevista à GloboNews, o fundo não é supervisionado pela SEC, a comissão de valores mobiliários dos EUA.",
+   "summary": "Fundo sediado no Texas (EUA), responsável por administrar os recursos destinados à produção do filme biográfico “Dark Horse”, sobre Jair Bolsonaro. Segundo relatório do Coaf revelado pela revista piauí, recebeu de Daniel Vorcaro pelo menos um repasse de US$ 1,66 milhão em 16/09/2025 — meses depois da data que o senador Flávio Bolsonaro apresentou publicamente como a do último pagamento (maio de 2025), elevando o total identificado de cerca de US$ 10,6 milhões para aproximadamente US$ 12,3 milhões. Ao contrário do que Flávio afirmou em entrevista à GloboNews, o fundo não é supervisionado pela SEC, a comissão de valores mobiliários dos EUA. É administrado por Paulo Calixto, advogado sem relação com a indústria do cinema, e por seu sócio Altieris Santana; recebe o dinheiro por uma conta no JPMorgan Chase Bank, alimentada não diretamente pelo Banco Master, mas por meio do doleiro Antonio Freixo Junior e sua empresa Entre Investimentos. Ao contrário do que afirmou Flávio Bolsonaro, o fundo seguia ativo nos registros fazendários do Texas quando a reportagem foi publicada, em setembro de 2026.",
    "src": [
-    "parlamentopiauidarkhorse"
+    "parlamentopiauidarkhorse",
+    "piauicaixapreta"
    ],
    "joke": "Fundo batizado com nome de “azarão”; o repasse de verdade não tinha nada de azar."
   },
@@ -2895,13 +2935,17 @@
    "related": [
     "ciro-nogueira",
     "daniel-vorcaro",
-    "daniel-monteiro"
+    "daniel-monteiro",
+    "karina-gama",
+    "flavio-dino",
+    "eduardo-bolsonaro"
    ],
    "states": [],
-   "summary": "Ministro do Supremo Tribunal Federal. Ao autorizar, em 6 de maio de 2026, uma nova fase da Operação Compliance Zero para apurar a relação entre o senador Ciro Nogueira e Daniel Vorcaro, escreveu em sua decisão que havia um “arranjo funcional e instrumental orientado por benefício mútuo, extrapolando relações de mera amizade” — a base jurídica que destravou o acesso da revista piauí a mais de sessenta páginas do relatório da PF sobre o caso. Também foi quem ordenou, em abril de 2026, a prisão do advogado Daniel Monteiro, apontado como homem de confiança de Vorcaro e arquiteto jurídico do esquema Master-BRB.",
+   "summary": "Ministro do Supremo Tribunal Federal. Ao autorizar, em 6 de maio de 2026, uma nova fase da Operação Compliance Zero para apurar a relação entre o senador Ciro Nogueira e Daniel Vorcaro, escreveu em sua decisão que havia um “arranjo funcional e instrumental orientado por benefício mútuo, extrapolando relações de mera amizade” — a base jurídica que destravou o acesso da revista piauí a mais de sessenta páginas do relatório da PF sobre o caso. Também foi quem ordenou, em abril de 2026, a prisão do advogado Daniel Monteiro, apontado como homem de confiança de Vorcaro e arquiteto jurídico do esquema Master-BRB. Também comanda a investigação sobre o financiamento do filme \"Dark Horse\" por Daniel Vorcaro — linha de apuração paralela à aberta pelo ministro Flávio Dino em agosto de 2026 sobre o possível desvio de recursos públicos (emendas parlamentares e um contrato municipal de wi-fi) para custear a mesma produção.",
    "src": [
     "piauiamigocrime",
-    "piauiarmadilha"
+    "piauiarmadilha",
+    "piauicaixapreta"
    ],
    "joke": "O ministro cujo despacho virou a chave que abriu o cofre das mensagens de “irmãozão”."
   },
@@ -2957,6 +3001,169 @@
     "piauiarmadilha"
    ],
    "joke": "Uma família inteira de advogados, todos, coincidentemente, do lado do banco."
+  },
+  {
+   "id": "eduardo-bolsonaro",
+   "name": "Eduardo Bolsonaro",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Deputado federal licenciado (PL-SP); vive no Texas (EUA); produtor executivo/financiador oficial do filme \"Dark Horse\"",
+   "period": "Mudou-se para os EUA em fevereiro de 2025; sob investigação desde 09/2026 (reportagem piauí)",
+   "amounts": [
+    "US$ 50 mil — valor que disse ter investido do próprio bolso no filme, depois devolvido, segundo entrevista à CBN"
+   ],
+   "related": [
+    "flavio-bolsonaro",
+    "jair-bolsonaro",
+    "daniel-vorcaro",
+    "havengate-development-fund",
+    "paulo-calixto",
+    "karina-gama",
+    "antonio-freixo-junior"
+   ],
+   "states": [],
+   "summary": "Deputado federal licenciado, mudou-se para os Estados Unidos (Texas) em fevereiro de 2025 — mesmo mês em que Daniel Vorcaro começou a enviar os repasses do filme \"Dark Horse\" ao Havengate Development Fund. Na documentação americana da produção, aparece ora como \"produtor executivo\", ora como \"financiador\". Mensagens obtidas pela revista piauí mostram Eduardo orientando ativamente o fluxo do dinheiro: sugeriu enviar recursos \"ainda neste sistema atual\" (via o doleiro Antonio Freixo Junior) e colocou à disposição Altieris Santana, sócio de Paulo Calixto no Havengate, para reuniões pessoais. Em entrevista à CBN, minimizou seu papel, dizendo ter investido apenas US$ 50 mil do próprio bolso — valor que, segundo ele, foi depois devolvido. A Polícia Federal investiga se parte dos recursos enviados por Vorcaro ao Havengate foi desviada para custear sua permanência nos Estados Unidos e a extensão de seu domínio sobre a conta do fundo; até a publicação da reportagem, não havia evidência de desvio. Procurada pela piauí, a produtora Go Up não deu resposta objetiva sobre seu papel.",
+   "src": [
+    "piauicaixapreta"
+   ],
+   "joke": "Contabilizado ora como produtor executivo, ora como financiador — a única certeza é que, nos dois casos, alguém tinha que responder pela grana."
+  },
+  {
+   "id": "mario-frias",
+   "name": "Mario Frias",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Investigado",
+    "kind": "warning"
+   },
+   "role": "Deputado federal (PL-SP); ex-secretário de Cultura; roteirista e produtor executivo de \"Dark Horse\"",
+   "period": "Emendas de 2024-2025 sob auditoria da CGU; reportagem piauí 09/2026",
+   "amounts": [
+    "R$ 2 milhões — emendas parlamentares direcionadas ao Instituto Conhecer Brasil (ICB), de Karina Gama, em dois projetos auditados pela CGU por irregularidades",
+    "R$ 54 mil — pagos por Karina Gama e seu então marido para prestar serviço à campanha de Frias a deputado federal em 2022"
+   ],
+   "related": [
+    "karina-gama",
+    "daniel-vorcaro",
+    "flavio-bolsonaro",
+    "eduardo-bolsonaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Deputado federal (PL-SP), ex-secretário especial de Cultura do governo Bolsonaro e ex-ator. Escreveu a primeira versão do roteiro de \"Dark Horse\" e consta como produtor executivo do filme; foi ele quem, em dezembro de 2024, agradeceu a Daniel Vorcaro por áudio pelo aporte inicial e convidou o diretor Cyrus Nowrasteh para o projeto. Direcionou emendas parlamentares de R$ 2 milhões ao Instituto Conhecer Brasil (ICB), ONG de Karina Gama — sua sócia em Dark Horse —, para dois projetos sociais (Lutando pela Vida e Jovem Empreendedor); uma auditoria da Controladoria-Geral da União encontrou tantos problemas nos dois que está tomando providências para pedir o dinheiro de volta: um deles não comprovou entrega de bens nem prestação de serviços, o outro não capacitou ninguém nem atendeu nenhum estudante apesar de prometer alcançar 2.250 pessoas. Segundo o Estado de S. Paulo, parte do dinheiro foi parar no advogado de Frias. Karina e seu então marido haviam recebido R$ 54 mil para prestar serviços à campanha de Frias em 2022, ano em que ele, como secretário, ajudou a Go Up a obter os direitos cinematográficos sobre a vida de Bolsonaro.",
+   "src": [
+    "piauicaixapreta"
+   ],
+   "joke": "Escreveu o roteiro, mandou os agradecimentos e ainda arranjou emenda pro filme. Faltou só produzir a prestação de contas."
+  },
+  {
+   "id": "paulo-calixto",
+   "name": "Paulo Calixto",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Advogado; administrador do fundo Havengate Development Fund",
+   "period": "Metadados do documento revelados em 09/2026",
+   "amounts": [],
+   "related": [
+    "havengate-development-fund",
+    "eduardo-bolsonaro",
+    "karina-gama",
+    "michael-davis"
+   ],
+   "states": [],
+   "summary": "Advogado especializado em imigração, sem relação com a indústria do cinema, e amigo de Eduardo Bolsonaro — como ele, radicado no Texas. Administra o Havengate Development Fund, o veículo americano por onde passou o dinheiro de Daniel Vorcaro para o filme \"Dark Horse\". Seu nome se tornou personagem central de um mistério à parte: quando a produtora Go Up enviou à revista piauí uma \"nota de esclarecimento\" genérica recusando-se a detalhar as contas do filme, os metadados do PDF mostravam Calixto como autor do documento — criado apenas duas horas antes de a reportagem recebê-lo. O sócio da Go Up, Michael Davis, negou enfaticamente qualquer participação de Calixto; a produtora Karina Gama, questionada, deu respostas contraditórias e por fim disse não saber quem escreveu o documento.",
+   "src": [
+    "piauicaixapreta"
+   ],
+   "joke": "Administrava um fundo que, oficialmente, nada tinha a ver com o filme — só que seu nome apareceu justamente nos metadados do documento que tentava provar o contrário."
+  },
+  {
+   "id": "antonio-freixo-junior",
+   "name": "Antonio Freixo Junior",
+   "aliases": [
+    "Mineiro"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Alvo de busca e apreensão",
+    "kind": "critical"
+   },
+   "role": "Doleiro (\"Mineiro\"); dono da Entre Investimentos e Participações",
+   "period": "Busca e apreensão da PF em 2026",
+   "amounts": [
+    "R$ 614 milhões — total já investido por Vorcaro/Banco Master em empresas do Grupo Entre, do doleiro, segundo apuração"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "havengate-development-fund",
+    "banco-master"
+   ],
+   "states": [],
+   "summary": "Doleiro conhecido como \"Mineiro\", dono da Entre Investimentos e Participações, empresa que já recebera cerca de R$ 614 milhões em investimentos de Daniel Vorcaro e do Banco Master. Foi por meio dele — e não diretamente das empresas de Vorcaro nem da conta da produtora do filme nos EUA — que o dinheiro de \"Dark Horse\" seguia até o Havengate Development Fund, um trajeto que a polícia investiga como possível tentativa de dificultar o rastreamento. Menos de um ano depois de intermediar os repasses, foi alvo de uma operação de busca e apreensão da Polícia Federal por seu envolvimento no escândalo do Master; a Entrepay Instituição de Pagamento, outra empresa do Grupo Entre, foi liquidada pelo Banco Central.",
+   "src": [
+    "piauicaixapreta"
+   ],
+   "joke": "Especialista em \"câmbio de saída, que é uma coisa mais arriscada\". A saída, no fim, foi da Polícia Federal, com mandado de busca."
+  },
+  {
+   "id": "michael-davis",
+   "name": "Michael Davis",
+   "aliases": [
+    "Michael Brian Davis"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Produtor; sócio de Karina Gama na Go Up Entertainment LLC",
+   "period": "Questionário da piauí, 09/2026",
+   "amounts": [],
+   "related": [
+    "karina-gama",
+    "paulo-calixto",
+    "eduardo-bolsonaro"
+   ],
+   "states": [],
+   "summary": "Americano naturalizado, sócio de Karina Gama na Go Up Entertainment LLC, produtora de \"Dark Horse\". Diante do questionário da revista piauí sobre as finanças do filme, recusou-se a comentar comparações com o cinema brasileiro, alegando que a produção seguia \"práticas americanas\", e pediu perguntas factuais específicas apoiadas em documentos — recebeu 146, divididas em blocos. Não respondeu a nenhuma, alegando cláusulas de confidencialidade, e encaminhou uma nota de esclarecimento genérica anunciando \"medidas civis e criminais\" contra o compartilhamento de informações internas. Quando os metadados do próprio documento revelaram que fora escrito pelo advogado Paulo Calixto, administrador do fundo Havengate — sem relação oficial com o filme —, Davis negou qualquer participação dele e sugeriu que o escritório brasileiro da Go Up explicasse.",
+   "src": [
+    "piauicaixapreta"
+   ],
+   "joke": "Pediu perguntas factuais e específicas. Recebeu 146. Respondeu com uma nota genérica e ameaça de processo."
+  },
+  {
+   "id": "flavio-dino",
+   "name": "Flávio Dino",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Ministro do STF; relator do inquérito sobre desvios do orçamento secreto",
+   "period": "Autorizou acesso da PF ao material em 24/08/2026",
+   "amounts": [],
+   "related": [
+    "andre-mendonca",
+    "karina-gama",
+    "mario-frias"
+   ],
+   "states": [],
+   "summary": "Ministro do Supremo Tribunal Federal, relator do inquérito que apura desvios de recursos do orçamento secreto no Congresso. Em 24 de agosto de 2026, autorizou a Polícia Federal a ter acesso ao material apreendido pela Polícia Civil de São Paulo nas investigações sobre o Instituto Conhecer Brasil (ICB), a ONG de Karina Gama sob suspeita de ter desviado recursos públicos — de um contrato de wi-fi gratuito com a Prefeitura de São Paulo e de emendas do deputado Mario Frias — para custear a produção do filme \"Dark Horse\". Com isso, o filme passou a ser alvo de duas investigações paralelas: a de Dino, e outra comandada pelo ministro André Mendonça, que já apurava o financiamento do filme por Daniel Vorcaro.",
+   "src": [
+    "piauicaixapreta"
+   ],
+   "joke": "Abriu mais uma frente de investigação sobre o filme. Hollywood nunca teve tantos produtores-investigadores simultâneos."
   }
  ],
  "stateValues": {
