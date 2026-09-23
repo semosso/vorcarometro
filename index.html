@@ -75,7 +75,7 @@ header h1 a:hover{opacity:0.82;}
 .theme-toggle:hover{border-color:var(--red);}
 
 .ticker-wrap{background:var(--surface); border-radius:0; margin-top:10px; overflow:hidden; border:1px solid var(--border); border-width:1px 0;}
-.ticker-track{display:flex; width:max-content; white-space:nowrap; animation:ticker-scroll 34s linear infinite;}
+.ticker-track{display:flex; width:max-content; white-space:nowrap; animation:ticker-scroll 90s linear infinite;}
 .ticker-track span{font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.03em; color:var(--ink-2); padding:7px 28px; text-transform:uppercase;}
 .ticker-track span::before{content:"—"; color:var(--red); margin-right:10px;}
 @keyframes ticker-scroll{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
@@ -90,6 +90,8 @@ section{margin-block:34px;}
 /* placar embutido no masthead */
 .placar-line{margin-top:10px; text-align:center; font-family:var(--font-sans); font-size:0.98rem; color:var(--ink-2);}
 .placar-line .placar-num{font-family:var(--font-display); font-weight:800; color:var(--red); font-size:1.35rem; margin:0 7px 0 3px; font-variant-numeric:tabular-nums;}
+.placar-line .placar-row{display:block;}
+.placar-line .placar-legend{display:block;}
 
 /* busca */
 .search-form{display:flex; gap:10px; flex-wrap:wrap;}
@@ -257,7 +259,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
     <h1><a href="#" id="homeLink">VORCARÔMETRO</a></h1>
     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar modo apuração (tema escuro)" title="Modo Apuração">🔦</button>
   </div>
-  <div class="placar-line">Lançado em 21/09. Estamos há <span class="placar-num tabular" id="placarNum">—</span> <span id="placarDiasLabel"></span> sem novidade no caso Master, nosso recorde é <span class="placar-num tabular" id="placarRecorde">—</span> <span id="placarRecordeLabel"></span>. <span id="placarLegend">carregando…</span></div>
+  <div class="placar-line"><span class="placar-row">Lançado em 21/09. Estamos há <span class="placar-num tabular" id="placarNum">—</span> <span id="placarDiasLabel"></span> sem novidade no caso Master, nosso recorde é <span class="placar-num tabular" id="placarRecorde">—</span> <span id="placarRecordeLabel"></span>.</span><span class="placar-legend" id="placarLegend">carregando…</span></div>
 </header>
 <div class="ticker-wrap" aria-hidden="true">
   <div class="ticker-track" id="tickerTrack"></div>
