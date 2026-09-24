@@ -140,6 +140,12 @@ section{margin-block:34px;}
 .result-positive-head{font-family:var(--font-display); font-weight:700; font-size:1.15rem; margin-bottom:14px;}
 .card{border:1px solid var(--gridline); border-top:4px solid var(--border); border-radius:0; background:var(--surface); padding:18px; margin-bottom:14px;}
 .card-top{display:flex; align-items:flex-start; justify-content:space-between; gap:10px; flex-wrap:wrap;}
+.card-top-main{display:flex; align-items:flex-start; gap:12px; flex:1 1 auto; min-width:0;}
+.card-photo-wrap{flex:0 0 auto;}
+.card-photo{width:60px; height:60px; border-radius:4px; object-fit:cover; display:block; border:1px solid var(--border); background:var(--surface-2);}
+.card-photo-fallback{width:60px; height:60px; border-radius:4px; display:flex; align-items:center; justify-content:center; border:1px solid var(--border); background:var(--surface-2); font-family:var(--font-display); font-weight:700; font-size:1rem; color:var(--ink-2);}
+.card-photo-credit{font-size:0.58rem; color:var(--ink-2); opacity:0.75; margin-top:3px; max-width:60px; line-height:1.15;}
+.card-top-text{min-width:0; flex:1 1 auto;}
 .card-name{font-family:var(--font-display); font-weight:700; font-size:1.15rem;}
 .card-role{font-size:0.84rem; color:var(--ink-2); margin-top:2px; font-style:italic;}
 .boss-card{border-top-color:var(--gold); box-shadow:0 0 0 1px var(--gold) inset;}
@@ -680,6 +686,19 @@ const PLACEHOLDER_MSGS = ["Digite um nome (qualquer um, a chance é alta)","tent
 
 const CROWN_SVG = '<svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 19h18l1.2-9-5.7 4-4.5-7-4.5 7-5.7-4L3 19z"/></svg>';
 
+function initials(name){
+  return name.split(/\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+}
+
+function cardPhotoHtml(e){
+  if(e.photo){
+    const credit = e.photoCredit ? '<div class="card-photo-credit">'+e.photoCredit+'</div>' : '';
+    const titleAttr = e.photoCredit ? ' title="Foto: '+e.photoCredit+'"' : '';
+    return '<div class="card-photo-wrap"><img class="card-photo" src="'+e.photo+'" alt="'+e.name+'" loading="lazy"'+titleAttr+'>'+credit+'</div>';
+  }
+  return '<div class="card-photo-wrap"><div class="card-photo-fallback" aria-hidden="true">'+initials(e.name)+'</div></div>';
+}
+
 function renderPositive(matches, banner){
   const results = document.getElementById('results');
   let html = banner || '';
@@ -690,7 +709,7 @@ function renderPositive(matches, banner){
     const figurante = e.status.kind==='affected' ? '<div class="figurante-note">Aparece no enredo, mas como figurante.</div>' : '';
     const joke = e.joke ? '<div class="card-joke">“'+e.joke+'”</div>' : '';
     const bossBadge = e.boss ? '<span class="boss-badge" title="O chefão">'+CROWN_SVG+'BIG BOSS</span>' : '';
-    return '<div class="card'+(e.boss?' boss-card':'')+'"><div class="card-top"><div><div class="card-name">'+e.name+bossBadge+'</div><div class="card-role">'+e.role+'</div>'+joke+'</div><span class="status status-'+e.status.kind+'">'+e.status.label+'</span></div>'+
+    return '<div class="card'+(e.boss?' boss-card':'')+'"><div class="card-top"><div class="card-top-main">'+cardPhotoHtml(e)+'<div class="card-top-text"><div class="card-name">'+e.name+bossBadge+'</div><div class="card-role">'+e.role+'</div>'+joke+'</div></div><span class="status status-'+e.status.kind+'">'+e.status.label+'</span></div>'+
       figurante+
       '<div class="detail-row"><div class="detail-label">Época</div>'+e.period+'</div>'+
       amounts+

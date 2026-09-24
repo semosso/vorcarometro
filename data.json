@@ -913,6 +913,8 @@
    "name": "Tarcísio de Freitas",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/tarcisio-de-freitas.jpg",
+   "photoCredit": "Ciete Silvério/Governo do Estado de SP",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -947,6 +949,8 @@
    "name": "Gilberto Kassab",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/gilberto-kassab.jpg",
+   "photoCredit": "Governo do Estado de São Paulo",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -1321,6 +1325,8 @@
    "name": "Roberto Campos Neto",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/roberto-campos-neto.jpg",
+   "photoCredit": "Pedro França/Agência Senado",
    "status": {
     "label": "Citado",
     "kind": "affected"
@@ -1349,6 +1355,8 @@
    "name": "Gabriel Galípolo",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/gabriel-galipolo.jpg",
+   "photoCredit": "Pedro França/Agência Senado",
    "status": {
     "label": "Citado",
     "kind": "affected"
@@ -1380,6 +1388,8 @@
    "name": "Alexandre de Moraes",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/alexandre-de-moraes.jpg",
+   "photoCredit": "Isac Nóbrega/PR",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -1421,6 +1431,8 @@
     "kássio nunes marques"
    ],
    "type": "pessoa",
+   "photo": "img/kassio-nunes-marques.jpg",
+   "photoCredit": "Alejandro Zambrana/Secom/TSE",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -1460,6 +1472,8 @@
    "name": "Paulo Gonet",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/paulo-gonet.jpg",
+   "photoCredit": "Antonio Augusto/Secom/TSE",
    "status": {
     "label": "Citado",
     "kind": "affected"
@@ -1526,6 +1540,8 @@
     "senador ciro nogueira"
    ],
    "type": "pessoa",
+   "photo": "img/ciro-nogueira.jpg",
+   "photoCredit": "Agência Senado",
    "status": {
     "label": "Investigado",
     "kind": "warning"
@@ -1570,6 +1586,8 @@
     "senador jaques wagner"
    ],
    "type": "pessoa",
+   "photo": "img/jaques-wagner.jpg",
+   "photoCredit": "Agência Senado",
    "status": {
     "label": "Investigado",
     "kind": "warning"
@@ -1608,6 +1626,8 @@
     "claudio castro"
    ],
    "type": "pessoa",
+   "photo": "img/claudio-castro.jpg",
+   "photoCredit": "Governo do Estado do Rio de Janeiro",
    "status": {
     "label": "Investigado",
     "kind": "warning"
@@ -1638,6 +1658,8 @@
    "name": "Ibaneis Rocha",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/ibaneis-rocha.jpg",
+   "photoCredit": "Paulo H. Carvalho/Agência Brasília",
    "status": {
     "label": "Investigado",
     "kind": "warning"
@@ -1700,6 +1722,8 @@
    "name": "Roberta Roma",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/roberta-roma.jpg",
+   "photoCredit": "Michel Jesus/Câmara dos Deputados",
    "status": {
     "label": "Citada",
     "kind": "affected"
@@ -1724,6 +1748,8 @@
    "name": "Hugo Motta",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/hugo-motta.jpg",
+   "photoCredit": "Carlos Moura/Agência Senado",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -1755,6 +1781,8 @@
    "name": "Flávio Bolsonaro",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/flavio-bolsonaro.jpg",
+   "photoCredit": "Agência Senado",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -1904,6 +1932,8 @@
    "name": "Jair Bolsonaro",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/jair-bolsonaro.jpg",
+   "photoCredit": "Isac Nóbrega/PR",
    "status": {
     "label": "Citado",
     "kind": "affected"
@@ -2488,6 +2518,8 @@
    "name": "Dias Toffoli",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/dias-toffoli.jpg",
+   "photoCredit": "Nelson Jr./STF",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -2627,6 +2659,8 @@
    "name": "Davi Alcolumbre",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/davi-alcolumbre.jpg",
+   "photoCredit": "Agência Senado",
    "status": {
     "label": "Citado",
     "kind": "affected"
@@ -2656,6 +2690,8 @@
    "name": "Rodrigo Pacheco",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/rodrigo-pacheco.jpg",
+   "photoCredit": "Agência Senado",
    "status": {
     "label": "Citado",
     "kind": "affected"
@@ -2725,6 +2761,8 @@
    "name": "Celina Leão",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/celina-leao.jpg",
+   "photoCredit": "Renato Alves/Agência Brasília",
    "status": {
     "label": "Citada",
     "kind": "warning"
@@ -2811,6 +2849,8 @@
    "name": "Nikolas Ferreira",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/nikolas-ferreira.jpg",
+   "photoCredit": "Pablo Valadares/Câmara dos Deputados",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -2842,6 +2882,8 @@
     "bispo Edir Macedo"
    ],
    "type": "pessoa",
+   "photo": "img/edir-macedo.jpg",
+   "photoCredit": "Ricardo Stuckert/Palácio do Planalto",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -2895,6 +2937,8 @@
    "name": "Aldemir Bendine",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/aldemir-bendine.jpg",
+   "photoCredit": "José Cruz/Agência Brasil",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -2979,6 +3023,8 @@
    "name": "André Mendonça",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/andre-mendonca.jpg",
+   "photoCredit": "Rosinei Coutinho/STF",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -3065,6 +3111,8 @@
    "name": "Eduardo Bolsonaro",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/eduardo-bolsonaro.jpg",
+   "photoCredit": "Michel Jesus/Câmara dos Deputados",
    "status": {
     "label": "Investigado",
     "kind": "warning"
@@ -3095,6 +3143,8 @@
    "name": "Mario Frias",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/mario-frias.jpg",
+   "photoCredit": "Câmara dos Deputados",
    "status": {
     "label": "Investigado",
     "kind": "warning"
@@ -3204,6 +3254,8 @@
    "name": "Flávio Dino",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/flavio-dino.jpg",
+   "photoCredit": "Gustavo Moreno/STF",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -3230,6 +3282,8 @@
     "Lula"
    ],
    "type": "pessoa",
+   "photo": "img/lula.jpg",
+   "photoCredit": "Ricardo Stuckert/PR",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -3322,6 +3376,8 @@
    "name": "Guido Mantega",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/guido-mantega.jpg",
+   "photoCredit": "Roosewelt Pinheiro/Agência Brasil",
    "status": {
     "label": "Citado",
     "kind": "warning"
