@@ -418,8 +418,10 @@ function countUp(el, target, duration){
 }
 function diasLabel(n){ return n===1 ? 'dia' : 'dias'; }
 function renderPlacar(){
-  const hoje = new Date(); const ultima = new Date(ULTIMA_NOVIDADE+"T23:59:00-03:00"); // 23h59 em Brasília (UTC-3, sem horário de verão)
-  const dias = Math.max(0, Math.floor((hoje - ultima) / 86400000));
+  const hojeBrasiliaStr = new Intl.DateTimeFormat('en-CA', {timeZone:'America/Sao_Paulo'}).format(new Date()); // YYYY-MM-DD, sempre no fuso de Brasília
+  const hojeData = new Date(hojeBrasiliaStr+"T00:00:00Z");
+  const ultimaData = new Date(ULTIMA_NOVIDADE+"T00:00:00Z");
+  const dias = Math.max(0, Math.round((hojeData - ultimaData) / 86400000));
   const recorde = Math.max(RECORDE_ANTERIOR, dias);
   countUp(document.getElementById('placarNum'), dias, 650);
   document.getElementById('placarDiasLabel').textContent = diasLabel(dias);
