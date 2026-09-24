@@ -764,13 +764,15 @@ function drawHazardBorder(ctx,w,h){
   ctx.beginPath(); ctx.moveTo(50,h-38); ctx.lineTo(w-50,h-38); ctx.stroke();
   ctx.beginPath(); ctx.moveTo(50,h-28); ctx.lineTo(w-50,h-28); ctx.stroke();
 }
-function drawVerifiedStamp(ctx,w,label){
+function drawVerifiedStamp(ctx,w,label,color){
+  color = color || '#7a1620';
   ctx.save(); ctx.translate(w-140, 90); ctx.rotate(-6*Math.PI/180);
-  ctx.strokeStyle = '#7a1620'; ctx.lineWidth = 4; ctx.strokeRect(-104,-33,208,66);
-  ctx.fillStyle = '#7a1620'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-  ctx.font = '700 20px "Playfair Display", serif'; ctx.fillText(label, 0, 3);
+  ctx.strokeStyle = color; ctx.lineWidth = 4; ctx.strokeRect(-104,-33,208,66);
+  ctx.fillStyle = color; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.font = '700 20px "Playfair Display", serif'; ctx.fillText(String(label).toUpperCase(), 0, 3);
   ctx.restore();
 }
+const STATUS_STAMP_COLORS = {critical:'#7a1620', warning:'#a3782f', affected:'#2a5c8a'};
 function wrapText(ctx, text, x, y, maxWidth, lineHeight){
   const words = text.split(' '); let line=''; let cy=y;
   for(const word of words){
@@ -790,21 +792,46 @@ function drawShareCard(id){
   const ctx = canvas.getContext('2d');
   ctx.fillStyle = '#faf6ec'; ctx.fillRect(0,0,w,h);
   drawHazardBorder(ctx,w,h);
-  drawVerifiedStamp(ctx,w, widget.stampLabel);
+  const stampColor = STATUS_STAMP_COLORS[widget.statusKind] || '#7a1620';
+  drawVerifiedStamp(ctx,w, widget.stampLabel, stampColor);
 
   ctx.fillStyle = '#1f1a14'; ctx.textAlign = 'left';
   ctx.font = '800 42px "Playfair Display", serif';
   wrapText(ctx, 'VORCARÔMETRO', 60, 96, w-300, 46);
 
+  let textX = 60;
+  let photoBottom = 0;
+  if(widget.photoImg){
+    const px = 60, py = 118, ps = 130;
+    ctx.save();
+    ctx.beginPath();
+    ctx.roundRect ? ctx.roundRect(px,py,ps,ps,10) : ctx.rect(px,py,ps,ps);
+    ctx.clip();
+    ctx.drawImage(widget.photoImg, px, py, ps, ps);
+    ctx.restore();
+    ctx.strokeStyle = stampColor; ctx.lineWidth = 3; ctx.strokeRect(px,py,ps,ps);
+    textX = px + ps + 24;
+    photoBottom = py + ps;
+    if(widget.photoCredit){
+      ctx.font = '400 15px "IBM Plex Mono", monospace';
+      ctx.fillStyle = '#8a7f6a';
+      const creditEndY = wrapText(ctx, 'Foto: '+widget.photoCredit, px, photoBottom+22, ps+40, 18);
+      photoBottom = Math.max(photoBottom, creditEndY);
+    }
+  }
+
   ctx.font = '700 38px "Playfair Display", serif';
   ctx.fillStyle = '#1f1a14';
-  let endY = wrapText(ctx, widget.phrase, 60, 172, w-260, 44);
+  const textMaxWidth = w - textX - 200;
+  let endY = wrapText(ctx, widget.phrase, textX, 172, textMaxWidth, 44);
 
   if(widget.subPhrase){
     ctx.font = '400 24px "IBM Plex Mono", monospace';
     ctx.fillStyle = '#5c5346';
-    endY = wrapText(ctx, widget.subPhrase, 60, endY+36, w-260, 30);
+    endY = wrapText(ctx, widget.subPhrase, textX, endY+36, textMaxWidth, 30);
   }
+
+  endY = Math.max(endY, photoBottom + 10);
 
   if(widget.joke){
     ctx.font = 'italic 400 24px "IBM Plex Mono", monospace';
@@ -819,9 +846,22 @@ function drawShareCard(id){
 }
 
 function setupShareWidget(id, opts){
-  shareWidgets[id] = {phrase: opts.phrase, subPhrase: opts.subPhrase||'', joke: opts.joke||'', stampLabel: opts.stampLabel||'VERIFICADO'};
+  shareWidgets[id] = {phrase: opts.phrase, subPhrase: opts.subPhrase||'', joke: opts.joke||'', stampLabel: opts.stampLabel||'VERIFICADO', statusKind: opts.statusKind||'', photoCredit: opts.photoCredit||''};
   const block = document.getElementById('shareBlock-'+id); if(!block) return;
-  const draw = async ()=>{ try{ await document.fonts.load('800 42px "Playfair Display"'); await document.fonts.load('700 38px "Playfair Display"'); await document.fonts.ready; }catch(e){} drawShareCard(id); };
+  const draw = async ()=>{
+    try{ await document.fonts.load('800 42px "Playfair Display"'); await document.fonts.load('700 38px "Playfair Display"'); await document.fonts.ready; }catch(e){}
+    if(opts.photo){
+      try{
+        shareWidgets[id].photoImg = await new Promise((resolve)=>{
+          const img = new Image();
+          img.onload = ()=>resolve(img);
+          img.onerror = ()=>resolve(null);
+          img.src = opts.photo;
+        });
+      }catch(e){ shareWidgets[id].photoImg = null; }
+    }
+    drawShareCard(id);
+  };
   draw();
   const toast = ()=>document.getElementById('shareToast-'+id);
   const downloadBtn = document.getElementById('downloadBtn-'+id);
@@ -880,7 +920,10 @@ function setupPositiveShare(entity){
     phrase: name,
     subPhrase: entity ? entity.role : 'Achei uma ficha no Vorcarômetro.',
     joke: entity ? entity.joke : '',
-    stampLabel: 'ACHADO',
+    stampLabel: entity ? entity.status.label : 'ACHADO',
+    statusKind: entity ? entity.status.kind : '',
+    photo: entity ? entity.photo : '',
+    photoCredit: entity ? entity.photoCredit : '',
     linkUrl: baseUrl,
     shareText: shareText,
   });
