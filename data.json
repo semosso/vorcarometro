@@ -2003,6 +2003,8 @@
     "master"
    ],
    "type": "instituicao",
+   "photo": "img/banco-master.jpg",
+   "photoCredit": "Rovena Rosa/Agência Brasil",
    "status": {
     "label": "Liquidação",
     "kind": "critical"
@@ -2048,6 +2050,8 @@
     "banco de brasília"
    ],
    "type": "instituicao",
+   "photo": "img/brb.jpg",
+   "photoCredit": "Paulo H. Carvalho/Agência Brasília",
    "status": {
     "label": "Contraparte",
     "kind": "affected"
