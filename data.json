@@ -2265,6 +2265,8 @@
     "fundo garantidor de créditos"
    ],
    "type": "instituicao",
+   "photo": "img/fgc.png",
+   "photoCredit": "Logomarca oficial do FGC",
    "status": {
     "label": "Parte afetada",
     "kind": "affected"
@@ -2327,6 +2329,8 @@
     "amprev amapá"
    ],
    "type": "fundo",
+   "photo": "img/amprev.png",
+   "photoCredit": "Logomarca oficial do Amprev",
    "status": {
     "label": "Parte afetada",
     "kind": "affected"
@@ -2356,6 +2360,8 @@
    "name": "Iprev Maceió",
    "aliases": [],
    "type": "fundo",
+   "photo": "img/iprev-maceio.jpg",
+   "photoCredit": "Prefeitura de Maceió",
    "status": {
     "label": "Parte afetada",
     "kind": "affected"
