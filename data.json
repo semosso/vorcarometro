@@ -1872,6 +1872,8 @@
    "name": "Rodrigo Fux",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/rodrigo-fux.jpg",
+   "photoCredit": "Site do escritório Fux Advogados",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -3191,6 +3193,8 @@
    "name": "Paulo Calixto",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/paulo-calixto.jpg",
+   "photoCredit": "Site do escritório Calixto Advisors",
    "status": {
     "label": "Citado",
     "kind": "warning"
