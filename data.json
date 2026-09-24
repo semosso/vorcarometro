@@ -1506,6 +1506,8 @@
    "name": "Andrei Rodrigues",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/andrei-rodrigues.jpg",
+   "photoCredit": "INTERPOL",
    "status": {
     "label": "Citado",
     "kind": "affected"
@@ -2412,6 +2414,8 @@
     "alan ti"
    ],
    "type": "pessoa",
+   "photo": "img/monique-alfradique.jpg",
+   "photoCredit": "Filipe Redondo/O Boticário SPFW",
    "status": {
     "label": "Citada",
     "kind": "affected"
@@ -2439,6 +2443,8 @@
    "name": "Alok",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/alok.jpg",
+   "photoCredit": "Renato Alves/Agência Brasília",
    "status": {
     "label": "Citado",
     "kind": "affected"
@@ -2466,6 +2472,8 @@
     "dennis"
    ],
    "type": "pessoa",
+   "photo": "img/dennis-dj.jpg",
+   "photoCredit": "Humor Multishow",
    "status": {
     "label": "Citado",
     "kind": "affected"
@@ -2493,6 +2501,8 @@
     "chainsmokers"
    ],
    "type": "pessoa",
+   "photo": "img/the-chainsmokers.jpg",
+   "photoCredit": "The Come Up Show",
    "status": {
     "label": "Citada",
     "kind": "affected"
@@ -2593,6 +2603,8 @@
    "name": "Fábio Faria",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/fabio-faria.jpg",
+   "photoCredit": "Cléverson Oliveira/Ministério das Comunicações",
    "status": {
     "label": "Citado",
     "kind": "warning"
@@ -2793,6 +2805,8 @@
    "name": "Milton Maluhy Filho",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/milton-maluhy-filho.jpg",
+   "photoCredit": "Sam Barnes/Web Summit Rio (Sportsfile)",
    "status": {
     "label": "Parte afetada",
     "kind": "affected"
@@ -2997,6 +3011,8 @@
    "name": "Nelson Tanure",
    "aliases": [],
    "type": "pessoa",
+   "photo": "img/nelson-tanure.jpg",
+   "photoCredit": "Marco Antonio Lima Santos",
    "status": {
     "label": "Investigado",
     "kind": "warning"
