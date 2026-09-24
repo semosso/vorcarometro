@@ -2091,6 +2091,8 @@
     "reag"
    ],
    "type": "instituicao",
+   "photo": "img/reag-investimentos.jpg",
+   "photoCredit": "Boaventuravinicius (Wikimedia Commons)",
    "status": {
     "label": "Liquidação",
     "kind": "critical"
