@@ -727,6 +727,38 @@
   "piauicaixapreta": {
    "t": "revista piauí — Em cartaz, a caixa-preta",
    "u": "https://piaui.uol.com.br/revista/240/caixa-preta-flavio-bolsonaro-vorcaro-dark-horse/"
+  },
+  "cnnwardewhisky": {
+   "t": "CNN Brasil — Advogado buscou interlocução e disse que Vorcaro presenteou Lula com whisky",
+   "u": "https://www.cnnbrasil.com.br/politica/advogado-buscou-interlocucao-e-disse-que-vorcaro-presenteou-lula-com-whisky/"
+  },
+  "cnnflaviopedeinvestigacaolula": {
+   "t": "CNN Brasil — Flávio pede ao STF investigação contra Lula por suposto presente de Vorcaro",
+   "u": "https://www.cnnbrasil.com.br/politica/flavio-pede-ao-stf-investigacao-contra-lula-por-suposto-presente-de-vorcaro/"
+  },
+  "dgabcflaviomendoncauisque": {
+   "t": "Diário do Grande ABC — Defesa de Flávio Bolsonaro pede a Mendonça para abrir inquérito sobre uísque de Vorcaro a Lula",
+   "u": "https://www.dgabc.com.br/Noticia/4348706/defesa-de-flavio-bolsonaro-pede-a-mendonca-para-abrir-inquerito-sobre-uisque-de-vorcaro-a-lula"
+  },
+  "jornaldocomercionunesmarquesvideo": {
+   "t": "Jornal do Comércio — Nunes Marques manda Lula retirar do ar vídeo sobre Banco Master gravado no Alvorada",
+   "u": "https://www.jornaldocomercio.com/politica/2026/09/1264298-nunes-marques-manda-lula-retirar-do-ar-video-sobre-banco-master-gravado-no-alvorada.html"
+  },
+  "gazetadopovowardemagnitsky": {
+   "t": "Gazeta do Povo — Quem é Walfrido Warde, que fez proposta \"matadora\" para livrar Moraes da Magnitsky",
+   "u": "https://www.gazetadopovo.com.br/vida-e-cidadania/walfrido-warde-proposta-matadora-livrar-moraes-magnitsky/"
+  },
+  "jornaldebrasilialulavorcaroplanalto": {
+   "t": "Jornal de Brasília — Lula recebeu Vorcaro em reunião no Palácio do Planalto no fim de 2024",
+   "u": "https://jornaldebrasilia.com.br/noticias/politica-e-poder/lula-recebeu-vorcaro-em-reuniao-no-palacio-do-planalto-no-fim-de-2024/"
+  },
+  "gazetadopovovorcaroencontroplanalto": {
+   "t": "Gazeta do Povo — Vorcaro diz ter tido \"ótimo\" encontro com Lula e ministros no Planalto em 2024",
+   "u": "https://www.gazetadopovo.com.br/republica/vorcaro-otimo-encontro-lula-ministros-planalto-2024/"
+  },
+  "dgabclulamasterbolsonaro": {
+   "t": "Diário do Grande ABC — Lula: \"Eles criaram o Banco Master e transformaram Vorcaro em amigo; nós o fizemos prisioneiro\"",
+   "u": "https://www.dgabc.com.br/Noticia/4347955/lula-eles-criaram-o-banco-master-e-transformaram-vorcaro-em-amigo-nos-o-fizemos-prisioneiro"
   }
  },
  "entities": [
@@ -767,13 +799,17 @@
     "antonio-freixo-junior",
     "mario-frias",
     "michael-davis",
-    "flavio-dino"
+    "flavio-dino",
+    "lula",
+    "walfrido-warde",
+    "marco-aurelio-santana-ribeiro",
+    "guido-mantega"
    ],
    "states": [
     "SP",
     "MG"
    ],
-   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor. Na noite de 17 de novembro de 2025 — um dia depois de a Justiça decretar sua prisão preventiva em sigilo —, tentou embarcar num jato particular rumo a Dubai, com escala em Malta; foi preso no Aeroporto de Guarulhos horas antes do embarque, enquanto a Fictor, holding de investimentos pouco conhecida, anunciava publicamente um “consórcio com investidores árabes” de R$ 3 bilhões para salvar o banco — proposta recebida pelo mercado como piada diante do rombo bilionário. Reportagens da revista piauí também documentam sua festa de Halloween de outubro de 2023 (a “festa das suíças”) e um jantar em Courchevel, nos Alpes franceses, com o senador Ciro Nogueira e o empresário José Seripieri Filho (dono da Amil), no chalé de Alberto Leite. Reportagem da piauí (\"Em cartaz, a caixa-preta\") mostra que os repasses ao Havengate não saíam diretamente das empresas de Vorcaro nem caíam na conta da produtora do filme nos EUA, como seria o percurso normal: passavam pelo doleiro Antonio Freixo Junior, o \"Mineiro\", e sua Entre Investimentos — companhia que já recebera R$ 614 milhões em investimentos do banqueiro. A Polícia Federal investiga por que Vorcaro optou por essa rota mais complexa em vez de enviar o dinheiro direto do banco à produtora.",
+   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor. Na noite de 17 de novembro de 2025 — um dia depois de a Justiça decretar sua prisão preventiva em sigilo —, tentou embarcar num jato particular rumo a Dubai, com escala em Malta; foi preso no Aeroporto de Guarulhos horas antes do embarque, enquanto a Fictor, holding de investimentos pouco conhecida, anunciava publicamente um “consórcio com investidores árabes” de R$ 3 bilhões para salvar o banco — proposta recebida pelo mercado como piada diante do rombo bilionário. Reportagens da revista piauí também documentam sua festa de Halloween de outubro de 2023 (a “festa das suíças”) e um jantar em Courchevel, nos Alpes franceses, com o senador Ciro Nogueira e o empresário José Seripieri Filho (dono da Amil), no chalé de Alberto Leite. Reportagem da piauí (\"Em cartaz, a caixa-preta\") mostra que os repasses ao Havengate não saíam diretamente das empresas de Vorcaro nem caíam na conta da produtora do filme nos EUA, como seria o percurso normal: passavam pelo doleiro Antonio Freixo Junior, o \"Mineiro\", e sua Entre Investimentos — companhia que já recebera R$ 614 milhões em investimentos do banqueiro. A Polícia Federal investiga por que Vorcaro optou por essa rota mais complexa em vez de enviar o dinheiro direto do banco à produtora. Recebido por Lula no Palácio do Planalto em 4 de dezembro de 2024, classificou o encontro, em mensagem própria, como \"ótimo\"; mensagens posteriores de seu então advogado Walfrido Warde relatam um suposto presente de uísque ao presidente e uma tentativa de aproximação continuada com o Planalto.",
    "src": [
     "stf",
     "yahoo",
@@ -797,7 +833,8 @@
     "piauicontaminacao",
     "piauifestasuicas",
     "piauivoltemane",
-    "piauicaixapreta"
+    "piauicaixapreta",
+    "jornaldebrasilialulavorcaroplanalto"
    ],
    "joke": "Oferecia 177% do CDI e tinha um jato de R$ 200 milhões — hoje só um dos dois ainda voa."
   },
@@ -1043,13 +1080,15 @@
     "banco-master",
     "banco-pleno",
     "gilberto-kassab",
-    "tarcisio-de-freitas"
+    "tarcisio-de-freitas",
+    "lula",
+    "guido-mantega"
    ],
    "states": [
     "BA",
     "SP"
    ],
-   "summary": "Conhecido como “Guga Lima”, entrou no mercado de crédito consignado em 2018 e se tornou sócio e CEO do Banco Master em 2020, trazendo o CredCesta — programa de consignado que virou um dos principais produtos do banco. Deixou a sociedade com Vorcaro em maio de 2024 e hoje controla o Banco Pleno (ex-Voiter), que ficou de fora da liquidação decretada pelo Banco Central. Reportagens apontam trânsito político com o PT baiano. Foi preso na deflagração da Operação Compliance Zero. Em proposta de delação (rejeitada), Vorcaro apontou a PKL One Participações, ligada a parentes de Lima, como operadora do CredCesta no governo de São Paulo — elo central da alegação de propina envolvendo Kassab; Lima não se pronunciou publicamente sobre essa alegação específica.",
+   "summary": "Conhecido como “Guga Lima”, entrou no mercado de crédito consignado em 2018 e se tornou sócio e CEO do Banco Master em 2020, trazendo o CredCesta — programa de consignado que virou um dos principais produtos do banco. Deixou a sociedade com Vorcaro em maio de 2024 e hoje controla o Banco Pleno (ex-Voiter), que ficou de fora da liquidação decretada pelo Banco Central. Reportagens apontam trânsito político com o PT baiano. Foi preso na deflagração da Operação Compliance Zero. Em proposta de delação (rejeitada), Vorcaro apontou a PKL One Participações, ligada a parentes de Lima, como operadora do CredCesta no governo de São Paulo — elo central da alegação de propina envolvendo Kassab; Lima não se pronunciou publicamente sobre essa alegação específica. Acompanhou Vorcaro e o ex-ministro Guido Mantega numa reunião com o presidente Lula no Palácio do Planalto em 4 de dezembro de 2024.",
    "src": [
     "poder360augusto1",
     "poder360augusto2",
@@ -1059,7 +1098,9 @@
     "jbkassab",
     "cnnquemeaugustolima",
     "cnnnomepreocupaplanalto",
-    "cnnbcavalvoiter"
+    "cnnbcavalvoiter",
+    "jornaldebrasilialulavorcaroplanalto",
+    "gazetadopovovorcaroencontroplanalto"
    ],
    "joke": "Trouxe o CredCesta pro Master, saiu da sociedade antes da conta chegar."
   },
@@ -1317,16 +1358,20 @@
    "amounts": [],
    "related": [
     "roberto-campos-neto",
-    "banco-master"
+    "banco-master",
+    "lula",
+    "daniel-vorcaro"
    ],
    "states": [
     "DF"
    ],
-   "summary": "Presidente do Banco Central desde 2025, foi quem decretou a liquidação extrajudicial do Master em novembro daquele ano. Declarou publicamente não ter encontrado evidências de que seu antecessor, Roberto Campos Neto, tenha agido para favorecer o banco de Vorcaro — declaração que gerou controvérsia e críticas de parlamentares.",
+   "summary": "Presidente do Banco Central desde 2025, foi quem decretou a liquidação extrajudicial do Master em novembro daquele ano. Declarou publicamente não ter encontrado evidências de que seu antecessor, Roberto Campos Neto, tenha agido para favorecer o banco de Vorcaro — declaração que gerou controvérsia e críticas de parlamentares. Ainda antes de assumir a presidência do Banco Central, foi chamado pelo presidente Lula para acompanhar a conversa numa reunião com Vorcaro no Palácio do Planalto em 4 de dezembro de 2024.",
    "src": [
     "infomoneyedinho",
     "spbancarioscampos",
-    "cnnbcpoupacamposneto"
+    "cnnbcpoupacamposneto",
+    "jornaldebrasilialulavorcaroplanalto",
+    "gazetadopovovorcaroencontroplanalto"
    ],
    "joke": "Herdou o problema, decretou a liquidação — e depois inocentou quem herdou."
   },
@@ -1347,10 +1392,11 @@
    "related": [
     "paulo-gonet",
     "andrei-rodrigues",
-    "dias-toffoli"
+    "dias-toffoli",
+    "walfrido-warde"
    ],
    "states": [],
-   "summary": "Ministro do STF. Reportagens, com base em mensagens extraídas do celular de Vorcaro, mostram o banqueiro pedindo ao ministro ajuda para tentar conter o avanço das investigações junto ao diretor-geral da PF (Andrei Rodrigues) e ao procurador-geral da República (Paulo Gonet). Passou a ser questionado também por um contrato de R$ 129 milhões entre o Master e o escritório de advocacia de sua esposa. O gabinete do ministro afirma que ele nunca julgou nenhum processo envolvendo o Banco Master — não há, até a última atualização desta base, decisão do STF ou denúncia formal contra ele neste caso.",
+   "summary": "Ministro do STF. Reportagens, com base em mensagens extraídas do celular de Vorcaro, mostram o banqueiro pedindo ao ministro ajuda para tentar conter o avanço das investigações junto ao diretor-geral da PF (Andrei Rodrigues) e ao procurador-geral da República (Paulo Gonet). Passou a ser questionado também por um contrato de R$ 129 milhões entre o Master e o escritório de advocacia de sua esposa. O gabinete do ministro afirma que ele nunca julgou nenhum processo envolvendo o Banco Master — não há, até a última atualização desta base, decisão do STF ou denúncia formal contra ele neste caso. Mensagens reveladas em setembro de 2026 mostram que, dois dias depois de o ministro ser incluído na lista de sanções americanas Magnitsky (08/2025), o advogado Walfrido Warde propôs a Vorcaro uma \"estratégia matadora\" para tentar retirar Moraes da lista, incluindo uma ofensiva na Corte Interamericana de Direitos Humanos; o ministro permaneceu sancionado por cerca de seis meses, sendo retirado da lista em dezembro de 2025.",
    "src": [
     "cnnreverter",
     "apublicagranada",
@@ -1363,7 +1409,8 @@
     "cnnfimdesemana10movimentacoes",
     "cnnteiafraudes",
     "cnnpfmapeiatreseixos",
-    "cnnuisquelondres"
+    "cnnuisquelondres",
+    "gazetadopovowardemagnitsky"
    ],
    "joke": "Foi à degustação de uísque de R$ 3 milhões que o banco pagou. Julgar processo do Master? Isso nunca, garante o gabinete."
   },
@@ -1386,10 +1433,12 @@
     "R$ 427 milhões — contrato de êxito (5% líquido sobre valores recuperados em 12 ações) que poderia destravar R$ 8,5 bilhões em precatórios de interesse do Master, via escritório da esposa de um desembargador do TRF-1"
    ],
    "related": [
-    "daniel-vorcaro"
+    "daniel-vorcaro",
+    "lula",
+    "flavio-bolsonaro"
    ],
    "states": [],
-   "summary": "Ministro do STF. Diálogos extraídos do celular de Daniel Vorcaro, com um interlocutor identificado como filho do ministro (o advogado Kevin Marques), citam o valor de R$ 500 mil. Nunes Marques afirmou publicamente, em sessão, que seu filho “nunca prestou serviço ao Master” nem recebeu qualquer pagamento do banco; o escritório de Kevin diz que ele recebeu R$ 281,6 mil da Consult por serviços jurídicos tributários, sem relação com o Master. Reportagem da revista Piauí (“Dominado aqui”) mostra que, no julgamento de um caso de interesse do Master envolvendo precatórios do setor sucroalcooleiro, o ministro se declarou impedido e depois reverteu a decisão, dando o voto de desempate (3 a 2) favorável ao banco; quatro minutos depois do resultado, um assessor jurídico do Master mandou a Vorcaro o contato de Kevin Marques com a mensagem “dominado aqui” — no mesmo período, a Consult recebeu R$ 6,62 milhões do banco. Mensagens também associam o ministro a um contrato de êxito de até R$ 427 milhões, num escritório de advocacia da esposa de um desembargador federal do TRF-1, que assessores de Vorcaro chamavam de “turma do KN”, visando destravar R$ 8,5 bilhões em precatórios de interesse do Master; os diálogos registram ainda pedidos atribuídos ao ministro, como hospedagem no hotel Fasano e uma mansão no Joá (RJ) alugada por R$ 1,45 milhão por uma semana no Carnaval de 2025. Nunes Marques nega qualquer relação com Vorcaro e diz nunca ter trocado mensagens com o banqueiro. Já se declarou impedido de julgar outro processo do caso Master às vésperas das eleições de 2026, decisão que, segundo análises publicadas, deu à defesa do banqueiro argumento para contestar sua prisão. Não há, até a última atualização desta base, denúncia formal contra o ministro neste caso.",
+   "summary": "Ministro do STF. Diálogos extraídos do celular de Daniel Vorcaro, com um interlocutor identificado como filho do ministro (o advogado Kevin Marques), citam o valor de R$ 500 mil. Nunes Marques afirmou publicamente, em sessão, que seu filho “nunca prestou serviço ao Master” nem recebeu qualquer pagamento do banco; o escritório de Kevin diz que ele recebeu R$ 281,6 mil da Consult por serviços jurídicos tributários, sem relação com o Master. Reportagem da revista Piauí (“Dominado aqui”) mostra que, no julgamento de um caso de interesse do Master envolvendo precatórios do setor sucroalcooleiro, o ministro se declarou impedido e depois reverteu a decisão, dando o voto de desempate (3 a 2) favorável ao banco; quatro minutos depois do resultado, um assessor jurídico do Master mandou a Vorcaro o contato de Kevin Marques com a mensagem “dominado aqui” — no mesmo período, a Consult recebeu R$ 6,62 milhões do banco. Mensagens também associam o ministro a um contrato de êxito de até R$ 427 milhões, num escritório de advocacia da esposa de um desembargador federal do TRF-1, que assessores de Vorcaro chamavam de “turma do KN”, visando destravar R$ 8,5 bilhões em precatórios de interesse do Master; os diálogos registram ainda pedidos atribuídos ao ministro, como hospedagem no hotel Fasano e uma mansão no Joá (RJ) alugada por R$ 1,45 milhão por uma semana no Carnaval de 2025. Nunes Marques nega qualquer relação com Vorcaro e diz nunca ter trocado mensagens com o banqueiro. Já se declarou impedido de julgar outro processo do caso Master às vésperas das eleições de 2026, decisão que, segundo análises publicadas, deu à defesa do banqueiro argumento para contestar sua prisão. Não há, até a última atualização desta base, denúncia formal contra o ministro neste caso. Como presidente do TSE, determinou em 22 de setembro de 2026 que o presidente Lula retirasse do ar, em 24 horas, um vídeo gravado no Palácio da Alvorada em que comentava o caso Master — atendendo a pedido do senador Flávio Bolsonaro, que alegou propaganda eleitoral disfarçada de pronunciamento institucional; a decisão também proibiu o uso do material, total ou parcial, em propaganda eleitoral.",
    "src": [
     "cnnkassio",
     "revistaforumkassio",
@@ -1401,7 +1450,8 @@
     "forum427kassio",
     "brasil247427kassio",
     "cnnmesada500milkn",
-    "cnnturmakn427mi"
+    "cnnturmakn427mi",
+    "jornaldocomercionunesmarquesvideo"
    ],
    "joke": "“Meu filho nunca prestou serviço ao Master”, jurou o ministro em sessão. O WhatsApp de Vorcaro, segundo reportagens, discorda — e ainda manda um “dominado aqui”."
   },
@@ -1726,12 +1776,14 @@
     "eduardo-bolsonaro",
     "mario-frias",
     "thiago-miranda",
-    "michael-davis"
+    "michael-davis",
+    "lula",
+    "walfrido-warde"
    ],
    "states": [
     "RJ"
    ],
-   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro. Um relatório do Coaf revelado pela revista piauí mostra que Vorcaro continuou enviando dinheiro para o “Dark Horse” depois da data que Flávio apresentou publicamente, em entrevista à GloboNews, como a do último pagamento: um repasse de US$ 1,66 milhão ao Havengate Development Fund em 16/09/2025, elevando o total identificado de US$ 10,6 milhões para cerca de US$ 12,3 milhões. Flávio também afirmou, incorretamente segundo a apuração, que o fundo seria supervisionado pela SEC americana. Reportagem da revista piauí (“Flávio, o homem do poço”) mostra que suas versões sobre a relação com Vorcaro caíram “peça por peça” em menos de uma semana, em maio de 2026: depois de ironizar um repórter que lhe perguntou sobre o financiamento do filme, foi forçado a admitir, horas depois, com a divulgação de um áudio, que pedira o dinheiro. Dias depois, o site Metrópoles revelou que Flávio visitara Vorcaro em sua casa em São Paulo no fim de 2025, quando o banqueiro já usava tornozeleira eletrônica após passar doze dias na cadeia — encontro que o senador omitira até então e que contradiz sua alegação de que, em novembro de 2025, desconhecia a gravidade da situação do banco. Mensagens de WhatsApp obtidas pela revista piauí mostram que, em 22 de outubro de 2025, já no terceiro dia de gravações, Flávio voltou a pressionar Vorcaro por dinheiro (\"Estamos no limite\"; \"se não der me fala que procuro urgente outro caminho\") e que o banqueiro liberou mais uma parcela horas depois — o que, somado ao repasse de 16 de setembro, eleva o total possivelmente desembolsado por Vorcaro para até US$ 14 milhões (R$ 72 milhões). Não é a primeira mentira pública do senador sobre o caso: à colunista Mônica Bergamo, em março de 2026, negou qualquer contato com Vorcaro, e ao Intercept reagiu com deboche (\"É mentira, de onde você tirou isso?\") horas antes de o áudio da cobrança vir a público. Também afirmou que o Havengate fora fechado assim que surgiram as primeiras suspeitas sobre Vorcaro — falso, segundo os registros fazendários do Texas, onde o fundo seguia ativo. Combinou ao menos cinco encontros com o banqueiro até novembro de 2025, incluindo convite para jantar com o ator Jim Caviezel e o diretor Cyrus Nowrasteh, e, na véspera da prisão de Vorcaro, trocou com ele mensagens de visualização única e uma declaração de lealdade eterna (\"Irmão, estou e estarei contigo sempre... Só preciso que me dê uma luz!\") pedindo mais dinheiro. Prometeu prestação de contas pública do filme em trinta dias a partir de maio de 2026; quase quatro meses depois, não apresentou nada — a produção entregou às autoridades um \"laudo\" de 32 páginas que bate exatamente com os centavos, sem detalhar um único gasto, considerado insuficiente por três produtores de cinema ouvidos pela piauí.",
+   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro. Um relatório do Coaf revelado pela revista piauí mostra que Vorcaro continuou enviando dinheiro para o “Dark Horse” depois da data que Flávio apresentou publicamente, em entrevista à GloboNews, como a do último pagamento: um repasse de US$ 1,66 milhão ao Havengate Development Fund em 16/09/2025, elevando o total identificado de US$ 10,6 milhões para cerca de US$ 12,3 milhões. Flávio também afirmou, incorretamente segundo a apuração, que o fundo seria supervisionado pela SEC americana. Reportagem da revista piauí (“Flávio, o homem do poço”) mostra que suas versões sobre a relação com Vorcaro caíram “peça por peça” em menos de uma semana, em maio de 2026: depois de ironizar um repórter que lhe perguntou sobre o financiamento do filme, foi forçado a admitir, horas depois, com a divulgação de um áudio, que pedira o dinheiro. Dias depois, o site Metrópoles revelou que Flávio visitara Vorcaro em sua casa em São Paulo no fim de 2025, quando o banqueiro já usava tornozeleira eletrônica após passar doze dias na cadeia — encontro que o senador omitira até então e que contradiz sua alegação de que, em novembro de 2025, desconhecia a gravidade da situação do banco. Mensagens de WhatsApp obtidas pela revista piauí mostram que, em 22 de outubro de 2025, já no terceiro dia de gravações, Flávio voltou a pressionar Vorcaro por dinheiro (\"Estamos no limite\"; \"se não der me fala que procuro urgente outro caminho\") e que o banqueiro liberou mais uma parcela horas depois — o que, somado ao repasse de 16 de setembro, eleva o total possivelmente desembolsado por Vorcaro para até US$ 14 milhões (R$ 72 milhões). Não é a primeira mentira pública do senador sobre o caso: à colunista Mônica Bergamo, em março de 2026, negou qualquer contato com Vorcaro, e ao Intercept reagiu com deboche (\"É mentira, de onde você tirou isso?\") horas antes de o áudio da cobrança vir a público. Também afirmou que o Havengate fora fechado assim que surgiram as primeiras suspeitas sobre Vorcaro — falso, segundo os registros fazendários do Texas, onde o fundo seguia ativo. Combinou ao menos cinco encontros com o banqueiro até novembro de 2025, incluindo convite para jantar com o ator Jim Caviezel e o diretor Cyrus Nowrasteh, e, na véspera da prisão de Vorcaro, trocou com ele mensagens de visualização única e uma declaração de lealdade eterna (\"Irmão, estou e estarei contigo sempre... Só preciso que me dê uma luz!\") pedindo mais dinheiro. Prometeu prestação de contas pública do filme em trinta dias a partir de maio de 2026; quase quatro meses depois, não apresentou nada — a produção entregou às autoridades um \"laudo\" de 32 páginas que bate exatamente com os centavos, sem detalhar um único gasto, considerado insuficiente por três produtores de cinema ouvidos pela piauí. Em 23 de setembro de 2026, a defesa de Flávio pediu ao ministro André Mendonça, do STF, a abertura de inquérito contra o presidente Lula por corrupção passiva e advocacia administrativa, com base nas mensagens do advogado Walfrido Warde sobre um suposto presente de uísque de Vorcaro a Lula.",
    "src": [
     "interceptflavio",
     "cnnflavio",
@@ -1740,7 +1792,9 @@
     "uolneymarintermediario",
     "parlamentopiauidarkhorse",
     "piauiflaviopoco",
-    "piauicaixapreta"
+    "piauicaixapreta",
+    "cnnflaviopedeinvestigacaolula",
+    "dgabcflaviomendoncauisque"
    ],
    "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa."
   },
@@ -2938,14 +2992,18 @@
     "daniel-monteiro",
     "karina-gama",
     "flavio-dino",
-    "eduardo-bolsonaro"
+    "eduardo-bolsonaro",
+    "lula",
+    "walfrido-warde",
+    "flavio-bolsonaro"
    ],
    "states": [],
-   "summary": "Ministro do Supremo Tribunal Federal. Ao autorizar, em 6 de maio de 2026, uma nova fase da Operação Compliance Zero para apurar a relação entre o senador Ciro Nogueira e Daniel Vorcaro, escreveu em sua decisão que havia um “arranjo funcional e instrumental orientado por benefício mútuo, extrapolando relações de mera amizade” — a base jurídica que destravou o acesso da revista piauí a mais de sessenta páginas do relatório da PF sobre o caso. Também foi quem ordenou, em abril de 2026, a prisão do advogado Daniel Monteiro, apontado como homem de confiança de Vorcaro e arquiteto jurídico do esquema Master-BRB. Também comanda a investigação sobre o financiamento do filme \"Dark Horse\" por Daniel Vorcaro — linha de apuração paralela à aberta pelo ministro Flávio Dino em agosto de 2026 sobre o possível desvio de recursos públicos (emendas parlamentares e um contrato municipal de wi-fi) para custear a mesma produção.",
+   "summary": "Ministro do Supremo Tribunal Federal. Ao autorizar, em 6 de maio de 2026, uma nova fase da Operação Compliance Zero para apurar a relação entre o senador Ciro Nogueira e Daniel Vorcaro, escreveu em sua decisão que havia um “arranjo funcional e instrumental orientado por benefício mútuo, extrapolando relações de mera amizade” — a base jurídica que destravou o acesso da revista piauí a mais de sessenta páginas do relatório da PF sobre o caso. Também foi quem ordenou, em abril de 2026, a prisão do advogado Daniel Monteiro, apontado como homem de confiança de Vorcaro e arquiteto jurídico do esquema Master-BRB. Também comanda a investigação sobre o financiamento do filme \"Dark Horse\" por Daniel Vorcaro — linha de apuração paralela à aberta pelo ministro Flávio Dino em agosto de 2026 sobre o possível desvio de recursos públicos (emendas parlamentares e um contrato municipal de wi-fi) para custear a mesma produção. Recebeu, em 23 de setembro de 2026, o pedido da defesa de Flávio Bolsonaro para abrir inquérito contra o presidente Lula por corrupção passiva, com base em mensagens do advogado Walfrido Warde sobre um suposto presente de uísque de Vorcaro a Lula.",
    "src": [
     "piauiamigocrime",
     "piauiarmadilha",
-    "piauicaixapreta"
+    "piauicaixapreta",
+    "dgabcflaviomendoncauisque"
    ],
    "joke": "O ministro cujo despacho virou a chave que abriu o cofre das mensagens de “irmãozão”."
   },
@@ -3164,6 +3222,126 @@
     "piauicaixapreta"
    ],
    "joke": "Abriu mais uma frente de investigação sobre o filme. Hollywood nunca teve tantos produtores-investigadores simultâneos."
+  },
+  {
+   "id": "lula",
+   "name": "Luiz Inácio Lula da Silva",
+   "aliases": [
+    "Lula"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Presidente da República",
+   "period": "Recebeu Vorcaro no Planalto em 04/12/2024; mensagens sobre presente de uísque reveladas em 09/2026",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "walfrido-warde",
+    "marco-aurelio-santana-ribeiro",
+    "guido-mantega",
+    "augusto-lima",
+    "gabriel-galipolo",
+    "flavio-bolsonaro",
+    "andre-mendonca",
+    "kassio-nunes-marques"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Presidente da República. Recebeu Daniel Vorcaro no Palácio do Planalto em 4 de dezembro de 2024, acompanhado do ex-ministro da Fazenda Guido Mantega e do ex-sócio do Master Augusto Lima; participaram também os ministros Rui Costa (Casa Civil) e Alexandre Silveira (Minas e Energia), e Lula chamou à conversa Gabriel Galípolo, que assumiria a presidência do Banco Central pouco depois. Segundo a versão oficial, Vorcaro se disse alvo de perseguição por grandes instituições financeiras, e Lula respondeu que qualquer questão sobre o Master deveria ser tratada tecnicamente pelo Banco Central; em mensagem própria, Vorcaro classificou o encontro como \"ótimo\". Mensagens extraídas do celular do banqueiro pela Polícia Federal e reveladas em setembro de 2026 mostram o advogado Walfrido Warde relatando a Vorcaro, em 22 de janeiro de 2025, que Lula \"agradeceu mais uma vez o uísque e mandou um abraço\" — presente que, segundo essas mensagens, teria sido dado pelo banqueiro ao presidente. A Secretaria de Comunicação da Presidência (Secom) nega que Lula tenha recebido qualquer presente de Vorcaro ou tido conhecimento da articulação de Warde, e afirma que o único contato direto entre os dois foi a reunião de dezembro de 2024. Com base nessas mensagens, a defesa de Flávio Bolsonaro pediu ao STF, em 23 de setembro de 2026, a abertura de inquérito contra Lula por corrupção passiva e advocacia administrativa. Dias antes, o ministro Kassio Nunes Marques, presidente do TSE, havia determinado que Lula retirasse do ar um vídeo gravado no Palácio da Alvorada em que comentava o caso Master, por entender que o conteúdo misturava manifestação institucional com propaganda de sua pré-candidatura à reeleição.",
+   "src": [
+    "cnnwardewhisky",
+    "dgabclulamasterbolsonaro",
+    "jornaldebrasilialulavorcaroplanalto",
+    "gazetadopovovorcaroencontroplanalto",
+    "cnnflaviopedeinvestigacaolula",
+    "jornaldocomercionunesmarquesvideo"
+   ],
+   "joke": "Reunião classificada de \"ótima\" pelo próprio banqueiro investigado. Pelo visto, o uísque ajudou."
+  },
+  {
+   "id": "walfrido-warde",
+   "name": "Walfrido Warde",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Advogado; foi interlocutor político de Daniel Vorcaro até janeiro de 2026",
+   "period": "Atuou como articulador de Vorcaro até 01/2026; mensagens reveladas em 09/2026",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "lula",
+    "marco-aurelio-santana-ribeiro",
+    "alexandre-de-moraes"
+   ],
+   "states": [],
+   "summary": "Advogado que atuou como interlocutor político de Daniel Vorcaro até janeiro de 2026. Mensagens extraídas do celular do banqueiro pela Polícia Federal, reveladas pelo jornal O Globo e confirmadas pela CNN em setembro de 2026, mostram Warde articulando a aproximação de Vorcaro com o governo Lula: relatou ter sido procurado por Marco Aurélio Santana Ribeiro, então chefe do gabinete pessoal da Presidência, e pediu a Vorcaro que enviasse por e-mail os temas de interesse do grupo. Em 22 de janeiro de 2025, escreveu a Vorcaro que Lula \"agradeceu mais uma vez o uísque e mandou um abraço\". Também propôs a Vorcaro, em 1º de agosto de 2025 — dois dias depois de o ministro Alexandre de Moraes ser incluído na lista de sanções americanas Magnitsky —, uma \"estratégia matadora\" para tentar retirar o ministro da lista, incluindo uma ofensiva na Corte Interamericana de Direitos Humanos sob a tese de que o governo Trump perseguia Moraes para favorecer Jair Bolsonaro nas eleições de 2026.",
+   "src": [
+    "cnnwardewhisky",
+    "gazetadopovowardemagnitsky"
+   ],
+   "joke": "Um advogado só, dois clientes informais: um ministro sancionado nos EUA e um presidente que jura não ter recebido presente nenhum."
+  },
+  {
+   "id": "marco-aurelio-santana-ribeiro",
+   "name": "Marco Aurélio Santana Ribeiro",
+   "aliases": [
+    "Marcola"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Chefe do gabinete pessoal da Presidência da República",
+   "period": "Contato relatado por Warde em abril de 2024; mensagens reveladas em 09/2026",
+   "amounts": [],
+   "related": [
+    "walfrido-warde",
+    "daniel-vorcaro",
+    "lula",
+    "guido-mantega"
+   ],
+   "states": [
+    "DF"
+   ],
+   "summary": "Chefe do gabinete pessoal da Presidência da República. Segundo mensagens do celular de Daniel Vorcaro reveladas em setembro de 2026, o advogado Walfrido Warde relatou ao banqueiro, em abril de 2024, ter sido procurado por Marco Aurélio pedindo o envio por e-mail dos temas de interesse do grupo — passo que precedeu a reunião de Vorcaro com Lula no Planalto, em dezembro daquele ano. O gabinete de Marco Aurélio nega ter procurado Warde ou qualquer outro representante do Banco Master, e afirma ter apenas seguido o procedimento padrão de exigir que pedidos de audiência sejam formalizados por e-mail.",
+   "src": [
+    "cnnwardewhisky"
+   ],
+   "joke": "Cumpriu o protocolo à risca — pedir por e-mail. O problema é o assunto do e-mail."
+  },
+  {
+   "id": "guido-mantega",
+   "name": "Guido Mantega",
+   "aliases": [],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Ex-ministro da Fazenda; intermediou o acesso de Vorcaro ao Palácio do Planalto",
+   "period": "Reunião de 04/12/2024",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "lula",
+    "marco-aurelio-santana-ribeiro",
+    "augusto-lima"
+   ],
+   "states": [],
+   "summary": "Ex-ministro da Fazenda (governos Lula, 2006-2015). Acompanhou Daniel Vorcaro e o ex-sócio do Master Augusto Lima ao Palácio do Planalto em 4 de dezembro de 2024. Segundo reportagens baseadas em mensagens do celular de Vorcaro, Mantega tinha uma conversa agendada com Marco Aurélio Santana Ribeiro, então chefe do gabinete pessoal da Presidência, e a partir dela solicitou falar diretamente com o presidente Lula — movimento que resultou no encontro em que Vorcaro se disse alvo de perseguição por grandes instituições financeiras.",
+   "src": [
+    "jornaldebrasilialulavorcaroplanalto",
+    "gazetadopovovorcaroencontroplanalto"
+   ],
+   "joke": "De ministro da Fazenda a abrir a porta do Planalto para o dono do banco que viraria a maior liquidação bancária do país."
   }
  ],
  "stateValues": {
