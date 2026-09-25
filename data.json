@@ -372,6 +372,22 @@
    "t": "Brasil 247 — Alcolumbre, Pacheco, Toffoli: quem foi convidado para festa secreta de Vorcaro",
    "u": "https://www.brasil247.com/brasil/alcolumbre-pacheco-toffoli-ciro-arthur-e-alexandre-quem-foi-convidado-para-festa-secreta-de-vorcaro/"
   },
+  "oantagonista_alcolumbre_amor": {
+   "t": "O Antagonista — Antes das mensagens de “amor”, Alcolumbre negou dinheiro de Vorcaro (revelação da revista Veja)",
+   "u": "https://oantagonista.com.br/brasil/antes-das-mensagens-de-amor-alcolumbre-negou-dinheiro-de-vorcaro/"
+  },
+  "cnnteixeira_alcolumbre_amizade": {
+   "t": "CNN Brasil (blog Matheus Teixeira) — Mensagens apontam relação de amizade entre Vorcaro e Alcolumbre",
+   "u": "https://www.cnnbrasil.com.br/blogs/matheus-teixeira/politica/mensagens-apontam-relacao-de-amizade-entre-vorcaro-e-alcolumbre/"
+  },
+  "metropoles_alcolumbre_irmao": {
+   "t": "Metrópoles — Mensagens mostram proximidade entre Alcolumbre e Vorcaro: “Sou seu irmão”",
+   "u": "https://www.metropoles.com/brasil/mensagens-mostram-proximidade-entre-alcolumbre-e-vorcaro-sou-seu-irmao"
+  },
+  "congressoemfoco_alcolumbre_amizade": {
+   "t": "Congresso em Foco — Amizade não é crime: o que as mensagens de Alcolumbre com Vorcaro realmente mostram",
+   "u": "https://www.congressoemfoco.com.br/noticia/122557/o-que-as-mensagens-de-alcolumbre-com-vorcaro-realmente-mostram"
+  },
   "correiofesta": {
    "t": "Correio Braziliense — Mensagens da PF mostram bastidores de festa de Vorcaro com Fábio Faria",
    "u": "https://www.correiobraziliense.com.br/politica/2026/09/7498396-mensagens-da-pf-mostram-bastidores-de-festa-de-vorcaro-com-fabio-faria.html"
@@ -2692,7 +2708,7 @@
     "kind": "affected"
    },
    "role": "Senador (União-AP); presidente do Senado Federal",
-   "period": "Festa em 31/10/2023; mensagens reveladas em 09/2026",
+   "period": "Festa em 31/10/2023; mensagens reveladas em 09/2026; mensagens de “amor” e “irmão pra vida toda” reveladas pela Veja em 25/09/2026",
    "amounts": [],
    "related": [
     "daniel-vorcaro",
@@ -2702,14 +2718,18 @@
    "states": [
     "SP"
    ],
-   "summary": "Presidente do Senado Federal. Mensagens entre Vorcaro e Fábio Faria, citadas pela revista Piauí, indicam que Alcolumbre confirmou presença numa festa de Vorcaro em São Paulo em outubro de 2023. Alcolumbre nega ter comparecido ao evento; não há indicação de irregularidade além da menção nas mensagens.",
+   "summary": "Presidente do Senado Federal. Mensagens entre Vorcaro e Fábio Faria, citadas pela revista Piauí, indicam que Alcolumbre confirmou presença numa festa de Vorcaro em São Paulo em outubro de 2023. Alcolumbre nega ter comparecido ao evento; não há indicação de irregularidade além da menção nas mensagens. Em 25/09/2026, a revista Veja divulgou novas mensagens do celular de Vorcaro (obtidas pela PF) mostrando trocas afetuosas entre os dois: em 1º/02/2025, na reeleição de Alcolumbre à presidência do Senado, Vorcaro o chamou de amigo e desejou sucesso, e Alcolumbre respondeu “Fala meu amor! Muito obrigado por tudo, em especial pelo seu carinho”; no fim de março de 2025, Alcolumbre escreveu “Sou seu irmão! Pra vida toda!!”, e Vorcaro respondeu “E eu seu. A qualquer tempo pra qualquer coisa”. A revelação contrasta com negativa anterior de Alcolumbre, em junho de 2026, de que teria recebido “aqueles valores ou quaisquer outros” de Vorcaro. A assessoria do senador chamou a reportagem de “injusto ataque” e “sensacionalismo barato”, classificou as mensagens como de teor pessoal, sem qualquer ilegalidade, e anunciou medidas judiciais.",
    "src": [
     "brasil247festa",
     "bahiafesta",
     "cnnmadamesata",
-    "cnntoffoliconvidou"
+    "cnntoffoliconvidou",
+    "oantagonista_alcolumbre_amor",
+    "cnnteixeira_alcolumbre_amizade",
+    "metropoles_alcolumbre_irmao",
+    "congressoemfoco_alcolumbre_amizade"
    ],
-   "joke": "Consta como confirmado numa lista de festa que depois disse não ter ido. Clássico do gênero “fui mas não fui”."
+   "joke": "Consta como confirmado numa lista de festa que depois disse não ter ido — e agora também como “irmão pra vida toda” de quem antes dizia não ter recebido nada. Amizade, dizem, não é crime; mas também não costuma vir com esse nível de intimidade por escrito."
   },
   {
    "id": "rodrigo-pacheco",
