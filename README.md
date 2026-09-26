@@ -34,6 +34,16 @@ Abra `data.json` (é um JSON puro, dá pra editar em qualquer editor de texto):
 
 Não precisa mexer no `index.html` pra isso — só no `data.json`. O site relê o arquivo a cada carregamento de página (sem cache agressivo, mas o navegador do visitante pode cachear por um tempo — considere um parâmetro de versão na URL do fetch, tipo `data.json?v=2`, se quiser forçar atualização imediata pra quem já visitou).
 
+## Contador de visitas (GoatCounter)
+
+O `index.html` já vem com o script do [GoatCounter](https://www.goatcounter.com/) no `<head>`, apontando pro código `vorcarometro` (`https://vorcarometro.goatcounter.com/count`). Pra ativar de verdade:
+
+1. Crie uma conta grátis em https://www.goatcounter.com/signup.
+2. No cadastro, escolha o código do site — se `vorcarometro` já estiver em uso por outra pessoa, escolha outro e troque o valor de `data-goatcounter` na tag `<script data-goatcounter="...">` perto do topo do `<head>` pra bater com o código escolhido.
+3. Publique o `index.html` normalmente (nenhum outro passo de deploy muda). Em alguns minutos as visitas já aparecem no painel em `https://SEU-CODIGO.goatcounter.com`.
+
+O GoatCounter conta page views e visitantes únicos sem cookies e sem guardar IP em texto puro (fica hasheado e é descartado depois de um tempo), então não precisa de banner de consentimento pra isso. Ele ignora automaticamente hits de quem tem bloqueador de anúncios ou "Do Not Track" ativado — é normal o número ficar um pouco abaixo do tráfego real.
+
 ## Links diretos (deep link)
 
 A página lê e escreve o estado na URL, então dá pra compartilhar um link direto pra:
