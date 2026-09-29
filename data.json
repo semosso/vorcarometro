@@ -783,6 +783,26 @@
   "uolacm": {
    "t": "UOL — Vorcaro acusa ACM Neto e Antonio Rueda de receber comissões do Master",
    "u": "https://noticias.uol.com.br/ultimas-noticias/redacao/2026/09/10/vorcaro-acusa-acm-neto-e-antonio-rueda-de-receber-comissoes-do-master.ghtm"
+  },
+  "jgbacm": {
+   "t": "Jornal Grande Bahia — Vorcaro acusa ACM Neto e Rueda de receber 10% sobre aportes ao Master; delação rejeitada cita até R$ 200 mi",
+   "u": "https://jornalgrandebahia.com.br/2026/09/daniel-vorcaro-acusa-acm-neto-e-rueda-de-receber-10-sobre-aportes-ao-banco-master-delacao-rejeitada-cita-ate-r-200-milhoes/"
+  },
+  "metrueda": {
+   "t": "Metrópoles — Rueda admite que advogou para o Master após negar relação com Vorcaro",
+   "u": "https://www.metropoles.com/brasil/rueda-admite-que-advogou-para-o-master-apos-negar-relacao-com-vorcaro"
+  },
+  "metruedabi": {
+   "t": "Metrópoles — Rueda dizia que ganharia bilhões para intermediar venda do Master",
+   "u": "https://www.metropoles.com/colunas/andreza-matais/rueda-dizia-que-ganharia-bilhoes-para-intermediar-venda-do-master"
+  },
+  "diariorio": {
+   "t": "Diário do Rio — Vorcaro acusa Rueda de abrir portas para o Master no Rio em troca de comissão de 10%",
+   "u": "https://diariodorio.com/politica/2026/09/10/vorcaro-acusa-rueda-de-abrir-portas-para-o-master-no-rio-em-troca-de-comissao-de-10.html"
+  },
+  "bpmoneyacm": {
+   "t": "BPMoney — em proposta de delação, Vorcaro acusa ACM Neto e Antônio Rueda de receber comissões do Master",
+   "u": "https://bpmoney.com.br/politica/delacao-premiada-em-proposta-vorcaro-acusa-acm-neto-e-antonio-rueda-de-receber-comissoes-do-master/"
   }
  },
  "entities": [
@@ -3483,17 +3503,68 @@
    "related": [
     "daniel-vorcaro",
     "banco-master",
-    "reag-investimentos"
+    "reag-investimentos",
+    "antonio-rueda"
    ],
    "states": [
     "BA"
    ],
-   "summary": "Ex-prefeito de Salvador, vice-presidente do União Brasil e pré-candidato ao governo da Bahia. Segundo comunicados ao Coaf noticiados pelo G1 em março de 2026, a A&M Consultoria, empresa criada por ele no fim de 2022, recebeu R$ 3,6 milhões do Banco Master e da Reag; entre 15/06/2023 e 03/05/2024, a conta da empresa recebeu R$ 4,77 milhões em 52 transferências, cerca de 60% delas de Reag (R$ 1,55 milhão) e Master (R$ 1,34 milhão), com finalidade declarada de “pagamento a fornecedor”. O Coaf registra movimentação acima da capacidade financeira declarada da empresa. ACM Neto confirmou os contratos, disse que eram de consultoria sobre a agenda político-econômica, formais e com impostos recolhidos, que não houve “irregularidade” e criticou “vazamento seletivo”. Em setembro de 2026, o UOL noticiou que Vorcaro acusa ACM Neto e Antonio Rueda (presidente do União Brasil) de receberem comissões do Master; não há confirmação independente da acusação.",
+   "summary": "Ex-prefeito de Salvador, vice-presidente do União Brasil e pré-candidato ao governo da Bahia. Segundo comunicados ao Coaf noticiados pelo G1 em março de 2026, a A&M Consultoria, empresa criada por ele no fim de 2022, recebeu R$ 3,6 milhões do Banco Master e da Reag; entre 15/06/2023 e 03/05/2024, a conta da empresa recebeu R$ 4,77 milhões em 52 transferências, cerca de 60% delas de Reag (R$ 1,55 milhão) e Master (R$ 1,34 milhão), com finalidade declarada de “pagamento a fornecedor”. O Coaf registra movimentação acima da capacidade financeira declarada da empresa. ACM Neto confirmou os contratos, disse que eram de consultoria sobre a agenda político-econômica, formais e com impostos recolhidos, que não houve “irregularidade” e criticou “vazamento seletivo”. Em setembro de 2026, o UOL e outros veículos noticiaram que a proposta de delação de Vorcaro — rejeitada pela PF e pela PGR — acusa ACM Neto e Antônio Rueda (presidente do União Brasil) de receberem 10% sobre aportes de institutos de previdência no Master (cerca de R$ 2 bilhões captados, até R$ 200 milhões em comissões, segundo o relato). O Jornal Grande Bahia registra que os depósitos conhecidos de quatro institutos somam R$ 3,62 bilhões e que os pagamentos documentados à A&M Consultoria foram de R$ 5,45 milhões. ACM Neto chamou as acusações de “absurdas, completamente fantasiosas e falsas”. Não há confirmação independente.",
    "src": [
     "g1acm",
-    "uolacm"
+    "uolacm",
+    "jgbacm",
+    "bpmoneyacm"
    ],
-   "joke": "Consultoria sobre “agenda político-econômica” que, pelo visto, tinha o Master como cliente fiel."
+   "joke": "Consultoria sobre “agenda político-econômica” que, pelo visto, tinha o Master como cliente fiel.",
+   "photo": "img/acm-neto.jpg",
+   "photoCredit": "Alan Santos/PR (Palácio do Planalto), CC BY 2.0, via Wikimedia Commons"
+  },
+  {
+   "id": "antonio-rueda",
+   "name": "Antônio Rueda",
+   "aliases": [
+    "rueda",
+    "antonio rueda",
+    "antonio de rueda",
+    "tony rueda",
+    "antonio eduardo goncalves de rueda",
+    "rueda & rueda",
+    "rueda e rueda"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Presidente nacional do União Brasil; advogado (Rueda & Rueda Advogados)",
+   "period": "Advocacia para o Master (admitida em 03/2026); acusação atribuída a Vorcaro em 09/2026",
+   "amounts": [
+    "R$ 6,4 milhões — pagos ao escritório Rueda & Rueda, segundo o Jornal Grande Bahia (09/2026)",
+    "Até R$ 200 milhões — comissões de 10% alegadas por Vorcaro (não confirmado)"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "banco-master",
+    "acm-neto",
+    "augusto-lima",
+    "antonio-freixo-junior",
+    "ciro-nogueira"
+   ],
+   "states": [
+    "RJ",
+    "PE"
+   ],
+   "summary": "Advogado e presidente nacional do União Brasil desde 2024 (eleito em fevereiro, posse em junho), tendo ACM Neto como vice; o partido integra a federação União Progressista com o PP. Em março de 2026, negou relação com Vorcaro além de contatos sociais e, no dia seguinte, admitiu ter advogado para o Master por meio do escritório Rueda & Rueda (dezenas de pareceres, centenas de reuniões, cerca de 400 acordos e 20 mil protocolos, segundo o Metrópoles); mensagens do celular de Vorcaro citam reunião com Rueda. A colunista Andreza Matais (Metrópoles) reportou que ele dizia a interlocutores que ganharia bilhões com a venda do Master ao BRB. Em setembro de 2026, veio à tona que a proposta de delação de Vorcaro — rejeitada pela PF e pela PGR — o acusa, junto com ACM Neto, de receber 10% sobre aportes de institutos de previdência no Master, via dinheiro em espécie por intermédio de pessoas ligadas a Augusto Lima e Antônio Freixo e por contratos com o escritório (algo em torno de R$ 3 milhões mensais). Rueda disse ter dificuldade em comentar documento a que não teve acesso; o entorno nega irregularidade. Não há confirmação independente das acusações.",
+   "src": [
+    "uolacm",
+    "jgbacm",
+    "bpmoneyacm",
+    "diariorio",
+    "metrueda",
+    "metruedabi"
+   ],
+   "joke": "Negou conhecer o banco na terça e admitiu ser o advogado do banco na quarta — velocidade de compliance que o Master nunca teve."
   }
  ],
  "stateValues": {
