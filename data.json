@@ -775,6 +775,14 @@
   "dgabclulamasterbolsonaro": {
    "t": "Diário do Grande ABC — Lula: \"Eles criaram o Banco Master e transformaram Vorcaro em amigo; nós o fizemos prisioneiro\"",
    "u": "https://www.dgabc.com.br/Noticia/4347955/lula-eles-criaram-o-banco-master-e-transformaram-vorcaro-em-amigo-nos-o-fizemos-prisioneiro"
+  },
+  "g1acm": {
+   "t": "G1 — empresa de ACM Neto recebeu R$ 3,6 mi do Master e da Reag, aponta Coaf",
+   "u": "https://g1.globo.com/politica/noticia/2026/03/11/empresa-de-acm-neto-recebeu-r-36-milhoes-do-banco-master-e-da-reag-apontam-informacoes-do-coaf.ghtml"
+  },
+  "uolacm": {
+   "t": "UOL — Vorcaro acusa ACM Neto e Antonio Rueda de receber comissões do Master",
+   "u": "https://noticias.uol.com.br/ultimas-noticias/redacao/2026/09/10/vorcaro-acusa-acm-neto-e-antonio-rueda-de-receber-comissoes-do-master.ghtm"
   }
  },
  "entities": [
@@ -3450,6 +3458,42 @@
     "gazetadopovovorcaroencontroplanalto"
    ],
    "joke": "De ministro da Fazenda a abrir a porta do Planalto para o dono do banco que viraria a maior liquidação bancária do país."
+  },
+  {
+   "id": "acm-neto",
+   "name": "ACM Neto",
+   "aliases": [
+    "acm",
+    "antonio carlos magalhaes neto",
+    "antonio carlos magalhaes",
+    "carlos magalhaes neto",
+    "neto",
+    "a&m consultoria"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Vice-presidente do União Brasil; ex-prefeito de Salvador e pré-candidato ao governo da Bahia",
+   "period": "Pagamentos em 2023–2024 (Coaf, revelado em 03/2026); acusação atribuída a Vorcaro em 09/2026",
+   "amounts": [
+    "R$ 3,6 milhões — pagos por Banco Master e Reag à A&M Consultoria, empresa de ACM Neto (Coaf; 2023–2024)"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "banco-master",
+    "reag-investimentos"
+   ],
+   "states": [
+    "BA"
+   ],
+   "summary": "Ex-prefeito de Salvador, vice-presidente do União Brasil e pré-candidato ao governo da Bahia. Segundo comunicados ao Coaf noticiados pelo G1 em março de 2026, a A&M Consultoria, empresa criada por ele no fim de 2022, recebeu R$ 3,6 milhões do Banco Master e da Reag; entre 15/06/2023 e 03/05/2024, a conta da empresa recebeu R$ 4,77 milhões em 52 transferências, cerca de 60% delas de Reag (R$ 1,55 milhão) e Master (R$ 1,34 milhão), com finalidade declarada de “pagamento a fornecedor”. O Coaf registra movimentação acima da capacidade financeira declarada da empresa. ACM Neto confirmou os contratos, disse que eram de consultoria sobre a agenda político-econômica, formais e com impostos recolhidos, que não houve “irregularidade” e criticou “vazamento seletivo”. Em setembro de 2026, o UOL noticiou que Vorcaro acusa ACM Neto e Antonio Rueda (presidente do União Brasil) de receberem comissões do Master; não há confirmação independente da acusação.",
+   "src": [
+    "g1acm",
+    "uolacm"
+   ],
+   "joke": "Consultoria sobre “agenda político-econômica” que, pelo visto, tinha o Master como cliente fiel."
   }
  ],
  "stateValues": {
