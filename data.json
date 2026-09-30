@@ -803,6 +803,10 @@
   "bpmoneyacm": {
    "t": "BPMoney — em proposta de delação, Vorcaro acusa ACM Neto e Antônio Rueda de receber comissões do Master",
    "u": "https://bpmoney.com.br/politica/delacao-premiada-em-proposta-vorcaro-acusa-acm-neto-e-antonio-rueda-de-receber-comissoes-do-master/"
+  },
+  "vejahuck": {
+   "t": "Veja — mensagens da PF revelam que Luciano Huck foi amigo e conselheiro de Daniel Vorcaro",
+   "u": "https://veja.abril.com.br/brasil/mensagens-da-pf-revelam-que-luciano-huck-foi-amigo-e-conselheiro-de-daniel-vorcaro/"
   }
  },
  "entities": [
@@ -3567,6 +3571,40 @@
    "joke": "Negou conhecer o banco na terça e admitiu ser o advogado do banco na quarta — velocidade de compliance que o Master nunca teve.",
    "photo": "img/antonio-rueda.jpg",
    "photoCredit": "União Brasil"
+  },
+  {
+   "id": "luciano-huck",
+   "name": "Luciano Huck",
+   "aliases": [
+    "huck",
+    "luciano",
+    "apresentador do domingao",
+    "domingao com huck"
+   ],
+   "type": "pessoa",
+   "photo": "img/luciano-huck.jpg",
+   "photoCredit": "Justo Ruiz, CC BY-SA 2.0, via Wikimedia Commons",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Apresentador da TV Globo (Domingão com Huck)",
+   "period": "Mensagens de 11/2023 a 11/2025; revelado em 30/09/2026",
+   "amounts": [
+    "R$ 83 milhões — em mídia para a Globo, segundo mensagens atribuídas a Huck",
+    "R$ 26 milhões — “contrato pessoal” do apresentador, segundo as mesmas mensagens"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "banco-master",
+    "alexandre-de-moraes"
+   ],
+   "states": [],
+   "summary": "Apresentador da TV Globo. Segundo a Veja, mensagens encontradas pela Polícia Federal no celular de Daniel Vorcaro mostram uma relação de amizade e negócios entre os dois entre novembro de 2023 e a noite de 17/11/2025, minutos antes da prisão do banqueiro: encontros e jantares, troca de favores pessoais, empréstimo de aviões de Vorcaro (inclusive para Canoas durante a tragédia climática no RS e para a Polônia), conversa sobre sociedade no jato G550 e uma reunião com Ronaldo Nazário sobre a candidatura dele à CBF. As mensagens também tratam do patrocínio do Will Bank ao Domingão com Huck, negociado a partir de 2024 e assinado em dezembro daquele ano, que, segundo o próprio apresentador nas mensagens, renderia R$ 83 milhões em mídia à emissora e R$ 26 milhões a ele num “contrato pessoal”; Huck também teria aconselhado Vorcaro a ser transparente e a adotar compliance nas negociações com a Globo. A reportagem ressalta que não há ilegalidades nas mensagens. Na última, às 21h47 de 17/11/2025, Huck parabeniza Vorcaro pela suposta venda do Master a investidores dos Emirados.",
+   "src": [
+    "vejahuck"
+   ],
+   "joke": "Aconselhou o banqueiro a fazer compliance — o único conselho que o Master não seguiu."
   }
  ],
  "stateValues": {
