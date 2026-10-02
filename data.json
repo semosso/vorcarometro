@@ -835,6 +835,18 @@
   "emjatinhonikolas": {
    "t": "Estado de Minas — Mesma empresa de Vorcaro controlou viagens de jatinho de Nikolas e Moraes",
    "u": "https://www.em.com.br/politica/2026/09/7504401-mesma-empresa-de-vorcaro-controlou-viagens-de-jatinho-de-nikolas-e-moraes.html"
+  },
+  "terrajustus": {
+   "t": "Terra (via Poder360) — Roberto Justus implora por reunião com Vorcaro para “tratar da sobrevivência” de empresa",
+   "u": "https://www.terra.com.br/diversao/gente/nunca-na-minha-vida-fiquei-tao-decepcionado-com-alguem-roberto-justus-implora-por-reuniao-com-vorcaro-para-tratar-da-sobrevivencia-de-empresa-em-mensagens-banqueiro-se-incomodou-com-falta-de-empatia,4db8f9788676f592fd8be6247ab54f62417ih1rv.html"
+  },
+  "forumjustus": {
+   "t": "Revista Fórum — Justus implora por reunião com Vorcaro: “Preciso tratar da sobrevivência da minha empresa”",
+   "u": "https://revistaforum.com.br/politica/justus-vorcaro-sobrevivencia/"
+  },
+  "spacemoneyjustus": {
+   "t": "SpaceMoney — Justus e Vorcaro discutem dívida da SteelCorp em mensagens",
+   "u": "https://www.spacemoney.com.br/economia/justus-vorcaro-steelcorp-divida"
   }
  },
  "entities": [
@@ -885,7 +897,8 @@
     "gusttavo-lima",
     "bruno-ferrari",
     "leonardo-serrano-giunchetti",
-    "yasmin-brunet"
+    "yasmin-brunet",
+    "roberto-justus"
    ],
    "states": [
     "SP",
@@ -3872,6 +3885,38 @@
     "terrabrunet"
    ],
    "joke": "Vorcaro pediu “um lance” para acelerar a votação no paredão. O único mercado que o Master nunca conseguiu manipular direito foi o do voto popular."
+  },
+  {
+   "id": "roberto-justus",
+   "name": "Roberto Justus",
+   "aliases": [
+    "justus",
+    "steelcorp"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Contraparte",
+    "kind": "affected"
+   },
+   "role": "Empresário e apresentador; controlador da SteelCorp",
+   "period": "Aporte em 2024; mensagens de 09/2025; reveladas em 10/2026",
+   "amounts": [
+    "R$ 130 milhões — valor que Justus teria proposto pagar a Vorcaro em até cinco anos, segundo mensagens"
+   ],
+   "related": [
+    "daniel-vorcaro",
+    "banco-master"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Empresário e apresentador, controlador da SteelCorp. Segundo mensagens extraídas pela PF do celular de Vorcaro e reveladas pelo Poder360 e outros veículos em 02/10/2026, o banqueiro fez um aporte na SteelCorp em 2024, estruturado como dívida conversível em participação societária. Em 2025, Justus tentou desfazer o acordo e recomprar a fatia antes da conversão, alegando que manter a dívida no balanço poderia levar a empresa à recuperação judicial. Em 01/09/2025, escreveu a Vorcaro: “Nunca na minha vida fiquei tão decepcionado com alguém” e pediu uma reunião para “tratar da sobrevivência” da empresa; o banqueiro se incomodou com a “falta de empatia”, disse ter cumprido os aportes e citou entraves técnicos e jurídicos. Em outra conversa, Justus teria proposto pagar R$ 130 milhões em até cinco anos. Ele não aparece na reportagem da Veja sobre Yasmin Brunet, apenas em link de leitura relacionada. Não há indicação de que seja investigado; não localizei posicionamento de Justus nas matérias lidas.",
+   "src": [
+    "terrajustus",
+    "forumjustus",
+    "spacemoneyjustus"
+   ],
+   "joke": "Implorou por uma hora de reunião para salvar a empresa. Do outro lado, o banqueiro que atendia autoridades até de madrugada."
   }
  ],
  "stateValues": {
