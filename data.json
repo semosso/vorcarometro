@@ -1268,7 +1268,10 @@
     "daniel-vorcaro",
     "paulo-henrique-costa"
    ],
-   "states": [],
+   "states": [
+    "SP",
+    "DF"
+   ],
    "summary": "Advogado apontado pela Polícia Federal como homem de confiança de Daniel Vorcaro e arquiteto jurídico-financeiro do esquema de propina entre o Banco Master e o BRB. Segundo a PF, seu escritório, batizado de Monteiro Rusu, funcionava como uma espécie de \"compliance paralelo\" do banco, fora dos fluxos normais de controle interno, usando seis empresas de fachada — no mesmo endereço do escritório — para receber recursos de fundos da Reag e bancar a compra de seis imóveis de luxo destinados ao ex-presidente do BRB Paulo Henrique Costa. Foi preso em abril de 2026, na mesma fase da Compliance Zero que prendeu Costa. Sua defesa nega ilegalidades e diz que a atuação foi técnica.",
    "src": [
     "ag13",
@@ -3093,7 +3096,9 @@
     "daniel-vorcaro",
     "banco-master"
    ],
-   "states": [],
+   "states": [
+    "BA"
+   ],
    "summary": "Empresário baiano cuja presença constante em negócios obscuros levou o mercado a especular se não seria sócio oculto do Banco Master. Segundo reportagem da revista piauí, Tanure captava dinheiro do Master (via CDBs) numa ponta e, na outra, vendia ao banco participações em empresas endividadas e com ativos podres — Light, CVC, Ambipar, Oi, Gafisa, Oncoclínicas, entre outras —, sempre atuando por meio de fundos com nomes diversos (Modal, Trustee, Banvox, Ilha de Patmos, Estocolmo, Phoenix, Planner) para não aparecer como pessoa física, prática que ajudava a inflar artificialmente o balanço do Master. Foi alvo da segunda fase da Operação Compliance Zero, em 14 de janeiro de 2026. Minoritários de empresas que adquiriu, como Vladimir Timerman (sócio na Gafisa), acusam-no de esvaziar o caixa das companhias e denunciaram o padrão à CVM por anos sem sucesso — o que reacendeu suspeitas sobre a proximidade entre um ex-presidente da CVM, João Pedro Nascimento, e um braço-direito de Tanure conhecido internamente como “Mister CVM”.",
    "src": [
     "piauicontaminacao"
@@ -3181,7 +3186,9 @@
     "ciro-nogueira",
     "daniel-monteiro"
    ],
-   "states": [],
+   "states": [
+    "BA"
+   ],
    "summary": "Advogado baiano cujo escritório já prestava serviços a Augusto Lima na época da privatização da Empresa Baiana de Alimentos (Ebal), em 2018 — origem do cartão consignado Credcesta. Tornou-se diretor jurídico do Banco Master, e a Polícia Federal aponta que foi ele quem redigiu a emenda apresentada pelo senador Ciro Nogueira em 2024 propondo ampliar de R$ 250 mil para R$ 1 milhão a cobertura do Fundo Garantidor de Créditos (FGC) — a chamada “Emenda Master”. A relação da família Kruschewsky com o caso é extensa: sua prima Luiá Kruschewsky Monteiro e o advogado Gustavo Castro Lima, ambos egressos da Ebal, foram contratados pela NGV (empresa que arrematou a Ebal) e depois pelo próprio Master; outro primo, Eugênio Kruschewsky — que acumula a advocacia com o cargo de procurador do estado da Bahia —, defendeu o Master na ação coletiva movida pelo advogado Jorge Falcão contra os juros abusivos do Credcesta, tendo seu escritório recebido R$ 54 milhões do banco entre 2022 e 2025. Quando essa ação chegou ao Tribunal de Justiça da Bahia, três desembargadores se declararam suspeitos para julgá-la, um episódio que o próprio autor da ação chamou de “muito inusitado”.",
    "src": [
     "piauiarmadilha"
@@ -3213,7 +3220,9 @@
     "karina-gama",
     "antonio-freixo-junior"
    ],
-   "states": [],
+   "states": [
+    "SP"
+   ],
    "summary": "Deputado federal licenciado, mudou-se para os Estados Unidos (Texas) em fevereiro de 2025 — mesmo mês em que Daniel Vorcaro começou a enviar os repasses do filme \"Dark Horse\" ao Havengate Development Fund. Na documentação americana da produção, aparece ora como \"produtor executivo\", ora como \"financiador\". Mensagens obtidas pela revista piauí mostram Eduardo orientando ativamente o fluxo do dinheiro: sugeriu enviar recursos \"ainda neste sistema atual\" (via o doleiro Antonio Freixo Junior) e colocou à disposição Altieris Santana, sócio de Paulo Calixto no Havengate, para reuniões pessoais. Em entrevista à CBN, minimizou seu papel, dizendo ter investido apenas US$ 50 mil do próprio bolso — valor que, segundo ele, foi depois devolvido. A Polícia Federal investiga se parte dos recursos enviados por Vorcaro ao Havengate foi desviada para custear sua permanência nos Estados Unidos e a extensão de seu domínio sobre a conta do fundo; até a publicação da reportagem, não havia evidência de desvio. Procurada pela piauí, a produtora Go Up não deu resposta objetiva sobre seu papel.",
    "src": [
     "piauicaixapreta"
@@ -3608,9 +3617,12 @@
   }
  ],
  "stateValues": {
+  "DF": {
+   "value": 12200000000,
+   "note": "Maior valor público identificado no caso: carteiras de crédito compradas pelo BRB (banco estatal) do Master."
+  },
   "RJ": {
-   "value": 970000000,
-   "note": "Maior valor público identificado no caso."
+   "value": 970000000
   },
   "AP": {
    "value": 400000000
