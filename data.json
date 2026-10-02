@@ -859,6 +859,10 @@
   "atarderonaldo": {
    "t": "A Tarde — Ronaldo recorreu a Vorcaro para conseguir R$ 28 milhões ao Cruzeiro",
    "u": "https://atarde.com.br/esportes/ronaldo-recorreu-a-vorcaro-para-conseguir-r-28-milhoes-ao-cruzeiro-1404305"
+  },
+  "valormarcal": {
+   "t": "Valor Econômico — Pablo Marçal teve voo internacional de R$ 1 milhão pago por empresa da qual Vorcaro era sócio",
+   "u": "https://valor.globo.com/politica/noticia/2026/10/02/pablo-maral-teve-voo-internacional-de-r-1-milho-pago-por-empresa-da-qual-vorcaro-era-scio.ghtml"
   }
  },
  "entities": [
@@ -911,14 +915,15 @@
     "leonardo-serrano-giunchetti",
     "yasmin-brunet",
     "roberto-justus",
-    "ronaldo-nazario"
+    "ronaldo-nazario",
+    "pablo-marcal"
    ],
    "states": [
     "SP",
     "MG",
     "BA"
    ],
-   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor. Na noite de 17 de novembro de 2025 — um dia depois de a Justiça decretar sua prisão preventiva em sigilo —, tentou embarcar num jato particular rumo a Dubai, com escala em Malta; foi preso no Aeroporto de Guarulhos horas antes do embarque, enquanto a Fictor, holding de investimentos pouco conhecida, anunciava publicamente um “consórcio com investidores árabes” de R$ 3 bilhões para salvar o banco — proposta recebida pelo mercado como piada diante do rombo bilionário. Reportagens da revista piauí também documentam sua festa de Halloween de outubro de 2023 (a “festa das suíças”) e um jantar em Courchevel, nos Alpes franceses, com o senador Ciro Nogueira e o empresário José Seripieri Filho (dono da Amil), no chalé de Alberto Leite. Reportagem da piauí (\"Em cartaz, a caixa-preta\") mostra que os repasses ao Havengate não saíam diretamente das empresas de Vorcaro nem caíam na conta da produtora do filme nos EUA, como seria o percurso normal: passavam pelo doleiro Antonio Freixo Junior, o \"Mineiro\", e sua Entre Investimentos — companhia que já recebera R$ 614 milhões em investimentos do banqueiro. A Polícia Federal investiga por que Vorcaro optou por essa rota mais complexa em vez de enviar o dinheiro direto do banco à produtora. Recebido por Lula no Palácio do Planalto em 4 de dezembro de 2024, classificou o encontro, em mensagem própria, como \"ótimo\"; mensagens posteriores de seu então advogado Walfrido Warde relatam um suposto presente de uísque ao presidente e uma tentativa de aproximação continuada com o Planalto. Reportagem da piauí de 01/10/2026 (“A corte de prazeres de Vorcaro”), com base no celular apreendido pela PF e em relatos de promoters e frequentadoras, descreve um “departamento de entretenimento” que, segundo a revista, servia à estratégia de cooptar pessoas úteis a seus interesses: terças fixas no Wine Bar (2º semestre de 2023) e no Pappa Bar (2024), noitadas às quartas e quintas no tríplex do Itaim, um apartamento na Vila Olímpia perto da antiga sede do Master, festas na casa de Trancoso (BA), promoters (Diogo Batista, com ~R$ 60 mil mensais, e Tiago Polo) e a “festa das suíças” no Halloween de 2023, com 60 mulheres trazidas do exterior. Também cita a compra frustrada de agências de modelos (Mega, Joy, Allure; Eli Hadid, da Mega, nega ter negociado), o concierge SL Consulting (201 serviços entre 2017 e 11/2025) e a viagem a Saint-Tropez de agosto de 2025 para o aniversário de Martha Graeff (iate Kismet, 8 festas, convidados orientados a não postar nas redes). Vários citados negam participação; a reportagem não atribui crime aos frequentadores. Em 02/10/2026, a Veja revelou, a partir de mensagens da PF, favores prestados à modelo Yasmin Brunet (aviões, apartamento, festa) e o monitoramento de sua participação no BBB 24. Em 02/10/2026, a Veja revelou ainda, a partir de mensagens da PF, um empréstimo de R$ 25 milhões ao Cruzeiro intermediado por Ronaldo Fenômeno em 2024.",
+   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor. Na noite de 17 de novembro de 2025 — um dia depois de a Justiça decretar sua prisão preventiva em sigilo —, tentou embarcar num jato particular rumo a Dubai, com escala em Malta; foi preso no Aeroporto de Guarulhos horas antes do embarque, enquanto a Fictor, holding de investimentos pouco conhecida, anunciava publicamente um “consórcio com investidores árabes” de R$ 3 bilhões para salvar o banco — proposta recebida pelo mercado como piada diante do rombo bilionário. Reportagens da revista piauí também documentam sua festa de Halloween de outubro de 2023 (a “festa das suíças”) e um jantar em Courchevel, nos Alpes franceses, com o senador Ciro Nogueira e o empresário José Seripieri Filho (dono da Amil), no chalé de Alberto Leite. Reportagem da piauí (\"Em cartaz, a caixa-preta\") mostra que os repasses ao Havengate não saíam diretamente das empresas de Vorcaro nem caíam na conta da produtora do filme nos EUA, como seria o percurso normal: passavam pelo doleiro Antonio Freixo Junior, o \"Mineiro\", e sua Entre Investimentos — companhia que já recebera R$ 614 milhões em investimentos do banqueiro. A Polícia Federal investiga por que Vorcaro optou por essa rota mais complexa em vez de enviar o dinheiro direto do banco à produtora. Recebido por Lula no Palácio do Planalto em 4 de dezembro de 2024, classificou o encontro, em mensagem própria, como \"ótimo\"; mensagens posteriores de seu então advogado Walfrido Warde relatam um suposto presente de uísque ao presidente e uma tentativa de aproximação continuada com o Planalto. Reportagem da piauí de 01/10/2026 (“A corte de prazeres de Vorcaro”), com base no celular apreendido pela PF e em relatos de promoters e frequentadoras, descreve um “departamento de entretenimento” que, segundo a revista, servia à estratégia de cooptar pessoas úteis a seus interesses: terças fixas no Wine Bar (2º semestre de 2023) e no Pappa Bar (2024), noitadas às quartas e quintas no tríplex do Itaim, um apartamento na Vila Olímpia perto da antiga sede do Master, festas na casa de Trancoso (BA), promoters (Diogo Batista, com ~R$ 60 mil mensais, e Tiago Polo) e a “festa das suíças” no Halloween de 2023, com 60 mulheres trazidas do exterior. Também cita a compra frustrada de agências de modelos (Mega, Joy, Allure; Eli Hadid, da Mega, nega ter negociado), o concierge SL Consulting (201 serviços entre 2017 e 11/2025) e a viagem a Saint-Tropez de agosto de 2025 para o aniversário de Martha Graeff (iate Kismet, 8 festas, convidados orientados a não postar nas redes). Vários citados negam participação; a reportagem não atribui crime aos frequentadores. Em 02/10/2026, a Veja revelou, a partir de mensagens da PF, favores prestados à modelo Yasmin Brunet (aviões, apartamento, festa) e o monitoramento de sua participação no BBB 24. Em 02/10/2026, a Veja revelou ainda, a partir de mensagens da PF, um empréstimo de R$ 25 milhões ao Cruzeiro intermediado por Ronaldo Fenômeno em 2024. O Valor revelou em 02/10/2026 que a Prime You, empresa da qual era sócio, pagou R$ 1,17 milhão por um voo de Pablo Marçal a Nova York em 2025.",
    "src": [
     "stf",
     "yahoo",
@@ -945,7 +950,8 @@
     "piauicaixapreta",
     "jornaldebrasilialulavorcaroplanalto",
     "piauicortedeprazeres",
-    "vejabrunet"
+    "vejabrunet",
+    "valormarcal"
    ],
    "joke": "Oferecia 177% do CDI e tinha um jato de R$ 200 milhões — hoje só um dos dois ainda voa."
   },
@@ -3979,6 +3985,38 @@
     "atarderonaldo"
    ],
    "joke": "Pediu dinheiro por causa da eliminação na Copa do Brasil. Do outro lado, o banqueiro que nunca sofreu eliminação — só liquidação."
+  },
+  {
+   "id": "pablo-marcal",
+   "name": "Pablo Marçal",
+   "aliases": [
+    "marcal",
+    "marçal",
+    "pablo marçal",
+    "prime you",
+    "coach marçal"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Empresário e ex-coach; ex-candidato à Prefeitura de São Paulo (2024)",
+   "period": "Voo entre 29/05 e 02/06/2025; revelado pelo Valor em 02/10/2026",
+   "amounts": [
+    "R$ 1,17 milhão — custo do voo São Paulo–Nova York, pago pela Prime You, segundo o Valor"
+   ],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Empresário e ex-coach. Segundo o Valor Econômico (02/10/2026), que teve acesso a conversas do celular de Daniel Vorcaro obtidas pela PF, Marçal fez um voo de ida e volta entre São Paulo e Nova York, de 29/05 a 02/06/2025, custeado pela Prime You — empresa de compartilhamento de ativos de luxo (jato, hotel, mansões) da qual Vorcaro era sócio até setembro de 2025. A viagem custou R$ 1,17 milhão. Em 26/05/2025, uma funcionária da Prime You cotou com um parceiro um voo de um jato Legacy a Miami (R$ 980 mil após negociação) porque o jato da empresa estava em manutenção; Vorcaro passou a ela o contato de Marçal e disse: “Não fala de valores. Se perguntar, fala que troquei horas, para ver comigo”. Marçal mudou o destino para Nova York (o valor mínimo foi R$ 1,17 milhão), e Vorcaro confirmou que o pagamento fosse feito por uma SPE ligada à Prime You, chamada nas mensagens de Prime2. Marçal publicou um vídeo confirmando o uso do avião e afirmou que se ofereceu para pagar, mas que Vorcaro teria dito para ele experimentar a aeronave antes de comprar um jato semelhante. A matéria não aponta ilegalidade.",
+   "src": [
+    "valormarcal"
+   ],
+   "joke": "Ex-coach de “mentalidade de prosperidade” ganhando R$ 1,17 milhão de viagem. “Não fala de valores” é, no caso, o único módulo de compliance do curso."
   }
  ],
  "stateValues": {
