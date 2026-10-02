@@ -3799,7 +3799,9 @@
    "src": [
     "piauicortedeprazeres"
    ],
-   "joke": "Diz que foi ao apartamento só para falar de patrocínio de festival. Ao menos o banco digital, esse sim, nunca saiu do papel."
+   "joke": "Diz que foi ao apartamento só para falar de patrocínio de festival. Ao menos o banco digital, esse sim, nunca saiu do papel.",
+   "photo": "img/gusttavo-lima.jpg",
+   "photoCredit": "Record TV Goiás, CC BY-SA 3.0, via Wikimedia Commons"
   },
   {
    "id": "bruno-ferrari",
@@ -3920,7 +3922,9 @@
     "forumjustus",
     "spacemoneyjustus"
    ],
-   "joke": "Implorou por uma hora de reunião para salvar a empresa. Do outro lado, o banqueiro que atendia autoridades até de madrugada."
+   "joke": "Implorou por uma hora de reunião para salvar a empresa. Do outro lado, o banqueiro que atendia autoridades até de madrugada.",
+   "photo": "img/roberto-justus.jpg",
+   "photoCredit": "Terciors, CC0, via Wikimedia Commons"
   }
  ],
  "stateValues": {
