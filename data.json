@@ -811,6 +811,30 @@
   "piauicortedeprazeres": {
    "t": "revista piauí — A corte de prazeres de Vorcaro",
    "u": "https://piaui.uol.com.br/web/festas-vorcaro-autoridades/"
+  },
+  "vejabrunet": {
+   "t": "Estado de Minas — Vorcaro bancou avião e festa para Yasmin Brunet e monitorou modelo no BBB, diz revista (Veja)",
+   "u": "https://www.em.com.br/politica/2026/10/7513276-vorcaro-bancou-aviao-e-festa-para-yasmin-brunet-e-monitorou-modelo-no-bbb-diz-revista.html"
+  },
+  "b247brunet": {
+   "t": "Brasil 247 — Mensagens revelam favores de Vorcaro a Yasmin Brunet e temor de exposição durante o BBB",
+   "u": "https://www.brasil247.com/brasil/mensagens-revelam-favores-de-vorcaro-a-yasmin-brunet-e-temor-de-exposicao-durante-o-bbb/"
+  },
+  "terrabrunet": {
+   "t": "Terra — Empréstimo de apartamento e avião, medo de helicóptero e vida pós-Big Brother: Yasmin Brunet tem mensagens com Vorcaro descobertas pela PF",
+   "u": "https://www.terra.com.br/diversao/gente/emprestimo-de-apartamento-e-aviao-medo-de-helicoptero-e-vida-pos-big-brother-yasmin-brunet-tem-mensagens-com-vorcaro-descobertas-pela-policia-federal,776402273d56815cec3a208c35de7542naqitszm.html"
+  },
+  "aosfatosnikolas": {
+   "t": "Aos Fatos — É falso documento em que PF diz não ver crime em mensagens de Nikolas e Vorcaro",
+   "u": "https://www.aosfatos.org/noticias/falso-documento-pf-nikolas-vorcaro/"
+  },
+  "otemponikolas": {
+   "t": "O Tempo — Nikolas Ferreira admite voos bancados por Vorcaro, mas nega relação pessoal",
+   "u": "https://www.otempo.com.br/politica/2026/9/3/nikolas-ferreira-admite-voos-bancados-por-vorcaro-mas-nega-relacao-pessoal-em-resposta-a-vazamento"
+  },
+  "emjatinhonikolas": {
+   "t": "Estado de Minas — Mesma empresa de Vorcaro controlou viagens de jatinho de Nikolas e Moraes",
+   "u": "https://www.em.com.br/politica/2026/09/7504401-mesma-empresa-de-vorcaro-controlou-viagens-de-jatinho-de-nikolas-e-moraes.html"
   }
  },
  "entities": [
@@ -860,14 +884,15 @@
     "elmar-nascimento",
     "gusttavo-lima",
     "bruno-ferrari",
-    "leonardo-serrano-giunchetti"
+    "leonardo-serrano-giunchetti",
+    "yasmin-brunet"
    ],
    "states": [
     "SP",
     "MG",
     "BA"
    ],
-   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor. Na noite de 17 de novembro de 2025 — um dia depois de a Justiça decretar sua prisão preventiva em sigilo —, tentou embarcar num jato particular rumo a Dubai, com escala em Malta; foi preso no Aeroporto de Guarulhos horas antes do embarque, enquanto a Fictor, holding de investimentos pouco conhecida, anunciava publicamente um “consórcio com investidores árabes” de R$ 3 bilhões para salvar o banco — proposta recebida pelo mercado como piada diante do rombo bilionário. Reportagens da revista piauí também documentam sua festa de Halloween de outubro de 2023 (a “festa das suíças”) e um jantar em Courchevel, nos Alpes franceses, com o senador Ciro Nogueira e o empresário José Seripieri Filho (dono da Amil), no chalé de Alberto Leite. Reportagem da piauí (\"Em cartaz, a caixa-preta\") mostra que os repasses ao Havengate não saíam diretamente das empresas de Vorcaro nem caíam na conta da produtora do filme nos EUA, como seria o percurso normal: passavam pelo doleiro Antonio Freixo Junior, o \"Mineiro\", e sua Entre Investimentos — companhia que já recebera R$ 614 milhões em investimentos do banqueiro. A Polícia Federal investiga por que Vorcaro optou por essa rota mais complexa em vez de enviar o dinheiro direto do banco à produtora. Recebido por Lula no Palácio do Planalto em 4 de dezembro de 2024, classificou o encontro, em mensagem própria, como \"ótimo\"; mensagens posteriores de seu então advogado Walfrido Warde relatam um suposto presente de uísque ao presidente e uma tentativa de aproximação continuada com o Planalto. Reportagem da piauí de 01/10/2026 (“A corte de prazeres de Vorcaro”), com base no celular apreendido pela PF e em relatos de promoters e frequentadoras, descreve um “departamento de entretenimento” que, segundo a revista, servia à estratégia de cooptar pessoas úteis a seus interesses: terças fixas no Wine Bar (2º semestre de 2023) e no Pappa Bar (2024), noitadas às quartas e quintas no tríplex do Itaim, um apartamento na Vila Olímpia perto da antiga sede do Master, festas na casa de Trancoso (BA), promoters (Diogo Batista, com ~R$ 60 mil mensais, e Tiago Polo) e a “festa das suíças” no Halloween de 2023, com 60 mulheres trazidas do exterior. Também cita a compra frustrada de agências de modelos (Mega, Joy, Allure; Eli Hadid, da Mega, nega ter negociado), o concierge SL Consulting (201 serviços entre 2017 e 11/2025) e a viagem a Saint-Tropez de agosto de 2025 para o aniversário de Martha Graeff (iate Kismet, 8 festas, convidados orientados a não postar nas redes). Vários citados negam participação; a reportagem não atribui crime aos frequentadores.",
+   "summary": "Empresário controlador do Banco Master, apontado pela Polícia Federal como o centro do núcleo financeiro da organização investigada na Operação Compliance Zero. Foi preso na deflagração da operação (18/11/2025), solto por decisão da Justiça Federal (TRF1) em 29/11/2025 e preso novamente em 04/03/2026. Rede de empresas ligadas a ele e a outros integrantes do Master soma mais de 2,5 mil CNPJs, concentrados sobretudo no setor imobiliário. Também é apontado, segundo a Polícia Federal, por ter negociado com o PCC (Primeiro Comando da Capital) para tentar recuperar o Instagram hackeado da atriz Monique Alfradique, e por ter pedido a um subordinado que agredisse a empregada doméstica dela — uma alegação grave, tratada aqui sem qualquer humor. Na noite de 17 de novembro de 2025 — um dia depois de a Justiça decretar sua prisão preventiva em sigilo —, tentou embarcar num jato particular rumo a Dubai, com escala em Malta; foi preso no Aeroporto de Guarulhos horas antes do embarque, enquanto a Fictor, holding de investimentos pouco conhecida, anunciava publicamente um “consórcio com investidores árabes” de R$ 3 bilhões para salvar o banco — proposta recebida pelo mercado como piada diante do rombo bilionário. Reportagens da revista piauí também documentam sua festa de Halloween de outubro de 2023 (a “festa das suíças”) e um jantar em Courchevel, nos Alpes franceses, com o senador Ciro Nogueira e o empresário José Seripieri Filho (dono da Amil), no chalé de Alberto Leite. Reportagem da piauí (\"Em cartaz, a caixa-preta\") mostra que os repasses ao Havengate não saíam diretamente das empresas de Vorcaro nem caíam na conta da produtora do filme nos EUA, como seria o percurso normal: passavam pelo doleiro Antonio Freixo Junior, o \"Mineiro\", e sua Entre Investimentos — companhia que já recebera R$ 614 milhões em investimentos do banqueiro. A Polícia Federal investiga por que Vorcaro optou por essa rota mais complexa em vez de enviar o dinheiro direto do banco à produtora. Recebido por Lula no Palácio do Planalto em 4 de dezembro de 2024, classificou o encontro, em mensagem própria, como \"ótimo\"; mensagens posteriores de seu então advogado Walfrido Warde relatam um suposto presente de uísque ao presidente e uma tentativa de aproximação continuada com o Planalto. Reportagem da piauí de 01/10/2026 (“A corte de prazeres de Vorcaro”), com base no celular apreendido pela PF e em relatos de promoters e frequentadoras, descreve um “departamento de entretenimento” que, segundo a revista, servia à estratégia de cooptar pessoas úteis a seus interesses: terças fixas no Wine Bar (2º semestre de 2023) e no Pappa Bar (2024), noitadas às quartas e quintas no tríplex do Itaim, um apartamento na Vila Olímpia perto da antiga sede do Master, festas na casa de Trancoso (BA), promoters (Diogo Batista, com ~R$ 60 mil mensais, e Tiago Polo) e a “festa das suíças” no Halloween de 2023, com 60 mulheres trazidas do exterior. Também cita a compra frustrada de agências de modelos (Mega, Joy, Allure; Eli Hadid, da Mega, nega ter negociado), o concierge SL Consulting (201 serviços entre 2017 e 11/2025) e a viagem a Saint-Tropez de agosto de 2025 para o aniversário de Martha Graeff (iate Kismet, 8 festas, convidados orientados a não postar nas redes). Vários citados negam participação; a reportagem não atribui crime aos frequentadores. Em 02/10/2026, a Veja revelou, a partir de mensagens da PF, favores prestados à modelo Yasmin Brunet (aviões, apartamento, festa) e o monitoramento de sua participação no BBB 24.",
    "src": [
     "stf",
     "yahoo",
@@ -893,7 +918,8 @@
     "piauivoltemane",
     "piauicaixapreta",
     "jornaldebrasilialulavorcaroplanalto",
-    "piauicortedeprazeres"
+    "piauicortedeprazeres",
+    "vejabrunet"
    ],
    "joke": "Oferecia 177% do CDI e tinha um jato de R$ 200 milhões — hoje só um dos dois ainda voa."
   },
@@ -1831,7 +1857,8 @@
     "R$ 22 milhões — empréstimo do Master a empresa da cunhada de Motta, com a própria empresa (avaliada em R$ 100 mil) como garantia"
    ],
    "related": [
-    "banco-master"
+    "banco-master",
+    "yasmin-brunet"
    ],
    "states": [
     "PB"
@@ -2977,7 +3004,7 @@
     "kind": "warning"
    },
    "role": "Deputado federal (PL-MG)",
-   "period": "Áudio de 30/03/2025, revelado por reportagens em 2026",
+   "period": "Áudio de 30/03/2025, revelado por reportagens em 2026; vídeo-resposta em 03/09/2026",
    "amounts": [],
    "joke": "Chamava o banqueiro investigado de “Dani” e “lindão” — e ainda pediu ajuda pra liberar um ativo de minério.",
    "related": [
@@ -2987,13 +3014,16 @@
    "states": [
     "MG"
    ],
-   "summary": "Deputado federal por Minas Gerais. Em áudio enviado por WhatsApp em 30 de março de 2025, revelado por reportagens em 2026, pediu a Daniel Vorcaro ajuda para liberar um ativo de minério de uma empresa ligada a seu ex-chefe de gabinete, Thiago Rodrigues de Faria — tratando o banqueiro com informalidade e se desculpando por críticas públicas que havia feito a um evento de luxo em Londres patrocinado pelo banco. Em mensagens a um empresário, Vorcaro afirmou ter financiado passagens aéreas do deputado. Nikolas também divulgou, em setembro de 2026, um vídeo reunindo trechos de um relatório da PF sobre a relação entre Vorcaro e o ministro Alexandre de Moraes.",
+   "summary": "Deputado federal por Minas Gerais. Em áudio enviado por WhatsApp em 30 de março de 2025, revelado por reportagens em 2026, pediu a Daniel Vorcaro ajuda para liberar um ativo de minério de uma empresa ligada a seu ex-chefe de gabinete, Thiago Rodrigues de Faria — tratando o banqueiro com informalidade e se desculpando por críticas públicas que havia feito a um evento de luxo em Londres patrocinado pelo banco. Em mensagens a um empresário, Vorcaro afirmou ter financiado passagens aéreas do deputado. Nikolas também divulgou, em setembro de 2026, um vídeo reunindo trechos de um relatório da PF sobre a relação entre Vorcaro e o ministro Alexandre de Moraes. Em vídeo de 03/09/2026, Nikolas admitiu que Vorcaro ajudou a custear voos ao Nordeste no segundo turno de 2022, que obteve o contato do banqueiro em 2023 por meio do pastor André Valadão e que o salvou como “Dani”; confirmou o pedido feito por seu advogado e ex-assessor, Thiago Rodrigues de Faria, sobre o ativo de minério, mas negou intimidade, irregularidade ou recebimento de valores e negou ter chamado Vorcaro de “lindão”, dizendo tê-lo confundido com outra pessoa. Chamou o episódio de “cortina de fumaça” para desviar de suas denúncias contra Alexandre de Moraes. Reportagens também apontam que a mesma empresa de Vorcaro controlou as viagens de jatinho de Nikolas e de Moraes. Nikolas chegou a compartilhar um suposto laudo da PF que não veria crime nas conversas; a PF negou a autoria e checagens (Aos Fatos, Lupa) concluíram que o documento era falso e gerado por IA — o gabinete diz que repostou conteúdo de um portal e apagou ao descobrir que era falso.",
    "src": [
     "cnn_nikolas",
     "brasildefato_nikolas",
     "agenciabrasil_nikolas",
     "revistaforum_nikolas",
-    "poder360_nikolas"
+    "poder360_nikolas",
+    "otemponikolas",
+    "emjatinhonikolas",
+    "aosfatosnikolas"
    ]
   },
   {
@@ -3811,6 +3841,37 @@
     "piauicortedeprazeres"
    ],
    "joke": "201 serviços de concierge, um iate de 122 metros e a regra de que nada ficasse no nome do cliente. Discrição de luxo: a única coisa do Master que funcionou como contratado."
+  },
+  {
+   "id": "yasmin-brunet",
+   "name": "Yasmin Brunet",
+   "aliases": [
+    "brunet",
+    "yasmin",
+    "modelo do bbb"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citada",
+    "kind": "affected"
+   },
+   "role": "Modelo e ex-participante do BBB 24",
+   "period": "Mensagens de 12/2023 a 2024; reveladas pela Veja em 02/10/2026",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro",
+    "hugo-motta"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Modelo e ex-participante do BBB 24. Segundo a coluna Radar, da Veja (02/10/2026), com base em mensagens extraídas pela PF do celular de Daniel Vorcaro, ela teve com o banqueiro uma relação próxima, de cerca de dois anos, com favores: voos em avião e helicóptero particulares (o primeiro pedido, em 31/12/2023, pouco antes do pré-confinamento do BBB, para ir ao Rio sem ser fotografada), uso de um apartamento em São Paulo, festa de aniversário no hotel Rosewood e apoio de equipe de segurança digital contra tentativas de invasão de contas (janeiro de 2024). Durante o programa, funcionários de Vorcaro teriam monitorado o que ela dizia na casa, por receio de que citasse o banqueiro; uma mensagem diz “Eu pedi um lance para ver se a gente acelera a votação nela no próximo paredão” e outra, “Ela precisa sair esse mês enquanto tá fresco” — as reportagens não esclarecem se houve alguma ação concreta. Depois, ela foi avisada de que teria de deixar o apartamento em 60 dias, pediu para alugá-lo ou ter mais prazo, e Vorcaro, que disse poder negociar, parou de responder. Não há indicação de investigação contra ela. A assessoria da modelo não comentou, segundo a Veja.",
+   "src": [
+    "vejabrunet",
+    "b247brunet",
+    "terrabrunet"
+   ],
+   "joke": "Vorcaro pediu “um lance” para acelerar a votação no paredão. O único mercado que o Master nunca conseguiu manipular direito foi o do voto popular."
   }
  ],
  "stateValues": {
