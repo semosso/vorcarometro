@@ -3984,7 +3984,9 @@
     "forumronaldo",
     "atarderonaldo"
    ],
-   "joke": "Pediu dinheiro por causa da eliminação na Copa do Brasil. Do outro lado, o banqueiro que nunca sofreu eliminação — só liquidação."
+   "joke": "Pediu dinheiro por causa da eliminação na Copa do Brasil. Do outro lado, o banqueiro que nunca sofreu eliminação — só liquidação.",
+   "photo": "img/ronaldo-nazario.jpg",
+   "photoCredit": "Ricardo Stuckert/PR, via Wikimedia Commons"
   },
   {
    "id": "pablo-marcal",
@@ -4016,7 +4018,9 @@
    "src": [
     "valormarcal"
    ],
-   "joke": "Ex-coach de “mentalidade de prosperidade” ganhando R$ 1,17 milhão de viagem. “Não fala de valores” é, no caso, o único módulo de compliance do curso."
+   "joke": "Ex-coach de “mentalidade de prosperidade” ganhando R$ 1,17 milhão de viagem. “Não fala de valores” é, no caso, o único módulo de compliance do curso.",
+   "photo": "img/pablo-marcal.jpg",
+   "photoCredit": "Kim Kataguiri, CC BY 3.0, via Wikimedia Commons"
   }
  ],
  "stateValues": {
