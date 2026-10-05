@@ -282,6 +282,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 .el-map svg{width:100%; height:auto; display:block;}
 .ehex{cursor:pointer;} .ehex path{stroke:var(--bg); stroke-width:2px; transition:opacity .12s;}
 .ehex:hover path{opacity:.82;} .ehex.only-lose path{stroke:var(--red); stroke-width:7px;}
+.ehex.only-second path{stroke:var(--gold); stroke-width:7px;}
 .ehex.selected path{stroke:var(--ink); stroke-width:3px;}
 .ehex text{font-family:var(--font-mono); font-size:24px; font-weight:600; pointer-events:none;}
 .ehex:focus{outline:none;}
@@ -291,8 +292,8 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 .el-cols{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
 .el-col h3{font-family:var(--font-display); font-weight:400; font-size:1.05rem; margin:0 0 8px; padding-bottom:4px; border-bottom:3px solid var(--border);}
 .el-col.win h3{border-color:var(--win);} .el-col.lose h3{border-color:var(--red);}
-.el-second{margin-top:16px;} .el-second h3{border-color:var(--gold);}
-.el-second .el-list{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:8px;}
+.el-second-unused{margin-top:16px;} .el-second-unused h3{border-color:var(--gold);}
+.el-second-unused .el-list{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:8px;}
 .el-list{display:flex; flex-direction:column; gap:8px;}
 .el-person{display:flex; gap:10px; align-items:center; text-align:left; padding:8px; background:var(--surface); border:1px solid var(--gridline); cursor:pointer; width:100%; color:var(--ink); font-family:var(--font-sans);}
 .el-person:hover,.el-person:focus-visible{border-color:var(--ink);}
@@ -381,13 +382,14 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 
 <section id="eleicoes">
   <div class="block-title">Eleições 2026: os citados nas urnas</div>
-  <div class="g-hint" style="margin:0 0 12px;">Políticos que aparecem na base e disputaram a eleição de 04/10. Borda verde: eleito(a); vermelha: não eleito(a); dourada: segundo turno (25/10). Toque num estado para filtrar (a disputa presidencial só aparece com todos os estados); toque num rosto para abrir a ficha.</div>
+  <div class="g-hint" style="margin:0 0 12px;">Políticos que aparecem na base e disputaram a eleição de 04/10. Borda verde: eleito(a) ou na frente; vermelha: não eleito(a) ou em segundo lugar. A etiqueta “2º turno” marca quem disputa a rodada de 25/10. Toque num estado para filtrar (a disputa presidencial só aparece com todos os estados); toque num rosto para abrir a ficha.</div>
   <div class="el-layout">
     <div class="el-map">
       <svg id="elMap" viewBox="0 0 722 700" role="group" aria-label="Mapa hexagonal dos estados com eleitos citados na base"></svg>
       <div class="el-legend">
         <div class="legend-row"><span class="legend-swatch" style="background:var(--win)"></span><span>Estado com ao menos um eleito citado</span></div>
-        <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none);border-color:var(--red)"></span><span>Só não eleitos ou segundo turno</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none);border-color:var(--red)"></span><span>Só não eleitos</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none);border-color:var(--gold)"></span><span>Só disputa de segundo turno</span></div>
         <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none)"></span><span>Nenhum citado na disputa</span></div>
       </div>
     </div>
@@ -397,7 +399,6 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
         <div class="el-col win"><h3>Eleitos(as)</h3><div class="el-list" id="elWin"></div></div>
         <div class="el-col lose"><h3>Não eleitos(as)</h3><div class="el-list" id="elLose"></div></div>
       </div>
-      <div class="el-second el-col"><h3>Vão ao segundo turno</h3><div class="el-list" id="elSecond"></div></div>
       <div class="g-hint">Fontes: resultados oficiais do TSE (apuração a 100%) e CBN. Todos os citados negam irregularidades; ser citado não é acusação.</div>
     </div>
   </div>
@@ -1165,12 +1166,13 @@ function buildElectionMap(){
   elPeople().forEach(e=>{ const u=e.eleicao.uf; if(u==='BR') return; (byUf[u]=byUf[u]||[]).push(e); });
   let out = '';
   BR_HEX.forEach(h=>{
-    const ps = byUf[h.uf]||[]; const won = ps.filter(e=>e.eleicao.resultado==='eleito').length;
+    const ps = byUf[h.uf]||[]; const won = ps.filter(e=>e.eleicao.resultado==='eleito' && !e.eleicao.segundoTurno).length;
+    const second = !won && ps.some(e=>e.eleicao.segundoTurno) && !ps.some(e=>!e.eleicao.segundoTurno);
     let fill='var(--map-none)', stroke='var(--bg)', txt='var(--ink-muted)';
     if(won){ fill = won>=2 ? 'var(--win)' : 'var(--win-soft)'; txt = won>=2 ? '#ffffff' : 'var(--ink)'; }
-    else if(ps.length){ stroke='var(--red)'; txt='var(--ink)'; }
+    else if(ps.length){ txt='var(--ink)'; }
     const tip = h.name+': '+(ps.length ? won+' eleito(s), '+ps.length+' citado(s) na disputa' : 'nenhum citado na disputa');
-    out += '<g class="ehex'+(ps.length?' has':'')+(!won&&ps.length?' only-lose':'')+'" data-uf="'+h.uf+'" tabindex="0" role="button" aria-label="'+tip+'">'+
+    out += '<g class="ehex'+(ps.length?' has':'')+(second?' only-second':(!won&&ps.length?' only-lose':''))+'" data-uf="'+h.uf+'" tabindex="0" role="button" aria-label="'+tip+'">'+
       '<title>'+tip+'</title><path d="'+h.d+'" fill="'+fill+'" stroke="'+stroke+'"/>'+
       '<text x="'+h.cx+'" y="'+(h.cy+8)+'" text-anchor="middle" fill="'+txt+'">'+h.uf+'</text></g>';
   });
@@ -1192,7 +1194,7 @@ function elPersonHtml(e){
   const x = e.eleicao;
   return '<button type="button" class="el-person '+x.resultado+'" data-id="'+e.id+'">'+face+
     '<span><div class="el-name">'+e.name+'</div><div class="el-meta">'+x.cargo+' · '+(x.uf==='BR'?'nacional':x.uf)+'. '+x.detalhe+'</div>'+
-    (x.resultado==='segundo-turno'?'<span class="el-tag">2º turno · 25/10</span>':'')+'</span></button>';
+    (x.segundoTurno?'<span class="el-tag">2º turno · 25/10</span>':'')+'</span></button>';
 }
 function renderElectionLists(){
   const state = elFilterUF ? BR_HEX.find(h=>h.uf===elFilterUF) : null;
@@ -1206,7 +1208,7 @@ function renderElectionLists(){
     const box = document.getElementById(id);
     box.innerHTML = items.length ? items.map(elPersonHtml).join('') : '<div class="el-empty">Ninguém nesta lista.</div>';
   };
-  fill('elWin','eleito'); fill('elLose','nao-eleito'); fill('elSecond','segundo-turno');
+  fill('elWin','eleito'); fill('elLose','nao-eleito');
   document.querySelectorAll('#eleicoes .el-person').forEach(b=>b.addEventListener('click', ()=>{ const e=byId(b.getAttribute('data-id')); if(e) goToEntity(e); }));
 }
 async function init(){

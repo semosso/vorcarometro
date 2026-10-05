@@ -2145,9 +2145,10 @@
    "eleicao": {
     "cargo": "Presidente",
     "uf": "BR",
-    "resultado": "segundo-turno",
+    "resultado": "eleito",
     "detalhe": "1º lugar com 47,03%; disputa o 2º turno em 25/10 contra Lula.",
-    "pendente": false
+    "pendente": false,
+    "segundoTurno": true
    }
   },
   {
@@ -3165,9 +3166,10 @@
    "eleicao": {
     "cargo": "Governadora",
     "uf": "DF",
-    "resultado": "segundo-turno",
+    "resultado": "eleito",
     "detalhe": "1ª colocada com 49,93%; disputa o 2º turno em 25/10 contra Leandro Grass.",
-    "pendente": false
+    "pendente": false,
+    "segundoTurno": true
    }
   },
   {
@@ -3745,9 +3747,10 @@
    "eleicao": {
     "cargo": "Presidente",
     "uf": "BR",
-    "resultado": "segundo-turno",
+    "resultado": "nao-eleito",
     "detalhe": "2º lugar com 45,16%; disputa o 2º turno em 25/10 contra Flávio Bolsonaro.",
-    "pendente": false
+    "pendente": false,
+    "segundoTurno": true
    }
   },
   {
