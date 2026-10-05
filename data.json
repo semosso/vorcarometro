@@ -923,6 +923,10 @@
   "otempomulheresvorcaro": {
    "t": "O Tempo — Violação do sigilo de Vorcaro revelou teia de relações amorosas com influenciadoras e modelos",
    "u": "https://www.otempo.com.br/politica/2026/3/7/violacao-do-sigilo-de-vorcaro-revelou-teia-de-relacoes-amorosas-com-influenciadoras-e-modelos"
+  },
+  "cnncpismartha": {
+   "t": "CNN Brasil — CPIs miram depoimento de Martha Graeff para esclarecer conexões de Vorcaro",
+   "u": "https://www.cnnbrasil.com.br/politica/cpis-miram-depoimento-de-martha-graeff-para-esclarecer-conexoes-de-vorcaro/"
   }
  },
  "entities": [
@@ -4156,7 +4160,7 @@
     "kind": "affected"
    },
    "role": "Influenciadora digital; ex-namorada de Daniel Vorcaro",
-   "period": "Mensagens de outubro de 2024 a agosto de 2025; divulgadas em 06/03/2026",
+   "period": "Mensagens de outubro de 2024 a agosto de 2025; divulgadas em 06/03/2026; CPIs buscaram seu depoimento em 03/2026",
    "amounts": [],
    "related": [
     "daniel-vorcaro"
@@ -4164,15 +4168,18 @@
    "states": [
     "RS"
    ],
-   "summary": "Influenciadora gaúcha, com cerca de 676 mil seguidores no Instagram, apontada por reportagens como namorada (hoje ex) de Daniel Vorcaro. Em 06/03/2026, 1.514 páginas de conversas entre os dois, de outubro de 2024 a agosto de 2025, extraídas pela Polícia Federal do celular do banqueiro e encaminhadas à CPMI do INSS, vieram a público e viralizaram: a palavra “peleleca”, usada por Vorcaro, chegou ao 15º lugar entre os assuntos mais comentados do X, e o casal aparece trocando mensagens no estilo do Cebolinha, trocando o “R” pelo “L”. Em uma das trocas mais repercutidas, Martha responde a uma mensagem do banqueiro com “PALAAAAAAA AGOLAAA” e “Amor, eu te amo tanto”. As mensagens também mostram que, em dezembro de 2024, Vorcaro contou a ela que um jornalista da Folha de S.Paulo o procurara sobre um suposto iate presenteado a ela em Miami; ela negou conhecimento (“Mentira. De onde veio isso?”). Segundo a ND+, ela diz nas conversas ter sido amante dele por seis meses antes de a relação se tornar pública, e, após a prisão de Vorcaro, encerrou o relacionamento. As fontes consultadas não indicam que ela seja investigada ou tenha qualquer participação nas irregularidades atribuídas a Vorcaro; ela aparece como pessoa citada nas mensagens. O conteúdo é de natureza íntima e entra aqui apenas pelo que já foi amplamente divulgado.",
+   "summary": "Influenciadora gaúcha, com cerca de 676 mil seguidores no Instagram, apontada por reportagens como namorada (hoje ex) de Daniel Vorcaro. Em 06/03/2026, 1.514 páginas de conversas entre os dois, de outubro de 2024 a agosto de 2025, extraídas pela Polícia Federal do celular do banqueiro e encaminhadas à CPMI do INSS, vieram a público e viralizaram: a palavra “peleleca”, usada por Vorcaro, chegou ao 15º lugar entre os assuntos mais comentados do X, e o casal aparece trocando mensagens no estilo do Cebolinha, trocando o “R” pelo “L”. Em uma das trocas mais repercutidas, Martha responde a uma mensagem do banqueiro com “PALAAAAAAA AGOLAAA” e “Amor, eu te amo tanto”. As mensagens também mostram que, em dezembro de 2024, Vorcaro contou a ela que um jornalista da Folha de S.Paulo o procurara sobre um suposto iate presenteado a ela em Miami; ela negou conhecimento (“Mentira. De onde veio isso?”). Segundo a ND+, ela diz nas conversas ter sido amante dele por seis meses antes de a relação se tornar pública, e, após a prisão de Vorcaro, encerrou o relacionamento. As fontes consultadas não indicam que ela seja investigada ou tenha qualquer participação nas irregularidades atribuídas a Vorcaro; ela aparece como pessoa citada nas mensagens. Em março de 2026, a CPMI do INSS (depoimento previsto para 23/03) e a CPI do Crime Organizado do Senado (25/03) quiseram ouvi-la, por acreditarem que ela tem informações sobre encontros de Vorcaro com autoridades, a partir das mensagens a que tiveram acesso; em 21/03, as duas comissões informaram dificuldade para localizá-la, segundo a CNN Brasil, que se refere a Vorcaro como seu ex-noivo. O conteúdo é de natureza íntima e entra aqui apenas pelo que já foi amplamente divulgado.",
    "src": [
     "bahianoticiaspeleleca",
     "dcmpeleleca",
     "ndmaismulherescelular",
     "terratresgracaspeleleca",
-    "otempomulheresvorcaro"
+    "otempomulheresvorcaro",
+    "cnncpismartha"
    ],
-   "joke": "“PALA AGOLA” foi a única coisa nesse inquérito que a PF não precisou traduzir."
+   "joke": "“PALA AGOLA” foi a única coisa nesse inquérito que a PF não precisou traduzir.",
+   "photo": "img/martha-graeff.jpg",
+   "photoCredit": "Reprodução/Redes Sociais, via CNN Brasil"
   }
  ],
  "stateValues": {
