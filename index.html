@@ -914,7 +914,9 @@ function setupShare(q){
 }
 
 function setupPositiveShare(entity){
-  const baseUrl = location.origin + location.pathname;
+  const baseUrl = entity
+    ? location.origin + location.pathname + '?p=' + encodeURIComponent(entity.id)
+    : location.href;
   const name = entity ? entity.name : 'Vorcarômetro';
   const shareText = entity
     ? name+' apareceu no Vorcarômetro. Confere a sua também: '+baseUrl
