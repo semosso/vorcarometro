@@ -927,6 +927,30 @@
   "cnncpismartha": {
    "t": "CNN Brasil — CPIs miram depoimento de Martha Graeff para esclarecer conexões de Vorcaro",
    "u": "https://www.cnnbrasil.com.br/politica/cpis-miram-depoimento-de-martha-graeff-para-esclarecer-conexoes-de-vorcaro/"
+  },
+  "ndmaismaryia": {
+   "t": "ND+ — Quem é Maryia Lubinova, modelo russa que aparece como ‘My Future Wife’ nos contatos de Vorcaro",
+   "u": "https://ndmais.com.br/famosos/quem-e-maryia-lubimova-a-russa-no-celular-de-vorcaro/"
+  },
+  "metropolesmaryia": {
+   "t": "Metrópoles — Quem é a modelo que Vorcaro salvou contato como “My Future Wife”",
+   "u": "https://www.metropoles.com/sao-paulo/quem-e-a-modelo-que-vorcaro-salvou-contato-como-my-future-wife"
+  },
+  "cnnerikaschneider": {
+   "t": "CNN Brasil — Quem é Erika Schneider, ex-A Fazenda citada nas mensagens de Daniel Vorcaro",
+   "u": "https://www.cnnbrasil.com.br/entretenimento/quem-e-erika-schneider-ex-a-fazenda-citada-nas-mensagens-de-daniel-vorcaro/"
+  },
+  "bnewserika": {
+   "t": "BNews — Ex-bailarina do Faustão abre o jogo sobre relação com Vorcaro após conversa vazada: “a gente se encontrou algumas vezes”",
+   "u": "https://www.bnews.com.br/noticias/entretenimento/ex-bailarina-do-faustao-abre-o-jogo-sobre-relacao-com-vorcaro-apos-conversa-vazada-gente-se-encontrou-algumas-vezes.html"
+  },
+  "ploxkarolina": {
+   "t": "Plox — Quem é a influenciadora Karolina Trainotti, apontada como ‘sugar baby’ de Vorcaro?",
+   "u": "https://plox.com.br/noticia/09/12/2025/karolina-trainotti-daniel-vorcaro-lavagem-dinheiro-trafico-internacional"
+  },
+  "midiamaxkarolina": {
+   "t": "Midiamax — Vorcaro doou apartamento de R$ 4,3 milhões para ‘sugar baby’ ré por lavagem de dinheiro",
+   "u": "https://midiamax.com.br/brasil/2025/vorcaro-doou-apartamento-r-43-milhoes-sugar-baby-reu-lavagem-dinheiro/"
   }
  },
  "entities": [
@@ -981,7 +1005,10 @@
     "roberto-justus",
     "ronaldo-nazario",
     "pablo-marcal",
-    "martha-graeff"
+    "martha-graeff",
+    "maryia-lubinova",
+    "erika-schneider",
+    "karolina-trainotti"
    ],
    "states": [
     "SP",
@@ -4180,6 +4207,93 @@
    "joke": "“PALA AGOLA” foi a única coisa nesse inquérito que a PF não precisou traduzir.",
    "photo": "img/martha-graeff.jpg",
    "photoCredit": "Reprodução/Redes Sociais, via CNN Brasil"
+  },
+  {
+   "id": "maryia-lubinova",
+   "name": "Maryia Lubinova",
+   "aliases": [
+    "maryia lubimova",
+    "my future wife"
+   ],
+   "type": "pessoa",
+   "orbit": true,
+   "status": {
+    "label": "Citada",
+    "kind": "affected"
+   },
+   "role": "Modelo e influenciadora russa, radicada em Bali",
+   "period": "Mensagens de novembro e dezembro de 2023",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [],
+   "summary": "Modelo e influenciadora russa, radicada em Bali (Indonésia), com cerca de 50 mil seguidores no Instagram. Segundo reportagens com base em dados extraídos pela PF do celular de Daniel Vorcaro, o banqueiro salvou o contato dela como “My Future Wife” (“minha futura esposa”). As mensagens mostram que, em 02/11/2023, Vorcaro lhe escreveu perguntando sobre sua passagem por São Paulo durante o Grande Prêmio de Fórmula 1 e sugeriu que ela voltasse ao shopping no dia seguinte; em 01/12/2023, escreveu que sentia sua falta, e ela perguntou quando ele daria as aulas de português prometidas. As reportagens consultadas não trazem posicionamento dela e não indicam qualquer participação em irregularidades.",
+   "src": [
+    "ndmaismaryia",
+    "metropolesmaryia",
+    "otempomulheresvorcaro"
+   ],
+   "joke": "Contato salvo como “futura esposa”. Mais vínculo do que a maioria dos contratos do Master."
+  },
+  {
+   "id": "erika-schneider",
+   "name": "Erika Schneider",
+   "aliases": [],
+   "type": "pessoa",
+   "orbit": true,
+   "status": {
+    "label": "Citada",
+    "kind": "affected"
+   },
+   "role": "Modelo, influenciadora e empresária; ex-bailarina do Domingão do Faustão",
+   "period": "Mensagens entre 2023 e 2025",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Modelo, influenciadora e empresária, foi cerca de oito anos bailarina do Domingão do Faustão e participou de A Fazenda (2021). Segundo reportagens com base em dados extraídos pela PF do celular de Daniel Vorcaro, ela recebia dele a mesma mensagem de “bom dia” enviada, no começo do dia, também a Tati Lima e a Martha Graeff. Em entrevista divulgada após o vazamento, afirmou, segundo a manchete do BNews, que “a gente se encontrou algumas vezes”. As reportagens consultadas não indicam qualquer participação dela em irregularidades.",
+   "src": [
+    "cnnerikaschneider",
+    "bnewserika",
+    "ndmaismulherescelular",
+    "otempomulheresvorcaro"
+   ],
+   "joke": "O “bom dia” era em lote. Nem a PF conseguiu rastrear a personalização."
+  },
+  {
+   "id": "karolina-trainotti",
+   "name": "Karolina Trainotti",
+   "aliases": [
+    "karol trainotti"
+   ],
+   "type": "pessoa",
+   "orbit": true,
+   "status": {
+    "label": "Citada",
+    "kind": "affected"
+   },
+   "role": "Influenciadora que se descreve como “sugar baby”",
+   "period": "Imóvel doado em 12/2024",
+   "amounts": [
+    "R$ 4,3 milhões — apartamento de 113 m² na Faria Lima (SP), doado em dezembro de 2024 por empresas ligadas a Vorcaro (Viking Participações e Super Empreendimentos e Participações), segundo reportagens"
+   ],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Influenciadora, com cerca de 34 mil seguidores, que se descreve como “sugar baby”. Segundo reportagens, em dezembro de 2024 recebeu em doação um apartamento de R$ 4,3 milhões na região da Faria Lima, em São Paulo, de empresas ligadas a Daniel Vorcaro. Ela é ré, desde 2023, em ação sem relação com Vorcaro: segundo o Ministério Público Federal, teria recebido R$ 271 mil entre 2020 e 2021 em esquema de lavagem de dinheiro ligado a outro réu, acusado de tráfico internacional de drogas. Seu advogado, Eugênio Pacelli, afirma que ela recebia uma mesada de “sugar baby” e nunca soube do suposto tráfico. Nem ela nem Vorcaro se manifestaram publicamente sobre a doação. Nada nas fontes consultadas aponta que ela tenha participação em irregularidades do Banco Master.",
+   "src": [
+    "ploxkarolina",
+    "midiamaxkarolina",
+    "ndmaismulherescelular"
+   ],
+   "joke": "Apartamento na Faria Lima via holding. A Viking Participações era mesmo generosa."
   }
  ],
  "stateValues": {
