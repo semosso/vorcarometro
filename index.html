@@ -263,7 +263,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 .g-node{cursor:pointer; outline:none;}
 .g-node .g-ring{fill:var(--surface-2); stroke-width:3;}
 .g-node.k-critical .g-ring{stroke:var(--red);} .g-node.k-warning .g-ring{stroke:var(--gold);} .g-node.k-affected .g-ring{stroke:var(--blue);}
-.g-node text{fill:var(--ink); font-family:var(--font-sans); font-size:13px; text-anchor:middle; paint-order:stroke; stroke:var(--surface); stroke-width:4px; stroke-linejoin:round;}
+.g-node text{fill:var(--ink); font-family:var(--font-sans); font-size:14px; text-anchor:middle; paint-order:stroke; stroke:var(--surface); stroke-width:4px; stroke-linejoin:round;}
 .g-node .g-ini{font-family:var(--font-display); font-size:17px; fill:var(--ink-2); stroke:none;}
 .g-node:hover .g-ring,.g-node:focus-visible .g-ring{stroke-width:6;}
 .g-node:hover text,.g-node:focus-visible text{font-weight:700;}
@@ -324,7 +324,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 
 <section id="pelelequeilo">
   <div class="block-title">Pelelequeilo</div>
-  <div class="g-hint" style="margin:0 0 8px;">Quem orbita Daniel Vorcaro na base. Mais perto = mais pesado o status (vermelho: preso/decretado; dourado: investigado/citado; azul: parte afetada). Toque num rosto para abrir a ficha.</div>
+  <div class="g-hint" style="margin:0 0 8px;">Quem orbita Daniel Vorcaro na base. A cor da borda indica o status (vermelho: preso/decretado; dourado: investigado/citado; azul: parte afetada). Toque num rosto para abrir a ficha.</div>
   <div class="graph-wrap"><svg id="orbitGraph" viewBox="0 0 900 900" role="group" aria-label="Grafo com Daniel Vorcaro no centro e as pessoas ligadas a ele em volta"></svg></div>
   <div class="g-hint">Estar ligado não é acusação: o traço só indica que há menção documentada nas fontes da ficha.</div>
 </section>
@@ -1041,10 +1041,11 @@ function buildOrbitGraph(){
   if(!svg || !center) return;
   const NS='http://www.w3.org/2000/svg', C=450;
   const order = {critical:0, warning:1, affected:2};
-  const people = center.related.map(byId).filter(e=>e && e.type==='pessoa')
+  const people = ENTITIES.filter(e=>e.orbit && e.type==='pessoa' && e.id!==center.id)
     .sort((a,b)=>(order[a.status.kind]-order[b.status.kind]) || a.name.localeCompare(b.name,'pt-BR'));
-  const nInner = Math.min(10, Math.ceil(people.length*0.4));
-  const rings = [{r:185, items:people.slice(0,nInner)}, {r:340, items:people.slice(nInner)}];
+  const few = people.length<=12;
+  const nInner = few ? 0 : Math.min(10, Math.ceil(people.length*0.4));
+  const rings = few ? [{r:290, items:people}] : [{r:185, items:people.slice(0,nInner)}, {r:340, items:people.slice(nInner)}];
   function el(tag, attrs, parent){
     const n = document.createElementNS(NS, tag);
     for(const k in attrs) n.setAttribute(k, attrs[k]);
@@ -1058,9 +1059,9 @@ function buildOrbitGraph(){
   const edges = el('g',{}, svg), nodes = el('g',{}, svg);
   const defs = el('defs',{}, svg);
   rings.forEach((ring, ri)=>{
-    const n = ring.items.length, off = ri ? Math.PI/n : -Math.PI/2;
+    const n = ring.items.length, off = (ri && !few) ? Math.PI/n : -Math.PI/2;
     ring.items.forEach((e,i)=>{
-      const a = off + 2*Math.PI*i/n, x = C+ring.r*Math.cos(a), y = C+ring.r*Math.sin(a), R = ri?30:34;
+      const a = off + 2*Math.PI*i/n, x = C+ring.r*Math.cos(a), y = C+ring.r*Math.sin(a), R = few?52:(ri?30:34);
       el('line',{x1:C,y1:C,x2:x,y2:y,class:'g-edge k-'+e.status.kind}, edges);
       const g = el('g',{class:'g-node k-'+e.status.kind, tabindex:0, role:'link', 'aria-label':'Abrir ficha de '+e.name}, nodes);
       el('title',{}, g).textContent = e.name+' — '+e.status.label+' · '+e.role;
@@ -1072,7 +1073,7 @@ function buildOrbitGraph(){
       } else {
         el('text',{x:x,y:y+6,class:'g-ini'}, g).textContent = initials(e.name);
       }
-      el('text',{x:x,y:y+R+17}, g).textContent = e.id==='lula' ? 'Lula' : shortName(e.name);
+      el('text',{x:x,y:y+R+(few?20:17)}, g).textContent = e.id==='lula' ? 'Lula' : shortName(e.name);
       const open = ()=>goToEntity(e);
       g.addEventListener('click', open);
       g.addEventListener('keydown', ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); open(); } });
