@@ -381,7 +381,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 
 <section id="eleicoes">
   <div class="block-title">Eleições 2026: os citados nas urnas</div>
-  <div class="g-hint" style="margin:0 0 12px;">Políticos que aparecem na base e disputaram a eleição de 04/10. Borda verde: eleito(a); vermelha: não eleito(a); dourada: segundo turno (25/10). Toque num estado para filtrar; toque num rosto para abrir a ficha.</div>
+  <div class="g-hint" style="margin:0 0 12px;">Políticos que aparecem na base e disputaram a eleição de 04/10. Borda verde: eleito(a); vermelha: não eleito(a); dourada: segundo turno (25/10). Toque num estado para filtrar (a disputa presidencial só aparece com todos os estados); toque num rosto para abrir a ficha.</div>
   <div class="el-layout">
     <div class="el-map">
       <svg id="elMap" viewBox="0 0 722 700" role="group" aria-label="Mapa hexagonal dos estados com eleitos citados na base"></svg>
@@ -398,7 +398,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
         <div class="el-col lose"><h3>Não eleitos(as)</h3><div class="el-list" id="elLose"></div></div>
       </div>
       <div class="el-second el-col"><h3>Vão ao segundo turno</h3><div class="el-list" id="elSecond"></div></div>
-      <div class="g-hint">Fontes: resultados oficiais do TSE (apuração a 100%) e CBN. Deputados federais de SP e MG aparecem como eleitos segundo a imprensa até o TSE publicar a distribuição das vagas. Todos os citados negam irregularidades; ser citado não é acusação.</div>
+      <div class="g-hint">Fontes: resultados oficiais do TSE (apuração a 100%) e CBN. Todos os citados negam irregularidades; ser citado não é acusação.</div>
     </div>
   </div>
 </section>
@@ -1162,7 +1162,7 @@ function elPeople(){ return ENTITIES.filter(e=>e.eleicao); }
 function buildElectionMap(){
   const svg = document.getElementById('elMap'); if(!svg) return;
   const byUf = {};
-  elPeople().forEach(e=>{ const u=e.eleicao.uf; (byUf[u]=byUf[u]||[]).push(e); });
+  elPeople().forEach(e=>{ const u=e.eleicao.uf; if(u==='BR') return; (byUf[u]=byUf[u]||[]).push(e); });
   let out = '';
   BR_HEX.forEach(h=>{
     const ps = byUf[h.uf]||[]; const won = ps.filter(e=>e.eleicao.resultado==='eleito').length;
@@ -1191,8 +1191,8 @@ function elPersonHtml(e){
   const face = e.photo ? '<img class="el-face" src="'+e.photo+'" alt="" loading="lazy">' : '<span class="el-face">'+initials+'</span>';
   const x = e.eleicao;
   return '<button type="button" class="el-person '+x.resultado+'" data-id="'+e.id+'">'+face+
-    '<span><div class="el-name">'+e.name+'</div><div class="el-meta">'+x.cargo+' · '+x.uf+'. '+x.detalhe+'</div>'+
-    (x.pendente?'<span class="el-tag">aguardando TSE</span>':'')+'</span></button>';
+    '<span><div class="el-name">'+e.name+'</div><div class="el-meta">'+x.cargo+' · '+(x.uf==='BR'?'nacional':x.uf)+'. '+x.detalhe+'</div>'+
+    (x.resultado==='segundo-turno'?'<span class="el-tag">2º turno · 25/10</span>':'')+'</span></button>';
 }
 function renderElectionLists(){
   const state = elFilterUF ? BR_HEX.find(h=>h.uf===elFilterUF) : null;
@@ -1200,7 +1200,7 @@ function renderElectionLists(){
     ? 'Mostrando só <strong>'+state.name+'</strong>. <button type="button" class="btn ghost small" id="elClear">Ver todos</button>'
     : 'Mostrando todos os estados.';
   const clear = document.getElementById('elClear'); if(clear) clear.addEventListener('click', ()=>setElectionFilter(null));
-  const list = elPeople().filter(e=>!elFilterUF || e.eleicao.uf===elFilterUF).sort((a,b)=>a.name.localeCompare(b.name,'pt-BR'));
+  const list = elPeople().filter(e=>!elFilterUF || (e.eleicao.uf!=='BR' && e.eleicao.uf===elFilterUF)).sort((a,b)=>a.name.localeCompare(b.name,'pt-BR'));
   const fill = (id, res)=>{
     const items = list.filter(e=>e.eleicao.resultado===res);
     const box = document.getElementById(id);

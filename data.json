@@ -2144,7 +2144,7 @@
    "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa.",
    "eleicao": {
     "cargo": "Presidente",
-    "uf": "RJ",
+    "uf": "BR",
     "resultado": "segundo-turno",
     "detalhe": "1º lugar com 47,03%; disputa o 2º turno em 25/10 contra Lula.",
     "pendente": false
@@ -3268,8 +3268,8 @@
     "cargo": "Deputado federal",
     "uf": "MG",
     "resultado": "eleito",
-    "detalhe": "Reeleito, segundo a imprensa, com 3,1 milhões de votos (27%); o TSE ainda não publicou os eleitos de MG.",
-    "pendente": true
+    "detalhe": "Reeleito, com 3,1 milhões de votos (27%).",
+    "pendente": false
    }
   },
   {
@@ -3587,8 +3587,8 @@
     "cargo": "Deputado federal",
     "uf": "SP",
     "resultado": "eleito",
-    "detalhe": "Reeleito, segundo a imprensa (91.403 votos); o TSE ainda não publicou os eleitos de SP.",
-    "pendente": true
+    "detalhe": "Reeleito, com 91.403 votos.",
+    "pendente": false
    }
   },
   {
@@ -3744,7 +3744,7 @@
    "joke": "Reunião classificada de \"ótima\" pelo próprio banqueiro investigado. Pelo visto, o uísque ajudou.",
    "eleicao": {
     "cargo": "Presidente",
-    "uf": "DF",
+    "uf": "BR",
     "resultado": "segundo-turno",
     "detalhe": "2º lugar com 45,16%; disputa o 2º turno em 25/10 contra Flávio Bolsonaro.",
     "pendente": false
