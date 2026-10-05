@@ -1746,7 +1746,8 @@
     "piauicontaminacao",
     "piauicortedeprazeres"
    ],
-   "joke": "Defendia aumentar a cobertura do FGC bem na hora que o FGC mais precisava não pagar. Coincidência, garantem as fontes."
+   "joke": "Defendia aumentar a cobertura do FGC bem na hora que o FGC mais precisava não pagar. Coincidência, garantem as fontes.",
+   "orbit": true
   },
   {
    "id": "jaques-wagner",
@@ -2640,7 +2641,8 @@
     "diariopara_pcc",
     "cnn10revelacoes",
     "cnnnuvemsicario"
-   ]
+   ],
+   "orbit": true
   },
   {
    "id": "alok",
@@ -3114,7 +3116,8 @@
     "otemponikolas",
     "emjatinhonikolas",
     "aosfatosnikolas"
-   ]
+   ],
+   "orbit": true
   },
   {
    "id": "edir-macedo",
