@@ -258,6 +258,10 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 /* ---------- pelelequeilo (grafo em volta de Vorcaro) ---------- */
 .graph-wrap{overflow-x:auto; border:1px solid var(--border); background:var(--surface); -webkit-overflow-scrolling:touch;}
 .graph-wrap svg{display:block; width:100%; min-width:720px; height:auto;}
+.graph-wrap svg.few{min-width:0; max-width:640px; margin-inline:auto;}
+.graph-wrap svg.few .g-node text{font-size:19px; stroke-width:5px;}
+.graph-wrap svg.few .g-node .g-ini{font-size:20px;}
+.graph-wrap svg.few .g-center text.g-ini{font-size:34px;}
 .g-edge{stroke-width:1.5; opacity:.45;}
 .g-edge.k-critical{stroke:var(--red);} .g-edge.k-warning{stroke:var(--gold);} .g-edge.k-affected{stroke:var(--blue);}
 .g-node{cursor:pointer; outline:none;}
@@ -323,7 +327,7 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 </section>
 
 <section id="pelelequeilo">
-  <div class="block-title">Pelelequeilo</div>
+  <div class="block-title">Momento Pelelequeilo</div>
   <div class="g-hint" style="margin:0 0 8px;">Aqui está quem, aparentemente, tinha uma relação mais próxima que o protocolo recomenda com Daniel Vorcaro: de foto abraçadinha a apelido carinhoso tipo “lindão”. São exemplos do tipo de proximidade, não acusações. A cor da borda indica o status na ficha. Toque num rosto para abrir a ficha.</div>
   <div class="graph-wrap"><svg id="orbitGraph" viewBox="0 0 900 900" role="group" aria-label="Grafo com Daniel Vorcaro no centro e as pessoas ligadas a ele em volta"></svg></div>
   <div class="g-hint">Humor com fonte: o que está documentado é o que a ficha de cada um diz. Aparecer aqui não é acusação.</div>
@@ -1039,13 +1043,15 @@ function buildOrbitGraph(){
   const svg = document.getElementById('orbitGraph');
   const center = byId('daniel-vorcaro');
   if(!svg || !center) return;
-  const NS='http://www.w3.org/2000/svg', C=450;
+  const NS='http://www.w3.org/2000/svg';
   const order = {critical:0, warning:1, affected:2};
+  let C = 450;
   const people = ENTITIES.filter(e=>e.orbit && e.type==='pessoa' && e.id!==center.id)
     .sort((a,b)=>(order[a.status.kind]-order[b.status.kind]) || a.name.localeCompare(b.name,'pt-BR'));
   const few = people.length<=12;
+  if(few){ C = 320; svg.setAttribute('viewBox','0 0 640 640'); svg.classList.add('few'); }
   const nInner = few ? 0 : Math.min(10, Math.ceil(people.length*0.4));
-  const rings = few ? [{r:290, items:people}] : [{r:185, items:people.slice(0,nInner)}, {r:340, items:people.slice(nInner)}];
+  const rings = few ? [{r:225, items:people}] : [{r:185, items:people.slice(0,nInner)}, {r:340, items:people.slice(nInner)}];
   function el(tag, attrs, parent){
     const n = document.createElementNS(NS, tag);
     for(const k in attrs) n.setAttribute(k, attrs[k]);
@@ -1061,7 +1067,7 @@ function buildOrbitGraph(){
   rings.forEach((ring, ri)=>{
     const n = ring.items.length, off = (ri && !few) ? Math.PI/n : -Math.PI/2;
     ring.items.forEach((e,i)=>{
-      const a = off + 2*Math.PI*i/n, x = C+ring.r*Math.cos(a), y = C+ring.r*Math.sin(a), R = few?52:(ri?30:34);
+      const a = off + 2*Math.PI*i/n, x = C+ring.r*Math.cos(a), y = C+ring.r*Math.sin(a), R = few?44:(ri?30:34);
       el('line',{x1:C,y1:C,x2:x,y2:y,class:'g-edge k-'+e.status.kind}, edges);
       const g = el('g',{class:'g-node k-'+e.status.kind, tabindex:0, role:'link', 'aria-label':'Abrir ficha de '+e.name}, nodes);
       el('title',{}, g).textContent = e.name+' — '+e.status.label+' · '+e.role;
@@ -1073,7 +1079,7 @@ function buildOrbitGraph(){
       } else {
         el('text',{x:x,y:y+6,class:'g-ini'}, g).textContent = initials(e.name);
       }
-      el('text',{x:x,y:y+R+(few?20:17)}, g).textContent = e.id==='lula' ? 'Lula' : shortName(e.name);
+      el('text',{x:x,y:y+R+(few?24:17)}, g).textContent = e.id==='lula' ? 'Lula' : shortName(e.name);
       const open = ()=>goToEntity(e);
       g.addEventListener('click', open);
       g.addEventListener('keydown', ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); open(); } });
@@ -1082,7 +1088,7 @@ function buildOrbitGraph(){
   const cg = el('g',{class:'g-node g-center', tabindex:0, role:'link', 'aria-label':'Abrir ficha de Daniel Vorcaro'}, nodes);
   el('circle',{cx:C,cy:C,r:52,class:'g-ring'}, cg);
   el('text',{x:C,y:C+10,class:'g-ini'}, cg).textContent='DV';
-  el('text',{x:C,y:C+78}, cg).textContent='Daniel Vorcaro';
+  el('text',{x:C,y:C+(few?82:78)}, cg).textContent='Daniel Vorcaro';
   cg.addEventListener('click', ()=>goToEntity(center));
   cg.addEventListener('keydown', ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); goToEntity(center); } });
 }
