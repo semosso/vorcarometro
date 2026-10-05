@@ -254,6 +254,22 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 .loading-data.active{display:flex;}
 .data-error{display:none; border:2px solid var(--red); border-radius:8px; padding:14px; background:var(--surface); color:var(--red); font-size:0.88rem; margin-top:14px;}
 .data-error.active{display:block;}
+
+/* ---------- pelelequeilo (grafo em volta de Vorcaro) ---------- */
+.graph-wrap{overflow-x:auto; border:1px solid var(--border); background:var(--surface); -webkit-overflow-scrolling:touch;}
+.graph-wrap svg{display:block; width:100%; min-width:720px; height:auto;}
+.g-edge{stroke-width:1.5; opacity:.45;}
+.g-edge.k-critical{stroke:var(--red);} .g-edge.k-warning{stroke:var(--gold);} .g-edge.k-affected{stroke:var(--blue);}
+.g-node{cursor:pointer; outline:none;}
+.g-node .g-ring{fill:var(--surface-2); stroke-width:3;}
+.g-node.k-critical .g-ring{stroke:var(--red);} .g-node.k-warning .g-ring{stroke:var(--gold);} .g-node.k-affected .g-ring{stroke:var(--blue);}
+.g-node text{fill:var(--ink); font-family:var(--font-sans); font-size:14px; text-anchor:middle; paint-order:stroke; stroke:var(--surface); stroke-width:4px; stroke-linejoin:round;}
+.g-node .g-ini{font-family:var(--font-display); font-size:17px; fill:var(--ink-2); stroke:none;}
+.g-node:hover .g-ring,.g-node:focus-visible .g-ring{stroke-width:6;}
+.g-node:hover text,.g-node:focus-visible text{font-weight:700;}
+.g-center .g-ring{fill:var(--red); stroke:var(--gold); stroke-width:5;}
+.g-center text.g-ini{fill:var(--red-ink); font-size:30px; stroke:none;}
+.g-hint{font-size:.85rem; color:var(--ink-muted); margin-top:6px;}
 </style>
 </head>
 <body>
@@ -304,6 +320,13 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
     <button class="btn ghost small" id="copyExcuseBtn">Copiar desculpa</button>
     <span class="toast" id="excuseToast"></span>
   </div>
+</section>
+
+<section id="pelelequeilo">
+  <div class="block-title">Pelelequeilo</div>
+  <div class="g-hint" style="margin:0 0 8px;">Pessoas em torno de Daniel Vorcaro neste recorte. A cor da borda indica o status na ficha (dourado: investigado/citado; azul: parte afetada). Toque num rosto para abrir a ficha.</div>
+  <div class="graph-wrap"><svg id="orbitGraph" viewBox="0 0 900 900" role="group" aria-label="Grafo com Daniel Vorcaro no centro e as pessoas ligadas a ele em volta"></svg></div>
+  <div class="g-hint">O traço indica só o vínculo documentado na ficha (financeiro, político ou pessoal), não um relacionamento. Aparecer aqui não é acusação.</div>
 </section>
 
 <section id="mapa">
@@ -914,7 +937,9 @@ function setupShare(q){
 }
 
 function setupPositiveShare(entity){
-  const baseUrl = location.origin + location.pathname;
+  const baseUrl = entity
+    ? location.origin + location.pathname + '?p=' + encodeURIComponent(entity.id)
+    : location.href;
   const name = entity ? entity.name : 'Vorcarômetro';
   const shareText = entity
     ? name+' apareceu no Vorcarômetro. Confere a sua também: '+baseUrl
@@ -1008,6 +1033,59 @@ function selectState(uf, opts){
   renderStatePanel(uf);
   if(!opts.skipUrlUpdate) updateUrlForState(uf);
 }
+
+/* ---------- pelelequeilo: grafo radial com Vorcaro no centro ---------- */
+function buildOrbitGraph(){
+  const svg = document.getElementById('orbitGraph');
+  const center = byId('daniel-vorcaro');
+  if(!svg || !center) return;
+  const NS='http://www.w3.org/2000/svg', C=450;
+  const order = {critical:0, warning:1, affected:2};
+  const people = ENTITIES.filter(e=>e.orbit && e.type==='pessoa' && e.id!==center.id)
+    .sort((a,b)=>(order[a.status.kind]-order[b.status.kind]) || a.name.localeCompare(b.name,'pt-BR'));
+  const few = people.length<=12;
+  const nInner = few ? 0 : Math.min(10, Math.ceil(people.length*0.4));
+  const rings = few ? [{r:290, items:people}] : [{r:185, items:people.slice(0,nInner)}, {r:340, items:people.slice(nInner)}];
+  function el(tag, attrs, parent){
+    const n = document.createElementNS(NS, tag);
+    for(const k in attrs) n.setAttribute(k, attrs[k]);
+    if(parent) parent.appendChild(n); return n;
+  }
+  function shortName(name){
+    const w = name.replace(/\s*\(.*\)/,'').split(/\s+/).filter(x=>!/^(de|da|do|dos|das)$/i.test(x));
+    return w.length>2 ? w[0]+' '+w[w.length-1] : w.join(' ');
+  }
+  function initials(name){ const w=shortName(name).split(' '); return (w[0][0]+(w[1]?w[1][0]:'')).toUpperCase(); }
+  const edges = el('g',{}, svg), nodes = el('g',{}, svg);
+  const defs = el('defs',{}, svg);
+  rings.forEach((ring, ri)=>{
+    const n = ring.items.length, off = (ri && !few) ? Math.PI/n : -Math.PI/2;
+    ring.items.forEach((e,i)=>{
+      const a = off + 2*Math.PI*i/n, x = C+ring.r*Math.cos(a), y = C+ring.r*Math.sin(a), R = few?52:(ri?30:34);
+      el('line',{x1:C,y1:C,x2:x,y2:y,class:'g-edge k-'+e.status.kind}, edges);
+      const g = el('g',{class:'g-node k-'+e.status.kind, tabindex:0, role:'link', 'aria-label':'Abrir ficha de '+e.name}, nodes);
+      el('title',{}, g).textContent = e.name+' — '+e.status.label+' · '+e.role;
+      el('circle',{cx:x,cy:y,r:R,class:'g-ring'}, g);
+      if(e.photo){
+        const id='gclip-'+e.id;
+        el('circle',{cx:x,cy:y,r:R-2}, el('clipPath',{id}, defs));
+        el('image',{href:e.photo,x:x-R+2,y:y-R+2,width:2*(R-2),height:2*(R-2),preserveAspectRatio:'xMidYMid slice','clip-path':'url(#'+id+')'}, g);
+      } else {
+        el('text',{x:x,y:y+6,class:'g-ini'}, g).textContent = initials(e.name);
+      }
+      el('text',{x:x,y:y+R+(few?20:17)}, g).textContent = e.id==='lula' ? 'Lula' : shortName(e.name);
+      const open = ()=>goToEntity(e);
+      g.addEventListener('click', open);
+      g.addEventListener('keydown', ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); open(); } });
+    });
+  });
+  const cg = el('g',{class:'g-node g-center', tabindex:0, role:'link', 'aria-label':'Abrir ficha de Daniel Vorcaro'}, nodes);
+  el('circle',{cx:C,cy:C,r:52,class:'g-ring'}, cg);
+  el('text',{x:C,y:C+10,class:'g-ini'}, cg).textContent='DV';
+  el('text',{x:C,y:C+78}, cg).textContent='Daniel Vorcaro';
+  cg.addEventListener('click', ()=>goToEntity(center));
+  cg.addEventListener('keydown', ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); goToEntity(center); } });
+}
 async function init(){
   const loadingEl = document.getElementById('dataLoading');
   const errorEl = document.getElementById('dataError');
@@ -1030,6 +1108,7 @@ async function init(){
   loadingEl.classList.remove('active');
 
   buildMap();
+  buildOrbitGraph();
   renderStatePanel(selectedUF);
   document.getElementById('sourceBiblio').innerHTML = Object.values(SRC).sort((a,b)=>a.t.localeCompare(b.t,'pt-BR')).map(s=>'<div><a href="'+s.u+'" target="_blank" rel="noopener">'+s.t+'</a></div>').join('');
 

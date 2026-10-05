@@ -863,6 +863,46 @@
   "valormarcal": {
    "t": "Valor Econômico — Pablo Marçal teve voo internacional de R$ 1 milhão pago por empresa da qual Vorcaro era sócio",
    "u": "https://valor.globo.com/politica/noticia/2026/10/02/pablo-maral-teve-voo-internacional-de-r-1-milho-pago-por-empresa-da-qual-vorcaro-era-scio.ghtml"
+  },
+  "brasildefatoflavio1turno": {
+   "t": "Brasil de Fato — Flávio Bolsonaro chega ao primeiro turno investigado pela PF, com relações com Vorcaro expostas",
+   "u": "https://www.brasildefato.com.br/2026/10/03/flavio-bolsonaro-chega-ao-primeiro-turno-investigado-pela-pf-com-relacoes-com-vorcaro-expostas-e-vice-suspeito-de-estupro/"
+  },
+  "brasildefatointerlocutor": {
+   "t": "Brasil de Fato — ‘Interlocutor direto’: o que as investigações da PF revelam sobre a relação de Flávio com Vorcaro",
+   "u": "https://www.brasildefato.com.br/2026/09/11/interlocutor-direto-o-que-as-investigacoes-da-pf-revelam-sobre-a-relacao-de-flavio-bolsonaro-com-daniel-vorcaro/"
+  },
+  "cnnpfconversasflavio": {
+   "t": "CNN Brasil — PF mostra conversas de Flávio com Vorcaro sobre recursos para Dark Horse",
+   "u": "https://www.cnnbrasil.com.br/politica/pf-mostra-conversas-de-flavio-com-vorcaro-sobre-recursos-para-dark-horse/"
+  },
+  "timesbrasilflaviolinha": {
+   "t": "Times Brasil — Relatório da PF traça linha do tempo de Flávio Bolsonaro com Vorcaro",
+   "u": "https://timesbrasil.com.br/brasil/politica/relatorio-pf-linha-tempo-flavio-bolsonaro-vorcaro/"
+  },
+  "jbpfparecerflavio": {
+   "t": "Jornal do Brasil — PF envia à PGR parecer favorável para investigar Flávio por pedido de dinheiro a Vorcaro",
+   "u": "https://www.jb.com.br/brasil/policia/2026/05/1059801-pf-envia-a-pgr-parecer-favoravel-pra-investigar-flavio-bolsonaro-por-pedido-de-dinheiro-a-vorcaro.html"
+  },
+  "vermelhojatovorcaro": {
+   "t": "Vermelho — Flávio Bolsonaro no jato de Vorcaro: o ecossistema que favorece o candidato do PL",
+   "u": "https://vermelho.org.br/2026/09/24/flavio-bolsonaro-no-jato-de-vorcaro-o-ecossistema-que-favorece-o-candidato-do-pl/"
+  },
+  "correiodoestadoflavioimovel": {
+   "t": "Correio do Estado — Flávio usou imóvel de advogado alvo de buscas da PF no caso INSS",
+   "u": "https://correiodoestado.com.br/politica/flavio-usou-imovel-de-advogado-alvo-de-buscas-da-pf-no-caso-inss/472838/"
+  },
+  "brasil247flavioimovelzettel": {
+   "t": "Brasil 247 — Flávio usou em campanha imóvel que pertenceu a cunhado de Vorcaro em São Paulo",
+   "u": "https://www.brasil247.com/brasil/flavio-usou-em-campanha-imovel-que-pertenceu-a-cunhado-de-vorcaro-em-sao-paulo/"
+  },
+  "wikipediamaster": {
+   "t": "Wikipédia — Escândalo do Banco Master",
+   "u": "https://pt.wikipedia.org/wiki/Esc%C3%A2ndalo_do_Banco_Master"
+  },
+  "aljazeeramasterracepres": {
+   "t": "Al Jazeera — How the Banco Master scandal injected chaos into Brazil’s presidential race",
+   "u": "https://aljazeera.com/features/longform/2026/10/2/how-the-banco-master-scandal-injected-chaos-into-brazils-presidential-race"
   }
  },
  "entities": [
@@ -1706,7 +1746,8 @@
     "piauicontaminacao",
     "piauicortedeprazeres"
    ],
-   "joke": "Defendia aumentar a cobertura do FGC bem na hora que o FGC mais precisava não pagar. Coincidência, garantem as fontes."
+   "joke": "Defendia aumentar a cobertura do FGC bem na hora que o FGC mais precisava não pagar. Coincidência, garantem as fontes.",
+   "orbit": true
   },
   {
    "id": "jaques-wagner",
@@ -1914,16 +1955,20 @@
    "photo": "img/flavio-bolsonaro.jpg",
    "photoCredit": "Agência Senado",
    "status": {
-    "label": "Citado",
+    "label": "Investigado",
     "kind": "warning"
    },
    "role": "Senador (PL-RJ); pré-candidato à Presidência",
-   "period": "Negociação ocorrida entre fevereiro e maio de 2025; áudio revelado em 05/2026; novas mensagens reveladas em 09/2026",
+   "period": "Negociação entre dezembro de 2024 e novembro de 2025; áudio revelado em 05/2026; inquérito aberto no STF em 07/2026; novas mensagens e relatório da PF em 09/2026",
    "amounts": [
     "R$ 134 milhões — valor negociado em áudio para bancar o filme “Dark Horse”, biografia de Jair Bolsonaro",
     "~R$ 61 milhões (US$ 10,6 milhões) já pagos entre fevereiro e maio de 2025, em seis transferências, segundo reportagem",
     "US$ 1,66 milhão repassado em 16/09/2025 ao Havengate Development Fund — pagamento posterior ao que Flávio apresentou publicamente como o último, elevando o total identificado para ~US$ 12,3 milhões, segundo relatório do Coaf revelado pela piauí",
-    "Possivelmente US$ 14 milhões (R$ 72 milhões) no total, se confirmado um terceiro repasse pressionado por Flávio em 22/10/2025, segundo mensagens de WhatsApp obtidas pela piauí"
+    "Possivelmente US$ 14 milhões (R$ 72 milhões) no total, se confirmado um terceiro repasse pressionado por Flávio em 22/10/2025, segundo mensagens de WhatsApp obtidas pela piauí",
+    "US$ 24 milhões (~R$ 131 milhões) — aporte total prometido, em contrato de 18/12/2024 com 14 parcelas (2 de US$ 2 milhões e 12 de US$ 1,66 milhão), segundo a PF",
+    "US$ 12,3 milhões (~R$ 69 milhões) em sete transferências ao Havengate, segundo delação de Antonio Carlos Freixo Júnior (“Mineiro”), da Entre Investimentos",
+    "R$ 1,5 milhão — três notas fiscais emitidas em agosto de 2026 por escritório ligado a Flávio a empresas do círculo de Vorcaro (duas de R$ 500 mil à Copenhagen Consultoria foram canceladas no mesmo dia; uma de R$ 500 mil à Contábil Correa sem cancelamento registrado), segundo Brasil de Fato",
+    "R$ 5,5 milhões → R$ 3,5 milhões — apartamento em Vila Nova Conceição (SP) comprado por Fabiano Zettel em 17/04/2025 e vendido em 10/02/2026 à empresa de Willer Tomaz; Flávio instalou ali o comitê de campanha em agosto de 2026"
    ],
    "related": [
     "jair-bolsonaro",
@@ -1936,12 +1981,16 @@
     "thiago-miranda",
     "michael-davis",
     "lula",
-    "walfrido-warde"
+    "walfrido-warde",
+    "willer-tomaz",
+    "fabiano-zettel",
+    "antonio-freixo-junior",
+    "andre-mendonca"
    ],
    "states": [
     "RJ"
    ],
-   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro. Um relatório do Coaf revelado pela revista piauí mostra que Vorcaro continuou enviando dinheiro para o “Dark Horse” depois da data que Flávio apresentou publicamente, em entrevista à GloboNews, como a do último pagamento: um repasse de US$ 1,66 milhão ao Havengate Development Fund em 16/09/2025, elevando o total identificado de US$ 10,6 milhões para cerca de US$ 12,3 milhões. Flávio também afirmou, incorretamente segundo a apuração, que o fundo seria supervisionado pela SEC americana. Reportagem da revista piauí (“Flávio, o homem do poço”) mostra que suas versões sobre a relação com Vorcaro caíram “peça por peça” em menos de uma semana, em maio de 2026: depois de ironizar um repórter que lhe perguntou sobre o financiamento do filme, foi forçado a admitir, horas depois, com a divulgação de um áudio, que pedira o dinheiro. Dias depois, o site Metrópoles revelou que Flávio visitara Vorcaro em sua casa em São Paulo no fim de 2025, quando o banqueiro já usava tornozeleira eletrônica após passar doze dias na cadeia — encontro que o senador omitira até então e que contradiz sua alegação de que, em novembro de 2025, desconhecia a gravidade da situação do banco. Mensagens de WhatsApp obtidas pela revista piauí mostram que, em 22 de outubro de 2025, já no terceiro dia de gravações, Flávio voltou a pressionar Vorcaro por dinheiro (\"Estamos no limite\"; \"se não der me fala que procuro urgente outro caminho\") e que o banqueiro liberou mais uma parcela horas depois — o que, somado ao repasse de 16 de setembro, eleva o total possivelmente desembolsado por Vorcaro para até US$ 14 milhões (R$ 72 milhões). Não é a primeira mentira pública do senador sobre o caso: à colunista Mônica Bergamo, em março de 2026, negou qualquer contato com Vorcaro, e ao Intercept reagiu com deboche (\"É mentira, de onde você tirou isso?\") horas antes de o áudio da cobrança vir a público. Também afirmou que o Havengate fora fechado assim que surgiram as primeiras suspeitas sobre Vorcaro — falso, segundo os registros fazendários do Texas, onde o fundo seguia ativo. Combinou ao menos cinco encontros com o banqueiro até novembro de 2025, incluindo convite para jantar com o ator Jim Caviezel e o diretor Cyrus Nowrasteh, e, na véspera da prisão de Vorcaro, trocou com ele mensagens de visualização única e uma declaração de lealdade eterna (\"Irmão, estou e estarei contigo sempre... Só preciso que me dê uma luz!\") pedindo mais dinheiro. Prometeu prestação de contas pública do filme em trinta dias a partir de maio de 2026; quase quatro meses depois, não apresentou nada — a produção entregou às autoridades um \"laudo\" de 32 páginas que bate exatamente com os centavos, sem detalhar um único gasto, considerado insuficiente por três produtores de cinema ouvidos pela piauí. Em 23 de setembro de 2026, a defesa de Flávio pediu ao ministro André Mendonça, do STF, a abertura de inquérito contra o presidente Lula por corrupção passiva e advocacia administrativa, com base nas mensagens do advogado Walfrido Warde sobre um suposto presente de uísque de Vorcaro a Lula.",
+   "summary": "Senador e pré-candidato à Presidência da República. Um áudio obtido pelo Intercept Brasil mostra Flávio Bolsonaro negociando diretamente com Vorcaro a liberação de R$ 134 milhões para financiar “Dark Horse”, um filme biográfico sobre Jair Bolsonaro; ao menos R$ 61 milhões já teriam sido pagos. O senador inicialmente negou a autenticidade do áudio, depois confirmou a conversa, afirmando que a negociação não foi ilícita e que conheceu Vorcaro em dezembro de 2024, antes de qualquer acusação pública contra o banqueiro. Mensagens do celular de Vorcaro obtidas pela Polícia Federal e reveladas pela CartaCapital em 09/2026 mostram Flávio cobrando diretamente o banqueiro pelas parcelas atrasadas do acordo, no mesmo conjunto de mensagens em que o empresário Neymar Pai também cobra recursos de Vorcaro. Um relatório do Coaf revelado pela revista piauí mostra que Vorcaro continuou enviando dinheiro para o “Dark Horse” depois da data que Flávio apresentou publicamente, em entrevista à GloboNews, como a do último pagamento: um repasse de US$ 1,66 milhão ao Havengate Development Fund em 16/09/2025, elevando o total identificado de US$ 10,6 milhões para cerca de US$ 12,3 milhões. Flávio também afirmou, incorretamente segundo a apuração, que o fundo seria supervisionado pela SEC americana. Reportagem da revista piauí (“Flávio, o homem do poço”) mostra que suas versões sobre a relação com Vorcaro caíram “peça por peça” em menos de uma semana, em maio de 2026: depois de ironizar um repórter que lhe perguntou sobre o financiamento do filme, foi forçado a admitir, horas depois, com a divulgação de um áudio, que pedira o dinheiro. Dias depois, o site Metrópoles revelou que Flávio visitara Vorcaro em sua casa em São Paulo no fim de 2025, quando o banqueiro já usava tornozeleira eletrônica após passar doze dias na cadeia — encontro que o senador omitira até então e que contradiz sua alegação de que, em novembro de 2025, desconhecia a gravidade da situação do banco. Mensagens de WhatsApp obtidas pela revista piauí mostram que, em 22 de outubro de 2025, já no terceiro dia de gravações, Flávio voltou a pressionar Vorcaro por dinheiro (\"Estamos no limite\"; \"se não der me fala que procuro urgente outro caminho\") e que o banqueiro liberou mais uma parcela horas depois — o que, somado ao repasse de 16 de setembro, eleva o total possivelmente desembolsado por Vorcaro para até US$ 14 milhões (R$ 72 milhões). Não é a primeira mentira pública do senador sobre o caso: à colunista Mônica Bergamo, em março de 2026, negou qualquer contato com Vorcaro, e ao Intercept reagiu com deboche (\"É mentira, de onde você tirou isso?\") horas antes de o áudio da cobrança vir a público. Também afirmou que o Havengate fora fechado assim que surgiram as primeiras suspeitas sobre Vorcaro — falso, segundo os registros fazendários do Texas, onde o fundo seguia ativo. Combinou ao menos cinco encontros com o banqueiro até novembro de 2025, incluindo convite para jantar com o ator Jim Caviezel e o diretor Cyrus Nowrasteh, e, na véspera da prisão de Vorcaro, trocou com ele mensagens de visualização única e uma declaração de lealdade eterna (\"Irmão, estou e estarei contigo sempre... Só preciso que me dê uma luz!\") pedindo mais dinheiro. Prometeu prestação de contas pública do filme em trinta dias a partir de maio de 2026; quase quatro meses depois, não apresentou nada — a produção entregou às autoridades um \"laudo\" de 32 páginas que bate exatamente com os centavos, sem detalhar um único gasto, considerado insuficiente por três produtores de cinema ouvidos pela piauí. Em 23 de setembro de 2026, a defesa de Flávio pediu ao ministro André Mendonça, do STF, a abertura de inquérito contra o presidente Lula por corrupção passiva e advocacia administrativa, com base nas mensagens do advogado Walfrido Warde sobre um suposto presente de uísque de Vorcaro a Lula. Atualização (10/2026): segundo a PF e a imprensa, a cronologia das conversas é a seguinte — em 08/12/2024 Thiago Miranda agendou a primeira reunião entre Flávio e Vorcaro, realizada em 11/12/2024 (Flávio chegou atrasado por causa de uma votação da reforma tributária); em 18/12/2024 foi enviado o contrato do filme, de US$ 24 milhões em 14 parcelas; em 20/01/2025 Miranda cobrou o primeiro aporte e, em 28/01, Vorcaro disse que não entrava “um real” havia três semanas; em 13/02/2025 foi confirmada a primeira transferência (US$ 2 milhões, da Entre Investimentos ao Havengate). O primeiro registro de troca direta entre os dois no celular de Vorcaro é de 20/08/2025; em 08/09/2025 Flávio enviou áudio cobrando pagamentos atrasados e citando compromissos com o ator Jim Caviezel e o diretor Cyrus Nowrasteh; em 15/09 Miranda relatou que Flávio queria mostrar material filmado em encontro na casa de Vorcaro em Brasília; em 16/09 houve ligação entre os dois e, no mesmo dia, a remessa de US$ 1,66 milhão; em 22/10 Flávio disse que o filme estava “no terceiro dia de filmagens e no limite do orçamento” e Vorcaro liberou nova parcela; em 07/11 Flávio enviou vídeo da produção dizendo que “tudo isso só está sendo possível por causa de vc”; em 16/11/2025, véspera da prisão de Vorcaro, tentou contato e escreveu “Irmão, estou e estarei contigo sempre, não tem meia conversa entre a gente”. A PF o descreve como “interlocutor direto” de Vorcaro no financiamento do filme, com reuniões presenciais, ligações e acompanhamento das filmagens, e aponta que Eduardo Bolsonaro orientou o envio do “máximo de dinheiro possível” pelo sistema financeiro dos EUA. Em 13–14/05/2026, Flávio negou o financiamento, depois admitiu ter pedido dinheiro; na GloboNews admitiu transferência a fundo administrado por advogado de seu irmão, mas negou que o dinheiro bancasse a estadia de Eduardo nos EUA, e classifica tudo como “patrocínio privado para um filme privado”, sem comissão ou contrapartida ao banqueiro. Em 13/05/2026, Thiago Miranda afirmou que Vorcaro foi o único financiador, com cerca de R$ 62 milhões; em 19/05, Karina Gama disse que ele bancou mais de 90% do orçamento de R$ 65,7 milhões; Mario Frias chegou a afirmar que o filme custou entre R$ 12 e 13 milhões. Em 30/05/2026, a PF enviou à PGR parecer favorável à investigação de Flávio por evasão de divisas e coação no curso do processo, e Alexandre de Moraes deu cinco dias à PGR para opinar sobre incluí-lo, e a Jair, em inquérito que já apura Eduardo. Em 23/07/2026, o ministro André Mendonça autorizou, a pedido da PF e com manifestação favorável da PGR, a abertura de inquérito no STF por suspeitas de lavagem de dinheiro, corrupção e evasão de divisas ligadas ao financiamento de “Dark Horse”; o relatório da PF teve o sigilo derrubado em 11/09/2026. Em setembro de 2026, o empresário Antonio Carlos Freixo Júnior (“Mineiro”), em delação premiada, disse ter feito sete transferências a pedido de Vorcaro, somando US$ 12,3 milhões, ao Havengate; em 10/09/2026, Mario Frias e Karina Gama foram alvos da Operação Make Up, sobre suposto desvio de emendas parlamentares. Conexões adicionais: em 19/01/2025, Flávio voltou da Flórida a Brasília no jato Legacy 650 (prefixo PP-NLR) com a mulher, as duas filhas e o advogado Willer Tomaz; a aeronave pertencia em partes iguais a Tomaz, a Laércio Cosentino (Totvs) e à Prime You, empresa de compartilhamento de ativos de luxo da qual Vorcaro foi sócio até setembro de 2025 — a PF chama Tomaz de “polo financeiro, patrimonial e logístico” e registra que ele acompanhou Flávio em ao menos cinco viagens internacionais no primeiro semestre de 2025 e cedeu casa em Angra dos Reis à família do senador, segundo reportagens. Em agosto de 2026, Flávio instalou o comitê de campanha em apartamento de Vila Nova Conceição (SP) que pertenceu a Fabiano Zettel, cunhado de Vorcaro, e hoje pertence à empresa de Tomaz (registro em 04/03/2026, dia da prisão de Zettel); Tomaz também é alvo de buscas da PF no caso INSS. O gabinete de Flávio diz que ele ficou apenas em hotéis na região. Três notas fiscais de R$ 1,5 milhão emitidas por escritório ligado ao senador a empresas do círculo de Vorcaro em agosto de 2026 também constam da apuração. No campo político, o caso chegou ao primeiro turno com Flávio sob investigação; pesquisa Datafolha apontou que 34% associam o escândalo mais à esquerda e 27% mais à direita, e um juiz mandou o Facebook apagar conteúdo falso que ligava Flávio ao caso Master. Flávio nega irregularidades; não há condenação nem denúncia formal contra ele.",
    "src": [
     "interceptflavio",
     "cnnflavio",
@@ -1952,7 +2001,17 @@
     "piauiflaviopoco",
     "piauicaixapreta",
     "cnnflaviopedeinvestigacaolula",
-    "dgabcflaviomendoncauisque"
+    "dgabcflaviomendoncauisque",
+    "brasildefatoflavio1turno",
+    "brasildefatointerlocutor",
+    "cnnpfconversasflavio",
+    "timesbrasilflaviolinha",
+    "jbpfparecerflavio",
+    "vermelhojatovorcaro",
+    "correiodoestadoflavioimovel",
+    "brasil247flavioimovelzettel",
+    "wikipediamaster",
+    "aljazeeramasterracepres"
    ],
    "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa."
   },
@@ -2582,7 +2641,8 @@
     "diariopara_pcc",
     "cnn10revelacoes",
     "cnnnuvemsicario"
-   ]
+   ],
+   "orbit": true
   },
   {
    "id": "alok",
@@ -3056,7 +3116,8 @@
     "otemponikolas",
     "emjatinhonikolas",
     "aosfatosnikolas"
-   ]
+   ],
+   "orbit": true
   },
   {
    "id": "edir-macedo",
@@ -3911,7 +3972,8 @@
    ],
    "joke": "Teve 60 dias para sair do apartamento do banqueiro — prazo bem mais generoso que o do Master para devolver o dinheiro de 1,6 milhão de credores.",
    "photo": "img/yasmin-brunet.jpg",
-   "photoCredit": "Multishow, CC BY 3.0, via Wikimedia Commons"
+   "photoCredit": "Multishow, CC BY 3.0, via Wikimedia Commons",
+   "orbit": true
   },
   {
    "id": "roberto-justus",
@@ -4021,6 +4083,40 @@
    "joke": "Ex-coach de “mentalidade de prosperidade” ganhando R$ 1,17 milhão de viagem. “Não fala de valores” é, no caso, o único módulo de compliance do curso.",
    "photo": "img/pablo-marcal.jpg",
    "photoCredit": "Kim Kataguiri, CC BY 3.0, via Wikimedia Commons"
+  },
+  {
+   "id": "willer-tomaz",
+   "name": "Willer Tomaz",
+   "aliases": [
+    "willer"
+   ],
+   "type": "pessoa",
+   "status": {
+    "label": "Citado",
+    "kind": "warning"
+   },
+   "role": "Advogado e empresário; amigo de Flávio Bolsonaro",
+   "period": "Jato em 01/2025; imóvel adquirido em 02/2026; reportagens em 09/2026",
+   "amounts": [
+    "R$ 3,5 milhões — apartamento em Vila Nova Conceição (SP) comprado por sua empresa, WT Administração, de Fabiano Zettel, em 10/02/2026",
+    "US$ 5,5 milhões — valor de cada fração do jato PP-NLR, segundo avaliação da PF (05/2025)"
+   ],
+   "related": [
+    "flavio-bolsonaro",
+    "fabiano-zettel",
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Advogado e empresário, amigo de Flávio Bolsonaro, apontado pela PF como “polo financeiro, patrimonial e logístico” do senador, segundo reportagens. Era um dos três sócios do jato Legacy 650 (PP-NLR), ao lado de Laércio Cosentino e da Prime You — empresa da qual Daniel Vorcaro foi sócio até setembro de 2025 —, no qual Flávio voltou da Flórida a Brasília em 19/01/2025. Sua empresa WT Administração comprou, em 10/02/2026, por R$ 3,5 milhões, o apartamento de Vila Nova Conceição (SP) que Fabiano Zettel, cunhado de Vorcaro, adquirira por R$ 5,5 milhões em abril de 2025; o imóvel, registrado em 04/03/2026, foi usado pela campanha de Flávio em agosto de 2026. Segundo reportagens, acompanhou Flávio em ao menos cinco viagens internacionais no primeiro semestre de 2025 e cedeu casa em Angra dos Reis à família do senador; também foi alvo de buscas da PF no caso INSS. O gabinete de Flávio afirma que ele ficou apenas em hotéis na região. Não há acusação formal conhecida contra Tomaz neste caso.",
+   "src": [
+    "vermelhojatovorcaro",
+    "correiodoestadoflavioimovel",
+    "brasil247flavioimovelzettel",
+    "brasildefatoflavio1turno"
+   ],
+   "joke": "Aluga jato, imóvel e casa em Angra. Só o roteiro do filme é que não era dele."
   }
  ],
  "stateValues": {
