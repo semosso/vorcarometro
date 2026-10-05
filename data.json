@@ -959,6 +959,14 @@
   "brasil247kengas": {
    "t": "Brasil 247 — Daniel Vorcaro pediu avião “para as kengas”, mostram mensagens",
    "u": "https://www.brasil247.com/brasil/daniel-vorcaro-pediu-aviao-para-as-kengas-mostram-mensagens"
+  },
+  "tse2026resultados": {
+   "t": "TSE — Resultados oficiais das eleições 2026, 1º turno (04/10/2026)",
+   "u": "https://resultados.tse.jus.br/"
+  },
+  "cbnciteadosmasterreeleicao": {
+   "t": "CBN — Políticos citados no caso Master conseguem reeleição; apenas Ciro Nogueira e ACM Neto perderam",
+   "u": "https://cbn.globo.com/coberturas/eleicoes-2026/noticia/2026/10/05/politicos-citados-no-caso-master-conseguem-reeleicao-apenas-ciro-nogueira-e-acm-neto-perderam.ghtml"
   }
  },
  "entities": [
@@ -1161,9 +1169,18 @@
     "cnnkassab",
     "jbkassab",
     "brasildefatokassab",
-    "piauicaixapreta"
+    "piauicaixapreta",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
-   "joke": "R$ 2 milhões de doação que, numa delação que nem colou, viraram acusação de propina."
+   "joke": "R$ 2 milhões de doação que, numa delação que nem colou, viraram acusação de propina.",
+   "eleicao": {
+    "cargo": "Governador",
+    "uf": "SP",
+    "resultado": "eleito",
+    "detalhe": "Reeleito no 1º turno, com 62,65% dos votos.",
+    "pendente": false
+   }
   },
   {
    "id": "gilberto-kassab",
@@ -1808,10 +1825,19 @@
     "piauiamigocrime",
     "piauiarmadilha",
     "piauicontaminacao",
-    "piauicortedeprazeres"
+    "piauicortedeprazeres",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
    "joke": "Defendia aumentar a cobertura do FGC bem na hora que o FGC mais precisava não pagar. Coincidência, garantem as fontes.",
-   "orbit": true
+   "orbit": true,
+   "eleicao": {
+    "cargo": "Senador",
+    "uf": "PI",
+    "resultado": "nao-eleito",
+    "detalhe": "Não eleito: 3º lugar (24,68%).",
+    "pendente": false
+   }
   },
   {
    "id": "jaques-wagner",
@@ -1848,9 +1874,18 @@
     "embc",
     "cnnpropinaservidoresbc",
     "piauiarmadilha",
-    "piauicontaminacao"
+    "piauicontaminacao",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
-   "joke": "Do PT pro grupo dos que, segundo apuração, tentaram segurar a CPI."
+   "joke": "Do PT pro grupo dos que, segundo apuração, tentaram segurar a CPI.",
+   "eleicao": {
+    "cargo": "Senador",
+    "uf": "BA",
+    "resultado": "eleito",
+    "detalhe": "Reeleito, 2º mais votado (27,65%).",
+    "pendente": false
+   }
   },
   {
    "id": "claudio-castro",
@@ -1947,9 +1982,18 @@
     "cnncpicrimeibaneis",
     "cnnquemeaugustolima",
     "cnnnomepreocupaplanalto",
-    "cnnnenhumcandidatoespaco"
+    "cnnnenhumcandidatoespaco",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
-   "joke": "Ajudou a ampliar o consignado no governo; o CredCesta, coincidentemente, veio de brinde depois."
+   "joke": "Ajudou a ampliar o consignado no governo; o CredCesta, coincidentemente, veio de brinde depois.",
+   "eleicao": {
+    "cargo": "Senador",
+    "uf": "BA",
+    "resultado": "nao-eleito",
+    "detalhe": "Não eleito: 4º lugar (19,97%).",
+    "pendente": false
+   }
   },
   {
    "id": "roberta-roma",
@@ -1973,9 +2017,18 @@
    ],
    "summary": "Parlamentar baiana apontada por reportagens como tendo conexões familiares com o escândalo do Master; segundo a cobertura, não assinou o requerimento de instalação de uma CPMI sobre o caso.",
    "src": [
-    "bradoroberta"
+    "bradoroberta",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
-   "joke": "Não assinou a CPMI. A família, pelo visto, também não assina embaixo de qualquer coisa."
+   "joke": "Não assinou a CPMI. A família, pelo visto, também não assina embaixo de qualquer coisa.",
+   "eleicao": {
+    "cargo": "Deputada federal",
+    "uf": "BA",
+    "resultado": "eleito",
+    "detalhe": "Eleita, com 1,88% dos votos.",
+    "pendente": false
+   }
   },
   {
    "id": "hugo-motta",
@@ -2007,9 +2060,18 @@
     "cnnmotta",
     "apublicabancada",
     "cnntcumotta",
-    "cnnmasterpagamentospoliticos"
+    "cnnmasterpagamentospoliticos",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
-   "joke": "Presidente da Câmara; empréstimo de R$ 22 milhões pra cunhada, garantia: uma empresa de R$ 100 mil."
+   "joke": "Presidente da Câmara; empréstimo de R$ 22 milhões pra cunhada, garantia: uma empresa de R$ 100 mil.",
+   "eleicao": {
+    "cargo": "Deputado federal",
+    "uf": "PB",
+    "resultado": "eleito",
+    "detalhe": "Reeleito, com 5,17% dos votos.",
+    "pendente": false
+   }
   },
   {
    "id": "flavio-bolsonaro",
@@ -2075,9 +2137,18 @@
     "correiodoestadoflavioimovel",
     "brasil247flavioimovelzettel",
     "wikipediamaster",
-    "aljazeeramasterracepres"
+    "aljazeeramasterracepres",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
-   "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa."
+   "joke": "R$ 134 milhões pra filmar a vida do pai. Ao menos o roteiro, garantem, era sobre outra pessoa.",
+   "eleicao": {
+    "cargo": "Presidente",
+    "uf": "RJ",
+    "resultado": "segundo-turno",
+    "detalhe": "1º lugar com 47,03%; disputa o 2º turno em 25/10 contra Lula.",
+    "pendente": false
+   }
   },
   {
    "id": "karina-gama",
@@ -3086,9 +3157,18 @@
     "g1celina",
     "otempocelina",
     "poder360celina1",
-    "poder360celina2"
+    "poder360celina2",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
-   "joke": "Vorcaro jura que ela não ficou de fora. Ela jura que sempre foi contra. Uma das duas versões está errada."
+   "joke": "Vorcaro jura que ela não ficou de fora. Ela jura que sempre foi contra. Uma das duas versões está errada.",
+   "eleicao": {
+    "cargo": "Governadora",
+    "uf": "DF",
+    "resultado": "segundo-turno",
+    "detalhe": "1ª colocada com 49,93%; disputa o 2º turno em 25/10 contra Leandro Grass.",
+    "pendente": false
+   }
   },
   {
    "id": "milton-maluhy-filho",
@@ -3179,9 +3259,18 @@
     "poder360_nikolas",
     "otemponikolas",
     "emjatinhonikolas",
-    "aosfatosnikolas"
+    "aosfatosnikolas",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
-   "orbit": true
+   "orbit": true,
+   "eleicao": {
+    "cargo": "Deputado federal",
+    "uf": "MG",
+    "resultado": "eleito",
+    "detalhe": "Reeleito, segundo a imprensa, com 3,1 milhões de votos (27%); o TSE ainda não publicou os eleitos de MG.",
+    "pendente": true
+   }
   },
   {
    "id": "edir-macedo",
@@ -3489,9 +3578,18 @@
    ],
    "summary": "Deputado federal (PL-SP), ex-secretário especial de Cultura do governo Bolsonaro e ex-ator. Escreveu a primeira versão do roteiro de \"Dark Horse\" e consta como produtor executivo do filme; foi ele quem, em dezembro de 2024, agradeceu a Daniel Vorcaro por áudio pelo aporte inicial e convidou o diretor Cyrus Nowrasteh para o projeto. Direcionou emendas parlamentares de R$ 2 milhões ao Instituto Conhecer Brasil (ICB), ONG de Karina Gama — sua sócia em Dark Horse —, para dois projetos sociais (Lutando pela Vida e Jovem Empreendedor); uma auditoria da Controladoria-Geral da União encontrou tantos problemas nos dois que está tomando providências para pedir o dinheiro de volta: um deles não comprovou entrega de bens nem prestação de serviços, o outro não capacitou ninguém nem atendeu nenhum estudante apesar de prometer alcançar 2.250 pessoas. Segundo o Estado de S. Paulo, parte do dinheiro foi parar no advogado de Frias. Karina e seu então marido haviam recebido R$ 54 mil para prestar serviços à campanha de Frias em 2022, ano em que ele, como secretário, ajudou a Go Up a obter os direitos cinematográficos sobre a vida de Bolsonaro.",
    "src": [
-    "piauicaixapreta"
+    "piauicaixapreta",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
-   "joke": "Escreveu o roteiro, mandou os agradecimentos e ainda arranjou emenda pro filme. Faltou só produzir a prestação de contas."
+   "joke": "Escreveu o roteiro, mandou os agradecimentos e ainda arranjou emenda pro filme. Faltou só produzir a prestação de contas.",
+   "eleicao": {
+    "cargo": "Deputado federal",
+    "uf": "SP",
+    "resultado": "eleito",
+    "detalhe": "Reeleito, segundo a imprensa (91.403 votos); o TSE ainda não publicou os eleitos de SP.",
+    "pendente": true
+   }
   },
   {
    "id": "paulo-calixto",
@@ -3639,9 +3737,18 @@
     "jornaldebrasilialulavorcaroplanalto",
     "gazetadopovovorcaroencontroplanalto",
     "cnnflaviopedeinvestigacaolula",
-    "jornaldocomercionunesmarquesvideo"
+    "jornaldocomercionunesmarquesvideo",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
-   "joke": "Reunião classificada de \"ótima\" pelo próprio banqueiro investigado. Pelo visto, o uísque ajudou."
+   "joke": "Reunião classificada de \"ótima\" pelo próprio banqueiro investigado. Pelo visto, o uísque ajudou.",
+   "eleicao": {
+    "cargo": "Presidente",
+    "uf": "DF",
+    "resultado": "segundo-turno",
+    "detalhe": "2º lugar com 45,16%; disputa o 2º turno em 25/10 contra Flávio Bolsonaro.",
+    "pendente": false
+   }
   },
   {
    "id": "walfrido-warde",
@@ -3763,11 +3870,20 @@
     "uolacm",
     "jgbacm",
     "bpmoneyacm",
-    "piauicortedeprazeres"
+    "piauicortedeprazeres",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
    "joke": "Consultoria sobre “agenda político-econômica” que, pelo visto, tinha o Master como cliente fiel.",
    "photo": "img/acm-neto.jpg",
-   "photoCredit": "Alan Santos/PR (Palácio do Planalto), CC BY 2.0, via Wikimedia Commons"
+   "photoCredit": "Alan Santos/PR (Palácio do Planalto), CC BY 2.0, via Wikimedia Commons",
+   "eleicao": {
+    "cargo": "Governador",
+    "uf": "BA",
+    "resultado": "nao-eleito",
+    "detalhe": "Não eleito: 2º lugar (43,72%); Jerônimo Rodrigues foi eleito.",
+    "pendente": false
+   }
   },
   {
    "id": "antonio-rueda",
@@ -3816,11 +3932,20 @@
     "diariorio",
     "metrueda",
     "metruedabi",
-    "piauicortedeprazeres"
+    "piauicortedeprazeres",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
    "joke": "Negou conhecer o banco na terça e admitiu ser o advogado do banco na quarta — velocidade de compliance que o Master nunca teve.",
    "photo": "img/antonio-rueda.jpg",
-   "photoCredit": "União Brasil"
+   "photoCredit": "União Brasil",
+   "eleicao": {
+    "cargo": "Deputado federal",
+    "uf": "RJ",
+    "resultado": "eleito",
+    "detalhe": "Reeleito, com 1,76% dos votos.",
+    "pendente": false
+   }
   },
   {
    "id": "luciano-huck",
@@ -3914,11 +4039,20 @@
    ],
    "summary": "Deputado federal pela Bahia e terceiro vice-presidente do União Brasil. Segundo a revista piauí, esteve ao lado de Antônio Rueda numa festa na mansão de Vorcaro em Trancoso (BA), onde, segundo participantes, circularam chocolates com cogumelos alucinógenos; os dois teriam trocado contatos com convidadas. Mensagens obtidas pela PF mostram o deputado combinando “farras” e pedindo para “levar umas amigas pra algum lugar reservado” em viagens a Belo Horizonte (abril de 2024) e São Paulo (julho de 2024). Procurado, primeiro negou ter ido a festas e ameaçou processar; ao receber detalhes da apuração, respondeu: “Isso pode acabar com o meu casamento.” Não há, na reportagem, acusação de crime.",
    "src": [
-    "piauicortedeprazeres"
+    "piauicortedeprazeres",
+    "tse2026resultados",
+    "cbnciteadosmasterreeleicao"
    ],
    "joke": "Jurou que nunca esteve em festa e prometeu processar; viu os detalhes e mudou o argumento para o casamento. Contraditório rápido, esse.",
    "photo": "img/elmar-nascimento.jpg",
-   "photoCredit": "Portal da Câmara dos Deputados, CC BY 3.0, via Wikimedia Commons"
+   "photoCredit": "Portal da Câmara dos Deputados, CC BY 3.0, via Wikimedia Commons",
+   "eleicao": {
+    "cargo": "Deputado federal",
+    "uf": "BA",
+    "resultado": "eleito",
+    "detalhe": "Reeleito, com 1,62% dos votos.",
+    "pendente": false
+   }
   },
   {
    "id": "gusttavo-lima",
