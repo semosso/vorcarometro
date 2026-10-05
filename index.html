@@ -30,6 +30,7 @@
   --gold:#a3782f; --gold-ink:#fffaf0; --link:#7a1620;
   --red:#7a1620; --red-ink:#ffffff;
   --blue:#2a5c8a; --blue-ink:#ffffff;
+  --win:#2f7a3d; --win-soft:#a9cfae;
   --map-none:#e3dac2; --map-none-line:#c9bfa8;
   --seq-1:#d9c68f; --seq-2:#b3903f; --seq-3:#8a5a2a; --seq-4:#5c2418;
   --font-display:'Playfair Display',Georgia,'Times New Roman',serif;
@@ -44,6 +45,7 @@
     --border:#f2e9d8; --gridline:#3c3024;
     --map-none:#2a2218; --map-none-line:#3c3024;
     --link:#e0736a;
+    --win:#6fbf7e; --win-soft:#2f5a38;
     color-scheme:dark;
   }
 }
@@ -53,6 +55,7 @@
   --border:#f2e9d8; --gridline:#3c3024;
   --map-none:#2a2218; --map-none-line:#3c3024;
   --link:#e0736a;
+  --win:#6fbf7e; --win-soft:#2f5a38;
   color-scheme:dark;
 }
 *{box-sizing:border-box;}
@@ -273,6 +276,34 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
 .g-node:hover text,.g-node:focus-visible text{font-weight:700;}
 .g-center .g-ring{fill:var(--red); stroke:var(--gold); stroke-width:5;}
 .g-center text.g-ini{fill:var(--red-ink); font-size:30px; stroke:none;}
+
+/* ---------- eleições 2026: eleitos x não eleitos ---------- */
+.el-layout{display:grid; grid-template-columns:minmax(240px,340px) 1fr; gap:22px; align-items:start;}
+.el-map svg{width:100%; height:auto; display:block;}
+.ehex{cursor:pointer;} .ehex path{stroke:var(--bg); stroke-width:2px; transition:opacity .12s;}
+.ehex:hover path{opacity:.82;} .ehex.only-lose path{stroke:var(--red); stroke-width:7px;}
+.ehex.only-second path{stroke:var(--gold); stroke-width:7px;}
+.ehex.selected path{stroke:var(--ink); stroke-width:3px;}
+.ehex text{font-family:var(--font-mono); font-size:24px; font-weight:600; pointer-events:none;}
+.ehex:focus{outline:none;}
+.el-legend{display:flex; flex-direction:column; gap:6px; font-size:.8rem; color:var(--ink); margin-top:10px;}
+.el-legend .legend-row{gap:8px;}
+.el-filter{min-height:2.2rem; display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:.95rem; margin-bottom:10px;}
+.el-cols{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+.el-col h3{font-family:var(--font-display); font-weight:400; font-size:1.05rem; margin:0 0 8px; padding-bottom:4px; border-bottom:3px solid var(--border);}
+.el-col.win h3{border-color:var(--win);} .el-col.lose h3{border-color:var(--red);}
+.el-second-unused{margin-top:16px;} .el-second-unused h3{border-color:var(--gold);}
+.el-second-unused .el-list{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:8px;}
+.el-list{display:flex; flex-direction:column; gap:8px;}
+.el-person{display:flex; gap:10px; align-items:center; text-align:left; padding:8px; background:var(--surface); border:1px solid var(--gridline); cursor:pointer; width:100%; color:var(--ink); font-family:var(--font-sans);}
+.el-person:hover,.el-person:focus-visible{border-color:var(--ink);}
+.el-face{width:56px; height:56px; border-radius:50%; object-fit:cover; flex:0 0 auto; border:4px solid var(--gold); background:var(--surface-2); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); color:var(--ink-2);}
+.el-person.eleito .el-face{border-color:var(--win);} .el-person.nao-eleito .el-face{border-color:var(--red);}
+.el-name{font-weight:700; line-height:1.15; font-size:.95rem;}
+.el-meta{font-size:.8rem; line-height:1.25; margin-top:2px;}
+.el-tag{display:inline-block; font-family:var(--font-mono); font-size:.66rem; border:1px solid var(--gold); padding:0 4px; margin-top:3px;}
+.el-empty{font-size:.9rem; color:var(--ink-2); padding:6px 0;}
+@media (max-width:640px){ .el-layout{grid-template-columns:1fr;} .el-face{width:46px; height:46px; border-width:3px;} .el-person{padding:6px; gap:8px;} .el-name{font-size:.88rem;} .el-meta{font-size:.74rem;} }
 .g-hint{font-size:1rem; color:var(--ink); margin-top:6px;}
 </style>
 </head>
@@ -346,6 +377,30 @@ details.src summary{cursor:pointer; font-size:0.8rem; color:var(--ink-2);}
       </div>
     </div>
     <div class="state-panel" id="statePanel"></div>
+  </div>
+</section>
+
+<section id="eleicoes">
+  <div class="block-title">Eleições 2026: os citados nas urnas</div>
+  <div class="g-hint" style="margin:0 0 12px;">Políticos que aparecem na base e disputaram a eleição de 04/10. Borda verde: eleito(a) ou na frente; vermelha: não eleito(a) ou em segundo lugar. A etiqueta “2º turno” marca quem disputa a rodada de 25/10. Toque num estado para filtrar (a disputa presidencial só aparece com todos os estados); toque num rosto para abrir a ficha.</div>
+  <div class="el-layout">
+    <div class="el-map">
+      <svg id="elMap" viewBox="0 0 722 700" role="group" aria-label="Mapa hexagonal dos estados com eleitos citados na base"></svg>
+      <div class="el-legend">
+        <div class="legend-row"><span class="legend-swatch" style="background:var(--win)"></span><span>Estado com ao menos um eleito citado</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none);border-color:var(--red)"></span><span>Só não eleitos</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none);border-color:var(--gold)"></span><span>Só disputa de segundo turno</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:var(--map-none)"></span><span>Nenhum citado na disputa</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="el-filter" id="elFilter" aria-live="polite"></div>
+      <div class="el-cols">
+        <div class="el-col win"><h3>Eleitos(as)</h3><div class="el-list" id="elWin"></div></div>
+        <div class="el-col lose"><h3>Não eleitos(as)</h3><div class="el-list" id="elLose"></div></div>
+      </div>
+      <div class="g-hint">Fontes: resultados oficiais do TSE (apuração a 100%) e CBN. Todos os citados negam irregularidades; ser citado não é acusação.</div>
+    </div>
   </div>
 </section>
 
@@ -1101,6 +1156,61 @@ function buildOrbitGraph(){
   cg.addEventListener('click', ()=>goToEntity(center));
   cg.addEventListener('keydown', ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); goToEntity(center); } });
 }
+
+/* ---------- eleições 2026: mapa + colunas ---------- */
+let elFilterUF = null;
+function elPeople(){ return ENTITIES.filter(e=>e.eleicao); }
+function buildElectionMap(){
+  const svg = document.getElementById('elMap'); if(!svg) return;
+  const byUf = {};
+  elPeople().forEach(e=>{ const u=e.eleicao.uf; if(u==='BR') return; (byUf[u]=byUf[u]||[]).push(e); });
+  let out = '';
+  BR_HEX.forEach(h=>{
+    const ps = byUf[h.uf]||[]; const won = ps.filter(e=>e.eleicao.resultado==='eleito' && !e.eleicao.segundoTurno).length;
+    const second = !won && ps.some(e=>e.eleicao.segundoTurno) && !ps.some(e=>!e.eleicao.segundoTurno);
+    let fill='var(--map-none)', stroke='var(--bg)', txt='var(--ink-muted)';
+    if(won){ fill = won>=2 ? 'var(--win)' : 'var(--win-soft)'; txt = won>=2 ? '#ffffff' : 'var(--ink)'; }
+    else if(ps.length){ txt='var(--ink)'; }
+    const tip = h.name+': '+(ps.length ? won+' eleito(s), '+ps.length+' citado(s) na disputa' : 'nenhum citado na disputa');
+    out += '<g class="ehex'+(ps.length?' has':'')+(second?' only-second':(!won&&ps.length?' only-lose':''))+'" data-uf="'+h.uf+'" tabindex="0" role="button" aria-label="'+tip+'">'+
+      '<title>'+tip+'</title><path d="'+h.d+'" fill="'+fill+'" stroke="'+stroke+'"/>'+
+      '<text x="'+h.cx+'" y="'+(h.cy+8)+'" text-anchor="middle" fill="'+txt+'">'+h.uf+'</text></g>';
+  });
+  svg.innerHTML = out;
+  svg.querySelectorAll('.ehex').forEach(g=>{
+    const pick = ()=>{ const u=g.getAttribute('data-uf'); setElectionFilter(elFilterUF===u ? null : u); };
+    g.addEventListener('click', pick);
+    g.addEventListener('keydown', ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); pick(); } });
+  });
+}
+function setElectionFilter(uf){
+  elFilterUF = uf;
+  document.querySelectorAll('#elMap .ehex').forEach(g=>g.classList.toggle('selected', g.getAttribute('data-uf')===uf));
+  renderElectionLists();
+}
+function elPersonHtml(e){
+  const initials = e.name.split(/\s+/).filter(w=>!/^(de|da|do|dos|das)$/i.test(w)).map(w=>w[0]).slice(0,2).join('').toUpperCase();
+  const face = e.photo ? '<img class="el-face" src="'+e.photo+'" alt="" loading="lazy">' : '<span class="el-face">'+initials+'</span>';
+  const x = e.eleicao;
+  return '<button type="button" class="el-person '+x.resultado+'" data-id="'+e.id+'">'+face+
+    '<span><div class="el-name">'+e.name+'</div><div class="el-meta">'+x.cargo+' · '+(x.uf==='BR'?'nacional':x.uf)+'. '+x.detalhe+'</div>'+
+    (x.segundoTurno?'<span class="el-tag">2º turno · 25/10</span>':'')+'</span></button>';
+}
+function renderElectionLists(){
+  const state = elFilterUF ? BR_HEX.find(h=>h.uf===elFilterUF) : null;
+  document.getElementById('elFilter').innerHTML = state
+    ? 'Mostrando só <strong>'+state.name+'</strong>. <button type="button" class="btn ghost small" id="elClear">Ver todos</button>'
+    : 'Mostrando todos os estados.';
+  const clear = document.getElementById('elClear'); if(clear) clear.addEventListener('click', ()=>setElectionFilter(null));
+  const list = elPeople().filter(e=>!elFilterUF || (e.eleicao.uf!=='BR' && e.eleicao.uf===elFilterUF)).sort((a,b)=>a.name.localeCompare(b.name,'pt-BR'));
+  const fill = (id, res)=>{
+    const items = list.filter(e=>e.eleicao.resultado===res);
+    const box = document.getElementById(id);
+    box.innerHTML = items.length ? items.map(elPersonHtml).join('') : '<div class="el-empty">Ninguém nesta lista.</div>';
+  };
+  fill('elWin','eleito'); fill('elLose','nao-eleito');
+  document.querySelectorAll('#eleicoes .el-person').forEach(b=>b.addEventListener('click', ()=>{ const e=byId(b.getAttribute('data-id')); if(e) goToEntity(e); }));
+}
 async function init(){
   const loadingEl = document.getElementById('dataLoading');
   const errorEl = document.getElementById('dataError');
@@ -1124,6 +1234,8 @@ async function init(){
 
   buildMap();
   buildOrbitGraph();
+  buildElectionMap();
+  renderElectionLists();
   renderStatePanel(selectedUF);
   document.getElementById('sourceBiblio').innerHTML = Object.values(SRC).sort((a,b)=>a.t.localeCompare(b.t,'pt-BR')).map(s=>'<div><a href="'+s.u+'" target="_blank" rel="noopener">'+s.t+'</a></div>').join('');
 
