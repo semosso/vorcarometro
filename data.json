@@ -903,6 +903,26 @@
   "aljazeeramasterracepres": {
    "t": "Al Jazeera — How the Banco Master scandal injected chaos into Brazil’s presidential race",
    "u": "https://aljazeera.com/features/longform/2026/10/2/how-the-banco-master-scandal-injected-chaos-into-brazils-presidential-race"
+  },
+  "bahianoticiaspeleleca": {
+   "t": "Bahia Notícias — “Peleleca” viraliza após vazamento de diálogos entre Daniel Vorcaro e a namorada",
+   "u": "https://www.bahianoticias.com.br/noticia/314536-peleleca-viraliza-apos-vazamento-de-dialogos-entre-daniel-vorcaro-e-a-namorada"
+  },
+  "dcmpeleleca": {
+   "t": "Diário do Centro do Mundo — “Peleleca”: conversa íntima de Vorcaro e ex-namorada vira meme na web",
+   "u": "https://www.diariodocentrodomundo.com.br/essencial/peleleca-conversa-intima-de-vorcaro-e-ex-namorada-vira-meme-na-web/"
+  },
+  "ndmaismulherescelular": {
+   "t": "ND+ — De sugar baby a ex-bailarina do Faustão: quem são as mulheres citadas no celular de Daniel Vorcaro",
+   "u": "https://ndmais.com.br/justica/quem-mulheres-aparecem-mensagens-de-vorcaro/"
+  },
+  "terratresgracaspeleleca": {
+   "t": "Terra — Cena de Grazi Massafera em ‘Três Graças’ ironiza mensagens íntimas de Daniel Vorcaro com a ex",
+   "u": "https://www.terra.com.br/diversao/tv/novelas/cena-de-grazi-massafera-em-tres-gracas-ironiza-mensagens-intimas-de-daniel-vorcaro-com-a-ex,ca1e1b2321028c1ba0349ea03a75ec96ibq19hs9.html"
+  },
+  "otempomulheresvorcaro": {
+   "t": "O Tempo — Violação do sigilo de Vorcaro revelou teia de relações amorosas com influenciadoras e modelos",
+   "u": "https://www.otempo.com.br/politica/2026/3/7/violacao-do-sigilo-de-vorcaro-revelou-teia-de-relacoes-amorosas-com-influenciadoras-e-modelos"
   }
  },
  "entities": [
@@ -956,7 +976,8 @@
     "yasmin-brunet",
     "roberto-justus",
     "ronaldo-nazario",
-    "pablo-marcal"
+    "pablo-marcal",
+    "martha-graeff"
    ],
    "states": [
     "SP",
@@ -993,7 +1014,9 @@
     "vejabrunet",
     "valormarcal"
    ],
-   "joke": "Oferecia 177% do CDI e tinha um jato de R$ 200 milhões — hoje só um dos dois ainda voa."
+   "joke": "Oferecia 177% do CDI e tinha um jato de R$ 200 milhões — hoje só um dos dois ainda voa.",
+   "photo": "img/daniel-vorcaro.jpg",
+   "photoCredit": "Márcio Gustavo Vasconcelos (Wikimedia Commons, CC0)"
   },
   {
    "id": "henrique-vorcaro",
@@ -4117,6 +4140,39 @@
     "brasildefatoflavio1turno"
    ],
    "joke": "Aluga jato, imóvel e casa em Angra. Só o roteiro do filme é que não era dele."
+  },
+  {
+   "id": "martha-graeff",
+   "name": "Martha Graeff",
+   "aliases": [
+    "martha",
+    "peleleca",
+    "pala agola"
+   ],
+   "type": "pessoa",
+   "orbit": true,
+   "status": {
+    "label": "Citada",
+    "kind": "affected"
+   },
+   "role": "Influenciadora digital; ex-namorada de Daniel Vorcaro",
+   "period": "Mensagens de outubro de 2024 a agosto de 2025; divulgadas em 06/03/2026",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "RS"
+   ],
+   "summary": "Influenciadora gaúcha, com cerca de 676 mil seguidores no Instagram, apontada por reportagens como namorada (hoje ex) de Daniel Vorcaro. Em 06/03/2026, 1.514 páginas de conversas entre os dois, de outubro de 2024 a agosto de 2025, extraídas pela Polícia Federal do celular do banqueiro e encaminhadas à CPMI do INSS, vieram a público e viralizaram: a palavra “peleleca”, usada por Vorcaro, chegou ao 15º lugar entre os assuntos mais comentados do X, e o casal aparece trocando mensagens no estilo do Cebolinha, trocando o “R” pelo “L”. Em uma das trocas mais repercutidas, Martha responde a uma mensagem do banqueiro com “PALAAAAAAA AGOLAAA” e “Amor, eu te amo tanto”. As mensagens também mostram que, em dezembro de 2024, Vorcaro contou a ela que um jornalista da Folha de S.Paulo o procurara sobre um suposto iate presenteado a ela em Miami; ela negou conhecimento (“Mentira. De onde veio isso?”). Segundo a ND+, ela diz nas conversas ter sido amante dele por seis meses antes de a relação se tornar pública, e, após a prisão de Vorcaro, encerrou o relacionamento. As fontes consultadas não indicam que ela seja investigada ou tenha qualquer participação nas irregularidades atribuídas a Vorcaro; ela aparece como pessoa citada nas mensagens. O conteúdo é de natureza íntima e entra aqui apenas pelo que já foi amplamente divulgado.",
+   "src": [
+    "bahianoticiaspeleleca",
+    "dcmpeleleca",
+    "ndmaismulherescelular",
+    "terratresgracaspeleleca",
+    "otempomulheresvorcaro"
+   ],
+   "joke": "“PALA AGOLA” foi a única coisa nesse inquérito que a PF não precisou traduzir."
   }
  ],
  "stateValues": {
