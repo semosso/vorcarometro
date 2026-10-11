@@ -1130,7 +1130,9 @@
     "agpai",
     "cnnpaipreso"
    ],
-   "joke": "Prova de que negócio de família, às vezes, é levado a sério demais."
+   "joke": "Prova de que negócio de família, às vezes, é levado a sério demais.",
+   "photo": "img/henrique-vorcaro.jpg",
+   "photoCredit": "via Revista Fórum"
   },
   {
    "id": "fabiano-zettel",
@@ -1173,7 +1175,9 @@
     "cnnoitoalvos",
     "cnnpropinaservidoresbc"
    ],
-   "joke": "Cunhado que também sabia comprar imóvel — só que pra devolver em forma de propina, segundo a apuração."
+   "joke": "Cunhado que também sabia comprar imóvel — só que pra devolver em forma de propina, segundo a apuração.",
+   "photo": "img/fabiano-zettel.jpg",
+   "photoCredit": "via Times Brasil"
   },
   {
    "id": "tarcisio-de-freitas",
@@ -1315,7 +1319,9 @@
     "cnnalvospf",
     "cnnoitoalvos"
    ],
-   "joke": null
+   "joke": null,
+   "photo": "img/luiz-phillipi-mourao.jpg",
+   "photoCredit": "via CNN Brasil"
   },
   {
    "id": "marilson-roseno",
@@ -1475,7 +1481,9 @@
     "piauicontaminacao",
     "piauiarmadilha"
    ],
-   "joke": "Presidente do banco que quase comprou o Master — e quase saiu dessa ileso."
+   "joke": "Presidente do banco que quase comprou o Master — e quase saiu dessa ileso.",
+   "photo": "img/paulo-henrique-costa.jpg",
+   "photoCredit": "via Correio Braziliense"
   },
   {
    "id": "daniel-monteiro",
@@ -2031,7 +2039,9 @@
     "resultado": "nao-eleito",
     "detalhe": "Não eleito: 4º lugar (19,97%).",
     "pendente": false
-   }
+   },
+   "photo": "img/joao-roma.jpg",
+   "photoCredit": "Câmara dos Deputados"
   },
   {
    "id": "roberta-roma",
@@ -2229,7 +2239,9 @@
     "cnndarkhorsenegaemendas",
     "piauicaixapreta"
    ],
-   "joke": "Produziu o filme sobre o pai do freguês mais generoso do banco. A plateia, ao que parece, incluía a Polícia Federal."
+   "joke": "Produziu o filme sobre o pai do freguês mais generoso do banco. A plateia, ao que parece, incluía a Polícia Federal.",
+   "photo": "img/karina-gama.jpg",
+   "photoCredit": "via CNN Brasil"
   },
   {
    "id": "rodrigo-fux",
@@ -2293,7 +2305,9 @@
     "terraneymarflavio",
     "uolneymarintermediario"
    ],
-   "joke": "Negociava patrocínio de R$ 100 milhões pro Santos e ainda tentou emplacar o camisa 10 na reunião."
+   "joke": "Negociava patrocínio de R$ 100 milhões pro Santos e ainda tentou emplacar o camisa 10 na reunião.",
+   "photo": "img/neymar-pai.jpg",
+   "photoCredit": "Reprodução, via CartaCapital"
   },
   {
    "id": "jair-bolsonaro",
@@ -3167,7 +3181,9 @@
     "uolneymarintermediario",
     "piauicaixapreta"
    ],
-   "joke": "Contratado pra cuidar da imagem do banqueiro. A imagem, no fim, também virou alvo de busca e apreensão."
+   "joke": "Contratado pra cuidar da imagem do banqueiro. A imagem, no fim, também virou alvo de busca e apreensão.",
+   "photo": "img/thiago-miranda.jpg",
+   "photoCredit": "via ND+"
   },
   {
    "id": "celina-leao",
@@ -3525,7 +3541,9 @@
    "src": [
     "piauiamigocrime"
    ],
-   "joke": "Não refina petróleo — refina mesmo é imposto, segundo o mercado."
+   "joke": "Não refina petróleo — refina mesmo é imposto, segundo o mercado.",
+   "photo": "img/ricardo-magro.jpg",
+   "photoCredit": "via BPMoney"
   },
   {
    "id": "andre-kruschewsky",
@@ -3819,7 +3837,9 @@
     "cnnwardewhisky",
     "gazetadopovowardemagnitsky"
    ],
-   "joke": "Um advogado só, dois clientes informais: um ministro sancionado nos EUA e um presidente que jura não ter recebido presente nenhum."
+   "joke": "Um advogado só, dois clientes informais: um ministro sancionado nos EUA e um presidente que jura não ter recebido presente nenhum.",
+   "photo": "img/walfrido-warde.jpg",
+   "photoCredit": "via Gazeta do Povo"
   },
   {
    "id": "marco-aurelio-santana-ribeiro",
@@ -3848,7 +3868,9 @@
    "src": [
     "cnnwardewhisky"
    ],
-   "joke": "Cumpriu o protocolo à risca — pedir por e-mail. O problema é o assunto do e-mail."
+   "joke": "Cumpriu o protocolo à risca — pedir por e-mail. O problema é o assunto do e-mail.",
+   "photo": "img/marco-aurelio-santana-ribeiro.jpg",
+   "photoCredit": "via CNN Brasil"
   },
   {
    "id": "guido-mantega",
@@ -4518,7 +4540,9 @@
     "otemposprioli",
     "mundobainfluenciadores"
    ],
-   "joke": null
+   "joke": null,
+   "photo": "img/gabriela-prioli.jpg",
+   "photoCredit": "via O Tempo"
   }
  ],
  "stateValues": {
