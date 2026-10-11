@@ -987,6 +987,18 @@
   "gazetaaudiovorcaro": {
    "t": "Gazeta do Povo — Em áudio, Vorcaro relata pagamentos por filme sobre Lula e negociação com petistas",
    "u": "https://www.gazetadopovo.com.br/republica/em-audio-vorcaro-compara-repasses-a-filmes-do-lula-foi-errado-do-flavio-nao-foi/"
+  },
+  "timesbrasilprioli": {
+   "t": "Times Brasil — Após defender Master, Gabriela Prioli sinaliza voto em Lula; mensagens revelam contrato de 12 meses com o banco (11/10/2026, com base no Poder360)",
+   "u": "https://timesbrasil.com.br/brasil/apos-defender-master-gabriela-prioli-sinaliza-voto-em-lula-mensagens-revelam-contrato-de-12-meses-com-o-banco/"
+  },
+  "otemposprioli": {
+   "t": "O Tempo — Gabriela Prioli nega ter defendido Banco Master mediante pagamento (10/01/2026)",
+   "u": "https://www.otempo.com.br/brasil/2026/1/10/gabriela-prioli-nega-ter-defendido-banco-master-mediante-pagamento"
+  },
+  "mundobainfluenciadores": {
+   "t": "Mundo BA — PF aponta que Vorcaro oferecia até R$ 2 milhões a influenciadores para defender Master e criticar BC",
+   "u": "https://mundoba.com.br/brasil/pf-aponta-que-vorcaro-oferecia-ate-r-2-milhoes-a-influenciadores-para-defender-master-e-criticar-bc/"
   }
  },
  "entities": [
@@ -1044,7 +1056,8 @@
     "martha-graeff",
     "maryia-lubinova",
     "erika-schneider",
-    "karolina-trainotti"
+    "karolina-trainotti",
+    "gabriela-prioli"
    ],
    "states": [
     "SP",
@@ -4476,6 +4489,36 @@
    "joke": "Apartamento na Faria Lima via holding. A Viking Participações era mesmo generosa.",
    "photo": "img/karolina-trainotti.jpg",
    "photoCredit": "Reprodução, via Midiamax"
+  },
+  {
+   "id": "gabriela-prioli",
+   "name": "Gabriela Prioli",
+   "aliases": [
+    "prioli",
+    "gabi prioli"
+   ],
+   "type": "pessoa",
+   "orbit": true,
+   "status": {
+    "label": "Citada",
+    "kind": "affected"
+   },
+   "role": "Advogada, comentarista e influenciadora digital; citada em mensagens de Vorcaro sobre contratação de influenciadores",
+   "period": "Mensagens de 04/2025; vídeo sobre o Master em 04/2025; negativa em 09/01/2026; mensagens divulgadas em 10/2026",
+   "amounts": [],
+   "related": [
+    "daniel-vorcaro"
+   ],
+   "states": [
+    "SP"
+   ],
+   "summary": "Advogada e comentarista com forte presença nas redes. Segundo o Poder360 (via Times Brasil, 11/10/2026), mensagens extraídas pela PF do celular de Daniel Vorcaro mostram que, em 05/04/2025, um integrante do marketing do Master informou que a contratação dela estava formalizada, \"assinada por 12 meses\", dentro de um plano para ~15 influenciadores por três meses, e que o contrato teria sido fechado por meio de uma agência para que o nome do banco não aparecesse. Vorcaro comentou que ela \"vai ser bombardeada\" e deveria ser acompanhada de perto; em 18/04/2025, sugeriu um vídeo dela sobre os CDBs do Master. As mensagens não trazem todos os termos do acordo nem o valor. Prioli nega ter firmado contrato diretamente com o Master ou ter sido paga para defender o banco: em vídeo de 09/01/2026, após ser citada por um vereador na GloboNews (que disse não acusá-la), afirmou que o vídeo em questão é do início de 2025, que não produziu conteúdo atacando o Banco Central e que todo conteúdo pago por ela é sinalizado como publicidade. A PF apura a contratação de influenciadores pelo Master (o chamado \"Projeto DV\", com propostas de até R$ 2 milhões a perfis para defender o banco e criticar o BC); as fontes consultadas não indicam que ela seja investigada nem que tenha recebido pagamento, e a reportagem não confirma que a publicidade tenha deixado de ser declarada.",
+   "src": [
+    "timesbrasilprioli",
+    "otemposprioli",
+    "mundobainfluenciadores"
+   ],
+   "joke": null
   }
  ],
  "stateValues": {
